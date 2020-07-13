@@ -37,6 +37,21 @@ var eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
+var gallery = function (content) {
+    return "<div class=\"gallery\">" + content + "</div>";
+};
+var figure = function (link, src, title) {
+    return "<figure><a href=\"" + link + "\"><img src=\"" + src + "\"></a></figure>";
+};
+var timeline = function (content, date, title, source) {
+    return "<div class=\"point\">\n    <span class=\"point-mark\"></span>\n    <span class=\"point-date\">\n        " + date + "\n    </span>\n    <h2>\n        " + title + "\n    </h2>\n    <span>\n        <a href=\"" + source + "\" target=\"blank\"><img src=\"/img/external-link.svg\" style=\"float:right\"></a>\n    </span>\n    <div class=\"timeline-body\">\n        " + content + "\n    </div>\n    </div>";
+};
+var alternativeAB = function (content) {
+    return "<div class=\"row\">" + content + "</div>";
+};
+var alternativeABInner = function (content) {
+    return "<div class=\"two-in-row\">" + content + "</div>";
+};
 var conf = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPluginRss);
@@ -47,6 +62,10 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter('htmlDateString', function (dateObj) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
+    eleventyConfig.addFilter('log', function (object) {
+        console.log(object);
+        return object;
+    });
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", function (array, n) {
         if (n < 0) {
@@ -54,6 +73,11 @@ var conf = function (eleventyConfig) {
         }
         return array.slice(0, n);
     });
+    eleventyConfig.addPairedShortcode("gallery", gallery);
+    eleventyConfig.addPairedShortcode("timeline", timeline);
+    eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB);
+    eleventyConfig.addPairedShortcode("alternativeABInner", alternativeABInner);
+    eleventyConfig.addShortcode("figure", figure);
     var markdownItOptions = {
         html: true,
         breaks: true,
@@ -63,7 +87,7 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("fonts");
     eleventyConfig.addPassthroughCopy("img");
     eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
+    eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable('code'));
     eleventyConfig.addCollection("tagList", function (collection) {
         var tagSet = new Set();
         collection.getAll().forEach(function (item) {
@@ -104,7 +128,6 @@ var conf = function (eleventyConfig) {
             "md",
             "njk",
             "html",
-            "liquid"
         ],
         // If your site lives in a different subdirectory, change this.
         // Leading or trailing slashes are all normalized away, so don’t worry about those.
@@ -113,9 +136,9 @@ var conf = function (eleventyConfig) {
         // Best paired with the `url` filter: https://www.11ty.io/docs/filters/url/
         // You can also pass this in on the command line using `--pathprefix`
         // pathPrefix: "/",
-        markdownTemplateEngine: "liquid",
-        htmlTemplateEngine: "njk",
-        dataTemplateEngine: "njk",
+        // markdownTemplateEngine: "njk",
+        // htmlTemplateEngine: "njk",
+        // dataTemplateEngine: "njk",
         // These are all optional, defaults are shown:
         dir: {
             input: ".",

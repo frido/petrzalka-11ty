@@ -63,25 +63,23 @@
 ---
 
 ## Investičný zámer
-<!-- https://www.petrzalka.sk/wp-content/uploads/2018/09/polyfunkcny_dom_humenske_nam..pdf -->
-
 Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.
 
-{{< gallery >}}
-{{< figure link="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg" src="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg" title="" >}}
-{{< figure link="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_3.jpg" src="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_3.jpg" title="" >}}
-{{< figure link="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg" src="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg" title="" >}}
-{{< figure link="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg" src="img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg" title="" >}}
-{{< /gallery >}}
+{% gallery %}
+{% figure "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg", "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg", "" %}
+{% figure "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_3.jpg", "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_3.jpg", "" %}
+{% figure "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg", "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg", "" %}
+{% figure "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg", "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg", "" %}
+{% endgallery %}
 
-{{% timeline date="28.05.2020" title="Zasadnutie Mestského zastupiteľstva" source="https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-28052020/bod-43/" %}}
+{% timeline "28.05.2020", "Zasadnutie Mestského zastupiteľstva", "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-28052020/bod-43/" %}
 Žiada primátora hlavného mesta SR Bratislavy,
 * aby zohľadnil predložené pripomienky v dôvodovej správe k Petícii PROTI výstavbe polyfunkčného domu na Humenskom námestí v lokalite Lúky VII a zabezpečil prehodnotenie predchádzajúceho platného stanoviska k výstavbe polyfunkčného domu na Humenskom námestí,
 * aby preskúmal možnosť zámeny pozemku, ktorého sa petícia týka, za iný pozemok na území mestskej časti Bratislava-Petržalka vo vlastníctve hlavného mesta SR Bratislavy, ktorého hodnota je rovnocenná so zamieňaným pozemkom, a to vrátane investičného potenciálu takého pozemku, za podmienky, že pozemok vo vlastníctve hlavného mesta SR Bratislavy sa nachádza v území regulovanom územným plánom zóny, resp. že sa bude nachádzať na takto regulovanom území, a aby o takejto možnosti rokoval s vlastníkom pozemku, na ktorom sa plánuje výstavbu polyfunkčného domu na Humenskom námestí.
-{{% /timeline  %}}
+{% endtimeline %}
 
 
-{{% timeline date="28.05.2020" title="Oznámenie výsledku vybavenia petície" source="https://esluzby.bratislava.sk/Upload/EDEM/NoticeBoardEntry/19396/2020PeticiaprotizastavbeparkuacastiparkoviskaHumenskenamestievlokaliteLukyVII._2%20doc.pdf" %}}
+{% timeline "28.05.2020", "Oznámenie výsledku vybavenia petície", "https://esluzby.bratislava.sk/Upload/EDEM/NoticeBoardEntry/19396/2020PeticiaprotizastavbeparkuacastiparkoviskaHumenskenamestievlokaliteLukyVII._2%20doc.pdf" %}
 Požiadavka potvrdiť predchádzajúce nesúhlasné stanovisko nie je použiteľná
 z dôvodu, že v obidvoch prípadoch boli predložené navrhované zámery so zásadne odlišnými
 riešeniami.
@@ -141,26 +139,26 @@ a ktoré by ho oprávňovali v zmysle spomínaného § 140a ods. 3 stavebného z
 príslušný dotknutý orgán na zmenu alebo nahradenie záväzného stanoviska. Zároveň
 konštatuje, že neboli naplnené podmienky, ktoré by oprávňovali iniciovať zmeny platnej
 územnoplánovacej dokumentácie.
-{{% /timeline  %}}
+{% endtimeline  %}
 
 
-{{% timeline date="27.02.2020" title="Petícia PROTI zástavbe parku a časti parkoviska" source="https://zastupitelstvo.bratislava.sk/data/att/46753.pdf" %}}
-{{% /timeline  %}}
+{% timeline "27.02.2020", "Petícia PROTI zástavbe parku a časti parkoviska", "https://zastupitelstvo.bratislava.sk/data/att/46753.pdf" %}
+{% endtimeline  %}
 
 
-{{% timeline date="04.02.2020" title="Zasadnutie Miestneho zastupiteľstva" source="https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf" %}}
+{% timeline "04.02.2020", "Zasadnutie Miestneho zastupiteľstva", "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf" %}
 Miestne zastupiteľstvo mestskej časti Bratislava-Petržalka
 * **vyjadruje nesúhlas** s výstavbou na Humenskom námestí, 
 * žiada starostu, aby v územnom konaní zohľadnil požiadavky signatárov petície proti výstavbe a to v súlade s právnymi predpismi Slovenskej republiky,
 * žiada starostu o zaslanie žiadosti hlavnému mestu SR o preskúmanie záväzného stanoviska k predmetnému zámeru a v prípade negatívnej odpovede, požiadať Krajskú prokuratúru o preskúmanie súladu záväzného stanoviska s územným plánom hlavného mesta Bratislava,
 * žiada starostu prerokovať, za účasti zástupcov občanov a mesta, zámer na Komisii územného plánu, výstavby a dopravy mestskej časti Bratislava-Petržalka,
 * žiada starostu, aby zabezpečil v spolupráci s hlavným mestom SR Bratislava včasné zverejňovanie, na stránke MČ Bratislava-Petržalka, všetkých žiadostí o „Kladné záväzné stanovisko“ k investičnej výstavbe na území MČ Bratislava-Petržalka.
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="27.11.2019" title="Začatie územného konania" source="https://www.petrzalka.sk/2020-03-04-uzemne-konania/" %}}
-{{% /timeline  %}}
+{% timeline "27.11.2019", "Začatie územného konania", "https://www.petrzalka.sk/2020-03-04-uzemne-konania/" %}
+{% endtimeline  %}
 
-{{% timeline date="25.7.2019" title="Súhlasné záväzné stanovisko" source="https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=64278" %}}
+{% timeline "25.7.2019", "Súhlasné záväzné stanovisko", "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=64278" %}
 ###### žiadosť zo dňa: 12.2.2019, doplnená dňa 6.6.2019
 
 Novostavba polyfunkčného domu s 1 podzemným a 4
@@ -194,10 +192,10 @@ v stabilizovanom územi, čiže ju nijako neobmedzuje, rešpektuje regulativy t.
 stabilizovanej plochy (vrátane koeficientu zelene), v maximálne možnej miere zachováva
 vzrastlú zeleň, ktorá zároveň spĺňa funkciu izolačnej zelene voči objektu základnej školy.
 Navrhovaná zástavba nepredstavuje neprimeranú intenzifikáciu dotknutej lokality.
-{{% /timeline  %}}
+{% endtimeline  %}
 
 
-{{% timeline date="18.09.2017" title="Zamietavé záväzné stanovisko" source="https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=52637" %}}
+{% timeline "18.09.2017", "Zamietavé záväzné stanovisko", "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=52637" %}
 ###### žiadosť zo dňa : 31.7.2017
 
 Umiestnenie novostavby 4 – 6 - podlažného bytového domu,
@@ -217,4 +215,4 @@ definovanú v záväznej časti Územného plánu hlavného mesta SR Bratislavy,
 zmien a doplnkov.
 Konštatujeme zároveň, že predmetná lokalita predstavuje územie s ukončenou stavebnou činnosťou
 a nie je vhodné uvažovať s jej ďalšou intenzifikáciou. 
-{{% /timeline  %}}
+{% endtimeline  %}

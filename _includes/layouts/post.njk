@@ -2,8 +2,63 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<div class="paletteA">
+    <article class="container article">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
 
-{{ content | safe }}
+        <div class="updated">
+            {% if date %}
+                <time datetime="{{ date }}">
+          aktualizované: {{ date }}
+                </time>
+            {% endif %}
+        </div>
 
-<p><a href="{{ '/' | url }}">← Home</a></p>
+        {%- if amount or amountAll %}
+            <div class="budget">
+                <span class="amount">{{ amount }}€</span> z rozpočtu Petržalky
+            {% if amountAll %}
+                    <span class="amount">{{ amountAll }}€</span> celková cena projektu
+            {% endif %}
+            </div>
+        {%- endif %}
+        
+        {% if schedule %}
+            <div class="schedule">
+                {% for schedule in schedule %}
+                    <div>
+                        <span class="schedule-title">{{ schedule.title }}: </span>
+                        {% if schedule.dateReal %}
+                            <span>
+                                <time>
+                                    {{ schedule.dateReal  }}
+                                </time>
+                            </span>
+                        {% endif %}
+                        {% if schedule.dateExpected %}
+                            <span>(plánované: <time>
+                                    {{ schedule.dateExpected }}
+                                </time>)</span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {{ content | safe }}
+
+        <div class="sources">
+            <div>
+          zdroj: <a href="{{ source }}">{{ source }}</a>
+            </div>
+        </div>
+
+        <p>
+            <a href="{{ '/' | url }}">← Home</a>
+        </p>
+    </article>
+</div>
+
+{{ end }}
