@@ -1,0 +1,56 @@
+{% set color = budget.data.color %}
+
+<article class="card card-body">
+  <div class="row">
+    <div class="col-md-2" style="margin: auto;">
+      <img src="img/budget/{{ budget.data.icon }}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-10">
+      <header>
+        <h2>
+          {{ budget.data.title }}
+        </h2>
+      </header>
+      <div class="row">
+        <div class="col-md-6" style="border-right: solid 1px lightgrey;">
+          <p class="card-text">
+            <span class="amount" style="background-color: {{ color }};">{{ budget.data.commonExpenses.amount }}€</span>
+            <span style="color: {{ color }};  font-weight: bold">{{ budget.data.commonExpenses.title }}</span>
+            {% if budget.data.commonExpenses.list %}
+              {% for ex in budget.data.commonExpenses.list %}
+                <div>
+                  {% if ex.link %}
+                    <a href="{{ ex.link}}" style="color: black">
+                      <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span></a>
+                  {% else %}
+                    <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            {% endif %}
+          </p>
+        </div>
+      <div class="col-md-6">
+          <p class="card-text">
+            <span class="amount" style="background-color: {{ color }};">
+              {{ budget.data.capitalExpenses.amount }}€</span>
+            <span style="color: {{ color }}; font-weight: bold">
+              {{ budget.data.capitalExpenses.title }}
+            </span>
+            {% if budget.data.capitalExpenses.list %}
+              {% for ex in budget.data.capitalExpenses.list %}
+                <div style=" {{ "text-decoration: line-through" if in.cancel else "" }} ">
+                  {% if ex.link %}
+                    <a href="{{ ex.link }}"><span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span></a>
+                  {% else %}
+                    <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            {% endif %}
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</article>

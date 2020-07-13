@@ -1,0 +1,13 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Projekty
+  order: 2
+---
+<div class="paletteA">
+  <section class="container vertical">
+    {% for post in collections.projekt | reverse %}
+      {% include "postslist.njk" %}
+    {% endfor %}
+  </section>
+</div>

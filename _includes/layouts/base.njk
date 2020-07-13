@@ -42,7 +42,7 @@
 
 
   <body>
-    <header>
+    {# <header>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 
       <ul class="nav">
@@ -50,6 +50,17 @@
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
+    </header> #}
+
+    <header class="paletteA d-flex flex-column flex-md-row align-items-center justify-content-between px-md-4 border-bottom shadow-sm logo">
+      <img src="img/logo-s.png"></h1>
+      <a href="/"><h1 class="my-0 font-weight-normal logo-text">Projekty v Petržalke</h1></a>
+      <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2" href="projects/">Projekty</a>
+          <a class="p-2" href="grant/grant-2020">Granty</a>
+          <a class="p-2" href="grant/dotacie-2020">Dotácie</a>
+          <a class="p-2" href="budget/2020">Rozpočet</a>   
+      </nav>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>

@@ -1,14 +1,24 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
-{% for post in postslist | reverse %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    {% for tag in post.data.tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-  </li>
-{% endfor %}
-</ol>
+<article class="article">
+  <header>
+      <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
+    {% if post.data.amount %}<span class="amount">{{ post.data.amount }}€</span>{% endif %}
+  </header>
+  <div class="row">
+    {%- if post.data.icon -%}
+    <div class="col-md-3" style="margin: auto;">
+      <img src="{{ post.data.icon }}" class="preview card-img" alt="...">
+    </div>
+    <div class="col-md-9">
+      <p class="card-text">
+        {{ post.data.description }}
+      </p>
+    </div>
+    {%- else -%}
+    <div class="col-md-12">
+      <p class="card-text">
+        {{ post.data.description }}
+      </p>
+    </div>
+    {%- endif -%}
+  </div>
+</article>
