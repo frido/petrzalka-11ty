@@ -1,0 +1,21 @@
+{
+  "name": "11ty-petrzalka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@types/markdown-it": "^10.0.1",
+    "@types/node": "^14.0.22",
+    "@types/punycode": "^2.1.0",
+    "markdown-it": "^11.0.0"
+  }
+}

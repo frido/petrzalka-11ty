@@ -1,0 +1,10 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+{% set postslist = collections.projekt | head(-10) %}
+{% set postslistCounter = collections.projekt | length %}
+{% include "postslist.njk" %}
