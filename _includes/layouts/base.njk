@@ -35,8 +35,6 @@
     {# <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" />  #}
     
     {# {{ template "_internal/google_analytics.html" . }} #}
-
-    {% include "postslist.njk" %}
 </head>
 
 
@@ -56,10 +54,10 @@
       <img src="img/logo-s.png"></h1>
       <a href="/"><h1 class="my-0 font-weight-normal logo-text">Projekty v Petržalke</h1></a>
       <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2" href="projects/">Projekty</a>
-          <a class="p-2" href="grant/grant-2020">Granty</a>
-          <a class="p-2" href="grant/dotacie-2020">Dotácie</a>
-          <a class="p-2" href="budget/2020">Rozpočet</a>   
+
+        {%- for entry in collections.all | eleventyNavigation %}
+          <a class="p-2 nav-item{% if entry.url == page.url %} nav-item-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+        {%- endfor %}
       </nav>
     </header>
 

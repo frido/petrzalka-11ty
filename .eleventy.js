@@ -47,10 +47,6 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter('htmlDateString', function (dateObj) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
-    eleventyConfig.addFilter('log', function (object) {
-        console.log(object);
-        return object;
-    });
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", function (array, n) {
         if (n < 0) {

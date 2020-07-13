@@ -1,22 +1,9 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Home
-  order: 1
+  key: Granty
+  order: 3
 ---
-<div class="paletteA">
-  <section class="container vertical">
-    {% for post in collections.projekt | reverse | head(4) %}
-      {% include "postslist.njk" %}
-    {% endfor %}
-  </section>
-  <div class="button">
-    <a href="projects/">
-      Viac
-    </a>
-  </div>
-</div>
-
 <div class="paletteC">
   <section class="container">
     <header>
@@ -24,7 +11,7 @@ eleventyNavigation:
     </header>
     <div class="flex-wrap c-4">
       {% for grantPost in collections.sgrant | head(1)  %}
-        {% set grants = grantPost.data.list | head(4) %}
+        {% set grants = grantPost.data.list %}
         {% for grant in grants  %}
           {% include "grantslist.njk" %}
         {% endfor %}
@@ -32,6 +19,7 @@ eleventyNavigation:
     </div>
   </section>
 </div>
+
 <div class="paletteC">
   <section class="container">
     <header>
@@ -39,25 +27,11 @@ eleventyNavigation:
     </header>
     <div class="flex-wrap c-4">
       {% for grantPost in collections.ogrant | head(1)  %}
-        {% set grants = grantPost.data.list | head(4) %}
+        {% set grants = grantPost.data.list %}
         {% for grant in grants  %}
           {% include "grantslist.njk" %}
         {% endfor %}
       {% endfor %}
     </div>
   </section>
-  <div class="button">
-    <a href="grants">Viac</a>
-  </div>
-</div>
-
-<div class="paletteB">
-  <section class="container vertical">
-    {% for budget in collections.main %}
-      {% include "budgetslist.njk" %}
-    {% endfor %}
-  </section>
-  <div class="button">
-    <a href="budget/">Viac</a>
-  </div>
 </div>

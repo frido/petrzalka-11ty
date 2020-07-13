@@ -21,9 +21,9 @@
                 <div>
                   {% if ex.link %}
                     <a href="{{ ex.link}}" style="color: black">
-                      <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span></a>
+                      <span style="">{{ ex.title }}</span></a>
                   {% else %}
-                    <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span>
+                    <span style="">{{ ex.title }}</span>
                   {% endif %}
                 </div>
               {% endfor %}
@@ -41,9 +41,9 @@
               {% for ex in budget.data.capitalExpenses.list %}
                 <div style=" {{ "text-decoration: line-through" if in.cancel else "" }} ">
                   {% if ex.link %}
-                    <a href="{{ ex.link }}"><span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span></a>
+                    <a href="{{ ex.link }}"><span style="">{{ ex.title }}</span></a>
                   {% else %}
-                    <span style="font-weight: 900; color:  {{ color }}">{{ ex.title }}</span>
+                    <span style="">{{ ex.title }}</span>
                   {% endif %}
                 </div>
               {% endfor %}
