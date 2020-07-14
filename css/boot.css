@@ -11004,7 +11004,7 @@ button.close {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.2rem;
@@ -11151,5 +11151,60 @@ img.preview {
 
 .two-in-row {
   width: 50%;
+}
+
+.xxx {
+  border-left: solid 10px #b8c1ec;
+  padding: 0;
+  margin: 10px;
+  margin-left: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(238, 187, 195, 0.05)), to(rgba(238, 187, 195, 0)));
+  background-image: linear-gradient(to right bottom, rgba(238, 187, 195, 0.05), rgba(238, 187, 195, 0));
+}
+
+.xxx.success {
+  border-left: solid 10px green;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.1)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(0, 255, 0, 0.1));
+}
+
+.xxx.success .description {
+  padding-left: 1rem;
+  color: green;
+}
+
+.xxx.inwork {
+  border-left: solid 10px orange;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 166, 0, 0.1)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 166, 0, 0.1));
+}
+
+.xxx.inwork .description {
+  padding-left: 1rem;
+  color: orange;
+}
+
+.xxx > .header {
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.xxx .date {
+  font-size: 1rem;
+}
+
+.xxx .dateExpected {
+  font-style: italic;
+}
+
+.xxx > .xxx {
+  margin-left: 10px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(238, 187, 195, 0)), to(rgba(238, 187, 195, 0)));
+  background-image: linear-gradient(to right bottom, rgba(238, 187, 195, 0), rgba(238, 187, 195, 0));
 }
 /*# sourceMappingURL=boot.css.map */

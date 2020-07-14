@@ -63,6 +63,11 @@ const conf = function (eleventyConfig: any) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
+    eleventyConfig.addFilter('postDate', (dateObj: string) => {
+        const dateTime = luxon.DateTime.fromString(dateObj, 'yyyy-LL-dd');
+        return dateTime.toFormat('yyyy-LL-dd');
+    });
+
     eleventyConfig.addFilter('log', (object: any) => {
         console.log(object);
         return object;

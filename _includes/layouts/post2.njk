@@ -1,0 +1,92 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="paletteA">
+    <article class="container article">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+
+        <div class="updated">
+            {% if date %}
+                <time datetime="{{ date }}">
+                    aktualizované: {{ date | postDate }}
+                </time>
+            {% endif %}
+        </div>
+
+        {%- if amount or amountAll %}
+            <div class="budget">
+                <span class="amount">{{ amount }}€</span> z rozpočtu Petržalky
+            {% if amountAll %}
+                    <span class="amount">{{ amountAll }}€</span> celková cena projektu
+            {% endif %}
+            </div>
+        {%- endif %}
+
+        {% if schedule %}
+            <div class="schedule">
+                {% for sch in schedule %}
+
+                    <div class="xxx {{ sch.status }}">
+                        <div class="header">
+                            <span class="title">{{ sch.title }}</span>
+                            <span class="date">
+                                {% if sch.startExpected %}
+                                    <span class="dateExpected">{{ sch.startExpected }}</span>
+                                {% endif %}
+                                {% if sch.startReal %}
+                                    <span class="dateReal">{{ sch.startReal }}</span>
+                                {% endif %}
+                                {% if sch.endExpected %}
+                                    <span class="dateExpected">- {{ sch.endExpected }}</span>
+                                {% endif %}
+                                {% if sch.endReal %}
+                                    <span class="dateReal">- {{ sch.endReal }}</span>
+                                {% endif %}
+                                <span class="description">{{sch.description}}</span>
+                            </span>
+                        </div>
+                        {% for sub in sch.sub %}
+                            <div class="xxx {{ sub.status }}">
+                                <div class="header">
+                                    <span class="title">{{ sub.title }}</span>
+                                    <span class="date">
+                                        {% if sub.startExpected %}
+                                            <span class="dateExpected">{{ sub.startExpected }}</span>
+                                        {% endif %}
+                                        {% if sub.startReal %}
+                                            <span class="dateReal">{{ sub.startReal }}</span>
+                                        {% endif %}
+                                        {% if sub.endExpected %}
+                                            <span class="dateExpected">- {{ sub.endExpected }}</span>
+                                        {% endif %}
+                                        {% if sub.endReal %}
+                                            <span class="dateReal">- {{ sub.endReal }}</span>
+                                        {% endif %}
+                                        <span class="description">{{sub.description}}</span>
+                                    </span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {{ content | safe }}
+
+        <div class="sources">
+            <div>
+          zdroj: <a href="{{ source }}">{{ source }}</a>
+            </div>
+        </div>
+
+        <p>
+            <a href="{{ '/' | url }}">← Home</a>
+        </p>
+    </article>
+</div>
+
+{{ end }}

@@ -6,6 +6,8 @@ $color3: #b8c1ec;
 $color4: #eebbc3;
 $color5: #d4d8f0;
 
+$timetable-border: $color3;
+
 .paletteA {
     @include palette($color1, $color1, $color2, $color2, $color3, $color4, $color1, $color4, $color1);
 }

@@ -13,9 +13,13 @@
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@types/luxon": "^1.24.1",
     "@types/markdown-it": "^10.0.1",
     "@types/node": "^14.0.22",
     "@types/punycode": "^2.1.0",
     "markdown-it": "^11.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
   }
 }

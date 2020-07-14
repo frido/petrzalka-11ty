@@ -12,13 +12,6 @@ font-family: 'Ubuntu', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-weight: 500;
 
-
-
-# Investičný zámer Námestie Republiky
-https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf
-https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/
-
-
 # Areál voľného času Vojenský dvor
 
 # Zámer Šrobárovo námestie
