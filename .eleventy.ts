@@ -16,7 +16,11 @@ const gallery = (content: string): string => {
 }
 
 const figure = (link: string, src:string, title: string): string => {
-    return `<figure><a href="${link}"><img src="${src}"></a></figure>`;
+    let figcaption = "";
+    if (title) {
+        figcaption = `<figcaption><h4>${title}</h4></figcaption>`
+    }
+    return `<figure><a href="${link}"><img src="${src}"></a>${figcaption}</figure>`;
 }
 
 const timeline = (content: string, date: Date, title: string, source: string): string => {
@@ -81,7 +85,7 @@ const conf = function (eleventyConfig: any) {
 
     const markdownItOptions: markdownIt.Options = {
         html: true,
-        breaks: true,
+        breaks: false,
         linkify: true
     };
 

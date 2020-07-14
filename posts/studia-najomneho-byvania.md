@@ -59,11 +59,11 @@ Na pozemkoch súkromných investorov:
 * **MUCHOVO NÁMESTIE, MČ Bratislava-Petržalka**
 * **VIEDENSKÁ CESTA, MČ Bratislava-Petržalka**
 
-{{< figure link="img/studia_najomneho_byvania/image--000.jpg" src="img/studia_najomneho_byvania/image--000.jpg" title="BRATSKÁ" >}}
-{{< figure link="img/studia_najomneho_byvania/image--001.jpg" src="img/studia_najomneho_byvania/image--001.jpg" title="SOSNOVÁ" >}}
-{{< figure link="img/studia_najomneho_byvania/image--002.jpg" src="img/studia_najomneho_byvania/image--002.jpg" title="ŠUSTEKOVA" >}}
-{{< figure link="img/studia_najomneho_byvania/image--003.jpg" src="img/studia_najomneho_byvania/image--003.jpg" title="MUCHOVO NÁMESTIE" >}}
-{{< figure link="img/studia_najomneho_byvania/image--004.jpg" src="img/studia_najomneho_byvania/image--004.jpg" title="VIEDENSKÁ CESTA" >}}
+{% figure "img/studia_najomneho_byvania/image--000.jpg", "img/studia_najomneho_byvania/image--000.jpg", "BRATSKÁ" %}
+{% figure "img/studia_najomneho_byvania/image--001.jpg", "img/studia_najomneho_byvania/image--001.jpg", "SOSNOVÁ" %}
+{% figure "img/studia_najomneho_byvania/image--002.jpg", "img/studia_najomneho_byvania/image--002.jpg", "ŠUSTEKOVA" %}
+{% figure "img/studia_najomneho_byvania/image--003.jpg", "img/studia_najomneho_byvania/image--003.jpg", "MUCHOVO NÁMESTIE" %}
+{% figure "img/studia_najomneho_byvania/image--004.jpg", "img/studia_najomneho_byvania/image--004.jpg", "VIEDENSKÁ CESTA" %}
 
 **Hlavnými cieľmi bude:**
 * zmapovať súčasný stav a overiť urbanistickú koncepciu vybraných lokalít, z hľadiska

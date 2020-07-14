@@ -70,11 +70,11 @@ pripravovanej urbanistickej štúdie Centrálnej rozvojovej osi Petržalka (ďal
 hmotou a úpravou okolia neblokuje zámery v zmysle pripravovanej štúdie CRO a Navrhované
 komunikácie a plochy situuje v rámci parcely vo vlastníctve predkladateľa. 
 
-{{< gallery >}}
-{{< figure link="img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg" src="img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg" title="" >}}
-{{< /gallery >}}
+{% gallery %}
+{% figure "img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg", "img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg", "" %}
+{% endgallery %}
 
-{{% timeline date="17.02.2020" title="Prerušenie územného konania" source="https://www.petrzalka.sk/wp-content/uploads/2020/02/Topolcianska_UR_PK_namietky_PET20200012217.pdf" %}}
+{% timeline "17.02.2020", "Prerušenie územného konania", "https://www.petrzalka.sk/wp-content/uploads/2020/02/Topolcianska_UR_PK_namietky_PET20200012217.pdf" %}
 ###### Odôvodnenie
 V konaní boli vznesené námietky účastníka konania smerujúce, okrem iného, proti záväznému
 stanovisku Hlavného mesta SR Bratislavy k investičnej činnosti MAGS OUIC 56556/17-434617 zo dňa
@@ -87,9 +87,9 @@ potvrdenie alebo zmenu záväzného stanoviska od orgánu, ktorý je nadriadený
 orgánu. Počas prerušenia konania neplynú lehoty na rozhodnutie veci stavebným úradom.
 V zmysle uvedeného si stavebný úrad listom č. 30/2020/10-UKSP/Va-nam zo dňa 17.02.2020
 vyžiadal od dotknutého orgánu stanovisko k námietkam.
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="04.02.2020" title="Uznesenie Miestneho zastupiteľstva" source="https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf" %}}
+{% timeline "04.02.2020", "Uznesenie Miestneho zastupiteľstva", "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf" %}
 Miestne zastupiteľstvo mestskej časti Bratislava-Petržalka
 
 * berie na vedomie
@@ -129,16 +129,16 @@ priamo na hlavnej stránke – úvodná stránka elektronickej tabule.
 * žiada starostu,
  aby sa obrátil na krajskú prokuratúru o preskúmanie zákonnosti a súladu záväzného
  stanoviska s územným plánom hlavného mesta Bratislava. 
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="07.01.2020" title="Začatie územného konania" source="https://www.petrzalka.sk/2020-03-04-uzemne-konania/" %}}
-{{% /timeline  %}}
+{% timeline "07.01.2020", "Začatie územného konania", "https://www.petrzalka.sk/2020-03-04-uzemne-konania/" %}
+{% endtimeline  %}
 
-<!-- {{% timeline date="25.04.2019" title="Uznesenie 150/2019" %}}
+<!-- {{% timeline "25.04.2019" "Uznesenie 150/2019" %}}
 [zdroj](https://bratislava.blob.core.windows.net/media/Default/Dokumenty/Str%C3%A1nky/2019%20Peticia%20proti%20vystavbe%20BD-Topolcianska.pdf)
 {{% /timeline  %}} -->
 
-{{% timeline date="25.04.2019" title="Uznesenie Mestského zastupiteľstva" source="https://zastupitelstvo.bratislava.sk/data/att/41660.pdf" %}}
+{% timeline "25.04.2019", "Uznesenie Mestského zastupiteľstva", "https://zastupitelstvo.bratislava.sk/data/att/41660.pdf" %}
 Hlavné mesto posúdilo žiadosť o vydanie záväzného stanoviska k investičnej
 činnosti na podklade predloženej dokumentácie stavby pre územné rozhodnutie (DUR
 11/2017) navrhovanej stavby. Po posúdení jednotlivými odbornými oddeleniami
@@ -176,9 +176,9 @@ vypracovania dokumentácie zodpovedá projektant, ktorý vykonáva príslušnú 
 Benček.
 
 Mestské zastupiteľstvo po prerokovaní materiálu berie na vedomie Petíciu proti výstavbe „Polyfunkčného bytového domu Topoľčianska“
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="26.03.2019" title="Uznesenie Miestneho zastupiteľstva" source="https://www.petrzalka.sk/wp-content/uploads/2019/03/Uznesenia-MZ-26.03.2019.pdf" %}}
+{% timeline "26.03.2019", "Uznesenie Miestneho zastupiteľstva", "https://www.petrzalka.sk/wp-content/uploads/2019/03/Uznesenia-MZ-26.03.2019.pdf" %}
 Miestne zastupiteľstvo mestskej časti Bratislava - Petržalka
 
 * berie na vedomie predloženú správu Petícia proti výstavbe polyfunkčného bytového domu Topoľčianska
@@ -190,9 +190,9 @@ bytového domu Topoľčianska, v súlade s vyjadrením magistrátu hl. mesta SR 
 * žiada starostu
 o zaslanie žiadosti hlavnému mestu SR o preskúmanie záväzného stanoviska k predmetnému
 zámeru
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="28.02.2019" title="Petícia proti výstavbe" source="https://www.petrzalka.sk/wp-content/uploads/2019/03/1-MZ-peticia-Topolcianska.pdf" %}}
+{% timeline "28.02.2019", "Petícia proti výstavbe", "https://www.petrzalka.sk/wp-content/uploads/2019/03/1-MZ-peticia-Topolcianska.pdf" %}
 Navrhovaným investičným zámerom budú jednoznačne a vo významnej miere negatívne
 ovplyvnené dopravné nároky na už v súčasnosti neprimerane preťaženej miestnej komunikácii -
 Topoľčianskej ulici. To, že k takémuto stavu dôjde, je možné priamo dokumentovať inými
@@ -202,13 +202,12 @@ zahusťovanie existujúcej zástavby, likvidáciu „zelenej“ plochy a je v ro
 dokumentmi hlavného mesta zameranými na nepriaznivé dôsledky zmeny klímy (dôležitým
 cieľom týchto dokumentov je zvyšovanie podielu „zelených plôch“, resp. „vegetácie“), čo bude
 nesporne spojené s negatívnymi dôsledkami na životné prostredie. 
-{{% /timeline  %}}
+{% endtimeline  %}
 
-<!-- {{% timeline date="31.10.2018" title="Žiadosť o územné rozhodnutie podaná" %}}
+<!-- {{% timeline "31.10.2018" "Žiadosť o územné rozhodnutie podaná" %}}
 [zdroj](https://www.petrzalka.sk/2018-10-31-polyfunkcny-bytovy-dom-topolcianska-bratislava/)
 {{% /timeline  %}} -->
-
-{{% timeline date="05.10.2018" title="Záväzné stanovisko hlavného mesta" source="https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=59362" %}}
+{% timeline "05.10.2018", "Záväzné stanovisko hlavného mesta", "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=59362" %}
 Polyfunkčný objekt s prevládajúcou funkciou
 bývania (68 %) s 8 nadzemnými a 2 podzemnými podlažiami, dopravne prístupným cez jestvujúce
 miestne komunikácie. V objekte sú priestory obchodu (10), služieb, administratívy (16) a bývania
@@ -224,7 +223,7 @@ Predložený IZ s prihliadnutím na majetko-právne vzťahy v území nebráni r
 pripravovanej urbanistickej štúdie Centrálnej rozvojovej osi Petržalka (ďalej CRO). Objekt svojou
 hmotou a úpravou okolia neblokuje zámery v zmysle pripravovanej štúdie CRO a Navrhované
 komunikácie a plochy situuje v rámci parcely vo vlastníctve predkladateľa. 
-{{% /timeline  %}}
+{% endtimeline  %}
 
 
 

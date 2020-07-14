@@ -124,7 +124,7 @@ financovanie ľudských zdrojov bez potreby investícií do infraštruktúry.
 
 **Finančné prostriedky sú zahrnuté v navrhovanom rozpočte hlavného mesta SR Bratislavy na roky 2018 - 2020.**
 
-{{% timeline date="21.01.2020" title="Zasadnutie komisie územného plánu, výstavby a rozvoja" source="https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf" %}}
+{% timeline "21.01.2020", "Zasadnutie komisie územného plánu, výstavby a rozvoja", "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf" %}
 Informácie k zámeru výstavby elektronabíjacích staníc v rámci projektu URBAN-E odprezentoval Milan Raus z OÚRaD.
 
 Komisia berie zámer výstavby nabíjacích staníc na parkoviskách v správe mestskej časti BratislavaPetržalka na vedomie a požaduje uzavretie zmluvy, ktorá bude riešiť najmä:
@@ -133,18 +133,18 @@ Komisia berie zámer výstavby nabíjacích staníc na parkoviskách v správe m
 * Špecifikáciu regulácie (státia) na parkovacích miestach označených dopravným značením II 8c Nabíjacia stanica.
 * Ekonomický model spojený s užívaním parkovacích miest aj v súvislosti so zavádzanou Petržalskou parkovacou politikou (VZN MČ č. 13/2019) a aj pripravovanou mestskou parkovacou politikou
 (VZN hl. m. SR BA č. 8/2019). 
-{{% /timeline  %}}
+{% endtimeline  %}
 
 
-{{% timeline date="20.01.2020" title="Zasadnutie komisie správy majetku a miestnych podnikov" source="https://www.petrzalka.sk/wp-content/uploads/2020/01/Z%C3%A1pisnica-%C4%8D.7-janu%C3%A1r-2020.pdf" %}}
+{% timeline "20.01.2020", "Zasadnutie komisie správy majetku a miestnych podnikov", "https://www.petrzalka.sk/wp-content/uploads/2020/01/Z%C3%A1pisnica-%C4%8D.7-janu%C3%A1r-2020.pdf" %}
 Materiál uviedla Mgr. Broszová, vedúca RSMM, nakoľko ide o informačný materiál, ktorý
 nebude predmetom rokovania zastupiteľstva. Členom komisie sa nepáči, že nabíjacie stanice
 sú navrhnuté na existujúcich parkovacích miestach, žiadajú zistiť, akú náhradu ponuka v
 danom území za zabratie parkovacích miest žiadateľ zámeru, keďže ide o komerčný účel a
 prídeme nim o parkovacie miesta
-{{% /timeline  %}}
+{% endtimeline  %}
 
-{{% timeline date="07.12.2017" title="Zasadnutie Mestského zastupiteľstva" source="https://zastupitelstvo.bratislava.sk/data/att/23543.pdf" %}}
+{% timeline "07.12.2017", "Zasadnutie Mestského zastupiteľstva", "https://zastupitelstvo.bratislava.sk/data/att/23543.pdf" %}
 Hlavné mesto SR Bratislava bolo začiatkom r. 2017 oslovené s ponukou na zapojenie do
 medzinárodného projektu „URBAN-E“. Na pravidelnej porade primátora bolo dňa
 17.01.2017 schválené zapojenie hlavného mesta do prípravy projektu. Partneri projektu
@@ -198,4 +198,4 @@ hlavného mesta SR Bratislavy prerokovať Informáciu o schválení projektu URB
 (e-Mobility, Infrastructure and Innovative Intermodal Services in Ljubljana, Bratislava
 and Zagreb / e-mobilita, infraštruktúra a inovatívne intermodálne služby v Ľubľane,
 Bratislave a Záhrebe). 
-{{% /timeline  %}}
+{% endtimeline  %}

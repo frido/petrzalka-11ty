@@ -44,14 +44,14 @@ vychádza zo zadania Bratislavského samosprávneho kraja, ktoré pre ťažiskov
 urbanistického bloku E2 južného sektoru /vo vlastníctve BSK/ požaduje overenie umiestnenia
 mestského pobytového parku so športovo-rekreačnou funkciou.
 
-{{< alternativeAB >}}
-    {{< alternativeABInner >}}
-        {{< figure link="img/sportovo_rekreacny_areal_pri_COV/image--000.jpg" src="img/sportovo_rekreacny_areal_pri_COV/image--000.jpg" title="Variant A" >}}
-    {{< /alternativeABInner >}}
-    {{< alternativeABInner >}}
-        {{< figure link="img/sportovo_rekreacny_areal_pri_COV/image--001.jpg" src="img/sportovo_rekreacny_areal_pri_COV/image--001.jpg" title="Variant B" >}}
-    {{< /alternativeABInner >}}
-{{< /alternativeAB >}}
+{% alternativeAB %}
+    {% alternativeABInner %}
+        {% figure "img/sportovo_rekreacny_areal_pri_COV/image--000.jpg", "img/sportovo_rekreacny_areal_pri_COV/image--000.jpg", "Variant A" %}
+    {% endalternativeABInner %}
+    {% alternativeABInner %}
+        {% figure "img/sportovo_rekreacny_areal_pri_COV/image--001.jpg", "img/sportovo_rekreacny_areal_pri_COV/image--001.jpg", "Variant B" %}
+    {% endalternativeABInner %}
+{% endalternativeAB %}
 
 **Navrhovaný program územia SEVER:**
 

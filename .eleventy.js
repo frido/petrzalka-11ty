@@ -41,7 +41,11 @@ var gallery = function (content) {
     return "<div class=\"gallery\">" + content + "</div>";
 };
 var figure = function (link, src, title) {
-    return "<figure><a href=\"" + link + "\"><img src=\"" + src + "\"></a></figure>";
+    var figcaption = "";
+    if (title) {
+        figcaption = "<figcaption><h4>" + title + "</h4></figcaption>";
+    }
+    return "<figure><a href=\"" + link + "\"><img src=\"" + src + "\"></a>" + figcaption + "</figure>";
 };
 var timeline = function (content, date, title, source) {
     return "<div class=\"point\">\n    <span class=\"point-mark\"></span>\n    <span class=\"point-date\">\n        " + date + "\n    </span>\n    <h2>\n        " + title + "\n    </h2>\n    <span>\n        <a href=\"" + source + "\" target=\"blank\"><img src=\"/img/external-link.svg\" style=\"float:right\"></a>\n    </span>\n    <div class=\"timeline-body\">\n        " + content + "\n    </div>\n    </div>";
@@ -80,7 +84,7 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addShortcode("figure", figure);
     var markdownItOptions = {
         html: true,
-        breaks: true,
+        breaks: false,
         linkify: true
     };
     eleventyConfig.addPassthroughCopy("css");
