@@ -1,17 +1,16 @@
 {
-    "title": "Your Blog Name",
-    "url": "https://myurl.com/",
-    "description": "I am writing about my experiences as a naval navel-gazer.",
+    "title": "Projekty v Petržalke",
+    "url": "http://petrzalka.info/",
+    "description": "Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery",
     "keywords": "Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery",
     "icon": "/img/logo-m.png",
     "feed": {
       "subtitle": "I am writing about my experiences as a naval navel-gazer.",
       "filename": "feed.xml",
       "path": "/feed/feed.xml",
-      "id": "https://myurl.com/"
+      "id": "http://petrzalka.info/"
     },
     "author": {
-      "name": "Your Name Here",
-      "email": "youremailaddress@example.com"
+      "name": "Peter Fridrich"
     }
   }
