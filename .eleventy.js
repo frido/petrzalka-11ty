@@ -81,6 +81,42 @@ var conf = function (eleventyConfig) {
         }
         return array.slice(0, n);
     });
+    eleventyConfig.addCollection("allMyContent", function (collection) {
+        var list = [];
+        var now = luxon.DateTime.local();
+        collection.getFilteredByTag('projekt')
+            .flatMap(function (i) {
+            if (i.data.schedule) {
+                return i.data.schedule
+                    .map(function (s) {
+                    s.page = i;
+                    return s;
+                });
+            }
+            return [];
+        })
+            .forEach(function (i) {
+            list.push(i);
+        });
+        return list
+            .filter(function (i) { return i.timelineDate; })
+            .map(function (i) {
+            i.timeline = luxon.DateTime.fromString(i.timelineDate, 'yyyy-LL-dd');
+            return i;
+        })
+            .filter(function (i) {
+            console.log('---------------');
+            // console.log(i.timeline);
+            console.log(i.timeline.toFormat('yyyy-LL-dd'));
+            // console.log(now);
+            console.log(now.toFormat('yyyy-LL-dd'));
+            console.log(i.timeline < now);
+            console.log(i.timeline > now);
+            console.log('---------------');
+            return i.timeline < now;
+        })
+            .sort(function (a, b) { return a.timeline - b.timeline; });
+    });
     eleventyConfig.addPairedShortcode("gallery", gallery);
     eleventyConfig.addPairedShortcode("timeline", timeline);
     eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB);

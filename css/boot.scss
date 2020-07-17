@@ -180,6 +180,26 @@ img.preview {
     }
 }
 
+.xxx.error {
+    border-left: solid 10px red;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.1));
+
+    .description {
+        padding-left: 1rem;
+        color: red;
+    }
+}
+
+.xxx.pause {
+    border-left: solid 10px rgb(210, 105, 30);
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(210, 105, 30, 0.1));
+
+    .description {
+        padding-left: 1rem;
+        color: rgb(210, 105, 30);
+    }
+}
+
 .xxx > .header {
     padding: 0.5rem 1rem;
     display: flex;

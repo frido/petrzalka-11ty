@@ -82,6 +82,45 @@ const conf = function (eleventyConfig: any) {
         return array.slice(0, n);
     });
 
+    eleventyConfig.addCollection("allMyContent", (collection:TemplateCollection) => {
+        let list = [];
+        const now = luxon.DateTime.local();
+        collection.getFilteredByTag('projekt')
+            .flatMap((i:TemplateCollectionItem) => {
+                if (i.data.schedule) {
+                    return i.data.schedule
+                        .map((s:any) => {
+                            s.page = i;
+                            return s;
+                        })
+                }
+                return [];
+            })
+            .forEach((i:any) => {
+                list.push(i);
+            });
+        return list
+            .filter((i:any)=> i.timelineDate )
+            .map((i:any) => {
+                i.timeline = luxon.DateTime.fromString(i.timelineDate, 'yyyy-LL-dd')
+                return i;
+            })
+            .filter((i:any)=> {
+                console.log('---------------');
+                // console.log(i.timeline);
+                console.log(i.timeline.toFormat('yyyy-LL-dd'));
+                // console.log(now);
+                console.log(now.toFormat('yyyy-LL-dd'));
+                console.log(i.timeline < now );
+                console.log(i.timeline > now );
+                console.log('---------------');
+                return i.timeline < now 
+
+            })
+            .sort((a,b) => a.timeline - b.timeline);
+        
+    });
+
     eleventyConfig.addPairedShortcode("gallery", gallery);
     eleventyConfig.addPairedShortcode("timeline", timeline);
     eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB);

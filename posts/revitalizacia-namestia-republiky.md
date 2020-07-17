@@ -21,6 +21,7 @@
          "startReal": "marec 2020",
          "endExpected": "december 2020",
          "endReal": null,
+         "timelineDate": "2020-03-01",
          "sub": [  ]
       }, 
       {
@@ -31,6 +32,7 @@
          "startReal": null,
          "endExpected": "2021/2022",
          "endReal": null,
+         "timelineDate": "2021-01-01",
          "sub": [ 
             {
                "title": "Vypracovanie zadania architektonickej súťaže",
@@ -68,6 +70,7 @@
          "startReal": null,
          "endExpected": "2026",
          "endReal": null,
+         "timelineDate": "2022-01-01",
          "sub": [  ]
       }
    ]

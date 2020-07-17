@@ -11184,6 +11184,28 @@ img.preview {
   color: orange;
 }
 
+.xxx.error {
+  border-left: solid 10px red;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 0, 0, 0.1)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.1));
+}
+
+.xxx.error .description {
+  padding-left: 1rem;
+  color: red;
+}
+
+.xxx.pause {
+  border-left: solid 10px chocolate;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(rgba(210, 105, 30, 0.1)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(210, 105, 30, 0.1));
+}
+
+.xxx.pause .description {
+  padding-left: 1rem;
+  color: chocolate;
+}
+
 .xxx > .header {
   padding: 0.5rem 1rem;
   display: -webkit-box;

@@ -6,7 +6,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "description": "Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.",
    "icon": "/img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg",
    "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
@@ -24,39 +24,99 @@
    "schedule": [
       {
          "title": "Vypracovaný projekt",
-         "dateReal": "apríl 2016"
+         "status": "success",
+         "description": "hotovo",
+         "startExpected": null,
+         "startReal": "apríl 2016",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2016-04-01",
+         "sub": [  ]
       },
       {
-         "title": "Vydané zamietavé záväzné stanovisko",
-         "dateReal": "18. september 2017"
+         "title": "Záväzné stanovisko",
+         "status": "error",
+         "description": "zamietnuté",
+         "startExpected": null,
+         "startReal": "18. september 2017",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2017-09-18",
+         "sub": [ 
+            {
+               "title": "Stanovené požiadavky do spracovania projektu",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "23. október 2018",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+          ]
       },
       {
-         "title": "Stanovené požiadavky do spracovania projektu",
-         "dateReal": "23. október 2018"
+         "title": "Záväzné stanovisko",
+         "status": "success",
+         "description": "súhlasné",
+         "startExpected": null,
+         "startReal": "25. júl 2019",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2019-06-25",
+         "sub": [  ]
       },
       {
-         "title": "Vydané súhlasné záväzné stanovisko",
-         "dateReal": "25. júl 2019"
-      },
-      {
-         "title": "Začatie územného konania",
-         "dateReal": "27. november 2019"
-      },
-      {
-         "title": "Zasadnutie Miestneho zastupiteľstva",
-         "dateReal": "4. február 2020"
-      },
-      {
-         "title": "Petícia PROTI zástavbe parku a časti parkoviska",
-         "dateReal": "27. február 2020"
-      },
-      {
-         "title": "Oznámenie výsledku vybavenia petície",
-         "dateReal": "28. máj 2020"
-      },
-      {
-         "title": "Zasadnutie Mestského zastupiteľstva",
-         "dateReal": "28. máj 2020"
+         "title": "Územné konanie",
+         "status": "pause",
+         "description": "prerušené",
+         "startExpected": null,
+         "startReal": "27. november 2019",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2019-11-27",
+         "sub": [ 
+            {
+               "title": "Zasadnutie Miestneho zastupiteľstva",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "4. február 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Petícia PROTI zástavbe parku a časti parkoviska",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "27. február 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Oznámenie výsledku vybavenia petície",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "28. máj 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Zasadnutie Mestského zastupiteľstva",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "28. máj 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }
    ]
 }

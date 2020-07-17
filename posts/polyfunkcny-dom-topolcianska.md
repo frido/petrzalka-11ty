@@ -23,32 +23,78 @@
    "amount": 0,
    "schedule": [
       {
-         "title": "Záväzné stanovisko hlavného mesta",
-         "dateReal": "05.10.2018"
-      },
+         "title": "Záväzné stanovisko",
+         "status": "success",
+         "description": "súhlasné",
+         "startExpected": null,
+         "startReal": "05.10.2018",
+         "endExpected": "null",
+         "endReal": null,
+         "timelineDate": "2018-10-05",
+         "sub": [
+            {
+               "title": "Petícia proti výstavbe",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "28.02.2019",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Uznesenie Miestneho zastupiteľstva",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "26.03.2019",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Uznesenie Mestského zastupiteľstva",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "25.04.2019",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
+      }, 
       {
-         "title": "Petícia proti výstavbe",
-         "dateReal": "28.02.2019"
-      },
-      {
-         "title": "Uznesenie Miestneho zastupiteľstva",
-         "dateReal": "26.03.2019"
-      },
-      {
-         "title": "Uznesenie Mestského zastupiteľstva",
-         "dateReal": "25.04.2019"
-      },
-      {
-         "title": "Začatie územného konania",
-         "dateReal": "07.01.2020"
-      },
-      {
-         "title": "Uznesenie Miestneho zastupiteľstva",
-         "dateReal": "04.02.2020"
-      },
-      {
-         "title": "Prerušenie územného konania",
-         "dateReal": "17.02.2020"
+         "title": "Územné konanie",
+         "status": "pause",
+         "description": "prerušené",
+         "startExpected": null,
+         "startReal": "07.01.2020",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2020-01-07",
+         "sub": [
+            {
+               "title": "Uznesenie Miestneho zastupiteľstva",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "04.02.2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Prerušenie územného konania",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "17.02.2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }
    ]
 }

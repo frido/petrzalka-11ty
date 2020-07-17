@@ -1,5 +1,6 @@
 export interface TemplateCollection {
-    getAll(): TemplateCollectionItem[]
+    getAll(): TemplateCollectionItem[];
+    getFilteredByTag(tag: string): TemplateCollectionItem[]
 }
 
 export interface TemplateCollectionItem {
