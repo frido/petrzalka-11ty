@@ -6,7 +6,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "description": "Zámerom urbanistického návrhu je športovo-rekreačný kampus, výškovo diferencovaná krajina s halovými športovými objektmi, externými športoviskami, zariadeniami občianskej vybavenosti nadväzujúcimi na hlavnú funkciu /napr. ubytovne, hotely, penzióny/ a pobytovou a parkovou zeleňou",
    "icon": "/img/sportovo_rekreacny_areal_pri_COV/image--000.jpg",
    "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-3.-%C5%A1portovo-rekrea%C4%8Dn%C3%BD-are%C3%A1l-pri-%C4%8COV-MZ.pdf",
@@ -17,10 +17,28 @@
    ],
    "amount": 0,
    "schedule": [
-      {
-         "title": "Materiál na rokovanie MZ",
-         "dateReal": "4. február 2020"
-      }
+       {
+         "title": "Urbanistický návrh",
+         "status": "inwork",
+         "description": "prebieha",
+         "startExpected": null,
+         "startReal": "4. február 2020",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2020-02-04",
+         "sub": [
+            {
+               "title": "Materiál na rokovanie MZ",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "4. február 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
+       }
    ]
 }
 ---

@@ -4,7 +4,7 @@
    "date": "2020-06-06T17:57:09.000Z",
    "draft": false,
    "tags": [
-      "projekt"
+      "draft"
    ],
    "layout": "layouts/post.njk",
    "Description": "Vybudovanie Cyklotrasy",

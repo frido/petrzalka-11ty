@@ -6,7 +6,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "description": "Polyfunkčný objekt s prevládajúcou funkciou bývania (68 %) s 8 nadzemnými a 2 podzemnými podlažiami, dopravne prístupným cez jestvujúce miestne komunikácie. V objekte sú priestory obchodu (10), služieb, administratívy (16) a bývania (60). Navrhnuté sú 2 dopravné vjazdy – rampa do garáže na 1. a 2. podzemnom podlaží (78 parkovacích miest) a priamy vjazd na spevnenú plochu na teréne (20 parkovacích miest).",
    "icon": "/img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg",
    "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
@@ -28,7 +28,7 @@
          "description": "súhlasné",
          "startExpected": null,
          "startReal": "05.10.2018",
-         "endExpected": "null",
+         "endExpected": null,
          "endReal": null,
          "timelineDate": "2018-10-05",
          "sub": [

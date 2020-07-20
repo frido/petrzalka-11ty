@@ -5,7 +5,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "description": "Medzinárodný projekt URBAN-E je zameraný na rozvoj elektromobility, podporu rozširovania infraštruktúry elektronabíjacích staníc a prepojenia na iné druhy dopravy, na znižovanie znečistenia ovzdušia v hlavných mestách Slovinska, Chorvátska a Slovenska – v Ľubľane, Záhrebe a Bratislave.",
    "icon": "",
    "source": "https://zastupitelstvo.bratislava.sk/data/att/23543.pdf",
@@ -15,17 +15,47 @@
    ],
    "amount": 0,
    "schedule": [
-      {
-         "title": "Informácia o schválení projektu",
-         "dateReal": "07.12.2017"
-      },
-      {
-         "title": "Zasadnutie komisie správy majetku a miestnych podnikov",
-         "dateReal": "20.01.2020"
-      },
-      {
-         "title": "Zasadnutie komisie územného plánu, výstavby a rozvoja",
-         "dateReal": "21.01.2020"
+{
+         "title": "Príprava projektu",
+         "status": "success",
+         "description": "hotovo",
+         "startExpected": null,
+         "startReal": "07.12.2017",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2017-12-07",
+         "sub": [ 
+            {
+               "title": "Informácia o schválení projektu",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "07.12.2017",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Zasadnutie komisie správy majetku a miestnych podnikov",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "20.01.2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },
+            {
+               "title": "Zasadnutie komisie územného plánu, výstavby a rozvoja",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "21.01.2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }
    ]
 }

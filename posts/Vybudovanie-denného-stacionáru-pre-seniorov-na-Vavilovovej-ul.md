@@ -6,7 +6,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "description": "Cieľom projektu „Vybudovanie denného stacionáru pre seniorov na Vavilovovej ul., Bratislava“ je vybudovanie denného stacionára pre seniorov na Vavilovovej ulici č. 18 v Mestskej časti Bratislava-Petržalka",
    "source": "https://www.petrzalka.sk/wp-content/uploads/2018/09/03_Projekt_Denny_stacionar_pre_seniorov-1.pdf",
    "sources": [
@@ -18,28 +18,97 @@
    "amountAll": "1 030 152",
    "schedule": [
       {
-         "title": "Materiál na rokovanie MZ",
-         "dateReal": "25. 9. 2018"
+         "title": "Projektová dokumentácia",
+         "status": "success",
+         "description": "hotovo",
+         "startExpected": null,
+         "startReal": "7. septembra 2018",
+         "endExpected": null,
+         "endReal": "20.12.2018",
+         "timelineDate": "2018-09-07",
+         "sub": [
+            {
+               "title": "Výzva na projektovú dokumentáciu",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "7. septembra 2018",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },{
+               "title": "Materiál na rokovanie MZ",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "25. 9. 2018",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },{
+               "title": "Podpis zmluvy na projektovú dokumentáciu",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "26. septembra 2018",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            },{
+               "title": "Odovzdanie projektovej dokumentácie",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "20.12.2018",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       },
       {
-         "title": "Výzva na projektovú dokumentáciu",
-         "dateReal": "7. septembra 2018"
+         "title": "Verejné obstarávanie",
+         "status": "success",
+         "description": "hotovo",
+         "startExpected": null,
+         "startReal": null,
+         "endExpected": null,
+         "endReal": "október 2019",
+         "timelineDate": "2018-10-01",
+         "sub": [
+            {
+               "title": "Ukončenie verejného obstarávania",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "október 2019",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       },
       {
-         "title": "Podpis zmluvy na projektovú dokumentáciu",
-         "dateReal": "26. septembra 2018 (Ing.Slavomír Kelemen SK DESIGN )"
-      },
-      {
-         "title": "Odovzdanie projektovej dokumentácie",
-         "dateReal": "15.10.2018 a 20.12.2018"
-      },
-      {
-         "title": "Ukončenie verejného obstarávania",
-         "dateExpected": "október 2019"
-      },
-      {
-         "title": "Koniec výstavby",
-         "dateExpected": "marec 2021"
+         "title": "Výstavba",
+         "status": "inwork",
+         "description": "prebieha",
+         "startExpected": null,
+         "startReal": null,
+         "endExpected": null,
+         "endReal": "marec 2021",
+         "timelineDate": "2021-03-01",
+         "sub": [
+            {
+               "title": "Koniec výstavby",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "marec 2021",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }
    ]
 }

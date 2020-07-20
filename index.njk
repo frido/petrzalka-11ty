@@ -9,13 +9,13 @@ eleventyNavigation:
     <article class="">
       {% for sch in collections.allMyContent | reverse %}
 
-        <div class="xxx {{ sch.status }}">
+        <div class="timeline {{ sch.status }}">
           <div class="header">
             <header class="title">
               <a href="{{ sch.page.url }}">
                 <h3>{{ sch.page.data.title }}</h3>
               </a>
-              {{ sch.title }}
+              <div class="subheader">{{ sch.title }}</div>
             </header>
             <span class="date">
               {% if sch.startExpected %}
@@ -33,8 +33,9 @@ eleventyNavigation:
               <span class="description">{{sch.description}}</span>
             </span>
           </div>
+          <div class="timeline-wrap-sub">
           {% for sub in sch.sub %}
-            <div class="xxx {{ sub.status }}">
+            <div class="timeline-sub {{ sub.status }}">
               <div class="header">
                 <span class="title">{{ sub.title }}</span>
                 <span class="date">
@@ -55,6 +56,7 @@ eleventyNavigation:
               </div>
             </div>
           {% endfor %}
+          </div>
         </div>
       {% endfor %}
     </article>

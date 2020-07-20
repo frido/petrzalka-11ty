@@ -6,7 +6,7 @@
    "tags": [
       "projekt"
    ],
-   "layout": "layouts/post.njk",
+   "layout": "layouts/post2.njk",
    "source": "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
    "sources": [
       "https://www.petrzalka.sk/oblasti/projektove-riadenie/budovanie-a-zlepsenie-technickeho-vybavenia-jazykovych-ucebni-skolskych-kniznic-odbornych-ucebni-rozneho-druhu-v-zakladnych-skolach/"
@@ -15,12 +15,48 @@
    "amountAll": "871 980",
    "schedule": [
       {
-         "title": "Materiál na rokovanie MZ",
-         "dateReal": "16. máj 2017"
+         "title": "Príprava projektu",
+         "status": "success",
+         "description": "hotovo",
+         "startExpected": null,
+         "startReal": "2016",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2017-05-16",
+         "sub": [ 
+            {
+               "title": "Materiál na rokovanie MZ",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "16. máj 2017",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       },
       {
          "title": "Koniec realizácie projektu",
-         "dateReal": "december 2020"
+         "status": "",
+         "description": "",
+         "startExpected": null,
+         "startReal": "december 2020",
+         "endExpected": null,
+         "endReal": null,
+         "timelineDate": "2020-12-31",
+         "sub": [ 
+            {
+               "title": "Materiál na rokovanie MZ",
+               "status": "",
+               "description": "",
+               "startExpected": null,
+               "startReal": "december 2020",
+               "endExpected": null,
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }
    ]
 }

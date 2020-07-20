@@ -151,18 +151,23 @@ img.preview {
     width: 50%;
 }
 
-.xxx {
+.timeline {
     border-left: solid 10px $timetable-border;
     // border-top: solid 2px $timetable-border;
     padding: 0;
     margin: 10px;
     margin-left: 0;
-    background-image: linear-gradient(to right bottom, rgba(238, 187, 195, 0.05), rgba(238, 187, 195, 0));
+    background-image: linear-gradient(to left top, rgba(238, 187, 195, 0.05) 50%, rgba(238, 187, 195, 0));
+
+    .subheader {
+        font-size: 1.3rem;
+    }
 }
 
-.xxx.success {
+.timeline.success {
     border-left: solid 10px green;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(0, 255, 0, 0.1));
+    border-top: solid 1px green;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.1));
 
     .description {
         padding-left: 1rem;
@@ -170,9 +175,10 @@ img.preview {
     }
 }
 
-.xxx.inwork {
+.timeline.inwork {
     border-left: solid 10px orange;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 166, 0, 0.1));
+    border-top: solid 1px orange;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 166, 0, 0.1));
     
     .description {
         padding-left: 1rem;
@@ -180,9 +186,10 @@ img.preview {
     }
 }
 
-.xxx.error {
+.timeline.error {
     border-left: solid 10px red;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.1));
+    border-top: solid 1px red;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.1));
 
     .description {
         padding-left: 1rem;
@@ -190,9 +197,10 @@ img.preview {
     }
 }
 
-.xxx.pause {
+.timeline.pause {
     border-left: solid 10px rgb(210, 105, 30);
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(210, 105, 30, 0.1));
+    border-top: solid 1px rgb(210, 105, 30);
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(210, 105, 30, 0.1));
 
     .description {
         padding-left: 1rem;
@@ -200,22 +208,30 @@ img.preview {
     }
 }
 
-.xxx > .header {
+.timeline > .header {
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
 
 }
 
-.xxx .date {
+.timeline .date {
     font-size: 1rem;
 }
 
-.xxx .dateExpected {
+.timeline .dateExpected {
     font-style: italic;
 }
 
-.xxx > .xxx {
-    margin-left: 10px;
-    background-image: linear-gradient(to right bottom, rgba(238, 187, 195, 0), rgba(238, 187, 195, 0));
+.timeline .timeline-sub {
+    
+}
+
+.timeline .timeline-wrap-sub {
+    font-size: 1rem;
+    margin-left: 1rem;
+    /* background: white; */
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    background-image: linear-gradient(to left top, rgba(238, 187, 195, 0), rgba(238, 187, 195, 0));
 }
