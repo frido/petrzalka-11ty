@@ -35,7 +35,7 @@
     }
     
     strong {
-        color: $secondary;
+        // color: $secondary;
     }
 
     div.button {
@@ -51,17 +51,17 @@
     }
     
     .schedule, .updated {
-        color: $tertiary;
+        color: $secondary;
     }
 
     .point {
-        border-left: 1px $secondary solid;
+        border-left: 1px $tertiary solid;
         .point-mark {
-            border: solid 5px $secondary;
-            background: $secondary-text;
+            border: solid 5px $tertiary;
+            background: $tertiary-text;
         }
         .point-date {
-            color: $secondary; 
+            color: $tertiary; 
         }
     }
     

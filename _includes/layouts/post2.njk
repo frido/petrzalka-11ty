@@ -26,10 +26,8 @@ templateClass: tmpl-post
         {%- endif %}
 
         {% if schedule %}
-            <div class="schedule">
                 {% for sch in schedule %}
-
-                    <div class="xxx {{ sch.status }}">
+                    <div class="timeline {{ sch.status }}">
                         <div class="header">
                             <span class="title">{{ sch.title }}</span>
                             <span class="date">
@@ -48,8 +46,9 @@ templateClass: tmpl-post
                                 <span class="description">{{sch.description}}</span>
                             </span>
                         </div>
+                        <div class="timeline-wrap-sub">
                         {% for sub in sch.sub %}
-                            <div class="xxx {{ sub.status }}">
+                            <div class="timeline-sub {{ sub.status }}">
                                 <div class="header">
                                     <span class="title">{{ sub.title }}</span>
                                     <span class="date">
@@ -70,9 +69,9 @@ templateClass: tmpl-post
                                 </div>
                             </div>
                         {% endfor %}
+                        </div>
                     </div>
                 {% endfor %}
-            </div>
         {% endif %}
 
         {{ content | safe }}

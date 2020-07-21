@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Polyfunkčný dom Topoľčianska",
-   "date": "2020-06-27T16:45:30.000Z",
+   "date": "2020-06-27",
    "draft": false,
    "tags": [
       "projekt"

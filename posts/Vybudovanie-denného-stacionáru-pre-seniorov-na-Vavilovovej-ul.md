@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Vybudovanie denného stacionáru pre seniorov na Vavilovovej ul",
-   "date": "2020-06-06T18:53:31.000Z",
+   "date": "2020-06-06",
    "draft": false,
    "tags": [
       "projekt"

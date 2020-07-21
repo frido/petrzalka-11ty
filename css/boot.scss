@@ -157,17 +157,18 @@ img.preview {
     padding: 0;
     margin: 10px;
     margin-left: 0;
-    background-image: linear-gradient(to left top, rgba(238, 187, 195, 0.05) 50%, rgba(238, 187, 195, 0));
+    background-image: linear-gradient(to left top, rgba($timetable-border, 0) 50%, rgba($timetable-border, 0.1));
 
     .subheader {
         font-size: 1.3rem;
+        font-weight: 600;
     }
 }
 
 .timeline.success {
     border-left: solid 10px green;
-    border-top: solid 1px green;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.1));
+    // border-top: solid 1px green;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.05));
 
     .description {
         padding-left: 1rem;
@@ -177,7 +178,7 @@ img.preview {
 
 .timeline.inwork {
     border-left: solid 10px orange;
-    border-top: solid 1px orange;
+    // border-top: solid 1px orange;
     background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 166, 0, 0.1));
     
     .description {
@@ -188,8 +189,8 @@ img.preview {
 
 .timeline.error {
     border-left: solid 10px red;
-    border-top: solid 1px red;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.1));
+    // border-top: solid 1px red;
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.05));
 
     .description {
         padding-left: 1rem;
@@ -199,7 +200,7 @@ img.preview {
 
 .timeline.pause {
     border-left: solid 10px rgb(210, 105, 30);
-    border-top: solid 1px rgb(210, 105, 30);
+    // border-top: solid 1px rgb(210, 105, 30);
     background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(210, 105, 30, 0.1));
 
     .description {
@@ -224,7 +225,12 @@ img.preview {
 }
 
 .timeline .timeline-sub {
-    
+    .header {
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
 }
 
 .timeline .timeline-wrap-sub {
@@ -233,5 +239,5 @@ img.preview {
     /* background: white; */
     padding-top: 0.5rem;
     padding-left: 1rem;
-    background-image: linear-gradient(to left top, rgba(238, 187, 195, 0), rgba(238, 187, 195, 0));
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }

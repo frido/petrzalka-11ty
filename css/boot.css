@@ -10826,10 +10826,6 @@ button.close {
   color: #b8c1ec;
 }
 
-.paletteA strong {
-  color: #b8c1ec;
-}
-
 .paletteA div.button > a {
   background-color: #b8c1ec;
   color: #232946;
@@ -10837,33 +10833,33 @@ button.close {
 
 .paletteA .amount {
   background: #eebbc3;
-  color: #232946;
+  color: #fffffe;
 }
 
 .paletteA .schedule, .paletteA .updated {
-  color: #eebbc3;
-}
-
-.paletteA .point {
-  border-left: 1px #b8c1ec solid;
-}
-
-.paletteA .point .point-mark {
-  border: solid 5px #b8c1ec;
-  background: #232946;
-}
-
-.paletteA .point .point-date {
   color: #b8c1ec;
 }
 
+.paletteA .point {
+  border-left: 1px #eebbc3 solid;
+}
+
+.paletteA .point .point-mark {
+  border: solid 5px #eebbc3;
+  background: #fffffe;
+}
+
+.paletteA .point .point-date {
+  color: #eebbc3;
+}
+
 .paletteB {
-  background-color: #232946;
+  background-color: #d4d8f0;
   color: #232946;
 }
 
 .paletteB.logo {
-  background-color: #232946;
+  background-color: #d4d8f0;
 }
 
 .paletteB.logo h1, .paletteB.logo .h1, .paletteB.logo a, .paletteB.logo a:hover {
@@ -10883,7 +10879,7 @@ button.close {
 }
 
 .paletteB article[class~="container"] {
-  background-color: #232946;
+  background-color: #d4d8f0;
 }
 
 .paletteB article[class~="container"] a, .paletteB article[class~="container"] h1, .paletteB article[class~="container"] .h1, .paletteB article[class~="container"] h2, .paletteB article[class~="container"] .h2, .paletteB article[class~="container"] h3, .paletteB article[class~="container"] .h3, .paletteB article[class~="container"] h4, .paletteB article[class~="container"] .h4, .paletteB article[class~="container"] h5, .paletteB article[class~="container"] .h5, .paletteB article[class~="container"] h6, .paletteB article[class~="container"] .h6 {
@@ -10891,15 +10887,11 @@ button.close {
 }
 
 .paletteB footer {
-  background-color: #232946;
+  background-color: #d4d8f0;
   color: #232946;
 }
 
 .paletteB footer a {
-  color: #eebbc3;
-}
-
-.paletteB strong {
   color: #eebbc3;
 }
 
@@ -10910,7 +10902,7 @@ button.close {
 
 .paletteB .amount {
   background: #eebbc3;
-  color: #232946;
+  color: #fffffe;
 }
 
 .paletteB .schedule, .paletteB .updated {
@@ -10923,7 +10915,7 @@ button.close {
 
 .paletteB .point .point-mark {
   border: solid 5px #eebbc3;
-  background: #232946;
+  background: #fffffe;
 }
 
 .paletteB .point .point-date {
@@ -10969,10 +10961,6 @@ button.close {
 }
 
 .paletteC footer a {
-  color: #eebbc3;
-}
-
-.paletteC strong {
   color: #eebbc3;
 }
 
@@ -11158,19 +11146,19 @@ img.preview {
   padding: 0;
   margin: 10px;
   margin-left: 0;
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(238, 187, 195, 0.05)), to(rgba(238, 187, 195, 0)));
-  background-image: linear-gradient(to left top, rgba(238, 187, 195, 0.05) 50%, rgba(238, 187, 195, 0));
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(184, 193, 236, 0)), to(rgba(184, 193, 236, 0.1)));
+  background-image: linear-gradient(to left top, rgba(184, 193, 236, 0) 50%, rgba(184, 193, 236, 0.1));
 }
 
 .timeline .subheader {
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .timeline.success {
   border-left: solid 10px green;
-  border-top: solid 1px green;
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.1)));
-  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.1));
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(0, 255, 0, 0.05)));
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.05));
 }
 
 .timeline.success .description {
@@ -11180,7 +11168,6 @@ img.preview {
 
 .timeline.inwork {
   border-left: solid 10px orange;
-  border-top: solid 1px orange;
   background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 166, 0, 0.1)));
   background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 166, 0, 0.1));
 }
@@ -11192,9 +11179,8 @@ img.preview {
 
 .timeline.error {
   border-left: solid 10px red;
-  border-top: solid 1px red;
-  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 0, 0, 0.1)));
-  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.1));
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 0, 0, 0.05)));
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.05));
 }
 
 .timeline.error .description {
@@ -11204,7 +11190,6 @@ img.preview {
 
 .timeline.pause {
   border-left: solid 10px chocolate;
-  border-top: solid 1px chocolate;
   background-image: -webkit-gradient(linear, right bottom, left top, color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(210, 105, 30, 0.1)));
   background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(210, 105, 30, 0.1));
 }
@@ -11232,13 +11217,22 @@ img.preview {
   font-style: italic;
 }
 
+.timeline .timeline-sub .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .timeline .timeline-wrap-sub {
   font-size: 1rem;
   margin-left: 1rem;
   /* background: white; */
   padding-top: 0.5rem;
   padding-left: 1rem;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(238, 187, 195, 0)), to(rgba(238, 187, 195, 0)));
-  background-image: linear-gradient(to left top, rgba(238, 187, 195, 0), rgba(238, 187, 195, 0));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 /*# sourceMappingURL=boot.css.map */

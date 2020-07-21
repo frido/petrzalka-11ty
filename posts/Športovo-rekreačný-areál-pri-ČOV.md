@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Športovo Rekreačný Areál Pri ČOV",
-   "date": "2020-06-14T04:26:50.000Z",
+   "date": "2020-06-14",
    "draft": false,
    "tags": [
       "projekt"

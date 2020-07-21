@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Urban E",
-   "date": "2020-07-05T19:52:37.000Z",
+   "date": "2020-07-05",
    "tags": [
       "projekt"
    ],

@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Polyfunkčný dom na Humenskom námestí",
-   "date": "2020-06-23T17:14:07.000Z",
+   "date": "2020-06-23",
    "draft": false,
    "tags": [
       "projekt"

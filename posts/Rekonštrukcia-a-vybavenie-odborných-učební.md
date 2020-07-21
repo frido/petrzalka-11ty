@@ -1,7 +1,7 @@
 ---json
 {
    "title": "Rekonštrukcia a vybavenie odborných učební",
-   "date": "2020-06-06T18:23:04.000Z",
+   "date": "2020-06-06",
    "draft": false,
    "tags": [
       "projekt"
