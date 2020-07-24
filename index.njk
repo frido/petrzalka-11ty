@@ -6,60 +6,66 @@ eleventyNavigation:
 ---
 <div class="paletteA">
   <section class="container vertical">
-    <article class="">
+  <header>
+      <h1 class="container-title">Časová os</h1>
+    </header>
       {% for sch in collections.allMyContent | reverse %}
 
         <div class="timeline {{ sch.status }}">
-          <div class="header">
-            <header class="title">
-              <a href="{{ sch.page.url }}">
-                <h3>{{ sch.page.data.title }}</h3>
-              </a>
-              <div class="subheader">{{ sch.title }}</div>
-            </header>
-            <span class="date">
-              {% if sch.startExpected %}
-                <span class="dateExpected">{{ sch.startExpected }}</span>
-              {% endif %}
-              {% if sch.startReal %}
-                <span class="dateReal">{{ sch.startReal }}</span>
-              {% endif %}
-              {% if sch.endExpected %}
-                <span class="dateExpected">- {{ sch.endExpected }}</span>
-              {% endif %}
-              {% if sch.endReal %}
-                <span class="dateReal">- {{ sch.endReal }}</span>
-              {% endif %}
-              <span class="description">{{sch.description}}</span>
-            </span>
-          </div>
-          <div class="timeline-wrap-sub">
-          {% for sub in sch.sub %}
-            <div class="timeline-sub {{ sub.status }}">
+          <div class="row">
+            <div class="col-md-10">
               <div class="header">
-                <span class="title">{{ sub.title }}</span>
+                <header class="title">
+                  <div class="subheader">{{ sch.title }}</div>
+                  <a href="{{ sch.page.url }}">
+                    <h3>{{ sch.page.data.title }}</h3>
+                  </a>
+                </header>
                 <span class="date">
-                  {% if sub.startExpected %}
-                    <span class="dateExpected">{{ sub.startExpected }}</span>
+                  {% if sch.startExpected %}
+                    <span class="dateExpected">{{ sch.startExpected }}</span>
                   {% endif %}
-                  {% if sub.startReal %}
-                    <span class="dateReal">{{ sub.startReal }}</span>
+                  {% if sch.startReal %}
+                    <span class="dateReal">{{ sch.startReal }}</span>
                   {% endif %}
-                  {% if sub.endExpected %}
-                    <span class="dateExpected">- {{ sub.endExpected }}</span>
+                  {% if sch.endExpected %}
+                    <span class="dateExpected">- {{ sch.endExpected }}</span>
                   {% endif %}
-                  {% if sub.endReal %}
-                    <span class="dateReal">- {{ sub.endReal }}</span>
+                  {% if sch.endReal %}
+                    <span class="dateReal">- {{ sch.endReal }}</span>
                   {% endif %}
-                  <span class="description">{{sub.description}}</span>
                 </span>
               </div>
+              <div class="timeline-wrap-sub">
+                {% for sub in sch.sub %}
+                  <div class="timeline-sub {{ sub.status }}">
+                    <div class="header">
+                      <span class="title">{{ sub.title }}</span>
+                      <span class="date">
+                        {% if sub.startExpected %}
+                          <span class="dateExpected">{{ sub.startExpected }}</span>
+                        {% endif %}
+                        {% if sub.startReal %}
+                          <span class="dateReal">{{ sub.startReal }}</span>
+                        {% endif %}
+                        {% if sub.endExpected %}
+                          <span class="dateExpected">- {{ sub.endExpected }}</span>
+                        {% endif %}
+                        {% if sub.endReal %}
+                          <span class="dateReal">- {{ sub.endReal }}</span>
+                        {% endif %}
+                      </span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
             </div>
-          {% endfor %}
+            <div class="col-md-2 text-right">
+              <span class="description">{{sch.description}}</span>
+            </div>
           </div>
         </div>
       {% endfor %}
-    </article>
   </section>
 </div>
 {# <div class="paletteA">

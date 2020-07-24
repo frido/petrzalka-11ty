@@ -106,14 +106,6 @@ const conf = function (eleventyConfig: any) {
                 return i;
             })
             .filter((i:any)=> {
-                console.log('---------------');
-                // console.log(i.timeline);
-                console.log(i.timeline.toFormat('yyyy-LL-dd'));
-                // console.log(now);
-                console.log(now.toFormat('yyyy-LL-dd'));
-                console.log(i.timeline < now );
-                console.log(i.timeline > now );
-                console.log('---------------');
                 return i.timeline < now 
 
             })

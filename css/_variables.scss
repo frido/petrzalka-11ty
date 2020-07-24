@@ -17,9 +17,9 @@ $timetable-border: $color3;
 
 .paletteB {
     // @include palette($color1, $color2, $color1, $color1, $color1, $color4, $color1, $color4, $color1);
-    @include palette($color5, $color2, $color1, $color1, $color1, $color4, $color1, $color4, $color2);
+    @include palette($color2, $color2, $color1, $color1, $color1, $color4, $color1, $color4, $color2);
 }
 
 .paletteC {
-    @include palette($color5, $color2, $color1, $color1, $color1, $color4, $color1, $color4, $color1);
+    @include palette($color2, $color2, $color1, $color1, $color1, $color4, $color1, $color4, $color1);
 }

@@ -61,6 +61,13 @@ div.button {
     }
 }
 
+// article a section>article rozdelit by bolo jasne co je zobrazene v liste articlov a co je samostatny articel
+// potom mozem nastavit article shadow len na article v zozname (section)
+
+section article {
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05), 0 3px 10px 0 rgba(0,0,0,0.05);
+}
+
 img.preview {
     max-height: 200px;
 }
@@ -151,66 +158,94 @@ img.preview {
     width: 50%;
 }
 
+.box-shadow {
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05), 0 3px 10px 0 rgba(0,0,0,0.05);
+}
+
 .timeline {
     border-left: solid 10px $timetable-border;
     // border-top: solid 2px $timetable-border;
     padding: 0;
-    margin: 10px;
+    margin-top: 2rem;
     margin-left: 0;
-    background-image: linear-gradient(to left top, rgba($timetable-border, 0) 50%, rgba($timetable-border, 0.1));
+    // background-image: linear-gradient(to left top, rgba($timetable-border, 0) 50%, rgba($timetable-border, 0.1));
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.05), 0 3px 10px 0 rgba(0,0,0,0.05);
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .description {
+        font-weight: 700;
+    }
 
     .subheader {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 600;
+        padding-bottom: 1rem;
+    }
+
+    .row {
+        padding-top: 1rem;
     }
 }
 
 .timeline.success {
-    border-left: solid 10px green;
+    border-left: solid 10px #00695c;
     // border-top: solid 1px green;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.05));
+    // background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(0, 255, 0, 0.05));
 
     .description {
-        padding-left: 1rem;
-        color: green;
+        
+        color: #00695c;
+    }
+    .subheader {
+        color: #00695c;
     }
 }
 
 .timeline.inwork {
-    border-left: solid 10px orange;
+    border-left: solid 10px #0d47a1;
     // border-top: solid 1px orange;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 166, 0, 0.1));
+    // background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 166, 0, 0.1));
     
     .description {
         padding-left: 1rem;
-        color: orange;
+        color: #0d47a1;
+    }
+    .subheader {
+        color: #0d47a1;
     }
 }
 
 .timeline.error {
-    border-left: solid 10px red;
+    border-left: solid 10px #CC0000;
     // border-top: solid 1px red;
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.05));
+    // background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(255, 0, 0, 0.05));
 
     .description {
         padding-left: 1rem;
-        color: red;
+        color: #CC0000;
+    }
+    .subheader {
+        color: #CC0000;
     }
 }
 
 .timeline.pause {
-    border-left: solid 10px rgb(210, 105, 30);
+    border-left: solid 10px #9933CC;
     // border-top: solid 1px rgb(210, 105, 30);
-    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(210, 105, 30, 0.1));
+    // background-image: linear-gradient(to left top, rgba(255, 255, 255, 0) 50%, rgba(210, 105, 30, 0.1));
 
     .description {
         padding-left: 1rem;
-        color: rgb(210, 105, 30);
+        color: #9933CC;
+    }
+    .subheader {
+        padding-bottom: 1rem;
+        color: #9933CC;
     }
 }
 
-.timeline > .header {
-    padding: 0.5rem 1rem;
+.timeline .header {
     display: flex;
     justify-content: space-between;
 
@@ -236,8 +271,7 @@ img.preview {
 .timeline .timeline-wrap-sub {
     font-size: 1rem;
     margin-left: 1rem;
-    /* background: white; */
-    padding-top: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
