@@ -1,6 +1,6 @@
 <article class="article">
   <header>
-      <a href="{{ post.url | url }}"><h2>{{ post.data.title }}</h2></a>
+      <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
     {% if post.data.amount %}<span class="amount">{{ post.data.amount }}€</span>{% endif %}
   </header>
   <div class="row">

@@ -10784,6 +10784,65 @@ button.close {
   }
 }
 
+@-webkit-keyframes example {
+  0% {
+    color: #0d47a1;
+  }
+  50% {
+    color: #9933CC;
+  }
+}
+
+@keyframes example {
+  0% {
+    color: #0d47a1;
+  }
+  50% {
+    color: #9933CC;
+  }
+}
+
+@-webkit-keyframes example2 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0d47a1;
+  }
+}
+
+@keyframes example2 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0d47a1;
+  }
+}
+
+a {
+  color: #232946;
+}
+
+header.logo {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0d47a1), to(#9933CC));
+  background-image: linear-gradient(to right, #0d47a1, #9933CC);
+}
+
+header.logo h1, header.logo .h1 {
+  color: #fffffe;
+}
+
+header.logo a:hover {
+  text-decoration: none;
+  -webkit-animation-name: example2;
+          animation-name: example2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .paletteA {
   background-color: #fffffe;
   color: #232946;
@@ -10794,10 +10853,10 @@ button.close {
 }
 
 .paletteA.logo h1, .paletteA.logo .h1, .paletteA.logo a, .paletteA.logo a:hover {
-  color: #232946;
+  color: white;
 }
 
-.paletteA section header a, .paletteA section header h1, .paletteA section header .h1 {
+.paletteA section header h1, .paletteA section header .h1 {
   color: #232946;
 }
 
@@ -10805,7 +10864,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteA article a, .paletteA article h1, .paletteA article .h1, .paletteA article h2, .paletteA article .h2, .paletteA article h3, .paletteA article .h3, .paletteA article h4, .paletteA article .h4, .paletteA article h5, .paletteA article .h5, .paletteA article h6, .paletteA article .h6 {
+.paletteA article h1, .paletteA article .h1, .paletteA article h2, .paletteA article .h2, .paletteA article h3, .paletteA article .h3, .paletteA article h4, .paletteA article .h4, .paletteA article h5, .paletteA article .h5, .paletteA article h6, .paletteA article .h6 {
   color: #232946;
 }
 
@@ -10813,7 +10872,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteA article[class~="container"] a, .paletteA article[class~="container"] h1, .paletteA article[class~="container"] .h1, .paletteA article[class~="container"] h2, .paletteA article[class~="container"] .h2, .paletteA article[class~="container"] h3, .paletteA article[class~="container"] .h3, .paletteA article[class~="container"] h4, .paletteA article[class~="container"] .h4, .paletteA article[class~="container"] h5, .paletteA article[class~="container"] .h5, .paletteA article[class~="container"] h6, .paletteA article[class~="container"] .h6 {
+.paletteA article[class~="container"] h1, .paletteA article[class~="container"] .h1, .paletteA article[class~="container"] h2, .paletteA article[class~="container"] .h2, .paletteA article[class~="container"] h3, .paletteA article[class~="container"] .h3, .paletteA article[class~="container"] h4, .paletteA article[class~="container"] .h4, .paletteA article[class~="container"] h5, .paletteA article[class~="container"] .h5, .paletteA article[class~="container"] h6, .paletteA article[class~="container"] .h6 {
   color: #232946;
 }
 
@@ -10822,35 +10881,31 @@ button.close {
   color: #232946;
 }
 
-.paletteA footer a {
-  color: #b8c1ec;
-}
-
 .paletteA div.button > a {
-  background-color: #b8c1ec;
-  color: #232946;
+  background-color: #9933CC;
+  color: #fffffe;
 }
 
 .paletteA .amount {
-  background: #eebbc3;
+  background: #0d47a1;
   color: #fffffe;
 }
 
 .paletteA .schedule, .paletteA .updated {
-  color: #b8c1ec;
+  color: #9933CC;
 }
 
 .paletteA .point {
-  border-left: 1px #eebbc3 solid;
+  border-left: 1px #0d47a1 solid;
 }
 
 .paletteA .point .point-mark {
-  border: solid 5px #eebbc3;
+  border: solid 5px #0d47a1;
   background: #fffffe;
 }
 
 .paletteA .point .point-date {
-  color: #eebbc3;
+  color: #0d47a1;
 }
 
 .paletteB {
@@ -10863,10 +10918,10 @@ button.close {
 }
 
 .paletteB.logo h1, .paletteB.logo .h1, .paletteB.logo a, .paletteB.logo a:hover {
-  color: #232946;
+  color: white;
 }
 
-.paletteB section header a, .paletteB section header h1, .paletteB section header .h1 {
+.paletteB section header h1, .paletteB section header .h1 {
   color: #232946;
 }
 
@@ -10874,7 +10929,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteB article a, .paletteB article h1, .paletteB article .h1, .paletteB article h2, .paletteB article .h2, .paletteB article h3, .paletteB article .h3, .paletteB article h4, .paletteB article .h4, .paletteB article h5, .paletteB article .h5, .paletteB article h6, .paletteB article .h6 {
+.paletteB article h1, .paletteB article .h1, .paletteB article h2, .paletteB article .h2, .paletteB article h3, .paletteB article .h3, .paletteB article h4, .paletteB article .h4, .paletteB article h5, .paletteB article .h5, .paletteB article h6, .paletteB article .h6 {
   color: #232946;
 }
 
@@ -10882,7 +10937,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteB article[class~="container"] a, .paletteB article[class~="container"] h1, .paletteB article[class~="container"] .h1, .paletteB article[class~="container"] h2, .paletteB article[class~="container"] .h2, .paletteB article[class~="container"] h3, .paletteB article[class~="container"] .h3, .paletteB article[class~="container"] h4, .paletteB article[class~="container"] .h4, .paletteB article[class~="container"] h5, .paletteB article[class~="container"] .h5, .paletteB article[class~="container"] h6, .paletteB article[class~="container"] .h6 {
+.paletteB article[class~="container"] h1, .paletteB article[class~="container"] .h1, .paletteB article[class~="container"] h2, .paletteB article[class~="container"] .h2, .paletteB article[class~="container"] h3, .paletteB article[class~="container"] .h3, .paletteB article[class~="container"] h4, .paletteB article[class~="container"] .h4, .paletteB article[class~="container"] h5, .paletteB article[class~="container"] .h5, .paletteB article[class~="container"] h6, .paletteB article[class~="container"] .h6 {
   color: #232946;
 }
 
@@ -10891,35 +10946,31 @@ button.close {
   color: #232946;
 }
 
-.paletteB footer a {
-  color: #eebbc3;
-}
-
 .paletteB div.button > a {
-  background-color: #eebbc3;
-  color: #232946;
+  background-color: #9933CC;
+  color: #fffffe;
 }
 
 .paletteB .amount {
-  background: #eebbc3;
+  background: #0d47a1;
   color: #fffffe;
 }
 
 .paletteB .schedule, .paletteB .updated {
-  color: #eebbc3;
+  color: #9933CC;
 }
 
 .paletteB .point {
-  border-left: 1px #eebbc3 solid;
+  border-left: 1px #0d47a1 solid;
 }
 
 .paletteB .point .point-mark {
-  border: solid 5px #eebbc3;
+  border: solid 5px #0d47a1;
   background: #fffffe;
 }
 
 .paletteB .point .point-date {
-  color: #eebbc3;
+  color: #0d47a1;
 }
 
 .paletteC {
@@ -10932,10 +10983,10 @@ button.close {
 }
 
 .paletteC.logo h1, .paletteC.logo .h1, .paletteC.logo a, .paletteC.logo a:hover {
-  color: #232946;
+  color: white;
 }
 
-.paletteC section header a, .paletteC section header h1, .paletteC section header .h1 {
+.paletteC section header h1, .paletteC section header .h1 {
   color: #232946;
 }
 
@@ -10943,7 +10994,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteC article a, .paletteC article h1, .paletteC article .h1, .paletteC article h2, .paletteC article .h2, .paletteC article h3, .paletteC article .h3, .paletteC article h4, .paletteC article .h4, .paletteC article h5, .paletteC article .h5, .paletteC article h6, .paletteC article .h6 {
+.paletteC article h1, .paletteC article .h1, .paletteC article h2, .paletteC article .h2, .paletteC article h3, .paletteC article .h3, .paletteC article h4, .paletteC article .h4, .paletteC article h5, .paletteC article .h5, .paletteC article h6, .paletteC article .h6 {
   color: #232946;
 }
 
@@ -10951,7 +11002,7 @@ button.close {
   background-color: #fffffe;
 }
 
-.paletteC article[class~="container"] a, .paletteC article[class~="container"] h1, .paletteC article[class~="container"] .h1, .paletteC article[class~="container"] h2, .paletteC article[class~="container"] .h2, .paletteC article[class~="container"] h3, .paletteC article[class~="container"] .h3, .paletteC article[class~="container"] h4, .paletteC article[class~="container"] .h4, .paletteC article[class~="container"] h5, .paletteC article[class~="container"] .h5, .paletteC article[class~="container"] h6, .paletteC article[class~="container"] .h6 {
+.paletteC article[class~="container"] h1, .paletteC article[class~="container"] .h1, .paletteC article[class~="container"] h2, .paletteC article[class~="container"] .h2, .paletteC article[class~="container"] h3, .paletteC article[class~="container"] .h3, .paletteC article[class~="container"] h4, .paletteC article[class~="container"] .h4, .paletteC article[class~="container"] h5, .paletteC article[class~="container"] .h5, .paletteC article[class~="container"] h6, .paletteC article[class~="container"] .h6 {
   color: #232946;
 }
 
@@ -10960,35 +11011,79 @@ button.close {
   color: #232946;
 }
 
-.paletteC footer a {
-  color: #eebbc3;
-}
-
 .paletteC div.button > a {
-  background-color: #eebbc3;
-  color: #232946;
+  background-color: #9933CC;
+  color: #fffffe;
 }
 
 .paletteC .amount {
-  background: #eebbc3;
-  color: #232946;
+  background: #0d47a1;
+  color: #fffffe;
 }
 
 .paletteC .schedule, .paletteC .updated {
-  color: #eebbc3;
+  color: #9933CC;
 }
 
 .paletteC .point {
-  border-left: 1px #eebbc3 solid;
+  border-left: 1px #0d47a1 solid;
 }
 
 .paletteC .point .point-mark {
-  border: solid 5px #eebbc3;
-  background: #232946;
+  border: solid 5px #0d47a1;
+  background: #fffffe;
 }
 
 .paletteC .point .point-date {
-  color: #eebbc3;
+  color: #0d47a1;
+}
+
+.timeline.success {
+  border-left: solid 10px #00695c;
+}
+
+.timeline.success .description {
+  color: #00695c;
+}
+
+.timeline.success .subheader {
+  color: #00695c;
+}
+
+.timeline.inwork {
+  border-left: solid 10px #0d47a1;
+}
+
+.timeline.inwork .description {
+  color: #0d47a1;
+}
+
+.timeline.inwork .subheader {
+  color: #0d47a1;
+}
+
+.timeline.error {
+  border-left: solid 10px #CC0000;
+}
+
+.timeline.error .description {
+  color: #CC0000;
+}
+
+.timeline.error .subheader {
+  color: #CC0000;
+}
+
+.timeline.pause {
+  border-left: solid 10px #9933CC;
+}
+
+.timeline.pause .description {
+  color: #9933CC;
+}
+
+.timeline.pause .subheader {
+  color: #9933CC;
 }
 
 body {
@@ -11002,13 +11097,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-section header h1, section header .h1 {
-  font-weight: 900;
-}
-
-section.vertical > article:not(:last-child) {
+section.vertical article:not(:last-child) {
   --bs-gutter-x: 1.5rem;
-  margin-bottom: var(--bs-gutter-x);
+  margin-top: var(--bs-gutter-x);
 }
 
 article header h1, article header .h1 {
@@ -11026,6 +11117,16 @@ figure img {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .container {
@@ -11059,16 +11160,15 @@ img.preview {
   border: 0;
 }
 
-.article header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.logo h1, .logo .h1 {
+  font-size: 3.0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 900 !important;
+}
+
+.pt-1 {
+  padding-top: 1rem;
 }
 
 .flex-wrap {
@@ -11146,20 +11246,21 @@ img.preview {
   width: 50%;
 }
 
-.box-shadow {
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+.palleteC {
+  margin-top: 1rem;
+}
+
+.timetable {
+  padding-bottom: 2rem;
+}
+
+.timetable .timeline {
+  padding: 0.3rem;
+  margin: 0.3rem;
 }
 
 .timeline {
-  border-left: solid 10px #b8c1ec;
-  padding: 0;
-  margin-top: 2rem;
-  margin-left: 0;
-  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
-          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  border-left: solid 10px #9933CC;
 }
 
 .timeline .description {
@@ -11168,64 +11269,11 @@ img.preview {
 
 .timeline .subheader {
   font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.timeline h3, .timeline .h3 {
   font-weight: 600;
-  padding-bottom: 1rem;
-}
-
-.timeline .row {
-  padding-top: 1rem;
-}
-
-.timeline.success {
-  border-left: solid 10px #00695c;
-}
-
-.timeline.success .description {
-  color: #00695c;
-}
-
-.timeline.success .subheader {
-  color: #00695c;
-}
-
-.timeline.inwork {
-  border-left: solid 10px #0d47a1;
-}
-
-.timeline.inwork .description {
-  padding-left: 1rem;
-  color: #0d47a1;
-}
-
-.timeline.inwork .subheader {
-  color: #0d47a1;
-}
-
-.timeline.error {
-  border-left: solid 10px #CC0000;
-}
-
-.timeline.error .description {
-  padding-left: 1rem;
-  color: #CC0000;
-}
-
-.timeline.error .subheader {
-  color: #CC0000;
-}
-
-.timeline.pause {
-  border-left: solid 10px #9933CC;
-}
-
-.timeline.pause .description {
-  padding-left: 1rem;
-  color: #9933CC;
-}
-
-.timeline.pause .subheader {
-  padding-bottom: 1rem;
-  color: #9933CC;
 }
 
 .timeline .header {
@@ -11257,8 +11305,5 @@ img.preview {
 .timeline .timeline-wrap-sub {
   font-size: 1rem;
   margin-left: 1rem;
-  padding-top: 0rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
 }
 /*# sourceMappingURL=boot.css.map */

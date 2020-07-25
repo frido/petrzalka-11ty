@@ -1,0 +1,11 @@
+@mixin timeline($color) {
+    border-left: solid 10px $color;
+
+    .description {
+        
+        color: $color;
+    }
+    .subheader {
+        color: $color;
+    }
+}

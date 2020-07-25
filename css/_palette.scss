@@ -1,37 +1,35 @@
 @mixin palette($background-section, $background-article, $title-section, $title-article, $paragraph, $secondary, $secondary-text, $tertiary, $tertiary-text) {
     background-color: $background-section;
     color: $paragraph;
+
     &.logo {
         background-color: $background-section;
         h1, a, a:hover {
-            color: $title-section;
+            color: white;
         }
     }
     section {
         header {
-            a, h1 {
+            h1 {
                 color: $title-section;
             }
         }   
     }
     article {
         background-color: $background-article;
-        a, h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6 {
             color: $title-article;
         }
     }
     article[class~="container"] {
         background-color: $background-section;
-        a, h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6 {
             color: $title-section;
         }
     }
     footer {
         background-color: $background-section;
         color: $title-section;
-        a {
-            color: $secondary;
-        }
     }
     
     strong {

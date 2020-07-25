@@ -105,14 +105,6 @@ var conf = function (eleventyConfig) {
             return i;
         })
             .filter(function (i) {
-            console.log('---------------');
-            // console.log(i.timeline);
-            console.log(i.timeline.toFormat('yyyy-LL-dd'));
-            // console.log(now);
-            console.log(now.toFormat('yyyy-LL-dd'));
-            console.log(i.timeline < now);
-            console.log(i.timeline > now);
-            console.log('---------------');
             return i.timeline < now;
         })
             .sort(function (a, b) { return a.timeline - b.timeline; });

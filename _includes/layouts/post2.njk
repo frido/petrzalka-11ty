@@ -26,6 +26,7 @@ templateClass: tmpl-post
         {%- endif %}
 
         {% if schedule %}
+            <div class="timetable">
                 {% for sch in schedule %}
                     <div class="timeline {{ sch.status }}">
                         <div class="header">
@@ -47,31 +48,32 @@ templateClass: tmpl-post
                             </span>
                         </div>
                         <div class="timeline-wrap-sub">
-                        {% for sub in sch.sub %}
-                            <div class="timeline-sub {{ sub.status }}">
-                                <div class="header">
-                                    <span class="title">{{ sub.title }}</span>
-                                    <span class="date">
-                                        {% if sub.startExpected %}
-                                            <span class="dateExpected">{{ sub.startExpected }}</span>
-                                        {% endif %}
-                                        {% if sub.startReal %}
-                                            <span class="dateReal">{{ sub.startReal }}</span>
-                                        {% endif %}
-                                        {% if sub.endExpected %}
-                                            <span class="dateExpected">- {{ sub.endExpected }}</span>
-                                        {% endif %}
-                                        {% if sub.endReal %}
-                                            <span class="dateReal">- {{ sub.endReal }}</span>
-                                        {% endif %}
-                                        <span class="description">{{sub.description}}</span>
-                                    </span>
+                            {% for sub in sch.sub %}
+                                <div class="timeline-sub {{ sub.status }}">
+                                    <div class="header">
+                                        <span class="title">{{ sub.title }}</span>
+                                        <span class="date">
+                                            {% if sub.startExpected %}
+                                                <span class="dateExpected">{{ sub.startExpected }}</span>
+                                            {% endif %}
+                                            {% if sub.startReal %}
+                                                <span class="dateReal">{{ sub.startReal }}</span>
+                                            {% endif %}
+                                            {% if sub.endExpected %}
+                                                <span class="dateExpected">- {{ sub.endExpected }}</span>
+                                            {% endif %}
+                                            {% if sub.endReal %}
+                                                <span class="dateReal">- {{ sub.endReal }}</span>
+                                            {% endif %}
+                                            <span class="description">{{sub.description}}</span>
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                        {% endfor %}
+                            {% endfor %}
                         </div>
                     </div>
                 {% endfor %}
+            </div>
         {% endif %}
 
         {{ content | safe }}
