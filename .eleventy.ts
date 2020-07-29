@@ -125,10 +125,10 @@ const conf = function (eleventyConfig: any) {
         linkify: true
     };
 
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("fonts");
-    eleventyConfig.addPassthroughCopy("img");
-    eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy({"src/static/css": 'css'});
+    eleventyConfig.addPassthroughCopy({"src/static/fonts": 'fonts'});
+    eleventyConfig.addPassthroughCopy({"src/static/img": 'img'});
+    eleventyConfig.addPassthroughCopy({"src/static/js": 'js'}); 
 
     eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable('code'));
 
@@ -184,7 +184,7 @@ const conf = function (eleventyConfig: any) {
 
         // These are all optional, defaults are shown:
         dir: {
-            input: ".",
+            input: "src",
             includes: "_includes",
             data: "_data",
             output: "_site"

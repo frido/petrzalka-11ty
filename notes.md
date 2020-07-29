@@ -25,14 +25,6 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%
 # Elektricka
 https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf
 
-
-# Investičný zámer Škola Južné mesto
-https://www.petrzalka.sk/wp-content/uploads/2020/03/KUPVaR-zapisnica_2020-03-03_overena.pdf
-https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735
-https://www.petrzalka.sk/wp-content/uploads/2018/02/Skola_Juzne_mesto.pdf
-https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=63162
-
-
 # Kopa dalsich projektov
 https://www.petrzalka.sk/wp-content/uploads/2020/03/KUPVaR-zapisnica_2020-03-03_overena.pdf
 
