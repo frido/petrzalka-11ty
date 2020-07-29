@@ -29,7 +29,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "16. máj 2017",
+               "startReal": "12017-05-06",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -51,7 +51,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "december 2020",
+               "startReal": "2020-12-31",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]

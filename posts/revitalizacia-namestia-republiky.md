@@ -22,7 +22,18 @@
          "endExpected": "december 2020",
          "endReal": null,
          "timelineDate": "2020-03-01",
-         "sub": [  ]
+         "sub": [
+            {
+               "title": "Analýza súčasného stavu",
+               "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+               "status": "",
+               "startExpected": "2021",
+               "startReal": null,
+               "endExpected": "2021",
+               "endReal": null,
+               "sub": [  ]
+            }
+         ]
       }, 
       {
          "title": "Architektonická súťaž",

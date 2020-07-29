@@ -29,10 +29,11 @@
          "sub": [
             {
                "title": "Materiál na rokovanie MZ",
+               "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-3.-%C5%A1portovo-rekrea%C4%8Dn%C3%BD-are%C3%A1l-pri-%C4%8COV-MZ.pdf",
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "4. február 2020",
+               "startReal": "2020-02-04",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]

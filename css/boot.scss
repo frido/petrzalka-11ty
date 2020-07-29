@@ -19,7 +19,7 @@ section {
         }
     }
     &.vertical {
-        article:not(:last-child) {
+        article {
             --bs-gutter-x: 1.5rem;
             margin-top: var(--bs-gutter-x);
         }
@@ -243,7 +243,17 @@ img.preview {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+
+        img.source {
+            float: right;
+            height: 19px;
+            vertical-align: middle;
+            padding-top: 6px;
+            padding-left: 3px;
+        }
     }
+
+    
 }
 
 .timeline .timeline-wrap-sub {

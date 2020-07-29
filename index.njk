@@ -21,26 +21,16 @@ eleventyNavigation:
                   {{ sch.page.data.title }}
                 </a></h3>
               </header>
-              {# <span class="date">
-                  {% if sch.startExpected %}
-                    <span class="dateExpected">{{ sch.startExpected }}</span>
-                  {% endif %}
-                  {% if sch.startReal %}
-                    <span class="dateReal">{{ sch.startReal }}</span>
-                  {% endif %}
-                  {% if sch.endExpected %}
-                    <span class="dateExpected">- {{ sch.endExpected }}</span>
-                  {% endif %}
-                  {% if sch.endReal %}
-                    <span class="dateReal">- {{ sch.endReal }}</span>
-                  {% endif %}
-                </span> #}
             </div>
             <div class="timeline-wrap-sub">
               {% for sub in sch.sub %}
                 <div class="timeline-sub {{ sub.status }}">
                   <div class="header">
-                    <span class="title">{{ sub.title }}</span>
+                      {% if sub.source %}
+                      <a href="{{ sub.source }}" target="blank"><span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
+                      {% else %}
+                      <span class="title">{{ sub.title }}</span>
+                      {% endif %}
                     <span class="date">
                       {% if sub.startExpected %}
                         <span class="dateExpected">{{ sub.startExpected }}</span>

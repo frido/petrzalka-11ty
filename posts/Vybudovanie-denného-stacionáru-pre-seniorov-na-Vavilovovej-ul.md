@@ -22,7 +22,7 @@
          "status": "success",
          "description": "hotovo",
          "startExpected": null,
-         "startReal": "7. septembra 2018",
+         "startReal": "2018-09-07",
          "endExpected": null,
          "endReal": "20.12.2018",
          "timelineDate": "2018-09-07",
@@ -32,7 +32,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "7. septembra 2018",
+               "startReal": "2018-09-07",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -41,7 +41,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "25. 9. 2018",
+               "startReal": "2018-09-25",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -50,7 +50,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "26. septembra 2018",
+               "startReal": "2018-09-26",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -59,7 +59,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "20.12.2018",
+               "startReal": "2018-12-20",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -81,7 +81,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "október 2019",
+               "startReal": "2018-10-01",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
@@ -103,7 +103,7 @@
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "marec 2021",
+               "startReal": "2021-03-01",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]

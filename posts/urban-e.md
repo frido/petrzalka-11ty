@@ -27,30 +27,33 @@
          "sub": [ 
             {
                "title": "Informácia o schválení projektu",
+               "source": "https://zastupitelstvo.bratislava.sk/data/att/23543.pdf",
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "07.12.2017",
+               "startReal": "2017-12-07",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
             },
             {
                "title": "Zasadnutie komisie správy majetku a miestnych podnikov",
+               "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/Z%C3%A1pisnica-%C4%8D.7-janu%C3%A1r-2020.pdf",
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "20.01.2020",
+               "startReal": "2020-01-20",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
             },
             {
                "title": "Zasadnutie komisie územného plánu, výstavby a rozvoja",
+               "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf",
                "status": "",
                "description": "",
                "startExpected": null,
-               "startReal": "21.01.2020",
+               "startReal": "2020-01-21",
                "endExpected": null,
                "endReal": null,
                "sub": [  ]
