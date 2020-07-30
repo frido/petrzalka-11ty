@@ -6,8 +6,8 @@
       "projekt"
    ],
    "layout": "layouts/post2.njk",
-   "description": "Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.",
-   "icon": "/img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg",
+   "description": "Škola je situovaná v rozvojovom území na pozemku s funkčným využitím občianska vybavenosť celomestského a nadmestského významu kód 201, severozápadná časť budovy je umiestňovaná na hranicu funkčnej plochy sadovnícke a lesoparkové úpravy, kód funkcie 1110. Návrh plôch pre školskú telesnú výchovu a šport je riešený ako športový areál s bežeckým oválom 250 m + 100 m dráhou a multifunkčným ihriskom 20 x 40 m. ",
+   "icon": "/img/skola-juzne-mesto/4.jpg",
    "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735",
    "sources": [
       "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735",
@@ -67,8 +67,8 @@ stanoveným funkčným využitím parky, sadovnícke a lesoparkové úpravy kód
 zasahuje časťou bežeckého oválu
 
 {% gallery %}
-{% figure "img/skola-juzne-mesto/1.png", "img/skola-juzne-mesto/1.png", "" %}
-{% figure "img/skola-juzne-mesto/2.png", "img/skola-juzne-mesto/2.png", "" %}
-{% figure "img/skola-juzne-mesto/3.png", "img/skola-juzne-mesto/3.png", "" %}
-{% figure "img/skola-juzne-mesto/4.png", "img/skola-juzne-mesto/4.png", "" %}
+{% figure "img/skola-juzne-mesto/1.jpg", "img/skola-juzne-mesto/1.jpg", "" %}
+{% figure "img/skola-juzne-mesto/2.jpg", "img/skola-juzne-mesto/2.jpg", "" %}
+{% figure "img/skola-juzne-mesto/3.jpg", "img/skola-juzne-mesto/3.jpg", "" %}
+{% figure "img/skola-juzne-mesto/4.jpg", "img/skola-juzne-mesto/4.jpg", "" %}
 {% endgallery %}

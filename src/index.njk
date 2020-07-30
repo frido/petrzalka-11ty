@@ -36,13 +36,13 @@ eleventyNavigation:
                         <span class="dateExpected">{{ sub.startExpected }}</span>
                       {% endif %}
                       {% if sub.startReal %}
-                        <span class="dateReal">{{ sub.startReal }}</span>
+                        <span class="dateReal">{{ sub.startReal | postDate }}</span>
                       {% endif %}
                       {% if sub.endExpected %}
                         <span class="dateExpected">- {{ sub.endExpected }}</span>
                       {% endif %}
                       {% if sub.endReal %}
-                        <span class="dateReal">- {{ sub.endReal }}</span>
+                        <span class="dateReal">- {{ sub.endReal | postDate }}</span>
                       {% endif %}
                     </span>
                   </div>

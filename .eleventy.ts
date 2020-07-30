@@ -65,7 +65,7 @@ const conf = function (eleventyConfig: any) {
 
     eleventyConfig.addFilter('postDate', (dateObj: string) => {
         const dateTime = luxon.DateTime.fromString(dateObj, 'yyyy-LL-dd');
-        return dateTime.toFormat('yyyy-LL-dd');
+        return dateTime.toFormat('dd.LL.yyyy');
     });
 
     eleventyConfig.addFilter('log', (object: any) => {

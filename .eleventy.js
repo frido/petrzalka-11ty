@@ -68,7 +68,7 @@ var conf = function (eleventyConfig) {
     });
     eleventyConfig.addFilter('postDate', function (dateObj) {
         var dateTime = luxon.DateTime.fromString(dateObj, 'yyyy-LL-dd');
-        return dateTime.toFormat('yyyy-LL-dd');
+        return dateTime.toFormat('dd.LL.yyyy');
     });
     eleventyConfig.addFilter('log', function (object) {
         console.log(object);
