@@ -3,7 +3,7 @@
     "url": "http://petrzalka.info/",
     "description": "Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery",
     "keywords": "Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery",
-    "icon": "/img/logo-m.png",
+    "icon": "img/logo-m.png",
     "feed": {
       "subtitle": "I am writing about my experiences as a naval navel-gazer.",
       "filename": "feed.xml",
