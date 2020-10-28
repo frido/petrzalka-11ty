@@ -14,6 +14,32 @@ font-weight: 500;
 
 # Areál voľného času Vojenský dvor
 
+# Polyfunkčný objekt, Tematínska
+https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71001
+
+# Showroom PIETA, Betliarska ulica, architektonická štúdia
+https://www.petrzalka.sk/wp-content/uploads/2020/10/KUPVaR-pozvanka_2020-10-27.pdf
+
+https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-oktobrovemu-zastupitelstvu-4/
+# X-box Petržalka – Verejné skladové priestory, Architektonická štúdia, vyjadrenie k investičnému zámeru
+# Skladovo-prevádzkový areál - DEKTER, s. r. o., vyjadrenie k investičnému zámeru
+
+https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-septembrovemu-zastupitelstvu-5/
+# „Nové Domino“, Jasovská ulica – stanovisko komisie
+# Viacúčelová športová hala – univerzitné športové centrum pri EU v Bratislave
+# Bytový dom Habern Au – informácia
+
+https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-junovemu-zastupitelstvu-6/
+
+# Metropolitný inštitút dokončil Manifest verejných priestorov, úvod k Manuálu verejných priestorov
+https://www.yimba.sk/clanky/metropolitny-institut-dokoncil-manifest-verejnych-priestorov-uvod-k-manualu-verejnych-priestorov
+
+# Pri Draždiaku pripravujú nový projekt. Vytvorí desiatky bytov
+https://index.sme.sk/c/22493518/pri-drazdiaku-pripravuju-novy-projekt-vytvori-desiatky-bytov.html
+
+# Drazdiak House
+https://www.drazdiak.haus/kontakty
+
 # Cyklo
 https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf
 https://cyklokoalicia.sk/wp-content/uploads/2013/11/STAROHAJSKA-SITUACIA-1-DSP.pdf
