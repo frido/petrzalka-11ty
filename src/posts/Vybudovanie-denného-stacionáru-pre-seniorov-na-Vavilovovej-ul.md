@@ -21,48 +21,27 @@
          "title": "Projektová dokumentácia",
          "status": "success",
          "description": "hotovo",
-         "startExpected": null,
-         "startReal": "2018-09-07",
-         "endExpected": null,
-         "endReal": "20.12.2018",
-         "timelineDate": "2018-09-07",
          "sub": [
             {
                "title": "Výzva na projektovú dokumentáciu",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-09-07",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-09-07"
             },{
                "title": "Materiál na rokovanie MZ",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-09-25",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-09-25"
             },{
                "title": "Podpis zmluvy na projektovú dokumentáciu",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-09-26",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-09-26"
             },{
                "title": "Odovzdanie projektovej dokumentácie",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-12-20",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-12-20"
             }
          ]
       },
@@ -70,21 +49,12 @@
          "title": "Verejné obstarávanie",
          "status": "success",
          "description": "hotovo",
-         "startExpected": null,
-         "startReal": null,
-         "endExpected": null,
-         "endReal": "október 2019",
-         "timelineDate": "2018-10-01",
          "sub": [
             {
                "title": "Ukončenie verejného obstarávania",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-10-01",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-10-01"
             }
          ]
       },
@@ -92,21 +62,12 @@
          "title": "Výstavba",
          "status": "inwork",
          "description": "prebieha",
-         "startExpected": null,
-         "startReal": null,
-         "endExpected": null,
-         "endReal": "marec 2021",
-         "timelineDate": "2021-03-01",
          "sub": [
             {
                "title": "Koniec výstavby",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2021-03-01",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2021-03-01"
             }
          ]
       }

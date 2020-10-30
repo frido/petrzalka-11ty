@@ -22,33 +22,21 @@
          "title": "Príprava projektu",
          "status": "inwork",
          "description": "prebieha",
-         "startExpected": null,
          "startReal": "2016",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2018-09-14",
          "sub": [ 
             {
                "title": "Petícia za verejný park",
                "source": "http://www.ekoforum.sk/peticia/park-petrzalka",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-09-14",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "startReal": "2018-09-14"
             },
             {
                "title": "Prerokovanie petície",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2018/09/23_Prerokovanie-peticie-Srobarovo-park.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-09-25",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "startReal": "2018-09-25"
             }
             ,
             {
@@ -56,11 +44,7 @@
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-01-14",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "startReal": "2020-01-14"
             }
          ]
       }

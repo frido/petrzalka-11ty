@@ -23,24 +23,17 @@
          "title": "Záväzné stanovisko",
          "status": "success",
          "description": "hotovo",
-         "timelineDate": "2020-01-24",
          "sub": [
             {
                "title": "Investičný zámer",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2018/02/Skola_Juzne_mesto.pdf",
                "status": "",
-               "startExpected": null,
-               "startReal": "2018-02-01",
-               "endExpected": null,
-               "endReal": null
+               "startReal": "2018-02-01"
             },
             {
                "title": "Záväzné stanovisko",
                "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735",
                "status": "",
-               "startExpected": null,
-               "startReal": "2017-10-24",
-               "endExpected": null,
                "endReal": "2020-01-24"
             }
          ]

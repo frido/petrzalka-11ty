@@ -26,55 +26,34 @@
          "title": "Záväzné stanovisko",
          "status": "success",
          "description": "súhlasné",
-         "startExpected": null,
-         "startReal": "2018-10-05",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2018-10-05",
          "sub": [
             {
                "title": "Záväzné stanovisko hlavného mesta",
                "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=59362",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2018-10-05",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-10-05"
             },
             {
                "title": "Petícia proti výstavbe",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2019/03/1-MZ-peticia-Topolcianska.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2019-02-28",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2019-02-28"
             },
             {
                "title": "Uznesenie Miestneho zastupiteľstva",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2019/03/Uznesenia-MZ-26.03.2019.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2019-03-26",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2019-03-26"
             },
             {
                "title": "Uznesenie Mestského zastupiteľstva",
                "source": "https://zastupitelstvo.bratislava.sk/data/att/41660.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2019-04-25",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2019-04-25"
             }
          ]
       }, 
@@ -82,44 +61,27 @@
          "title": "Územné konanie",
          "status": "pause",
          "description": "prerušené",
-         "startExpected": null,
-         "startReal": "07.01.2020",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2020-01-07",
          "sub": [
             {
                "title": "Začatie územného konania",
                "source": "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
                "status": "berie na vedomie",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-01-07",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-01-07"
             },
             {
                "title": "Uznesenie Miestneho zastupiteľstva",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
                "status": "berie na vedomie",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-02-04",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-02-04"
             },
             {
                "title": "Prerušenie územného konania",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/Topolcianska_UR_PK_namietky_PET20200012217.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-02-17",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-02-17"
             }
          ]
       }

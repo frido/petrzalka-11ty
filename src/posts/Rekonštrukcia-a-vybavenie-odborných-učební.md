@@ -18,21 +18,13 @@
          "title": "Príprava projektu",
          "status": "success",
          "description": "hotovo",
-         "startExpected": null,
          "startReal": "2016",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2017-05-16",
          "sub": [ 
             {
                "title": "Materiál na rokovanie MZ",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2017-05-06",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2017-05-06"
             }
          ]
       },
@@ -40,21 +32,13 @@
          "title": "Koniec realizácie projektu",
          "status": "",
          "description": "",
-         "startExpected": null,
          "startReal": "december 2020",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2020-12-31",
          "sub": [ 
             {
                "title": "Materiál na rokovanie MZ",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-12-31",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-12-31"
             }
          ]
       }

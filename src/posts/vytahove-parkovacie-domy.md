@@ -20,23 +20,13 @@
          "title": "Zámer budovania",
          "status": "inwork",
          "description": "prebieha",
-         "startExpected": null,
-         "startReal": "2020-08-26",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2020-08-26",
          "sub": [
             {
                "title": "Infomateriál",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/09/INFO-7.-Z%C3%A1mer-budovania-v%C3%BD%C5%A5ahov%C3%BDch-parkovac%C3%ADch-domov-v-Petr%C5%BEalke.pdf",
                "status": "success",
                "description": "prebieha",
-               "startExpected": null,
-               "startReal": "2020-08-26",
-               "endExpected": null,
-               "endReal": null,
-               "timelineDate": "2020-08-26",
-               "sub": [  ]
+               "timelineDate": "2020-08-26"
             }
          ]
       }

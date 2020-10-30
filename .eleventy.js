@@ -62,6 +62,9 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter("readableDate", function (dateObj) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
     });
+    eleventyConfig.addFilter("json", function (object) {
+        return JSON.stringify(object);
+    });
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
     eleventyConfig.addFilter('htmlDateString', function (dateObj) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');

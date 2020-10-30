@@ -17,21 +17,14 @@
          "title": "Analýza súčasného stavu",
          "status": "inwork",
          "description": "prebieha",
-         "startExpected": null,
          "startReal": "marec 2020",
          "endExpected": "december 2020",
-         "endReal": null,
          "timelineDate": "2020-03-01",
          "sub": [
             {
                "title": "Analýza súčasného stavu",
                "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-               "status": "",
-               "startExpected": "2021",
-               "startReal": null,
-               "endExpected": "2021",
-               "endReal": null,
-               "sub": [  ]
+               "status": ""
             }
          ]
       }, 
@@ -40,37 +33,26 @@
          "status": "",
          "description": "",
          "startExpected": "2021",
-         "startReal": null,
          "endExpected": "2021/2022",
-         "endReal": null,
          "timelineDate": "2021-01-01",
          "sub": [ 
             {
                "title": "Vypracovanie zadania architektonickej súťaže",
                "status": "",
                "startExpected": "2021",
-               "startReal": null,
-               "endExpected": "2021",
-               "endReal": null,
-               "sub": [  ]
+               "endExpected": "2021"
             },
             {
                "title": "Vyhlásenie architektonickej súťaže",
                "status": "",
                "startExpected": "2021",
-               "startReal": null,
-               "endExpected": "2021",
-               "endReal": null,
-               "sub": [  ]
+               "endExpected": "2021"
             },
             {
                "title": "Výsledky architektonickej súťaže",
                "status": "",
                "startExpected": "2021",
-               "startReal": null,
-               "endExpected": "2021/2022",
-               "endReal": null,
-               "sub": [  ]
+               "endExpected": "2021/2022"
             }
          ]
       },
@@ -78,9 +60,7 @@
          "title": "Realizácia víťazného návrhu",
          "status": "",
          "startExpected": "2022",
-         "startReal": null,
          "endExpected": "2026",
-         "endReal": null,
          "timelineDate": "2022-01-01",
          "sub": [  ]
       }

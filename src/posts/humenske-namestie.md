@@ -71,36 +71,36 @@
             {
                "title": "Začatie územného konania",
                "source": "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
-               "status": "",
+               "status": "inwork",
                "description": "",
                "timelineDate": "2019-11-27"
             },
             {
                "title": "Zasadnutie Miestneho zastupiteľstva",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
-               "status": "",
-               "description": "",
+               "status": "error",
+               "description": "vyjadruje nesúhlas",
                "timelineDate": "2020-02-04"
             },
             {
                "title": "Petícia PROTI zástavbe parku a časti parkoviska",
                "source": "https://zastupitelstvo.bratislava.sk/data/att/46753.pdf",
-               "status": "",
-               "description": "",
+               "status": "success",
+               "description": "berie na vedomie",
                "timelineDate": "2020-02-27"
             },
             {
                "title": "Oznámenie výsledku vybavenia petície",
                "source": "https://esluzby.bratislava.sk/Upload/EDEM/NoticeBoardEntry/19396/2020PeticiaprotizastavbeparkuacastiparkoviskaHumenskenamestievlokaliteLukyVII._2%20doc.pdf",
-               "status": "",
-               "description": "",
+               "status": "success",
+               "description": "berie na vedomie",
                "timelineDate": "2020-05-28"
             },
             {
                "title": "Zasadnutie Mestského zastupiteľstva",
                "source": "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-28052020/bod-43/",
-               "status": "",
-               "description": "",
+               "status": "success",
+               "description": "berie na vedomie",
                "timelineDate": "2020-05-28"
             }
          ]
