@@ -26,10 +26,7 @@
          "title": "Vypracovaný projekt",
          "status": "success",
          "description": "hotovo",
-         "startExpected": null,
          "startReal": "apríl 2016",
-         "endExpected": null,
-         "endReal": null,
          "timelineDate": "2016-04-01",
          "sub": [  ]
       },
@@ -37,32 +34,18 @@
          "title": "Záväzné stanovisko",
          "status": "error",
          "description": "zamietnuté",
-         "startExpected": null,
-         "startReal": "2017-09-18",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2017-09-18",
          "sub": [ 
             {
-               "title": "Zamietavé záväzné stanovisko",
+               "title": "Záväzné stanovisko",
                "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=52637",
-               "status": "",
-               "description": "",
-               "startExpected": null,
-               "startReal": "2019-09-18",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "status": "error",
+               "description": "zamietnuté",
+               "timelineDate": "2017-09-18"
             },
             {
                "title": "Stanovené požiadavky do spracovania projektu",
                "status": "",
-               "description": "",
-               "startExpected": null,
-               "startReal": "2018-10-23",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2018-10-23"
             }
           ]
       },
@@ -70,22 +53,13 @@
          "title": "Záväzné stanovisko",
          "status": "success",
          "description": "súhlasné",
-         "startExpected": null,
-         "startReal": "2019-07-25",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2019-07-25",
          "sub": [ 
             {
-               "title": "Súhlasné záväzné stanovisko",
+               "title": "Záväzné stanovisko",
                "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=64278",
-               "status": "",
-               "description": "",
-               "startExpected": null,
-               "startReal": "2019-07-25",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "status": "success",
+               "description": "súhlasné",
+               "timelineDate": "2019-07-25"
             }
          ]
       },
@@ -93,66 +67,41 @@
          "title": "Územné konanie",
          "status": "pause",
          "description": "prerušené",
-         "startExpected": null,
-         "startReal": "2019-11-27",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2019-11-27",
          "sub": [ 
             {
                "title": "Začatie územného konania",
                "source": "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2019-11-27",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2019-11-27"
             },
             {
                "title": "Zasadnutie Miestneho zastupiteľstva",
                "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-02-04",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-02-04"
             },
             {
                "title": "Petícia PROTI zástavbe parku a časti parkoviska",
                "source": "https://zastupitelstvo.bratislava.sk/data/att/46753.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-02-27",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-02-27"
             },
             {
                "title": "Oznámenie výsledku vybavenia petície",
                "source": "https://esluzby.bratislava.sk/Upload/EDEM/NoticeBoardEntry/19396/2020PeticiaprotizastavbeparkuacastiparkoviskaHumenskenamestievlokaliteLukyVII._2%20doc.pdf",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-05-28",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-05-28"
             },
             {
                "title": "Zasadnutie Mestského zastupiteľstva",
                "source": "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-28052020/bod-43/",
                "status": "",
                "description": "",
-               "startExpected": null,
-               "startReal": "2020-05-28",
-               "endExpected": null,
-               "endReal": null,
-               "sub": [  ]
+               "timelineDate": "2020-05-28"
             }
          ]
       }

@@ -70,6 +70,9 @@ var conf = function (eleventyConfig) {
         var dateTime = luxon.DateTime.fromString(dateObj, 'yyyy-LL-dd');
         return dateTime.toFormat('dd.LL.yyyy');
     });
+    eleventyConfig.addFilter('date', function (timeline) {
+        return timeline.toFormat('dd.LL.yyyy');
+    });
     eleventyConfig.addFilter('log', function (object) {
         console.log(object);
         return object;
@@ -82,32 +85,39 @@ var conf = function (eleventyConfig) {
         return array.slice(0, n);
     });
     eleventyConfig.addCollection("allMyContent", function (collection) {
-        var list = [];
+        var scheduleList = [];
         var now = luxon.DateTime.local();
         collection.getFilteredByTag('projekt')
-            .flatMap(function (i) {
-            if (i.data.schedule) {
-                return i.data.schedule
-                    .map(function (s) {
-                    s.page = i;
-                    return s;
+            .flatMap(function (page) {
+            if (page.data.schedule) {
+                return page.data.schedule
+                    .map(function (schedule) {
+                    schedule.page = page;
+                    if (schedule.timelineDate) {
+                        schedule.timeline = luxon.DateTime.fromString(schedule.timelineDate, 'yyyy-LL-dd');
+                    }
+                    if (schedule.sub) {
+                        schedule.sub
+                            .filter(function (sub) { return sub.timelineDate; })
+                            .map(function (sub) {
+                            sub.timeline = luxon.DateTime.fromString(sub.timelineDate, 'yyyy-LL-dd');
+                            return sub;
+                        })
+                            .filter(function (sub) { return sub.timeline < now; })
+                            .forEach(function (sub) { return schedule.timeline = sub.timeline; });
+                    }
+                    return schedule;
                 });
             }
             return [];
         })
-            .forEach(function (i) {
-            list.push(i);
+            .forEach(function (schedule) {
+            scheduleList.push(schedule);
         });
-        return list
-            .filter(function (i) { return i.timelineDate; })
-            .map(function (i) {
-            i.timeline = luxon.DateTime.fromString(i.timelineDate, 'yyyy-LL-dd');
-            return i;
-        })
-            .filter(function (i) {
-            return i.timeline < now;
-        })
-            .sort(function (a, b) { return a.timeline - b.timeline; });
+        return scheduleList
+            .filter(function (schedule) { return schedule.timeline; })
+            .filter(function (schedule) { return schedule.timeline < now; })
+            .sort(function (a, b) { return a.timeline.toMillis() - b.timeline.toMillis(); });
     });
     eleventyConfig.addPairedShortcode("gallery", gallery);
     eleventyConfig.addPairedShortcode("timeline", timeline);
@@ -161,6 +171,7 @@ var conf = function (eleventyConfig) {
     });
     return {
         templateFormats: [
+            "11ty.js",
             "md",
             "njk",
             "html",

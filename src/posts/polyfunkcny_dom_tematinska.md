@@ -23,47 +23,27 @@
          "title": "Územné konanie",
          "status": "error",
          "description": "zamietnuté",
-         "startExpected": null,
-         "startReal": "2018-10-08",
-         "endExpected": null,
-         "endReal": null,
-         "timelineDate": "2018-10-08",
          "sub": [
             {
                "title": "Petíciu proti výstavbe na Tematinskej 1",
                "source": "https://zastupitelstvo.bratislava.sk/data/att/40163.pdf",
                "status": "sucess",
                "description": "odovzdaná",
-               "startExpected": null,
-               "startReal": "2018-10-11",
-               "endExpected": null,
-               "endReal": null,
-               "timelineDate": "2018-10-11",
-               "sub": [  ]
+               "timelineDate": "2018-10-11"
             },
             {
                "title": "Záväzné stanovisko hlavného mesta",
                "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=60157",
                "status": "error",
                "description": "zamietnuté",
-               "startExpected": null,
-               "startReal": "2019-01-17",
-               "endExpected": null,
-               "endReal": null,
-               "timelineDate": "2019-01-17",
-               "sub": [  ]
+               "timelineDate": "2019-01-17"
             },
             {
                "title": "Uznesenie mestského zastupiteľstva",
                "source": "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-07022019/bod-35/",
                "status": "",
                "description": "berie na vedomie",
-               "startExpected": null,
-               "startReal": "2019-02-07",
-               "endExpected": null,
-               "endReal": null,
-               "timelineDate": "2019-02-07",
-               "sub": [  ]
+               "timelineDate": "2019-02-07"
             }
          ]
       }

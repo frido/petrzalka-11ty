@@ -1,4 +1,4 @@
-import { TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -68,6 +68,10 @@ const conf = function (eleventyConfig: any) {
         return dateTime.toFormat('dd.LL.yyyy');
     });
 
+    eleventyConfig.addFilter('date', (timeline: luxon.DateTime) => {
+        return timeline.toFormat('dd.LL.yyyy');
+    });
+
     eleventyConfig.addFilter('log', (object: any) => {
         console.log(object);
         return object;
@@ -83,33 +87,39 @@ const conf = function (eleventyConfig: any) {
     });
 
     eleventyConfig.addCollection("allMyContent", (collection:TemplateCollection) => {
-        let list = [];
+        let scheduleList: Schedule[] = [];
         const now = luxon.DateTime.local();
         collection.getFilteredByTag('projekt')
-            .flatMap((i:TemplateCollectionItem) => {
-                if (i.data.schedule) {
-                    return i.data.schedule
-                        .map((s:any) => {
-                            s.page = i;
-                            return s;
+            .flatMap((page:TemplateCollectionItem) => {
+                if (page.data.schedule) {
+                    return page.data.schedule
+                        .map((schedule:Schedule) => {
+                            schedule.page = page;
+                            if (schedule.timelineDate) {
+                                schedule.timeline = luxon.DateTime.fromString(schedule.timelineDate, 'yyyy-LL-dd');
+                            }
+                            if (schedule.sub) {
+                                schedule.sub
+                                    .filter(sub => sub.timelineDate )
+                                    .map(sub => {
+                                        sub.timeline = luxon.DateTime.fromString(sub.timelineDate, 'yyyy-LL-dd');
+                                        return sub;
+                                    })
+                                    .filter(sub => sub.timeline < now )
+                                    .forEach(sub => schedule.timeline = sub.timeline)
+                            }
+                            return schedule;
                         })
                 }
                 return [];
             })
-            .forEach((i:any) => {
-                list.push(i);
+            .forEach(schedule => {
+                scheduleList.push(schedule);
             });
-        return list
-            .filter((i:any)=> i.timelineDate )
-            .map((i:any) => {
-                i.timeline = luxon.DateTime.fromString(i.timelineDate, 'yyyy-LL-dd')
-                return i;
-            })
-            .filter((i:any)=> {
-                return i.timeline < now 
-
-            })
-            .sort((a,b) => a.timeline - b.timeline);
+        return scheduleList
+            .filter(schedule => schedule.timeline )
+            .filter(schedule => schedule.timeline < now )
+            .sort((a,b) => a.timeline.toMillis() - b.timeline.toMillis());
         
     });
 
@@ -163,6 +173,7 @@ const conf = function (eleventyConfig: any) {
 
     return {
         templateFormats: [
+            "11ty.js",
             "md",
             "njk",
             "html",

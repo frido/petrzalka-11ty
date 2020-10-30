@@ -23,7 +23,7 @@ eleventyNavigation:
               </header>
             </div>
             <div class="timeline-wrap-sub">
-              {% for sub in sch.sub %}
+              {% for sub in sch.sub | reverse %}
                 <div class="timeline-sub {{ sub.status }}">
                   <div class="header">
                       {% if sub.source %}
@@ -32,17 +32,8 @@ eleventyNavigation:
                       <span class="title">{{ sub.title }}</span>
                       {% endif %}
                     <span class="date">
-                      {% if sub.startExpected %}
-                        <span class="dateExpected">{{ sub.startExpected }}</span>
-                      {% endif %}
-                      {% if sub.startReal %}
-                        <span class="dateReal">{{ sub.startReal | postDate }}</span>
-                      {% endif %}
-                      {% if sub.endExpected %}
-                        <span class="dateExpected">- {{ sub.endExpected }}</span>
-                      {% endif %}
-                      {% if sub.endReal %}
-                        <span class="dateReal">- {{ sub.endReal | postDate }}</span>
+                      {% if sub.timeline %}
+                        <span class="dateReal">{{ sub.timeline | date}}</span>
                       {% endif %}
                     </span>
                   </div>
