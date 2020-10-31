@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var luxon = require("luxon");
 var PolyfunkcnyObjektTematinska = /** @class */ (function () {
     function PolyfunkcnyObjektTematinska() {
     }
@@ -24,7 +25,7 @@ var PolyfunkcnyObjektTematinska = /** @class */ (function () {
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71001",
                             status: "success",
                             description: "súhlasí",
-                            timelineDate: "2020-08-27"
+                            timeline: luxon.DateTime.fromISO("2020-08-27")
                         },
                     ]
                 },

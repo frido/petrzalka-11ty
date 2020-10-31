@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -28,7 +29,7 @@ class Template implements Post {
                   "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
                   "status": "inwork",
                   description: 'prebieha',
-                  "timelineDate": "2020-03-01",
+                  timeline: luxon.DateTime.fromISO("2020-03-01")
                }
             ]
          }, 
@@ -38,7 +39,7 @@ class Template implements Post {
             "description": "",
             "startExpected": "2021",
             "endExpected": "2021/2022",
-            "timelineDate": "2021-01-01",
+            timeline: luxon.DateTime.fromISO("2021-01-01"),
             "sub": [ 
                {
                   "title": "Vypracovanie zadania architektonickej súťaže",
@@ -72,7 +73,7 @@ class Template implements Post {
             description: '',
             "startExpected": "2022",
             "endExpected": "2026",
-            "timelineDate": "2022-01-01",
+            timeline: luxon.DateTime.fromISO("2022-01-01"),
             "sub": [
               {
                 "title": "Realizácia víťazného návrhu",

@@ -65,23 +65,23 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPluginRss);
     eleventyConfig.addFilter("readableDate", function (dateObj) {
-        return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLL yyyy");
+        return luxon.DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy");
     });
     eleventyConfig.addFilter("json", function (object) {
         return JSON.stringify(object);
     });
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-    eleventyConfig.addFilter('htmlDateString', function (dateObj) {
-        return luxon.DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    eleventyConfig.addFilter("htmlDateString", function (dateObj) {
+        return luxon.DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
-    eleventyConfig.addFilter('postDate', function (dateObj) {
-        var dateTime = luxon.DateTime.fromString(dateObj, 'yyyy-LL-dd');
-        return dateTime.toFormat('dd.LL.yyyy');
+    eleventyConfig.addFilter("postDate", function (dateObj) {
+        var dateTime = luxon.DateTime.fromString(dateObj, "yyyy-LL-dd");
+        return dateTime.toFormat("dd.LL.yyyy");
     });
-    eleventyConfig.addFilter('date', function (timeline) {
-        return timeline.toFormat('dd.LL.yyyy');
+    eleventyConfig.addFilter("date", function (timeline) {
+        return timeline.toFormat("dd.LL.yyyy");
     });
-    eleventyConfig.addFilter('log', function (object) {
+    eleventyConfig.addFilter("log", function (object) {
         console.log(object);
         return object;
     });
@@ -95,29 +95,14 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addCollection("allMyContent", function (collection) {
         var scheduleList = [];
         var now = luxon.DateTime.local();
-        collection.getFilteredByTag('projekt')
+        collection
+            .getFilteredByTag("projekt")
             .flatMap(function (page) {
-            if (page.data.schedule) {
-                return page.data.schedule
-                    .map(function (schedule) {
-                    schedule.page = page;
-                    if (schedule.timelineDate) {
-                        schedule.timeline = luxon.DateTime.fromString(schedule.timelineDate, 'yyyy-LL-dd');
-                    }
-                    if (schedule.sub) {
-                        schedule.sub
-                            .filter(function (sub) { return sub.timelineDate; })
-                            .map(function (sub) {
-                            sub.timeline = luxon.DateTime.fromString(sub.timelineDate, 'yyyy-LL-dd');
-                            return sub;
-                        })
-                            .filter(function (sub) { return sub.timeline < now; })
-                            .forEach(function (sub) { return schedule.timeline = sub.timeline; });
-                    }
-                    return schedule;
-                });
-            }
-            return [];
+            return page.data.schedule.map(function (schedule) {
+                schedule.page = page; // TODO: I dont need all page
+                schedule.sub.filter(function (sub) { return sub.timeline < now; }).forEach(function (sub) { return (schedule.timeline = sub.timeline); });
+                return schedule;
+            });
         })
             .forEach(function (schedule) {
             scheduleList.push(schedule);
@@ -127,21 +112,21 @@ var conf = function (eleventyConfig) {
             .filter(function (schedule) { return schedule.timeline < now; })
             .sort(function (a, b) { return a.timeline.toMillis() - b.timeline.toMillis(); });
     });
-    eleventyConfig.addPairedShortcode("gallery", gallery);
-    eleventyConfig.addPairedShortcode("timeline", timeline);
-    eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB);
-    eleventyConfig.addPairedShortcode("alternativeABInner", alternativeABInner);
-    eleventyConfig.addShortcode("figure", figure);
+    eleventyConfig.addPairedShortcode("gallery", gallery); // TODO: I dont need
+    eleventyConfig.addPairedShortcode("timeline", timeline); // TODO: I dont need
+    eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB); // TODO: I dont need
+    eleventyConfig.addPairedShortcode("alternativeABInner", alternativeABInner); // TODO: I dont need
+    eleventyConfig.addShortcode("figure", figure); // TODO: I dont need
     var markdownItOptions = {
         html: true,
         breaks: false,
         linkify: true
     };
-    eleventyConfig.addPassthroughCopy({ "src/static/css": 'css' });
-    eleventyConfig.addPassthroughCopy({ "src/static/fonts": 'fonts' });
-    eleventyConfig.addPassthroughCopy({ "src/static/img": 'img' });
-    eleventyConfig.addPassthroughCopy({ "src/static/js": 'js' });
-    eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable('code'));
+    eleventyConfig.addPassthroughCopy({ "src/static/css": "css" });
+    eleventyConfig.addPassthroughCopy({ "src/static/fonts": "fonts" });
+    eleventyConfig.addPassthroughCopy({ "src/static/img": "img" });
+    eleventyConfig.addPassthroughCopy({ "src/static/js": "js" });
+    eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable("code"));
     eleventyConfig.addCollection("tagList", function (collection) {
         var tagSet = new Set();
         collection.getAll().forEach(function (item) {
@@ -178,12 +163,7 @@ var conf = function (eleventyConfig) {
         return __spread(tagSet);
     });
     return {
-        templateFormats: [
-            "11ty.js",
-            "md",
-            "njk",
-            "html",
-        ],
+        templateFormats: ["11ty.js", "md", "njk", "html"],
         // If your site lives in a different subdirectory, change this.
         // Leading or trailing slashes are all normalized away, so don’t worry about those.
         // If you don’t have a subdirectory, use "" or "/" (they do the same thing)

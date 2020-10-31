@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class PolyfunkcnyObjektTematinska implements Post {
   data(): FrontMatter {
@@ -22,7 +23,7 @@ class PolyfunkcnyObjektTematinska implements Post {
               source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71001",
               status: "success",
               description: "súhlasí",
-              timelineDate: "2020-08-27"
+              timeline: luxon.DateTime.fromISO("2020-08-27")
             },
           ],
         },

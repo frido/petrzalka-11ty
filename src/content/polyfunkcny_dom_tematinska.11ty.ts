@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -31,21 +32,21 @@ class Template implements Post {
                   "source": "https://zastupitelstvo.bratislava.sk/data/att/40163.pdf",
                   "status": "success",
                   "description": "odovzdaná",
-                  "timelineDate": "2018-10-11"
+                  timeline: luxon.DateTime.fromISO("2018-10-11")
                },
                {
                   "title": "Záväzné stanovisko hlavného mesta",
                   "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=60157",
                   "status": "error",
                   "description": "zamietnuté",
-                  "timelineDate": "2019-01-17"
+                  timeline: luxon.DateTime.fromISO("2019-01-17")
                },
                {
                   "title": "Uznesenie mestského zastupiteľstva",
                   "source": "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-07022019/bod-35/",
                   "status": "success",
                   "description": "berie na vedomie",
-                  "timelineDate": "2019-02-07"
+                  timeline: luxon.DateTime.fromISO("2019-02-07")
                }
             ]
          }

@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -41,7 +42,7 @@ class Template implements Post {
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2020/09/INFO-7.-Z%C3%A1mer-budovania-v%C3%BD%C5%A5ahov%C3%BDch-parkovac%C3%ADch-domov-v-Petr%C5%BEalke.pdf",
                   "status": "success",
                   "description": "",
-                  "timelineDate": "2020-08-26"
+                  timeline: luxon.DateTime.fromISO("2020-08-26")
                }
             ]
          }

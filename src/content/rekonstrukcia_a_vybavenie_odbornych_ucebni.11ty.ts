@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -28,13 +29,13 @@ class Template implements Post {
                   "status": "success",
                   "description": "",
                   source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                  "timelineDate": "2017-05-06"
+                  timeline: luxon.DateTime.fromISO("2017-05-06")
                }, {
                   "title": "Materiál na rokovanie MZ",
                   "status": "success",
                   "description": "",
                   source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                  "timelineDate": "2020-12-31"
+                  timeline: luxon.DateTime.fromISO("2020-12-31")
                }
             ]
          }

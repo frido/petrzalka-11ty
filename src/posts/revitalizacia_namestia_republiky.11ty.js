@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
     }
@@ -30,7 +31,7 @@ var Template = /** @class */ (function () {
                             "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
                             "status": "inwork",
                             description: 'prebieha',
-                            "timelineDate": "2020-03-01"
+                            timeline: luxon.DateTime.fromISO("2020-03-01")
                         }
                     ]
                 },
@@ -40,7 +41,7 @@ var Template = /** @class */ (function () {
                     "description": "",
                     "startExpected": "2021",
                     "endExpected": "2021/2022",
-                    "timelineDate": "2021-01-01",
+                    timeline: luxon.DateTime.fromISO("2021-01-01"),
                     "sub": [
                         {
                             "title": "Vypracovanie zadania architektonickej súťaže",
@@ -74,7 +75,7 @@ var Template = /** @class */ (function () {
                     description: '',
                     "startExpected": "2022",
                     "endExpected": "2026",
-                    "timelineDate": "2022-01-01",
+                    timeline: luxon.DateTime.fromISO("2022-01-01"),
                     "sub": [
                         {
                             "title": "Realizácia víťazného návrhu",

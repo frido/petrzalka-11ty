@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -37,28 +38,28 @@ class Template implements Post {
                   "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=59362",
                   "status": "success",
                   "description": "súhlasí",
-                  "timelineDate": "2018-10-05"
+                  timeline: luxon.DateTime.fromISO("2018-10-05")
                },
                {
                   "title": "Petícia proti výstavbe",
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2019/03/1-MZ-peticia-Topolcianska.pdf",
                   "status": "success",
                   "description": "odovzdaná",
-                  "timelineDate": "2019-02-28"
+                  timeline: luxon.DateTime.fromISO("2019-02-28")
                },
                {
                   "title": "Uznesenie Miestneho zastupiteľstva",
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2019/03/Uznesenia-MZ-26.03.2019.pdf",
                   "status": "success",
                   "description": "berie na vedomie",
-                  "timelineDate": "2019-03-26"
+                  timeline: luxon.DateTime.fromISO("2019-03-26")
                },
                {
                   "title": "Uznesenie Mestského zastupiteľstva",
                   "source": "https://zastupitelstvo.bratislava.sk/data/att/41660.pdf",
                   "status": "success",
                   "description": "berie na vedomie",
-                  "timelineDate": "2019-04-25"
+                  timeline: luxon.DateTime.fromISO("2019-04-25")
                }
             ]
          }, 
@@ -72,21 +73,21 @@ class Template implements Post {
                   "source": "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
                   "status": "success",
                   "description": "berie na vedomie",
-                  "timelineDate": "2020-01-07"
+                  timeline: luxon.DateTime.fromISO("2020-01-07")
                },
                {
                   "title": "Uznesenie Miestneho zastupiteľstva",
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
                   "status": "success",
                   "description": "berie na vedomie",
-                  "timelineDate": "2020-02-04"
+                  timeline: luxon.DateTime.fromISO("2020-02-04")
                },
                {
                   "title": "Prerušenie územného konania",
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/Topolcianska_UR_PK_namietky_PET20200012217.pdf",
                   "status": "inwork",
                   "description": "prerušuje",
-                  "timelineDate": "2020-02-17"
+                  timeline: luxon.DateTime.fromISO("2020-02-17")
                }
             ]
          }

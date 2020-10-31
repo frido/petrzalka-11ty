@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var luxon = require("luxon");
 var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
     function PolyfunkcnyDomNaHumenskomNamesti2() {
     }
@@ -26,7 +27,7 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                     status: "success",
                     description: "hotovo",
                     startReal: "apríl 2016",
-                    timelineDate: "2016-04-01",
+                    timeline: luxon.DateTime.fromISO("2016-04-01"),
                     sub: []
                 },
                 {
@@ -39,14 +40,14 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=52637",
                             status: "error",
                             description: "zamietnuté",
-                            timelineDate: "2017-09-18"
+                            timeline: luxon.DateTime.fromISO("2017-09-18")
                         },
                         {
                             title: "Stanovené požiadavky do spracovania projektu",
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=52637",
                             status: "success",
                             description: "",
-                            timelineDate: "2018-10-23"
+                            timeline: luxon.DateTime.fromISO("2018-10-23")
                         },
                     ]
                 },
@@ -60,7 +61,7 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=64278",
                             status: "success",
                             description: "súhlasné",
-                            timelineDate: "2019-07-25"
+                            timeline: luxon.DateTime.fromISO("2019-07-25")
                         },
                     ]
                 },
@@ -74,35 +75,35 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                             source: "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
                             status: "inwork",
                             description: "",
-                            timelineDate: "2019-11-27"
+                            timeline: luxon.DateTime.fromISO("2019-11-27")
                         },
                         {
                             title: "Zasadnutie Miestneho zastupiteľstva",
                             source: "https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%C3%A9.pdf",
                             status: "error",
                             description: "vyjadruje nesúhlas",
-                            timelineDate: "2020-02-04"
+                            timeline: luxon.DateTime.fromISO("2020-02-04")
                         },
                         {
                             title: "Petícia PROTI zástavbe parku a časti parkoviska",
                             source: "https://zastupitelstvo.bratislava.sk/data/att/46753.pdf",
                             status: "success",
                             description: "berie na vedomie",
-                            timelineDate: "2020-02-27"
+                            timeline: luxon.DateTime.fromISO("2020-02-27")
                         },
                         {
                             title: "Oznámenie výsledku vybavenia petície",
                             source: "https://esluzby.bratislava.sk/Upload/EDEM/NoticeBoardEntry/19396/2020PeticiaprotizastavbeparkuacastiparkoviskaHumenskenamestievlokaliteLukyVII._2%20doc.pdf",
                             status: "success",
                             description: "berie na vedomie",
-                            timelineDate: "2020-05-28"
+                            timeline: luxon.DateTime.fromISO("2020-05-28")
                         },
                         {
                             title: "Zasadnutie Mestského zastupiteľstva",
                             source: "https://zastupitelstvo.bratislava.sk/mestske-zastupitelstvo-hlavneho-mesta-sr-bratislavy-zasadnutie-28052020/bod-43/",
                             status: "success",
                             description: "berie na vedomie",
-                            timelineDate: "2020-05-28"
+                            timeline: luxon.DateTime.fromISO("2020-05-28")
                         },
                     ]
                 },

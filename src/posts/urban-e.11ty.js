@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
     }
@@ -30,21 +31,21 @@ var Template = /** @class */ (function () {
                             "source": "https://zastupitelstvo.bratislava.sk/data/att/23543.pdf",
                             "status": "success",
                             "description": "berie na vedomie",
-                            "timelineDate": "2017-12-07"
+                            timeline: luxon.DateTime.fromISO("2017-12-07")
                         },
                         {
                             "title": "Zasadnutie komisie správy majetku a miestnych podnikov",
                             "source": "https://www.petrzalka.sk/wp-content/uploads/2020/01/Z%C3%A1pisnica-%C4%8D.7-janu%C3%A1r-2020.pdf",
                             "status": "success",
                             "description": "",
-                            "timelineDate": "2020-01-20"
+                            timeline: luxon.DateTime.fromISO("2020-01-20")
                         },
                         {
                             "title": "Zasadnutie komisie územného plánu, výstavby a rozvoja",
                             "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf",
                             "status": "success",
                             "description": "",
-                            "timelineDate": "2020-01-21"
+                            timeline: luxon.DateTime.fromISO("2020-01-21")
                         }
                     ]
                 }

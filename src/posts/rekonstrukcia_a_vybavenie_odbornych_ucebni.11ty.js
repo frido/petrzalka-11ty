@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
     }
@@ -30,13 +31,13 @@ var Template = /** @class */ (function () {
                             "status": "success",
                             "description": "",
                             source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                            "timelineDate": "2017-05-06"
+                            timeline: luxon.DateTime.fromISO("2017-05-06")
                         }, {
                             "title": "Materiál na rokovanie MZ",
                             "status": "success",
                             "description": "",
                             source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                            "timelineDate": "2020-12-31"
+                            timeline: luxon.DateTime.fromISO("2020-12-31")
                         }
                     ]
                 }

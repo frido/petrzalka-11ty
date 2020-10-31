@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -29,19 +30,19 @@ class Template implements Post {
                   "status": "success",
                   source: 'https://www.petrzalka.sk/wp-content/uploads/2018/09/03_Projekt_Denny_stacionar_pre_seniorov-1.pdf',
                   "description": "",
-                  "timelineDate": "2018-09-07"
+                  timeline: luxon.DateTime.fromISO("2018-09-07")
                },{
                   "title": "Materiál na rokovanie MZ",
                   "status": "success",
                   "description": "schvaľuje",
                   source: 'https://www.petrzalka.sk/wp-content/uploads/2018/09/03_Projekt_Denny_stacionar_pre_seniorov-1.pdf',
-                  "timelineDate": "2018-09-25"
+                  timeline: luxon.DateTime.fromISO("2018-09-25")
                },{
                   "title": "Podpis zmluvy na projektovú dokumentáciu",
                   "status": "success",
                   "description": "",
                   source: 'https://www.petrzalka.sk/wp-content/uploads/2018/09/03_Projekt_Denny_stacionar_pre_seniorov-1.pdf',
-                  "timelineDate": "2018-09-26"
+                  timeline: luxon.DateTime.fromISO("2018-09-26")
                }
             ]
          },
@@ -55,13 +56,13 @@ class Template implements Post {
                   "status": "success",
                   "description": "",
                   source: 'https://www.petrzalka.sk/2018-09-07-vyzva-na-predlozenie-ponuk-vybudovanie-denneho-stacionaru-pre-seniorov-na-vavilovovej-ulici-bratislava/',
-                  "timelineDate": "2018-10-01"
+                  timeline: luxon.DateTime.fromISO("2018-10-01")
                },{
                 "title": "Odovzdanie projektovej dokumentácie",
                 "status": "success",
                 "description": "",
                 source: 'https://www.petrzalka.sk/wp-content/uploads/2018/09/03_Projekt_Denny_stacionar_pre_seniorov-1.pdf',
-                "timelineDate": "2018-12-20"
+                timeline: luxon.DateTime.fromISO("2018-12-20")
              }
             ]
          },
@@ -75,7 +76,7 @@ class Template implements Post {
                   "status": "inwork",
                   "description": "",
                   source: 'https://www.petrzalka.sk/wp-content/uploads/2018/10/Zmluva_335_2018.pdf',
-                  "timelineDate": "2021-03-01"
+                  timeline: luxon.DateTime.fromISO("2021-03-01")
                }
             ]
          }

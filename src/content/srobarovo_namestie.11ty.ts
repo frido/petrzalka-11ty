@@ -1,4 +1,5 @@
 import { FrontMatter, Post } from "../../@types/eleventy";
+import * as luxon from "luxon";
 
 class Template implements Post {
   data(): FrontMatter {
@@ -34,14 +35,14 @@ class Template implements Post {
                   "source": "http://www.ekoforum.sk/peticia/park-petrzalka",
                   "status": "success",
                   "description": "odovzdaná",
-                  timelineDate: "2018-09-14"
+                  timeline: luxon.DateTime.fromISO("2018-09-14")
                },
                {
                   "title": "Prerokovanie petície",
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2018/09/23_Prerokovanie-peticie-Srobarovo-park.pdf",
                   "status": "success",
                   "description": "vyhovuje",
-                  timelineDate: "2018-09-25"
+                  timeline: luxon.DateTime.fromISO("2018-09-25")
                }
                ,
                {
@@ -49,7 +50,7 @@ class Template implements Post {
                   "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf",
                   "status": "success",
                   "description": "schválené.",
-                  timelineDate: "2020-01-14"
+                  timeline: luxon.DateTime.fromISO("2020-01-14")
                }
             ]
          }

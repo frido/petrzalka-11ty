@@ -12,7 +12,7 @@ export interface TemplateCollectionItem {
     date: Date;
     outputPath: string;
     url: string;
-    data: any;
+    data: FrontMatter;
     template: any;
 }
 
@@ -24,8 +24,9 @@ export interface Schedule {
     startReal?: string;
     endExpected?: string;
     endReal?: string;
-    timelineDate?: string;
+    // timelineDate?: string;
     timeline?: DateTime;
+    // timeline2?: Date;
     sub: ScheduleItem[];
     page?: TemplateCollectionItem;
 }
@@ -35,7 +36,7 @@ export interface ScheduleItem {
     status: Status;
     source: string;
     description: string;
-    timelineDate?: string;
+    // timelineDate?: string;
     timeline?: DateTime;
     startExpected?: string;
     endExpected?: string;
