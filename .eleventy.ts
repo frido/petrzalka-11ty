@@ -11,10 +11,12 @@ import * as eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 
 import * as markdownIt from "markdown-it";
 
+// TODO: deprecated
 const gallery = (content: string): string => {
     return `<div class="gallery">${content}</div>`;
 }
 
+// TODO: deprecated
 const figure = (link: string, src:string, title: string): string => {
     let figcaption = "";
     if (title) {
@@ -23,6 +25,7 @@ const figure = (link: string, src:string, title: string): string => {
     return `<figure><a href="${link}"><img src="${src}"></a>${figcaption}</figure>`;
 }
 
+// TODO: deprecated
 const timeline = (content: string, date: Date, title: string, source: string): string => {
     return `<div class="point">
     <span class="point-mark"></span>
@@ -41,10 +44,12 @@ const timeline = (content: string, date: Date, title: string, source: string): s
     </div>`;
 }
 
+// TODO: deprecated
 const alternativeAB = (content: string): string => {
     return `<div class="row">${content}</div>`;
 }
 
+// TODO: deprecated
 const alternativeABInner = (content: string): string => {
     return `<div class="two-in-row">${content}</div>`;
 }

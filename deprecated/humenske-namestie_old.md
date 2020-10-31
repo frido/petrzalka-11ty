@@ -71,7 +71,7 @@
             {
                "title": "Začatie územného konania",
                "source": "https://www.petrzalka.sk/2020-03-04-uzemne-konania/",
-               "status": "inwork",
+               "status": "success",
                "description": "",
                "timelineDate": "2019-11-27"
             },

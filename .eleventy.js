@@ -37,9 +37,11 @@ var eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
+// TODO: deprecated
 var gallery = function (content) {
     return "<div class=\"gallery\">" + content + "</div>";
 };
+// TODO: deprecated
 var figure = function (link, src, title) {
     var figcaption = "";
     if (title) {
@@ -47,12 +49,15 @@ var figure = function (link, src, title) {
     }
     return "<figure><a href=\"" + link + "\"><img src=\"" + src + "\"></a>" + figcaption + "</figure>";
 };
+// TODO: deprecated
 var timeline = function (content, date, title, source) {
     return "<div class=\"point\">\n    <span class=\"point-mark\"></span>\n    <span class=\"point-date\">\n        " + date + "\n    </span>\n    <h2>\n        " + title + "\n    </h2>\n    <span>\n        <a href=\"" + source + "\" target=\"blank\"><img src=\"/img/external-link.svg\" style=\"float:right\"></a>\n    </span>\n    <div class=\"timeline-body\">\n        " + content + "\n    </div>\n    </div>";
 };
+// TODO: deprecated
 var alternativeAB = function (content) {
     return "<div class=\"row\">" + content + "</div>";
 };
+// TODO: deprecated
 var alternativeABInner = function (content) {
     return "<div class=\"two-in-row\">" + content + "</div>";
 };

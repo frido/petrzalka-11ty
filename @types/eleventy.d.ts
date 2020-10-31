@@ -18,7 +18,7 @@ export interface TemplateCollectionItem {
 
 export interface Schedule {
     title: string;
-    status: string;
+    status: Status;
     description: string;
     startExpected?: string;
     startReal?: string;
@@ -37,7 +37,8 @@ export interface ScheduleItem {
     description: string;
     timelineDate?: string;
     timeline?: DateTime;
-    
+    startExpected?: string;
+    endExpected?: string;
 }
 
 export interface Post {
@@ -52,10 +53,11 @@ export interface FrontMatter {
     tags: Tag[];
     layout: "layouts/post2.njk";
     description: string;
-    icon: string;
+    icon?: string;
     source: string;
     sources: string[];
-    amount: number;
+    amount?: number;
+    amountAll?: number;
     schedule: Schedule[];
 }
 
@@ -65,4 +67,4 @@ export interface Image {
 }
 
 type Tag = "projekt" | 'template'
-type Status = "inwork" | "success" | 'error'
+type Status = "inwork" | "success" | 'error' | 'unknown' | 'pause'
