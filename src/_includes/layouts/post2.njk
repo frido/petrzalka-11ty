@@ -38,9 +38,10 @@ templateClass: tmpl-post
                                 <div class="timeline-sub {{ sub.status }}">
                                     <div class="header">
                                         {% if sub.source %}
-                                        <a href="{{ sub.source }}" target="blank"><span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
+                                            <a href="{{ sub.source }}" target="blank">
+                                                <span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
                                         {% else %}
-                                        <span class="title">{{ sub.title }}</span>
+                                            <span class="title">{{ sub.title }}</span>
                                         {% endif %}
                                         <span class="date">
                                             {% if sub.startExpected %}
@@ -66,7 +67,22 @@ templateClass: tmpl-post
             </div>
         {% endif %}
 
-        {{ content | safe }}
+        {% if gallery %}
+            <div class="gallery">
+                {% for image in gallery %}
+                    <figure>
+                        <a href="{{image.link}}">
+                            <img src="{{image.link}}">
+                        </a>
+                        {{image.title}}
+                    </figure>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="content">
+            {{ content | safe }}
+        </div>
 
         <div class="sources">
             <div>

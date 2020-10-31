@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "_variables";
 
 body {
@@ -135,6 +135,8 @@ img.preview {
     border-radius: 0.25rem;
 }
 
+.gallery, 
+.content,
 .schedule,
 .updated,
 .budget,

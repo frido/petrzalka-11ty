@@ -48,7 +48,7 @@ export interface Post {
 export interface FrontMatter {
     title: string;
     date: string;
-    draft: boolean;
+    gallery?: Image[];
     tags: Tag[];
     layout: "layouts/post2.njk";
     description: string;
@@ -59,5 +59,10 @@ export interface FrontMatter {
     schedule: Schedule[];
 }
 
-type Tag = "projekt"
+export interface Image {
+    link: string;
+    title?: string;
+}
+
+type Tag = "projekt" | 'template'
 type Status = "inwork" | "success" | 'error'
