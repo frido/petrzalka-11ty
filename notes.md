@@ -12,21 +12,29 @@ font-family: 'Ubuntu', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-weight: 500;
 
+* Architektonicka studia
+  *  komisia KUPVaR: vyjadrenie k investičnému zámeru ->  Komisia odporúča starostovi súhlasiť
+* Uzemne konanie
+  * mesto: zavazne stanovisko
+* Stavebne konanie
+  * ???
+
 # Areál voľného času Vojenský dvor
 
-# Polyfunkčný objekt, Tematínska
-https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71001
-
-# Showroom PIETA, Betliarska ulica, architektonická štúdia
+# ??? Showroom PIETA, Betliarska ulica, architektonická štúdia
 https://www.petrzalka.sk/wp-content/uploads/2020/10/KUPVaR-pozvanka_2020-10-27.pdf
 
+# ??? X-box Petržalka – Verejné skladové priestory, Architektonická štúdia, vyjadrenie k investičnému zámeru
+# ??? Skladovo-prevádzkový areál - DEKTER, s. r. o., vyjadrenie k investičnému zámeru
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-oktobrovemu-zastupitelstvu-4/
-# X-box Petržalka – Verejné skladové priestory, Architektonická štúdia, vyjadrenie k investičnému zámeru
-# Skladovo-prevádzkový areál - DEKTER, s. r. o., vyjadrenie k investičnému zámeru
 
-https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-septembrovemu-zastupitelstvu-5/
 # „Nové Domino“, Jasovská ulica – stanovisko komisie
+https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf
+https://www.novedomino.sk/#amenities
+
 # Viacúčelová športová hala – univerzitné športové centrum pri EU v Bratislave
+https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf
+
 # Bytový dom Habern Au – informácia
 
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-junovemu-zastupitelstvu-6/
