@@ -14,7 +14,6 @@ var Template = /** @class */ (function () {
             "layout": "layouts/post2.njk",
             "description": "V súčasnosti sa spevnená časť námestia využíva na spoločenské a kultúrne podujatia mestskej časti. Už tradične sa tu konajú navštevované Petržalské vianočné trhy. Plocha bývalého parkoviska susediaca s Chorvátskym ramenom slúži ako spomínaný skatepark. ",
             "icon": "/img/revitalizacia-namestia-republiky/revitalizacia-namestia-republiky.jpg",
-            "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
             "sources": ["https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf"
             ],
             "amount": 0,

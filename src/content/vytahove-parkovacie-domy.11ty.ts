@@ -25,10 +25,8 @@ class Template implements Post {
         { link: 'img/vytahove-parkovacie-domy/12.png' },
         { link: 'img/vytahove-parkovacie-domy/13.png' },
       ],
-      "source": "https://www.petrzalka.sk/wp-content/uploads/2020/09/INFO-7.-Z%C3%A1mer-budovania-v%C3%BD%C5%A5ahov%C3%BDch-parkovac%C3%ADch-domov-v-Petr%C5%BEalke.pdf",
       "sources": [
-         "http://updownparking.sk/assets/dist/images/presentation.pdf",
-         "https://www.petrzalka.sk/wp-content/uploads/2020/09/INFO-7.-Z%C3%A1mer-budovania-v%C3%BD%C5%A5ahov%C3%BDch-parkovac%C3%ADch-domov-v-Petr%C5%BEalke.pdf"
+         "http://updownparking.sk/assets/dist/images/presentation.pdf"
       ],
       "amount": 0,
       "schedule": [

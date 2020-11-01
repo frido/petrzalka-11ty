@@ -11,7 +11,6 @@ class Template implements Post {
       ],
       "layout": "layouts/post2.njk",
       description: "Cieľom projektov je vytvorenie podmienok na zabezpečenie kvalitného primárneho vzdelávania a nižšieho stredného vzdelávania prispievajúceho k zvládnutiu povinnej školskej dochádzky. Tento cieľ sa naplní realizáciou aktivít jednotlivých projektov zameraných na vytvorenie odborných učební, čím sa vytvoria predpoklady pre zabezpečenie prístupu ku kvalitnejším verejným službám v oblasti povinnej školskej dochádzky a výchovy.",
-      "source": "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
       "sources": [
          "https://www.petrzalka.sk/oblasti/projektove-riadenie/budovanie-a-zlepsenie-technickeho-vybavenia-jazykovych-ucebni-skolskych-kniznic-odbornych-ucebni-rozneho-druhu-v-zakladnych-skolach/"
       ],

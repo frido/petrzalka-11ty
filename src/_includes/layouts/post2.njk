@@ -84,11 +84,11 @@ templateClass: tmpl-post
             {{ content | safe }}
         </div>
 
-        <div class="sources">
-            <div>
+        {% if source %}
+            <div class="sources">
           zdroj: <a href="{{ source }}">{{ source }}</a>
             </div>
-        </div>
+        {% endif %}
 
         <p>
             <a href="{{ '/' | url }}">← Home</a>

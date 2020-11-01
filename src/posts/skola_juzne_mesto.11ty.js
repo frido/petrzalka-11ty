@@ -20,10 +20,7 @@ var Template = /** @class */ (function () {
                 { link: 'img/skola-juzne-mesto/3.jpg' },
                 { link: 'img/skola-juzne-mesto/4.jpg' }
             ],
-            "source": "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735",
             "sources": [
-                "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=66735",
-                "https://www.petrzalka.sk/wp-content/uploads/2018/02/Skola_Juzne_mesto.pdf",
                 "https://www.petrzalka.sk/wp-content/uploads/2020/03/KUPVaR-zapisnica_2020-03-03_overena.pdf",
                 "https://www.enviroportal.sk/sk/eia/detail/skola-juzne-mesto-bratislava-petrzalka-",
                 "https://www.petrzalka.sk/wp-content/uploads/2017/12/EIA_skola_Juzne_mesto.pdf",

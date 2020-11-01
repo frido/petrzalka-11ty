@@ -10,8 +10,7 @@ class Template implements Post {
       layout: "layouts/post2.njk",
       description: "Skelet nedokončenej stavby stojí na pozemku, ktorý je podľa platného územného plánu určený na výstavbu bývania. Projekt má stále platné a nezrušiteľné územné rozhodnutie. Neexistuje teda legálny a právny spôsob, ako stavbu odstrániť, no ak by sa v nej nepokračovalo ďalej, schátraný skelet by pravdepodobne zotrval na svojom mieste ešte veľmi dlhý čas.",
       icon: "https://www.novedomino.sk/img/obr5.jpg",
-      source: "https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf",
-      sources: ["https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf", "https://www.novedomino.sk/#amenities"],
+      source: "https://www.novedomino.sk/",
       gallery: [
         { link: "https://www.novedomino.sk/img/obr5.jpg" }
       ],

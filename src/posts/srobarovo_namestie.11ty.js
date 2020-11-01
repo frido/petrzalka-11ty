@@ -17,11 +17,7 @@ var Template = /** @class */ (function () {
                 "projekt"
             ],
             "layout": "layouts/post2.njk",
-            "source": "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf",
             "sources": [
-                "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf",
-                "http://www.ekoforum.sk/peticia/park-petrzalka",
-                "https://www.petrzalka.sk/wp-content/uploads/2018/09/23_Prerokovanie-peticie-Srobarovo-park.pdf",
                 "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",
                 "http://www.vistatower.com/_sk/poloha.html"
             ],

@@ -55,8 +55,8 @@ export interface FrontMatter {
     layout: "layouts/post2.njk";
     description: string;
     icon?: string;
-    source: string;
-    sources: string[];
+    source?: string;
+    sources?: string[];
     amount?: number;
     amountAll?: number;
     schedule: Schedule[];

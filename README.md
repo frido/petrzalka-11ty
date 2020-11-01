@@ -6,6 +6,14 @@ The page contains open information collected from Slovak government pages: plans
 
 You can access the page on [petrzalka.info](http://petrzalka.info/) or [frido.github.io](https://github.com/frido/frido.github.io)
 
+## Develop
+
+```.\start.ps1```
+
+run vscode task: ```tsc: watch - eleventy``` to compile `.eleventy.ts` file
+
+run vscode task: ```tsc: watch - content``` to compile `content` folder
+
 ## Build
 
 Compile ts to js
@@ -26,3 +34,5 @@ Run server
 Copy the` _site` folder to a destination.
 
 Generated static pages are deployed on `frido.github.io` (GitHub pages)
+
+run: ```.\deploy.ps1```

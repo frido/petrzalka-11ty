@@ -14,11 +14,6 @@ var Template = /** @class */ (function () {
             "layout": "layouts/post2.njk",
             "description": "Medzinárodný projekt URBAN-E je zameraný na rozvoj elektromobility, podporu rozširovania infraštruktúry elektronabíjacích staníc a prepojenia na iné druhy dopravy, na znižovanie znečistenia ovzdušia v hlavných mestách Slovinska, Chorvátska a Slovenska – v Ľubľane, Záhrebe a Bratislave.",
             "icon": "",
-            "source": "https://zastupitelstvo.bratislava.sk/data/att/23543.pdf",
-            "sources": [
-                "https://www.petrzalka.sk/wp-content/uploads/2020/01/Z%C3%A1pisnica-%C4%8D.7-janu%C3%A1r-2020.pdf",
-                "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf"
-            ],
             "amount": 0,
             "schedule": [
                 {
