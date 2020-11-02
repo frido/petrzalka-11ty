@@ -28,15 +28,11 @@ https://www.petrzalka.sk/wp-content/uploads/2020/10/KUPVaR-pozvanka_2020-10-27.p
 # ??? Skladovo-prevádzkový areál - DEKTER, s. r. o., vyjadrenie k investičnému zámeru
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-oktobrovemu-zastupitelstvu-4/
 
-# „Nové Domino“, Jasovská ulica – stanovisko komisie
-https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf
-https://www.novedomino.sk/#amenities
-
 # Viacúčelová športová hala – univerzitné športové centrum pri EU v Bratislave
 https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf
+https://www.petrzalka.sk/viacucelova-sportova-hala-univerzitne-sportove-centrum-pri-eu-v-bratislave/
 
 # Bytový dom Habern Au – informácia
-
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-junovemu-zastupitelstvu-6/
 
 # Metropolitný inštitút dokončil Manifest verejných priestorov, úvod k Manuálu verejných priestorov
