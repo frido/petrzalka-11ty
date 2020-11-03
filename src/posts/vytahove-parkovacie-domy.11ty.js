@@ -33,7 +33,7 @@ var Template = /** @class */ (function () {
             "amount": 0,
             "schedule": [
                 {
-                    "title": "Zámer budovania",
+                    "title": "Investičný zámer",
                     "status": "inwork",
                     "description": "prebieha",
                     "sub": [

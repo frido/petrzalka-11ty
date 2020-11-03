@@ -39,8 +39,16 @@ class Template implements Post {
               source: "https://www.petrzalka.sk/viacucelova-sportova-hala-univerzitne-sportove-centrum-pri-eu-v-bratislave/",
               status: "success",
               description: "začiatok",
-              timeline: luxon.DateTime.fromISO("2020-07-28"),
+              timeline: luxon.DateTime.fromISO("2020-07-18"),
             },
+            {
+              title: "Záväzné stanovisko",
+              source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71584",
+              status: "success",
+              description: "súhlasí",
+              timeline: luxon.DateTime.fromISO("2020-09-25"),
+            },
+            
           ],
         }
       ],
@@ -49,7 +57,20 @@ class Template implements Post {
 
   render(data: FrontMatter) {
     return `
-    Viacúčelová športová hala bude mať hraciu plochu minimálne 42x24 metrov s grafickým vyznačením viacerých ihrísk pre rôzne športy (volejbal, basketbal, futsal, florbal, hádzaná či bedminton), 8 šatní s celkovou kapacitou 130 športovcov, šatňami pre trénerov a rozhodcov a taktiež priestory pre relax a regeneráciu športovcov. Výhľadová kapacita hľadiska je 700 – 750 miest. Hala bude po dokončení slúžiť pre potreby výuky a rozvoja športových a pohybových aktivít študentov EU v Bratislave, pre potreby športovej reprezentácie a organizovanie významných národných a medzinárodných športových podujatí v halových športoch. Predpokladané investičné náklady na realizáciu stavby sú odhadované v celkovej hodnote 2,28 mil. Eur bez dane. Výstavba by mala byť ukončená v decembri 2021.
+    Predložená projektová dokumentácia rieši novostavbu viacúčelovej športovej haly
+obdĺžnikového pôdorysu, so zastrešením z priehradových väzníkov v tvare lomenice, ktorej hrebene
+dosiahnu výšku max. + 13,000 m (od podlahy 1. NP ± 0,000, čo je 149,000 m n. m. Bpv).
+Využívaná bude pre potreby výuky a rozvoja športových a pohybových aktivít študentov
+a zamestnancov Ekonomickej univerzity v Bratislave (ďalej len „EU BA“). Priečelie budovy tvorí
+vystupujúci jednopodlažný trakt, kde sa nachádzajú vstupné priestory, hygienické zariadenia
+pre divákov a ďalšie prevádzkové priestory. Dominantná časť stavby je dispozične rozdelená na dve
+časti: samotnú športovú halu s tribúnou pre 230 divákov a na zázemie pre športovcov, kde sú
+na dvoch výškových úrovniach rozmiestnené šatne, sociálne zariadenia a prislúchajúce prevádzkové
+priestory.
+Objekt bude dopravne napojený z komunikácie – Májová ulica, odkiaľ sa jedným vjazdom
+sprístupní navrhované parkovisko pre 20 osobných automobilov. Požiadavky na zabezpečenie
+statickej dopravy predmetnej športovej haly pre ďalších 63 áut budú splnené zástupným
+parkovaním na jestvujúcich parkoviskách v areáli EU BA.
     `;
   }
 }

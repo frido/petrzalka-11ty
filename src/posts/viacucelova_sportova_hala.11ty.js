@@ -41,7 +41,14 @@ var Template = /** @class */ (function () {
                             source: "https://www.petrzalka.sk/viacucelova-sportova-hala-univerzitne-sportove-centrum-pri-eu-v-bratislave/",
                             status: "success",
                             description: "začiatok",
-                            timeline: luxon.DateTime.fromISO("2020-07-28")
+                            timeline: luxon.DateTime.fromISO("2020-07-18")
+                        },
+                        {
+                            title: "Záväzné stanovisko",
+                            source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71584",
+                            status: "success",
+                            description: "súhlasí",
+                            timeline: luxon.DateTime.fromISO("2020-09-25")
                         },
                     ]
                 }
@@ -49,7 +56,7 @@ var Template = /** @class */ (function () {
         };
     };
     Template.prototype.render = function (data) {
-        return "\n    Viac\u00FA\u010Delov\u00E1 \u0161portov\u00E1 hala bude ma\u0165 hraciu plochu minim\u00E1lne 42x24 metrov s grafick\u00FDm vyzna\u010Den\u00EDm viacer\u00FDch ihr\u00EDsk pre r\u00F4zne \u0161porty (volejbal, basketbal, futsal, florbal, h\u00E1dzan\u00E1 \u010Di bedminton), 8 \u0161atn\u00ED s celkovou kapacitou 130 \u0161portovcov, \u0161at\u0148ami pre tr\u00E9nerov a rozhodcov a taktie\u017E priestory pre relax a regener\u00E1ciu \u0161portovcov. V\u00FDh\u013Eadov\u00E1 kapacita h\u013Eadiska je 700 \u2013 750 miest. Hala bude po dokon\u010Den\u00ED sl\u00FA\u017Ei\u0165 pre potreby v\u00FDuky a rozvoja \u0161portov\u00FDch a pohybov\u00FDch aktiv\u00EDt \u0161tudentov EU v Bratislave, pre potreby \u0161portovej reprezent\u00E1cie a organizovanie v\u00FDznamn\u00FDch n\u00E1rodn\u00FDch a medzin\u00E1rodn\u00FDch \u0161portov\u00FDch podujat\u00ED v halov\u00FDch \u0161portoch. Predpokladan\u00E9 investi\u010Dn\u00E9 n\u00E1klady na realiz\u00E1ciu stavby s\u00FA odhadovan\u00E9 v celkovej hodnote 2,28 mil. Eur bez dane. V\u00FDstavba by mala by\u0165 ukon\u010Den\u00E1 v decembri 2021.\n    ";
+        return "\n    Predlo\u017Een\u00E1 projektov\u00E1 dokument\u00E1cia rie\u0161i novostavbu viac\u00FA\u010Delovej \u0161portovej haly\nobd\u013A\u017Enikov\u00E9ho p\u00F4dorysu, so zastre\u0161en\u00EDm z priehradov\u00FDch v\u00E4zn\u00EDkov v tvare lomenice, ktorej hrebene\ndosiahnu v\u00FD\u0161ku max. + 13,000 m (od podlahy 1. NP \u00B1 0,000, \u010Do je 149,000 m n. m. Bpv).\nVyu\u017E\u00EDvan\u00E1 bude pre potreby v\u00FDuky a rozvoja \u0161portov\u00FDch a pohybov\u00FDch aktiv\u00EDt \u0161tudentov\na zamestnancov Ekonomickej univerzity v Bratislave (\u010Falej len \u201EEU BA\u201C). Prie\u010Delie budovy tvor\u00ED\nvystupuj\u00FAci jednopodla\u017En\u00FD trakt, kde sa nach\u00E1dzaj\u00FA vstupn\u00E9 priestory, hygienick\u00E9 zariadenia\npre div\u00E1kov a \u010Fal\u0161ie prev\u00E1dzkov\u00E9 priestory. Dominantn\u00E1 \u010Das\u0165 stavby je dispozi\u010Dne rozdelen\u00E1 na dve\n\u010Dasti: samotn\u00FA \u0161portov\u00FA halu s trib\u00FAnou pre 230 div\u00E1kov a na z\u00E1zemie pre \u0161portovcov, kde s\u00FA\nna dvoch v\u00FD\u0161kov\u00FDch \u00FArovniach rozmiestnen\u00E9 \u0161atne, soci\u00E1lne zariadenia a prisl\u00FAchaj\u00FAce prev\u00E1dzkov\u00E9\npriestory.\nObjekt bude dopravne napojen\u00FD z komunik\u00E1cie \u2013 M\u00E1jov\u00E1 ulica, odkia\u013E sa jedn\u00FDm vjazdom\nspr\u00EDstupn\u00ED navrhovan\u00E9 parkovisko pre 20 osobn\u00FDch automobilov. Po\u017Eiadavky na zabezpe\u010Denie\nstatickej dopravy predmetnej \u0161portovej haly pre \u010Fal\u0161\u00EDch 63 \u00E1ut bud\u00FA splnen\u00E9 z\u00E1stupn\u00FDm\nparkovan\u00EDm na jestvuj\u00FAcich parkovisk\u00E1ch v are\u00E1li EU BA.\n    ";
     };
     return Template;
 }());

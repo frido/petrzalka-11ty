@@ -32,7 +32,7 @@ export interface Schedule {
 }
 
 export interface ScheduleItem {
-    title: string;
+    title: 'Stanovisko komisie MZ' | 'Záväzné stanovisko' | string;
     status: Status;
     source: string;
     description: string;
