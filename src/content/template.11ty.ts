@@ -15,20 +15,20 @@ class Template implements Post {
       amount: 0,
       schedule: [
         {
-          title: "Územné konanie",
-          status: "inwork",
-          description: "prebieha", 
+          title: "Investičný zámer",
+          status: "success",
+          description: "", 
           sub: [
             {
-              title: "Záväzné stanovisko hlavného mesta",
-              source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=71001",
+              title: "Záväzné stanovisko MZ",
+              source: "https://www.petrzalka.sk/wp-content/uploads/2020/03/KUPVaR-zapisnica_2020-03-03_overena.pdf",
               status: "success",
               description: "súhlasí",
-              timeline: luxon.DateTime.fromISO("2020-08-27")
-            },
-          ],
-        },
-      ],
+              timeline: luxon.DateTime.fromISO("2020-03-03")
+            }
+          ]
+        }
+      ]
     };
   }
 

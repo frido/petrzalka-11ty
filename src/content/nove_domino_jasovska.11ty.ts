@@ -24,13 +24,20 @@ class Template implements Post {
             {
               title: "Stanovisko komisie MZ",
               source: "https://www.petrzalka.sk/wp-content/uploads/2020/09/KUPVaR-zapisnica_2020-08-25_overena.pdf",
-              status: "inwork",
+              status: "success",
               description: "žiada ďalšie možnosti riešenia",
               timeline: luxon.DateTime.fromISO("2020-08-25"),
+            },
+            {
+              title: "Stanovisko komisie MZ",
+              source: "https://www.petrzalka.sk/wp-content/uploads/2020/10/KUPVaR-zapisnica_2020-09-29_overena.pdf",
+              status: "success",
+              description: "žiada ďalšie dokumenty",
+              timeline: luxon.DateTime.fromISO("2020-09-29"),
             }
-          ],
+          ]
         }
-      ],
+      ]
     };
   }
 

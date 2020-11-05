@@ -23,10 +23,10 @@ class PolyfunkcnyObjektTematinska implements Post {
               status: "success",
               description: "súhlasí",
               timeline: luxon.DateTime.fromISO("2020-08-27")
-            },
-          ],
-        },
-      ],
+            }
+          ]
+        }
+      ]
     };
   }
 
