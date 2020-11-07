@@ -3,6 +3,7 @@
         "lib": ["ES2020"],
         "downlevelIteration": true
     },
-    "include": [".eleventy.ts", "src/posts"],
-    "exclude": ["node_modules"]
+    "include": [".eleventy.ts", "generators/*"],
+    "exclude": ["node_modules"],
+    
 }

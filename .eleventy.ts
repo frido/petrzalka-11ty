@@ -10,6 +10,7 @@ import * as eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 import * as markdownIt from "markdown-it";
+import { ZverejnovanieDownloader } from "./generators/zverejnovanie";
 
 // TODO: deprecated
 const gallery = (content: string): string => {
@@ -91,6 +92,12 @@ const conf = function (eleventyConfig: any) {
       return array.slice(n);
     }
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addCollection("zverejnovanieBaStanoviska", (collection: TemplateCollection) => {
+    const downloader = new ZverejnovanieDownloader();
+    // return downloader.load();
+    // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
   });
 
   eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection) => {

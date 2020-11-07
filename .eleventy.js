@@ -37,6 +37,7 @@ var eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
+var zverejnovanie_1 = require("./generators/zverejnovanie");
 // TODO: deprecated
 var gallery = function (content) {
     return "<div class=\"gallery\">" + content + "</div>";
@@ -91,6 +92,11 @@ var conf = function (eleventyConfig) {
             return array.slice(n);
         }
         return array.slice(0, n);
+    });
+    eleventyConfig.addCollection("zverejnovanieBaStanoviska", function (collection) {
+        var downloader = new zverejnovanie_1.ZverejnovanieDownloader();
+        // return downloader.load();
+        // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
     });
     eleventyConfig.addCollection("allMyContent", function (collection) {
         var scheduleList = [];
