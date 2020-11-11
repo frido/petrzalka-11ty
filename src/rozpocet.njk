@@ -1,0 +1,46 @@
+---
+layout: layouts/home.njk
+
+---
+<div class="paletteB">
+  <section class="container vertical">
+    {% for budget in collections.allMyBudget %}
+      <article class="article budget {{budget.statuses[0].status}}">
+        <div class="row">
+          <div class="col-md-10">
+            <header>
+              <h2>
+                {{ budget.title }}
+              </h2>
+            </header>
+            <p class="card-text">
+              {{budget.statuses[0].comment}}
+              <div class="progress">
+                <div class="progress-bar bg-{{budget.statuses[0].status}}" role="progressbar" style="width: {{budget.statuses[0].usage}}%" aria-valuenow="{{budget.statuses[0].amount}}" aria-valuemin="0" aria-valuemax="{{budget.amount}}">
+                  momentálne čerpanie: {{budget.statuses[0].usage}}%
+          </div>
+              </div>
+            </p>
+          </div>
+          <div class="col-md-2">
+            <div class="d-flex justify-content-between">
+            rozpčet<span class="amount">{{budget.amount}}€</span>
+            </div>
+            <div class="d-flex justify-content-between">
+            odhad<span class="amount">{{budget.statuses[0].amount}}€</span>
+            </div>
+            <div class="d-flex justify-content-between">
+            skutočné<span class="amount">{{budget.statuses[0].realAmount}}€</span>
+            </div>
+            <div class="status-box d-flex justify-content-between">
+            {{budget.statuses[0].status}}</span>
+            </div>
+            <div class="d-flex justify-content-between">
+            <small>ku dňu: {{budget.statuses[0].date | date}}</small>
+            </div>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+</div>

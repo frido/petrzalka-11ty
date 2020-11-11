@@ -69,3 +69,45 @@ export interface Image {
 
 type Tag = "projekt" | 'template'
 type Status = "inwork" | "success" | 'error' | 'unknown' | 'pause'
+
+export interface Budget {
+    data(): FMBudget ;
+    render(data: FMBudget): string;
+}
+
+export interface FMBudget {
+    tags: BudgetTag[]
+    title: string;
+    icon: string;
+    color: string;
+    years: BudgetYear[]
+}
+
+type BudgetTag = 'budget2';
+
+export interface BudgetYear {
+    year: number;
+    amount: number;
+    items: BudgetItem[];
+}
+
+export interface BudgetItem {
+    title: string;
+    amount: number;
+    statuses: BudgetStatus[]
+}
+
+export interface BudgetStatus {
+    date: DateTime;
+    amount: number;
+    realAmount: number;
+    comment: string;
+    status: string;
+    items?: BudgetDetail[];
+}
+
+export interface BudgetDetail {
+    title: string;
+    status: string;
+    description: string;
+}

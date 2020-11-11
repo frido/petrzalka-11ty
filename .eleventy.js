@@ -97,6 +97,40 @@ var conf = function (eleventyConfig) {
         var downloader = new zverejnovanie_1.ZverejnovanieDownloader();
         // return downloader.load();
         // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
+        return [];
+    });
+    eleventyConfig.addCollection("allMyBudget", function (collection) {
+        var scheduleList = [];
+        var now = luxon.DateTime.local();
+        var x = collection
+            .getFilteredByTag("budget2")
+            .map(function (page) {
+            return page.data.years.find(function (year) { return year.year == 2020; });
+        })
+            .flatMap(function (year) {
+            return year.items;
+        })
+            .map(function (i) {
+            // console.log(i);
+            i.statuses.forEach(function (s) {
+                s.initAmount = i.amount;
+                var percentPoint = s.initAmount / 100;
+                if (percentPoint == 0) {
+                    s.usage = 0;
+                }
+                else {
+                    s.usage = Math.round(s.amount / percentPoint);
+                }
+            });
+            if (i.statuses[0]) {
+                i.lastStatusAmount = i.statuses[0].amount;
+            }
+            // console.log(i);
+            return i;
+        });
+        // console.log(x);
+        return x.sort(function (a, b) { return b.lastStatusAmount - a.lastStatusAmount; });
+        ;
     });
     eleventyConfig.addCollection("allMyContent", function (collection) {
         var scheduleList = [];
@@ -146,6 +180,8 @@ var conf = function (eleventyConfig) {
                         case "nav":
                         case "post":
                         case "posts":
+                        case "budget":
+                        case "budget2":
                             return false;
                     }
                     return true;
@@ -184,6 +220,7 @@ var conf = function (eleventyConfig) {
         dir: {
             input: "src",
             includes: "_includes",
+            // layouts: "_layouts",
             data: "_data",
             output: "_site"
         }

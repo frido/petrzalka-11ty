@@ -98,6 +98,40 @@ const conf = function (eleventyConfig: any) {
     const downloader = new ZverejnovanieDownloader();
     // return downloader.load();
     // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
+    return [];
+  });
+
+  eleventyConfig.addCollection("allMyBudget", (collection: TemplateCollection) => {
+    let scheduleList: Schedule[] = [];
+    const now = luxon.DateTime.local();
+    let x = collection
+      .getFilteredByTag("budget2")
+      .map((page: any) => {
+        return page.data.years.find(year => year.year == 2020);
+      })
+      .flatMap((year: any) => {
+        return year.items;
+      })
+      .map((i: any) => {
+        // console.log(i);
+        i.statuses.forEach(s => {
+          s.initAmount = i.amount;
+          const percentPoint = s.initAmount / 100;
+          if(percentPoint == 0) {
+            s.usage = 0
+          } else {
+            s.usage = Math.round(s.amount / percentPoint);
+          }
+        });
+        if (i.statuses[0]) {
+          i.lastStatusAmount = i.statuses[0].amount;
+        }
+        // console.log(i);
+        return i;
+      });
+      // console.log(x);
+      
+      return x.sort((a, b) => b.lastStatusAmount - a.lastStatusAmount);;
   });
 
   eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection) => {
@@ -153,6 +187,8 @@ const conf = function (eleventyConfig: any) {
             case "nav":
             case "post":
             case "posts":
+            case "budget":
+              case "budget2":
               return false;
           }
 
@@ -190,6 +226,7 @@ const conf = function (eleventyConfig: any) {
     dir: {
       input: "src",
       includes: "_includes",
+      // layouts: "_layouts",
       data: "_data",
       output: "_site",
     },

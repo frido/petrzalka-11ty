@@ -11086,6 +11086,38 @@ header.logo a:hover {
   color: #9933CC;
 }
 
+.budget.success {
+  border-left: solid 10px #00695c;
+}
+
+.budget.success .status-box {
+  color: #00695c;
+}
+
+.budget.inwork {
+  border-left: solid 10px #0d47a1;
+}
+
+.budget.inwork .status-box {
+  color: #0d47a1;
+}
+
+.budget.error {
+  border-left: solid 10px #CC0000;
+}
+
+.budget.error .status-box {
+  color: #CC0000;
+}
+
+.budget.pause {
+  border-left: solid 10px #9933CC;
+}
+
+.budget.pause .status-box {
+  color: #9933CC;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -11104,6 +11136,11 @@ section.vertical article {
 
 article header h1, article header .h1 {
   font-weight: 900;
+}
+
+article .progress {
+  height: 2rem;
+  font-size: 1.2rem;
 }
 
 figure {

@@ -73,4 +73,20 @@ header.logo {
     @include timeline($pause);
 }
 
+.budget.success {
+    @include budget($success);
+}
+
+.budget.inwork {
+    @include budget($inwork);
+}
+
+.budget.error {
+    @include budget($error);
+}
+
+.budget.pause {
+    @include budget($pause);
+}
+
 
