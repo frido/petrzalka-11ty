@@ -7,7 +7,7 @@ var Template = /** @class */ (function () {
     Template.prototype.data = function () {
         return {
             title: "Bytový dom Habern Au",
-            date: "2020-11-03",
+            date: "2020-11-11",
             tags: ["projekt"],
             layout: "layouts/post2.njk",
             description: "Bytový dom Habern Au na ulici A. Gwerkovej.",
@@ -25,8 +25,15 @@ var Template = /** @class */ (function () {
                             description: "žiada prepracovanie",
                             timeline: luxon.DateTime.fromISO("2020-05-26")
                         },
+                        {
+                            title: 'Petícia proti výstavbe',
+                            source: "https://www.peticie.com/peticia_proti_vystavbe_bytoveho_domu_habern_au_na_luke_nachadzajucej_sa_na_ulici_a_gwerkovej_v_mestskej_asti_bratislava__petralka_v_ovsiti",
+                            status: "inwork",
+                            description: "",
+                            timeline: luxon.DateTime.fromISO("2020-11-10")
+                        }
                     ]
-                },
+                }
             ]
         };
     };

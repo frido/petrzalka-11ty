@@ -25,9 +25,9 @@ var PolyfunkcnyObjektTematinska = /** @class */ (function () {
                             status: "success",
                             description: "súhlasí",
                             timeline: luxon.DateTime.fromISO("2020-08-27")
-                        },
+                        }
                     ]
-                },
+                }
             ]
         };
     };
