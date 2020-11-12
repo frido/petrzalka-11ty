@@ -21,6 +21,8 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%
 https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%BD-pl%C3%A1n-3-z%C3%A1sobn%C3%ADk.pdf
 
 # Samoobslužná autoumyváreň, Petržalka Juh
+https://www.petrzalka.sk/samoobsluzna-autoumyvaren-petrzalka-juh/
+https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67277
   Statement {
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=67277',
     ziadatel: 'Arekon, s. r. o., Rekreačný rad 6091/37,',
@@ -31,6 +33,8 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%B
   },
 
 # Samoobslužná čerpacia stanica PHM, Petržalka Juh
+https://www.petrzalka.sk/samoobsluzna-cerpacia-stanica-phm-petrzalka-juh/
+https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67275
   Statement {
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=67275',
     ziadatel: 'Arekon, s. r. o., Rekreačný rad 6091/37, ',
@@ -40,41 +44,15 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%B
     publicDate: '10. 03. 2020'
   },
 
-  # Hotel Sphinx, Kopčianska (1 MB)
-  https://www.petrzalka.sk/wp-content/uploads/2019/09/KUPVaD_09-10_bod-10_Hotel_Sphinx-Kopcianska.pdf
-  https://www.petrzalka.sk/wp-content/uploads/2019/09/KUPVaD-zapisnica_2019-09-10_overena.pdf
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68661',
-    ziadatel: 'Ateliér obchodu a cestovného ruchu s. r. o.',
-    title: 'Hotel SPHINX Kopčianska, Bratislava',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '11. 05. 2020',
-    publicDate: '08. 06. 2020'
-  },
-
-# projekty z petrzalka.sk
-Areál voľného času Vojenský dvor -> nic
-Polyfunkčný bytový dom Topoľčianska na ul. Topoľčianska, Bratislava -> nic
-Polyfunkčný dom na Humenskom nám. v Bratislave -> nic
-Samoobslužná umývacia linka na autá -> nic
-Nájomný bytový dom Kubínska na Dargovskej ulici -> nic
-
-# materialy na rokovania
-FEND APARTMENTS, polyfunkčný objekt (2 MB) - FEND APARTMENTS, polyfunkčný objekt (1 MB)
+# materialy na rokovania 2019
+FEND APARTMENTS, polyfunkčný objekt (2 MB) - FEND APARTMENTS, polyfunkčný objekt (1 MB) - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_Aktual.pdf - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_FEND_APARTMENTS_Budatinska.pdf
 TOWER Bratislava (984 KB)
 Investičný zámer - Petržalská pláž (276 KB); Petržalská pláž - vizualizácia (2 MB)
 Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 KB); Polyfunkčná budova Digital Systems Údernícka 9/A (204 KB)
 
 [
   Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=69412',
-    ziadatel: 'DEV-ING, s. r. o., Rovná 50, 900 31 Stupava',
-    title: 'Samoobslužná autoumyváreň Panónska cesta',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '19. 05. 2020',
-    publicDate: '14. 07. 2020'
-  },
-  Statement {
+    https://www.petrzalka.sk/parkovaci-dom-panonska-ul-bratislava-mc-petrzalka/
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=69407',
     ziadatel: 'APROX spol. s r. o., Tabakova 1, 811 07 Bratislava ',
     title: 'Parkovací dom, Panónska ul.',

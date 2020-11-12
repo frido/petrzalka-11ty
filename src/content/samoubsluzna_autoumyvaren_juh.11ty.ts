@@ -4,9 +4,9 @@ import * as luxon from "luxon";
 class Template implements Post {
   data(): FrontMatter {
     return {
-      title: "Samoobslužná autoumyváreň, Petržalka Juh",
+      title: "Samoobslužná autoumyváreň Panónska cesta, Bratislava",
       date: "2020-11-05",
-      tags: ["template"],
+      tags: ["projekt"],
       layout: "layouts/post2.njk",
       description: "Autoumyváreň na Panónskej ceste.",
       icon: "",
@@ -35,19 +35,6 @@ class Template implements Post {
               status: "success",
               description: "súhlasí",
               timeline: luxon.DateTime.fromISO("2020-05-19")
-            }
-          ]
-        },{
-          title: "Stavebné konanie",
-          status: "pause",
-          description: "prerušené", 
-          sub: [
-            {
-              title: "Začatie konania",
-              source: "https://www.petrzalka.sk/bytovy-dom-fend-apartmens-budatinska/",
-              status: "success",
-              description: "",
-              timeline: luxon.DateTime.fromISO("2019-03-22")
             }
           ]
         }
