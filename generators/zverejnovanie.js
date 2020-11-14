@@ -39,7 +39,7 @@ var Statement = /** @class */ (function () {
 var ZverejnovanieDownloader = /** @class */ (function () {
     function ZverejnovanieDownloader() {
         this.base = "https://zverejnovanie.bratislava.sk";
-        this.link = "/vismo/zobraz_dok.asp?p1=77275&id_ktg=1329&tzv=1&pocet=25&stranka=";
+        this.link = "/vismo/zobraz_dok.asp?id_ktg=1208&p1=63777&tzv=1&pocet=25&stranka=";
         this.statements = [];
     }
     ZverejnovanieDownloader.prototype.extractData = function (base, root) {
@@ -63,7 +63,7 @@ var ZverejnovanieDownloader = /** @class */ (function () {
     ZverejnovanieDownloader.prototype.load = function (callback) {
         var _this = this;
         var urls = [];
-        for (var i = 1; i < 17; i++) {
+        for (var i = 1; i < 30; i++) {
             urls.push(this.base + this.link + i);
         }
         console.log(urls);

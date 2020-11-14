@@ -20,18 +20,6 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%
 # Investicny plan
 https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%BD-pl%C3%A1n-3-z%C3%A1sobn%C3%ADk.pdf
 
-# Samoobslužná autoumyváreň, Petržalka Juh
-https://www.petrzalka.sk/samoobsluzna-autoumyvaren-petrzalka-juh/
-https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67277
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=67277',
-    ziadatel: 'Arekon, s. r. o., Rekreačný rad 6091/37,',
-    title: 'Samoobslužná autoumyváreň Petržalka juh',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '21. 02. 2020',
-    publicDate: '10. 03. 2020'
-  },
-
 # Samoobslužná čerpacia stanica PHM, Petržalka Juh
 https://www.petrzalka.sk/samoobsluzna-cerpacia-stanica-phm-petrzalka-juh/
 https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67275
@@ -44,13 +32,7 @@ https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=
     publicDate: '10. 03. 2020'
   },
 
-# materialy na rokovania 2019
-FEND APARTMENTS, polyfunkčný objekt (2 MB) - FEND APARTMENTS, polyfunkčný objekt (1 MB) - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_Aktual.pdf - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_FEND_APARTMENTS_Budatinska.pdf
-TOWER Bratislava (984 KB)
-Investičný zámer - Petržalská pláž (276 KB); Petržalská pláž - vizualizácia (2 MB)
-Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 KB); Polyfunkčná budova Digital Systems Údernícka 9/A (204 KB)
-
-[
+# Parkovaci dom
   Statement {
     https://www.petrzalka.sk/parkovaci-dom-panonska-ul-bratislava-mc-petrzalka/
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=69407',
@@ -60,6 +42,15 @@ Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 
     stateDate: '05. 05. 2020',
     publicDate: '14. 07. 2020'
   },
+
+# materialy na rokovania 2019
+FEND APARTMENTS, polyfunkčný objekt (2 MB) - FEND APARTMENTS, polyfunkčný objekt (1 MB) - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_Aktual.pdf - https://www.petrzalka.sk/wp-content/uploads/2019/03/KUPVaD_FEND_APARTMENTS_Budatinska.pdf
+TOWER Bratislava (984 KB)
+Investičný zámer - Petržalská pláž (276 KB); Petržalská pláž - vizualizácia (2 MB)
+Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 KB); Polyfunkčná budova Digital Systems Údernícka 9/A (204 KB)
+
+[
+
   Statement {
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=69404',
     ziadatel: 'VI GROUP, spol. s. r. o., Roľnícka 157',
@@ -93,30 +84,6 @@ Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 
     publicDate: '08. 06. 2020'
   },
   Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68657',
-    ziadatel: 'TOCCATA s. r. o., Kremnická 26, ',
-    title: 'Budova ACV – ubytovanie internátneho typu, zmena účelu využitia',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '07. 05. 2020',
-    publicDate: '08. 06. 2020'
-  },
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68357',
-    ziadatel: 'HFD, s.r.o., Karadžičova 55, ',
-    title: 'Dopravné napojenie na Einsteinovu ulicu',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '13. 05. 2020',
-    publicDate: '26. 05. 2020'
-  },
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68178',
-    ziadatel: 'SPP – distribúcia a. s., Mlynské Nivy 44/b',
-    title: 'Rekonštrukcia plynovodov Bratislava, Holíčska, ÚO00057, 2022',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '31. 03. 2020',
-    publicDate: '19. 05. 2020'
-  },
-  Statement {
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68176',
     ziadatel: '',
     title: 'FTTC Danubia 0610BR',
@@ -148,15 +115,6 @@ Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 
     stateDate: '03. 02. 2020',
     publicDate: '10. 03. 2020'
   },
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=67943',
-    ziadatel: '',
-    title: 'Rekonštrukcia rodinného domu, Handlovská ulica, Bratislava',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '27. 01. 2020',
-    publicDate: '02. 03. 2020'
-  },
-  Statement {
     link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=66735',
     ziadatel: 'K. T. plus, s. r. o., Kopčianska 15, ',
     title: 'Škola Južné mesto, Bratislava – Petržalka ',

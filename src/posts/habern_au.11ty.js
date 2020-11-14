@@ -33,6 +33,27 @@ var Template = /** @class */ (function () {
                             timeline: luxon.DateTime.fromISO("2020-11-10")
                         }
                     ]
+                },
+                {
+                    title: "Územné konanie",
+                    status: "error",
+                    description: "zastavené",
+                    sub: [
+                        {
+                            title: "Záväzné stanovisko hlavného mesta",
+                            source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=31041",
+                            status: "error",
+                            description: "nesúhlasí",
+                            timeline: luxon.DateTime.fromISO("2014-09-18")
+                        },
+                        {
+                            title: "Rozhodnutie mestskej časti",
+                            source: "https://www.petrzalka.sk/wp-content/uploads/2015/08/Rozhodnutie_Ovsiste.pdf",
+                            status: "error",
+                            description: "zastavené",
+                            timeline: luxon.DateTime.fromISO("2015-08-03")
+                        }
+                    ]
                 }
             ]
         };
