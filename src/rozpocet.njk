@@ -8,16 +8,31 @@ layout: layouts/home.njk
     {% set success = allMyBudget.success %}
     <div class="row text-success">
     <div class="col-md-2">
-      Zrealizovane <i class="fas fa-check-circle"></i>
+      Zrealizované <i class="fas fa-check-circle"></i>
     </div>
     <div class="col-md-2">
       {{success.list.length}} projektov
     </div>
     <div class="col-md-8">
-      Vydavky: {{success.realAmount | value}}
+      Výdavky: {{success.realAmount | value}}
     </div>
     </div>
     {% for budget in success.list %}
+      {% include "rozpocetlist.njk" %}
+    {% endfor %} 
+  </section>
+
+  <section class="container vertical">
+    {% set error = allMyBudget.error %}
+    <div class="row text-danger">
+    <div class="col-md-3">
+      Zrušené / Odložené <i class="fas fa-ban"></i>
+    </div>
+    <div class="col-md-2">
+      {{error.list.length}} projektov
+    </div>
+    </div>
+    {% for budget in error.list %}
       {% include "rozpocetlist.njk" %}
     {% endfor %} 
   </section>
@@ -32,28 +47,13 @@ layout: layouts/home.njk
       {{inwork.list.length}} projektov
     </div>
     <div class="col-md-4">
-      Aktualne vydavky: {{inwork.realAmount | value}}
+      Aktuálne výdavky: {{inwork.realAmount | value}}
     </div>
     <div class="col-md-4">
-      Planovane vydavky: {{inwork.amount | value}}
+      Plánované výdavky: {{inwork.amount | value}}
     </div>
     </div>
     {% for budget in inwork.list %}
-      {% include "rozpocetlist.njk" %}
-    {% endfor %} 
-  </section>
-
-    <section class="container vertical">
-    {% set error = allMyBudget.error %}
-    <div class="row text-danger">
-    <div class="col-md-3">
-      Zrusene / Odlozene <i class="fas fa-ban"></i>
-    </div>
-    <div class="col-md-2">
-      {{error.list.length}} projektov
-    </div>
-    </div>
-    {% for budget in error.list %}
       {% include "rozpocetlist.njk" %}
     {% endfor %} 
   </section>

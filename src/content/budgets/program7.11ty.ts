@@ -18,7 +18,7 @@ class Template implements Budget {
           items: [
             {
               amount: 219348,
-              title: 'Nakup vozidiel a plosiny',
+              title: 'Nakup vozidiel a plošiny',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -30,7 +30,7 @@ class Template implements Budget {
               ]
             },{
               amount: 18252,
-              title: 'prevadzkove stroje',
+              title: 'Prevádzkové stroje',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -48,37 +48,37 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "prebieha identifikácia vhodných pozemkov, v roku 2020 sa nebude realizovať",
+                  comment: "Prebieha identifikácia vhodných pozemkov. V roku 2020 sa nebude realizovať",
                   status: 'error'
                 }
               ]
             },{
               amount: 10000,
-              title: 'Príspevky na stav. Úpravy a vybudovanie nových kontajnerových stanovíšť',
+              title: 'Príspevky na stavebné úpravy a vybudovanie nových kontajnerových stanovíšť',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 10000,
                   realAmount: 0,
-                  comment: "priebežne sa plní",
+                  comment: "Priebežne sa plní",
                   status: 'inwork'
                 }
               ]
             },{
               amount: 63200,
-              title: 'Na revitalizáciu verejných detských ihrísk',
+              title: 'Revitalizácia verejných detských ihrísk',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 53322,
                   realAmount: 38322,
-                  comment: "prebieha inventarizácia stavu DI",
+                  comment: "Prebieha inventarizácia stavu detských ihrísk",
                   status: 'inwork'
                 }
               ]
             },{
               amount: 91614,
-              title: 'nakup nakladnych automobilov + prevadzkove stroje a pristroje',
+              title: 'Nákup nákladných automobilov a prevádzkových strojov a prístrojov',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),

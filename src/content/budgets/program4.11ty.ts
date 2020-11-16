@@ -30,7 +30,7 @@ class Template implements Budget {
               ]
             },{
               amount: 80000,
-              title: 'rekonstrukcia a modernizacia',
+              title: 'Rekonstrukcia a modernizácia',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -54,7 +54,7 @@ class Template implements Budget {
               ]
             },{
               amount: 370000,
-              title: 'pripravna projektova dokumentacia - budovaie nových chopdníkov',
+              title: 'Prípravná projektová dokumentácia na budovanie nových chodníkov',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -66,7 +66,7 @@ class Template implements Budget {
               ]
             },{
               amount: 23000,
-              title: 'PD na nové parkoviská',
+              title: 'Projektová dokumentácia na nové parkoviská',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),

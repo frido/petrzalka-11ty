@@ -26,7 +26,7 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "niCE life projekt -  nahradne cerpanie za neschvaleny povodny projekt. Pre potreby niCE life projektu su potrebne cisto bezne vydavky, t.j. kapitalove vydavky v roku 2020 nebudu cerpane",
+                                    comment: "niCE life projekt. Náhradné čerpanie za neschválený pôvodný projekt. Pre potreby niCE life projektu sú potrebné iba bežné výdavky. Kapitálové výdavky v roku 2020 nebudú čerpané",
                                     status: 'success'
                                 }
                             ]

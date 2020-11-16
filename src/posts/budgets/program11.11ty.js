@@ -26,13 +26,13 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 20000,
                                     realAmount: 0,
-                                    comment: "v príprave",
+                                    comment: "V príprave",
                                     status: 'inwork'
                                 }
                             ]
                         }, {
                             amount: 100000,
-                            title: 'nakup telco techniky - kamery',
+                            title: 'Nákup telekomunikačnej techniky - kamery',
                             statuses: [
                                 {
                                     date: luxon.DateTime.fromISO("2020-10-01"),

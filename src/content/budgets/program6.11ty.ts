@@ -24,7 +24,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "spracováva sa PD, v rezii KZP",
+                  comment: "Spracováva sa projektová dokumentácia v réžii KZP",
                   status: 'error'
                 }
               ]
@@ -36,7 +36,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "zrealizované - boli to cisto bezne vydavky",
+                  comment: "Zrealizované cez bežné výdavky",
                   status: 'success'
                 }
               ]
@@ -48,7 +48,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 30000,
                   realAmount: 0,
-                  comment: "realiyovať sa bude PD na multifunkčné ihrisko a dráhu. Príprava súťaže.",
+                  comment: "Realiyovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže.",
                   status: 'inwork'
                 }
               ]
@@ -60,7 +60,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 18534,
                   realAmount: 18534,
-                  comment: "vysutazene, montaz - polovica 10/2020",
+                  comment: "Realizácia v polovici 10/2020",
                   status: 'success'
                 }
               ]

@@ -26,13 +26,13 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "NFP zamietnutý, aktualne prebieha odvolacie konanie",
-                                    status: 'inwork'
+                                    comment: "Nenávratný finančný prispevok bol zamietnutý. Aktuálne prebieha odvolacie konanie",
+                                    status: 'error'
                                 }
                             ]
                         }, {
                             amount: 34730,
-                            title: 'Participatívny výskum na Nám. Republiky + Šrobárovo námestie',
+                            title: 'Participatívny výskum na Nám. Republiky a Šrobárovom námestí',
                             statuses: [
                                 {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
@@ -50,31 +50,31 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "prebratie objektu Hrobákova, na obhliadke objektu Hrobáková sa určila cena rekonštrukcie ref, inv. Činností na sumu 450-520000 €",
+                                    comment: "Prebratie objektu Hrobákova, na obhliadke objektu Hrobáková sa určila cena rekonštrukcie ref, investičných činností na sumu 450 000 - 520 000 €",
                                     status: 'inwork'
                                 }
                             ]
                         }, {
                             amount: 15100,
-                            title: 'nakup budov, objektov a ich casti',
+                            title: 'Nákup budov, objektov a ich časti',
                             statuses: [
                                 {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 15100,
                                     realAmount: 15100,
-                                    comment: " zrealizované",
+                                    comment: "Zrealizované",
                                     status: 'success'
                                 }
                             ]
                         }, {
                             amount: 29000,
-                            title: 'Vyhotovenie PD k novým projektom podľa vyhlásených výziev',
+                            title: 'Vyhotovenie projektových dokumentácií k novým projektom podľa vyhlásených výziev',
                             statuses: [
                                 {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 2065,
                                     realAmount: 0,
-                                    comment: "neocakava sa dalsie cerpanie",
+                                    comment: "Neočakáva sa ďalšie čerpanie",
                                     status: 'success'
                                 }
                             ]

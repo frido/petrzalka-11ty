@@ -18,7 +18,7 @@ class Template implements Budget {
           items: [
             {
               amount: 911536,
-              title: 'Rekonštrukcia skolkskych zariadeni',
+              title: 'Rekonštrukcia školkských zariadení',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -105,13 +105,13 @@ class Template implements Budget {
               ]
             },{
               amount: 777246,
-              title: 'Dotacia na obnovu odborných učební ZŠ',
+              title: 'Dotácia na obnovu odborných učební ZŠ',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "NFP schválený, dodavatel vysutazeny (s realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020 ). Ymluvz sú na kontrole na ministerstve",
+                  comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
                   status: 'error'
                 }
               ]
@@ -123,7 +123,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "NFP schválený, dodavatel vysutazeny - realizacia v 2021, zmluvz na kontrole na ministerstve",
+                  comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
                   status: 'error'
                 }
               ]
@@ -135,7 +135,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "NFP schválený, dodavatel vysutazeny (s realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020 ). Ymluvz sú na kontrole na ministerstve",
+                  comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
                   status: 'error'
                 }
               ]

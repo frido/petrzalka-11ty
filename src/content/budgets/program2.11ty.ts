@@ -18,19 +18,19 @@ class Template implements Budget {
           items: [
             {
               amount: 3000,
-              title: 'Nákup licencie software na verejné obstarávanie v čiastke',
+              title: 'Nákup licencie software na verejné obstarávanie',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 1500,
                   realAmount: 0,
-                  comment: "príprava podkl. na VO",
+                  comment: "Príprava podkladov na verejné obstarávanie",
                   status: 'inwork'
                 }
               ]
             },{
               amount: 30000,
-              title: 'Obstaranie virtualizácie serverov',
+              title: 'Virtualizácie serverov',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -42,7 +42,7 @@ class Template implements Budget {
               ]
             },{
               amount: 35000,
-              title: 'Komunikacna infrastruktura',
+              title: 'Komunikačná infraštruktúra',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),

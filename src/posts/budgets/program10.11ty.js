@@ -26,7 +26,7 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "Z dovodu pandemie nebolo mozne realizovat, 26/07/2020 poziadalo ZSS o dotaciu pre zabezpecenie klimatizazie vo vlastnej rezii",
+                                    comment: "Z dôvodu pandémie nebolo možné realizovať. 26/07/2020 požiadalo ZSS o dotáciu pre zabezpečenie klimatizázie vo vlastnej réžii",
                                     status: 'error'
                                 }
                             ]

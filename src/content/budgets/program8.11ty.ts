@@ -24,7 +24,7 @@ class Template implements Budget {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 34757,
                   realAmount: 34757,
-                  comment: "v procese spracovania návrhu ÚP",
+                  comment: "V procese spracovania návrhu ÚP",
                   status: 'inwork'
                 }
               ]
