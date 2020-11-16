@@ -21,31 +21,31 @@ class Template implements Budget {
               title: 'Vybudovanie denného stacionáru',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 34756.8,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 0,
                   realAmount: 0,
                   comment: "NFP zamietnutý, aktualne prebieha odvolacie konanie",
                   status: 'inwork'
                 }
               ]
             },{
-              amount: 0,
-              title: 'PD + realizácia',
+              amount: 34730,
+              title: 'Participatívny výskum na Nám. Republiky + Šrobárovo námestie',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 19800,
-                  realAmount: 4200,
-                  comment: "participatívny výskum na Nám. Republiky",
-                  status: 'done'
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 23570,
+                  realAmount: 8200,
+                  comment: "",
+                  status: 'inwork'
                 }
               ]
             },{
-              amount: 300000,
+              amount: 0,
               title: 'Riešenie sociálneho zar. pre seniorov, príp. na zvýšenie kapacity MŠ',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
                   comment: "prebratie objektu Hrobákova, na obhliadke objektu Hrobáková sa určila cena rekonštrukcie ref, inv. Činností na sumu 450-520000 €",
@@ -57,11 +57,11 @@ class Template implements Budget {
               title: 'nakup budov, objektov a ich casti',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 15100,
                   realAmount: 15100,
                   comment: " zrealizované",
-                  status: 'done'
+                  status: 'success'
                 }
               ]
             },{
@@ -69,11 +69,11 @@ class Template implements Budget {
               title: 'Vyhotovenie PD k novým projektom podľa vyhlásených výziev',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 2065,
                   realAmount: 0,
                   comment: "neocakava sa dalsie cerpanie",
-                  status: 'done'
+                  status: 'success'
                 }
               ]
             }

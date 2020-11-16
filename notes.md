@@ -20,6 +20,13 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/uznesenia_04_02_2020opraven%
 # Investicny plan
 https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%BD-pl%C3%A1n-3-z%C3%A1sobn%C3%ADk.pdf
 
+# Polyfunkčný objekt, Tematínska, Veľký Draždiak
+https://www.petrzalka.sk/wp-content/uploads/2020/11/KUPVaR-zapisnica.pdf
+
+# Showroom PIETA, Betliarska ulica, architektonická štúdia – prezentácia projektu
+navrhovateľom, vyjadrenie k investičnému zámeru
+https://www.petrzalka.sk/wp-content/uploads/2020/11/KUPVaR-zapisnica.pdf
+
 # Samoobslužná čerpacia stanica PHM, Petržalka Juh
 https://www.petrzalka.sk/samoobsluzna-cerpacia-stanica-phm-petrzalka-juh/
 https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67275

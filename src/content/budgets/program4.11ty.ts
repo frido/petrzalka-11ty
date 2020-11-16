@@ -18,12 +18,12 @@ class Template implements Budget {
           items: [
             {
               amount: 100000,
-              title: 'Nákup strojovej techniky na údržbu komunikácií, kosenie',
+              title: 'Rekonštrukcia chodníkov',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 100000,
-                  realAmount: 0,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 95000,
+                  realAmount: 36836,
                   comment: "",
                   status: 'inwork'
                 }
@@ -33,9 +33,9 @@ class Template implements Budget {
               title: 'rekonstrukcia a modernizacia',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 80000,
-                  realAmount: 4000,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 0,
+                  realAmount: 0,
                   comment: "",
                   status: 'inwork'
                 }
@@ -45,9 +45,9 @@ class Template implements Budget {
               title: 'Vybudovanie cyklotrasy, prípadne nových chodníkov',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 13100,
-                  realAmount: 0,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 15852,
+                  realAmount: 5352,
                   comment: "platba za PD, aktualne prebiehaju zistovania vlastnickych vztahov na pozemkoch cyklotras",
                   status: 'inwork'
                 }
@@ -57,7 +57,7 @@ class Template implements Budget {
               title: 'pripravna projektova dokumentacia - budovaie nových chopdníkov',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
                   comment: "Nerealizuje sa, bolo by vhodné od MZ presunúť na opravu jestvujúcich chodnikov",
@@ -69,7 +69,7 @@ class Template implements Budget {
               title: 'PD na nové parkoviská',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 14437.8,
                   realAmount: 14437.8,
                   comment: "zrealizované",

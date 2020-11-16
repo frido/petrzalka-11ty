@@ -1,0 +1,52 @@
+<article class="article budget {{budget.statuses[0].status}}">
+        <div class="row">
+          <div class="col-md-9">
+            <header>
+              <h2>
+                {{ budget.title }}
+              </h2>
+            </header>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-end align-items-baseline">
+                rozpčet <span style="margin-left: 1rem" class="amount">{{budget.amount | value}}€</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="progress" style="height: 3px">
+              <div class="progress-bar bg-{{budget.statuses[0].status}}" role="progressbar" style="width: {{budget.statuses[0].usage}}%" aria-valuenow="{{budget.statuses[0].amount}}" aria-valuemin="0" aria-valuemax="{{budget.amount}}"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div>
+            <small>Aktualne vydavky:</small><span class="amountXXX">{{budget.statuses[0].realAmount | value}}€</span>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div>
+              <small>Odhad vydavkov:</small><span class="amountXXX">{{budget.statuses[0].amount | value}}€</span>
+              {% if budget.statuses[0].amount > budget.amount %}
+              <span class="text-danger"><i class="fas fa-angle-double-up"></i></span>
+              {% endif %}  
+            </div>
+          </div>
+          <div class="col-md-2">
+            <small>ku dňu: {{budget.statuses[0].date | date}}</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            {{budget.statuses[0].comment}}
+            {% if budget.statuses[0].status === 'success' %}
+            <div class="text-success">Zrealizovane <i class="fas fa-check-circle"></i></div>
+            {% endif %}
+            {% if budget.statuses[0].status === 'error' %}
+            <div class="text-danger">Zrusene <i class="fas fa-ban"></i></div>
+            {% endif %}
+          </div>
+        </div>
+      </article>

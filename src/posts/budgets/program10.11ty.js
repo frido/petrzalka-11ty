@@ -19,15 +19,15 @@ var Template = /** @class */ (function () {
                     amount: 100000,
                     items: [
                         {
-                            amount: 14000,
+                            amount: 0,
                             title: 'Zabezpečenie klimatizácie do ZSS na Vavilovovej ulici',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
                                     comment: "Z dovodu pandemie nebolo mozne realizovat, 26/07/2020 poziadalo ZSS o dotaciu pre zabezpecenie klimatizazie vo vlastnej rezii",
-                                    status: 'cancel'
+                                    status: 'error'
                                 }
                             ]
                         }

@@ -23,8 +23,8 @@ var Template = /** @class */ (function () {
                             title: 'Nákup licencie software na verejné obstarávanie v čiastke',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
-                                    amount: 0,
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
+                                    amount: 1500,
                                     realAmount: 0,
                                     comment: "príprava podkl. na VO",
                                     status: 'inwork'
@@ -35,8 +35,8 @@ var Template = /** @class */ (function () {
                             title: 'Obstaranie virtualizácie serverov',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
-                                    amount: 0,
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
+                                    amount: 30000,
                                     realAmount: 0,
                                     comment: "priebežne sa plní",
                                     status: 'inwork'
@@ -47,7 +47,7 @@ var Template = /** @class */ (function () {
                             title: 'Komunikacna infrastruktura',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 30000,
                                     realAmount: 16253.42,
                                     comment: "priebežne sa plní",

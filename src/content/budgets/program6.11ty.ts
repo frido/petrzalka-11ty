@@ -21,11 +21,11 @@ class Template implements Budget {
               title: 'Vybudovanie klimatizácie v DK Zrkadlový háj ',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
                   comment: "spracováva sa PD, v rezii KZP",
-                  status: 'cancel'
+                  status: 'error'
                 }
               ]
             },{
@@ -33,11 +33,11 @@ class Template implements Budget {
               title: 'Rekonštrukcia jestvujúceho multifunkčného ihriska',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: " zrealizované - boli to cisto bezne vydavky",
-                  status: 'done'
+                  comment: "zrealizované - boli to cisto bezne vydavky",
+                  status: 'success'
                 }
               ]
             },{
@@ -45,11 +45,11 @@ class Template implements Budget {
               title: 'Revitalizácia športového areálu,  multifunkčného ihriska - I. fáza',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 30000,
                   realAmount: 0,
-                  comment: "inwork",
-                  status: 'prebieha vyber projektanta'
+                  comment: "realiyovať sa bude PD na multifunkčné ihrisko a dráhu. Príprava súťaže.",
+                  status: 'inwork'
                 }
               ]
             },{
@@ -57,11 +57,11 @@ class Template implements Budget {
               title: 'Výmena mantinelov',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 18534.36,
-                  realAmount: 0,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 18534,
+                  realAmount: 18534,
                   comment: "vysutazene, montaz - polovica 10/2020",
-                  status: 'inwork'
+                  status: 'success'
                 }
               ]
             }

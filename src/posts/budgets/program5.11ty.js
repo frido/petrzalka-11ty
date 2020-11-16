@@ -19,13 +19,13 @@ var Template = /** @class */ (function () {
                     amount: 1400720,
                     items: [
                         {
-                            amount: 420523,
+                            amount: 911536,
                             title: 'Rekonštrukcia skolkskych zariadeni',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
-                                    amount: 856300,
-                                    realAmount: 115963.85,
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
+                                    amount: 867554.53,
+                                    realAmount: 454520.07,
                                     comment: "realizuje sa",
                                     status: 'inwork',
                                     items: [
@@ -79,7 +79,7 @@ var Template = /** @class */ (function () {
                                             description: 'zrealizované, prebieha zmena účelu využívania'
                                         }, , {
                                             title: 'Úprava oplotenia areálu MŠ',
-                                            status: 'cancel',
+                                            status: 'error',
                                             description: 'nerealizuje sa'
                                         }, , {
                                             title: 'Rekonštrukcia hydroizolácie strechy',
@@ -110,11 +110,11 @@ var Template = /** @class */ (function () {
                             title: 'Dotacia na obnovu odborných učební ZŠ',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "zrusene",
-                                    status: 'cancel'
+                                    comment: "NFP schválený, dodavatel vysutazeny (s realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020 ). Ymluvz sú na kontrole na ministerstve",
+                                    status: 'error'
                                 }
                             ]
                         }, {
@@ -122,23 +122,23 @@ var Template = /** @class */ (function () {
                             title: 'Rekonštrukcia časti objektu za účelom zvýšenia kapacity',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "inwork",
-                                    status: 'NFP schválený, dodavatel vysutazeny - realizacia v 2021'
+                                    comment: "NFP schválený, dodavatel vysutazeny - realizacia v 2021, zmluvz na kontrole na ministerstve",
+                                    status: 'error'
                                 }
                             ]
                         }, {
-                            amount: 0,
-                            title: 'Nákup vozidla',
+                            amount: 94734,
+                            title: 'Rekonštrukcia a vybavenie odborných učební',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
-                                    amount: 20000,
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
+                                    amount: 0,
                                     realAmount: 0,
-                                    comment: "success",
-                                    status: 'nákup vozidla na rozvoz stravy'
+                                    comment: "NFP schválený, dodavatel vysutazeny (s realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020 ). Ymluvz sú na kontrole na ministerstve",
+                                    status: 'error'
                                 }
                             ]
                         }

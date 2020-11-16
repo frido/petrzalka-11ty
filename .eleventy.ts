@@ -1,4 +1,4 @@
-import { Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { BudgetItem, BudgetYear, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -11,6 +11,8 @@ import * as eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 
 import * as markdownIt from "markdown-it";
 import { ZverejnovanieDownloader } from "./generators/zverejnovanie";
+
+import * as numberString from "number-string";
 
 // TODO: deprecated
 const gallery = (content: string): string => {
@@ -55,6 +57,8 @@ const alternativeABInner = (content: string): string => {
   return `<div class="two-in-row">${content}</div>`;
 };
 
+const statusOrder = {success: 0, inwork: 1, error: 2};
+
 const conf = function (eleventyConfig: any) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyPluginRss);
@@ -81,6 +85,20 @@ const conf = function (eleventyConfig: any) {
     return timeline.toFormat("dd.LL.yyyy");
   });
 
+  eleventyConfig.addFilter("value", (value: number) => {
+    // const number = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'EUR' }).format(value);
+    const number = numberString.toMoney(value, {
+      decimalMark: ",",
+      thousandSeperator: " ",
+      maxPrecision: 2,
+      minPrecision: 0,
+      symbol: "",
+      symbolBehind: false,
+      useParens: true,
+    });
+    return number;
+  });
+
   eleventyConfig.addFilter("log", (object: any) => {
     console.log(object);
     return object;
@@ -103,35 +121,80 @@ const conf = function (eleventyConfig: any) {
 
   eleventyConfig.addCollection("allMyBudget", (collection: TemplateCollection) => {
     let scheduleList: Schedule[] = [];
-    const now = luxon.DateTime.local();
     let x = collection
       .getFilteredByTag("budget2")
       .map((page: any) => {
-        return page.data.years.find(year => year.year == 2020);
+        return page.data.years.find((year) => year.year == 2020);
       })
-      .flatMap((year: any) => {
+      .flatMap((year: BudgetYear) => {
         return year.items;
       })
-      .map((i: any) => {
-        // console.log(i);
-        i.statuses.forEach(s => {
+      .map((i: BudgetItem) => {
+        i.statuses.forEach((s) => {
           s.initAmount = i.amount;
-          const percentPoint = s.initAmount / 100;
-          if(percentPoint == 0) {
-            s.usage = 0
+          const percentPoint = s.amount / 100;
+          if (percentPoint == 0) {
+            s.usage = 0;
           } else {
-            s.usage = Math.round(s.amount / percentPoint);
+            s.usage = Math.round(s.realAmount / percentPoint);
           }
         });
         if (i.statuses[0]) {
           i.lastStatusAmount = i.statuses[0].amount;
         }
-        // console.log(i);
         return i;
       });
-      // console.log(x);
-      
-      return x.sort((a, b) => b.lastStatusAmount - a.lastStatusAmount);;
+
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+    const successItems = x.filter(i => i.statuses[0].status === 'success');
+    const inworkItems = x.filter(i => i.statuses[0].status === 'inwork');
+    const errorItems = x.filter(i => i.statuses[0].status === 'error');
+
+    const success = {
+      initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+      amount: successItems.map(i => i.statuses[0].amount).reduce(reducer),
+      realAmount: successItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+      list: successItems
+    }
+
+    const inwork = {
+      initAmount: inworkItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+      amount: inworkItems.map(i => i.statuses[0].amount).reduce(reducer),
+      realAmount: inworkItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+      list: inworkItems
+    }
+
+    const error = {
+      initAmount: errorItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+      amount: errorItems.map(i => i.statuses[0].amount).reduce(reducer),
+      realAmount: errorItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+      list: errorItems
+    }
+
+    const all = {
+      initAmount: success.initAmount + inwork.initAmount + error.initAmount,
+      amount: success.amount + inwork.amount + error.amount,
+      realAmount: success.realAmount + inwork.realAmount + error.realAmount,
+    }
+
+    const response = {
+      all: all,
+      success: success,
+      inwork: inwork,
+      error: error
+    }
+
+    return response
+
+    // return x.sort((a, b) => {
+    //   const statusCmp = statusOrder[a.statuses[0].status] - statusOrder[b.statuses[0].status];
+    //   if (statusCmp == 0) {
+    //     return b.statuses[0].usage - a.statuses[0].usage;
+    //   }else{
+    //     return statusCmp
+    //   }
+    // });
   });
 
   eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection) => {
@@ -155,11 +218,11 @@ const conf = function (eleventyConfig: any) {
       .sort((a, b) => a.timeline.toMillis() - b.timeline.toMillis());
   });
 
-  eleventyConfig.addPairedShortcode("gallery", gallery);// TODO: I dont need
-  eleventyConfig.addPairedShortcode("timeline", timeline);// TODO: I dont need
-  eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB);// TODO: I dont need
-  eleventyConfig.addPairedShortcode("alternativeABInner", alternativeABInner);// TODO: I dont need
-  eleventyConfig.addShortcode("figure", figure);// TODO: I dont need
+  eleventyConfig.addPairedShortcode("gallery", gallery); // TODO: I dont need
+  eleventyConfig.addPairedShortcode("timeline", timeline); // TODO: I dont need
+  eleventyConfig.addPairedShortcode("alternativeAB", alternativeAB); // TODO: I dont need
+  eleventyConfig.addPairedShortcode("alternativeABInner", alternativeABInner); // TODO: I dont need
+  eleventyConfig.addShortcode("figure", figure); // TODO: I dont need
 
   const markdownItOptions: markdownIt.Options = {
     html: true,
@@ -188,7 +251,7 @@ const conf = function (eleventyConfig: any) {
             case "post":
             case "posts":
             case "budget":
-              case "budget2":
+            case "budget2":
               return false;
           }
 

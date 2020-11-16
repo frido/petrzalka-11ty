@@ -21,11 +21,11 @@ class Template implements Budget {
               title: 'Nakup vozidiel a plosiny',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 179348,
                   realAmount: 113075.99,
                   comment: "",
-                  status: 'success'
+                  status: 'inwork'
                 }
               ]
             },{
@@ -33,11 +33,11 @@ class Template implements Budget {
               title: 'prevadzkove stroje',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 18252,
                   realAmount: 18252,
                   comment: "",
-                  status: 'done'
+                  status: 'inwork'
                 }
               ]
             },{
@@ -45,11 +45,11 @@ class Template implements Budget {
               title: 'Vybudovanie jedného nového výbehu pre psov',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 0,
                   realAmount: 0,
-                  comment: "inwork",
-                  status: 'prebieha identifikácia vhodných pozemkov, v roku 2020 sa nebude realizovať'
+                  comment: "prebieha identifikácia vhodných pozemkov, v roku 2020 sa nebude realizovať",
+                  status: 'error'
                 }
               ]
             },{
@@ -57,7 +57,7 @@ class Template implements Budget {
               title: 'Príspevky na stav. Úpravy a vybudovanie nových kontajnerových stanovíšť',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 10000,
                   realAmount: 0,
                   comment: "priebežne sa plní",
@@ -69,7 +69,7 @@ class Template implements Budget {
               title: 'Na revitalizáciu verejných detských ihrísk',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 53322,
                   realAmount: 38322,
                   comment: "prebieha inventarizácia stavu DI",
@@ -81,11 +81,11 @@ class Template implements Budget {
               title: 'nakup nakladnych automobilov + prevadzkove stroje a pristroje',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 89384.33,
                   realAmount: 89384.33,
                   comment: "",
-                  status: 'done'
+                  status: 'inwork'
                 }
               ]
             }

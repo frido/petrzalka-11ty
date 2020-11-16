@@ -38,6 +38,7 @@ var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
 var zverejnovanie_1 = require("./generators/zverejnovanie");
+var numberString = require("number-string");
 // TODO: deprecated
 var gallery = function (content) {
     return "<div class=\"gallery\">" + content + "</div>";
@@ -62,6 +63,7 @@ var alternativeAB = function (content) {
 var alternativeABInner = function (content) {
     return "<div class=\"two-in-row\">" + content + "</div>";
 };
+var statusOrder = { success: 0, inwork: 1, error: 2 };
 var conf = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPluginRss);
@@ -82,6 +84,19 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter("date", function (timeline) {
         return timeline.toFormat("dd.LL.yyyy");
     });
+    eleventyConfig.addFilter("value", function (value) {
+        // const number = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'EUR' }).format(value);
+        var number = numberString.toMoney(value, {
+            decimalMark: ",",
+            thousandSeperator: " ",
+            maxPrecision: 2,
+            minPrecision: 0,
+            symbol: "",
+            symbolBehind: false,
+            useParens: true
+        });
+        return number;
+    });
     eleventyConfig.addFilter("log", function (object) {
         console.log(object);
         return object;
@@ -101,7 +116,6 @@ var conf = function (eleventyConfig) {
     });
     eleventyConfig.addCollection("allMyBudget", function (collection) {
         var scheduleList = [];
-        var now = luxon.DateTime.local();
         var x = collection
             .getFilteredByTag("budget2")
             .map(function (page) {
@@ -111,26 +125,63 @@ var conf = function (eleventyConfig) {
             return year.items;
         })
             .map(function (i) {
-            // console.log(i);
             i.statuses.forEach(function (s) {
                 s.initAmount = i.amount;
-                var percentPoint = s.initAmount / 100;
+                var percentPoint = s.amount / 100;
                 if (percentPoint == 0) {
                     s.usage = 0;
                 }
                 else {
-                    s.usage = Math.round(s.amount / percentPoint);
+                    s.usage = Math.round(s.realAmount / percentPoint);
                 }
             });
             if (i.statuses[0]) {
                 i.lastStatusAmount = i.statuses[0].amount;
             }
-            // console.log(i);
             return i;
         });
-        // console.log(x);
-        return x.sort(function (a, b) { return b.lastStatusAmount - a.lastStatusAmount; });
-        ;
+        var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
+        var successItems = x.filter(function (i) { return i.statuses[0].status === 'success'; });
+        var inworkItems = x.filter(function (i) { return i.statuses[0].status === 'inwork'; });
+        var errorItems = x.filter(function (i) { return i.statuses[0].status === 'error'; });
+        var success = {
+            initAmount: successItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
+            amount: successItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
+            realAmount: successItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
+            list: successItems
+        };
+        var inwork = {
+            initAmount: inworkItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
+            amount: inworkItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
+            realAmount: inworkItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
+            list: inworkItems
+        };
+        var error = {
+            initAmount: errorItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
+            amount: errorItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
+            realAmount: errorItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
+            list: errorItems
+        };
+        var all = {
+            initAmount: success.initAmount + inwork.initAmount + error.initAmount,
+            amount: success.amount + inwork.amount + error.amount,
+            realAmount: success.realAmount + inwork.realAmount + error.realAmount
+        };
+        var response = {
+            all: all,
+            success: success,
+            inwork: inwork,
+            error: error
+        };
+        return response;
+        // return x.sort((a, b) => {
+        //   const statusCmp = statusOrder[a.statuses[0].status] - statusOrder[b.statuses[0].status];
+        //   if (statusCmp == 0) {
+        //     return b.statuses[0].usage - a.statuses[0].usage;
+        //   }else{
+        //     return statusCmp
+        //   }
+        // });
     });
     eleventyConfig.addCollection("allMyContent", function (collection) {
         var scheduleList = [];

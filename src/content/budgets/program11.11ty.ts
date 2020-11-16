@@ -21,8 +21,8 @@ class Template implements Budget {
               title: 'Obstaranie špeciálneho vozidla pre DVPZ Petržalka',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
-                  amount: 0,
+                  date: luxon.DateTime.fromISO("2020-10-01"),
+                  amount: 20000,
                   realAmount: 0,
                   comment: "v príprave",
                   status: 'inwork'
@@ -33,7 +33,7 @@ class Template implements Budget {
               title: 'nakup telco techniky - kamery',
               statuses: [
                 {
-                  date: luxon.DateTime.fromISO("2020-09-01"),
+                  date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 100000,
                   realAmount: 0,
                   comment: "",

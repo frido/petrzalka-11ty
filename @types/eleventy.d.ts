@@ -69,6 +69,7 @@ export interface Image {
 
 type Tag = "projekt" | 'template'
 type Status = "inwork" | "success" | 'error' | 'unknown' | 'pause'
+type InvPlanStatus = "inwork" | "success" | 'error'
 
 export interface Budget {
     data(): FMBudget ;
@@ -94,6 +95,7 @@ export interface BudgetYear {
 export interface BudgetItem {
     title: string;
     amount: number;
+    lastStatusAmount?: number;
     statuses: BudgetStatus[]
 }
 
@@ -102,12 +104,14 @@ export interface BudgetStatus {
     amount: number;
     realAmount: number;
     comment: string;
-    status: string;
+    status: InvPlanStatus;
     items?: BudgetDetail[];
+    initAmount?: number;
+    usage?: number;
 }
 
 export interface BudgetDetail {
     title: string;
-    status: string;
+    status: InvPlanStatus;
     description: string;
 }

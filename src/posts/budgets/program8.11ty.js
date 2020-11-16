@@ -23,10 +23,10 @@ var Template = /** @class */ (function () {
                             title: 'Dofinancovanie ÚP zóny Kapitulský dvor',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
-                                    amount: 34756.8,
-                                    realAmount: 34756.8,
-                                    comment: "v procese spracovania návrhu ÚP ",
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
+                                    amount: 34757,
+                                    realAmount: 34757,
+                                    comment: "v procese spracovania návrhu ÚP",
                                     status: 'inwork'
                                 }
                             ]

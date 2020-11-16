@@ -23,11 +23,11 @@ var Template = /** @class */ (function () {
                             title: 'Moderná prezentácia pamiatok a pamätihodností MČ',
                             statuses: [
                                 {
-                                    date: luxon.DateTime.fromISO("2020-09-01"),
+                                    date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 0,
                                     realAmount: 0,
-                                    comment: "pre potreby niCE life projektu su potrebne cisto bezne vydavky, t.j. kapitalove vydavky v roku 2020 nebudu cerpane",
-                                    status: 'error'
+                                    comment: "niCE life projekt -  nahradne cerpanie za neschvaleny povodny projekt. Pre potreby niCE life projektu su potrebne cisto bezne vydavky, t.j. kapitalove vydavky v roku 2020 nebudu cerpane",
+                                    status: 'success'
                                 }
                             ]
                         }
