@@ -9,6 +9,8 @@ var Template = /** @class */ (function () {
     };
     Template.prototype.data = function () {
         return {
+            layout: "layouts/rozpocet.njk",
+            tags: ["budget2"],
             programs: [
                 {
                     program: 1,

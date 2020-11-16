@@ -15,8 +15,7 @@ var Template = /** @class */ (function () {
             title: 'Doprava a komunikácie',
             years: [
                 {
-                    year: 2020,
-                    amount: 100000,
+                    program: 7,
                     items: [
                         {
                             amount: 219348,

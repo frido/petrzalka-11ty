@@ -15,8 +15,7 @@ var Template = /** @class */ (function () {
             title: 'Vzdelávanie',
             years: [
                 {
-                    year: 2020,
-                    amount: 1400720,
+                    program: 5,
                     items: [
                         {
                             amount: 911536,

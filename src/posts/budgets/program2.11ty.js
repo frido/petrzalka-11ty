@@ -15,8 +15,7 @@ var Template = /** @class */ (function () {
             title: 'Moderný miestny úrad',
             years: [
                 {
-                    year: 2020,
-                    amount: 53000,
+                    program: 2,
                     items: [
                         {
                             amount: 3000,

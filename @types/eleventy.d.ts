@@ -77,11 +77,19 @@ export interface Budget {
 }
 
 export interface FMBudget {
-    tags: BudgetTag[]
-    title: string;
-    icon: string;
-    color: string;
-    years: BudgetYear[]
+    // tags: BudgetTag[]
+    // title: string;
+    // icon: string;
+    // color: string;
+    // years: BudgetYear[]
+    programs: Program[];
+    layout: "layouts/rozpocet.njk";
+    tags: string[];
+}
+
+export interface Program {
+    program: number;
+    items: BudgetItem[];
 }
 
 type BudgetTag = 'budget2';

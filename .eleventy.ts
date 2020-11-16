@@ -1,4 +1,4 @@
-import { BudgetItem, BudgetYear, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { BudgetItem, BudgetYear, FMBudget, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -119,16 +119,11 @@ const conf = function (eleventyConfig: any) {
     return [];
   });
 
-  eleventyConfig.addCollection("allMyBudget", (collection: TemplateCollection) => {
-    let scheduleList: Schedule[] = [];
-    let x = collection
-      .getFilteredByTag("budget2")
-      .map((page: any) => {
-        return page.data.years.find((year) => year.year == 2020);
-      })
-      .flatMap((year: BudgetYear) => {
-        return year.items;
-      })
+  eleventyConfig.addFilter("FMBudget", (programs: Program[]) => {
+    console.log(programs);
+    
+    const budgetItems = programs
+      .flatMap(p => p.items)
       .map((i: BudgetItem) => {
         i.statuses.forEach((s) => {
           s.initAmount = i.amount;
@@ -145,11 +140,11 @@ const conf = function (eleventyConfig: any) {
         return i;
       });
 
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+      const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-    const successItems = x.filter(i => i.statuses[0].status === 'success');
-    const inworkItems = x.filter(i => i.statuses[0].status === 'inwork');
-    const errorItems = x.filter(i => i.statuses[0].status === 'error');
+    const successItems = budgetItems.filter(i => i.statuses[0].status === 'success');
+    const inworkItems = budgetItems.filter(i => i.statuses[0].status === 'inwork');
+    const errorItems = budgetItems.filter(i => i.statuses[0].status === 'error');
 
     const success = {
       initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),
@@ -186,16 +181,86 @@ const conf = function (eleventyConfig: any) {
     }
 
     return response
-
-    // return x.sort((a, b) => {
-    //   const statusCmp = statusOrder[a.statuses[0].status] - statusOrder[b.statuses[0].status];
-    //   if (statusCmp == 0) {
-    //     return b.statuses[0].usage - a.statuses[0].usage;
-    //   }else{
-    //     return statusCmp
-    //   }
-    // });
   });
+
+  // eleventyConfig.addCollection("allMyBudget", (collection: TemplateCollection) => {
+  //   let scheduleList: Schedule[] = [];
+  //   let x = collection
+  //     .getFilteredByTag("budget2")
+  //     .map((page: any) => page.data)
+  //     .flatMap((data: FMBudget) => {
+  //       return data.programs;
+  //     })
+  //     .flatMap((data: Program) => {
+  //       return data.items;
+  //     })
+  //     .map((i: BudgetItem) => {
+  //       i.statuses.forEach((s) => {
+  //         s.initAmount = i.amount;
+  //         const percentPoint = s.amount / 100;
+  //         if (percentPoint == 0) {
+  //           s.usage = 0;
+  //         } else {
+  //           s.usage = Math.round(s.realAmount / percentPoint);
+  //         }
+  //       });
+  //       if (i.statuses[0]) {
+  //         i.lastStatusAmount = i.statuses[0].amount;
+  //       }
+  //       return i;
+  //     });
+
+  //   const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+  //   const successItems = x.filter(i => i.statuses[0].status === 'success');
+  //   const inworkItems = x.filter(i => i.statuses[0].status === 'inwork');
+  //   const errorItems = x.filter(i => i.statuses[0].status === 'error');
+
+  //   const success = {
+  //     initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+  //     amount: successItems.map(i => i.statuses[0].amount).reduce(reducer),
+  //     realAmount: successItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+  //     list: successItems
+  //   }
+
+  //   const inwork = {
+  //     initAmount: inworkItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+  //     amount: inworkItems.map(i => i.statuses[0].amount).reduce(reducer),
+  //     realAmount: inworkItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+  //     list: inworkItems
+  //   }
+
+  //   const error = {
+  //     initAmount: errorItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+  //     amount: errorItems.map(i => i.statuses[0].amount).reduce(reducer),
+  //     realAmount: errorItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+  //     list: errorItems
+  //   }
+
+  //   const all = {
+  //     initAmount: success.initAmount + inwork.initAmount + error.initAmount,
+  //     amount: success.amount + inwork.amount + error.amount,
+  //     realAmount: success.realAmount + inwork.realAmount + error.realAmount,
+  //   }
+
+  //   const response = {
+  //     all: all,
+  //     success: success,
+  //     inwork: inwork,
+  //     error: error
+  //   }
+
+  //   return response
+
+  //   // return x.sort((a, b) => {
+  //   //   const statusCmp = statusOrder[a.statuses[0].status] - statusOrder[b.statuses[0].status];
+  //   //   if (statusCmp == 0) {
+  //   //     return b.statuses[0].usage - a.statuses[0].usage;
+  //   //   }else{
+  //   //     return statusCmp
+  //   //   }
+  //   // });
+  // });
 
   eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection) => {
     let scheduleList: Schedule[] = [];
