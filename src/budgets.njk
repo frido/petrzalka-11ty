@@ -1,0 +1,14 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Rozpočet
+  order: 4
+---
+<div class="paletteB">
+  <section class="container vertical">
+    <h1>Rozpočty</h1>
+    {% for budget in collections.budget2 %}
+     <h2><a href="{{ budget.url | url }}">rok {{ budget.data.year }}</a></h2>
+    {% endfor %}
+  </section>
+</div>

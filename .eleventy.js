@@ -122,6 +122,9 @@ var conf = function (eleventyConfig) {
             i.statuses.forEach(function (s) {
                 s.initAmount = i.amount;
                 var percentPoint = s.amount / 100;
+                if (s.status === 'success') {
+                    percentPoint = s.initAmount / 100;
+                }
                 if (percentPoint == 0) {
                     s.usage = 0;
                 }
@@ -135,9 +138,10 @@ var conf = function (eleventyConfig) {
             return i;
         });
         var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
-        var successItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'success'; });
-        var inworkItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'inwork'; });
-        var errorItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'error'; });
+        var sorter = function (a, b) { return b.statuses[0].usage - a.statuses[0].usage; };
+        var successItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'success'; }).sort(sorter);
+        var inworkItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'inwork'; }).sort(sorter);
+        var errorItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'error'; }).sort(sorter);
         var success = {
             initAmount: successItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
             amount: successItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),

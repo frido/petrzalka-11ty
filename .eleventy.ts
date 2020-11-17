@@ -127,7 +127,10 @@ const conf = function (eleventyConfig: any) {
       .map((i: BudgetItem) => {
         i.statuses.forEach((s) => {
           s.initAmount = i.amount;
-          const percentPoint = s.amount / 100;
+          let percentPoint = s.amount / 100;
+          if (s.status === 'success') {
+            percentPoint = s.initAmount / 100;
+          }
           if (percentPoint == 0) {
             s.usage = 0;
           } else {
@@ -140,11 +143,12 @@ const conf = function (eleventyConfig: any) {
         return i;
       });
 
-      const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const sorter = (a: BudgetItem, b:BudgetItem) => b.statuses[0].usage - a.statuses[0].usage;
 
-    const successItems = budgetItems.filter(i => i.statuses[0].status === 'success');
-    const inworkItems = budgetItems.filter(i => i.statuses[0].status === 'inwork');
-    const errorItems = budgetItems.filter(i => i.statuses[0].status === 'error');
+    const successItems = budgetItems.filter(i => i.statuses[0].status === 'success').sort(sorter);
+    const inworkItems = budgetItems.filter(i => i.statuses[0].status === 'inwork').sort(sorter);
+    const errorItems = budgetItems.filter(i => i.statuses[0].status === 'error').sort(sorter);
 
     const success = {
       initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),

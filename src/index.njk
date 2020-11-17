@@ -86,7 +86,7 @@ eleventyNavigation:
     <header>
       <h1 class="container-title">Športové granty</h1>
     </header>
-    <div class="flex-wrap c-4 pt-3">
+    <div class="grants-row c-4">
       {% for grantPost in collections.sgrant | head(1) %}
         {% set grants = grantPost.data.list | head(4) %}
         {% for grant in grants %}
@@ -101,7 +101,7 @@ eleventyNavigation:
     <header>
       <h1 class="container-title">Dotácie</h1>
     </header>
-    <div class="flex-wrap c-4 pt-3">
+    <div class="grants-row c-4">
       {% for grantPost in collections.ogrant | head(1) %}
         {% set grants = grantPost.data.list | head(4) %}
         {% for grant in grants %}
@@ -112,20 +112,5 @@ eleventyNavigation:
   </section>
   <div class="button">
     <a href="grants">Viac</a>
-  </div>
-</div>
-
-<div class="paletteB">
-
-  <section class="container vertical">
-    <header>
-      <h1 class="container-title">Rozpočet</h1>
-    </header>
-    {% for budget in collections.main %}
-      {% include "budgetslist.njk" %}
-    {% endfor %}
-  </section>
-  <div class="button">
-    <a href="budget/">Viac</a>
   </div>
 </div>

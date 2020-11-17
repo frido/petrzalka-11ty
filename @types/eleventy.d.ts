@@ -82,6 +82,7 @@ export interface FMBudget {
     // icon: string;
     // color: string;
     // years: BudgetYear[]
+    year: number;
     programs: Program[];
     layout: "layouts/rozpocet.njk";
     tags: string[];

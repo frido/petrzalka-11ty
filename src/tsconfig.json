@@ -1,9 +1,0 @@
-{
-    "compilerOptions": {
-        "lib": ["ES2020"],
-        "downlevelIteration": true,
-        "outDir": "./"
-    },
-    "include": ["content/"],
-    "exclude": ["content/posts/template*"]
-}

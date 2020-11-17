@@ -9,6 +9,7 @@ var Template = /** @class */ (function () {
     };
     Template.prototype.data = function () {
         return {
+            year: 2020,
             layout: "layouts/rozpocet.njk",
             tags: ["budget2"],
             programs: [
@@ -343,7 +344,7 @@ var Template = /** @class */ (function () {
                                     amount: 18252,
                                     realAmount: 18252,
                                     comment: "",
-                                    status: 'inwork'
+                                    status: 'success'
                                 }
                             ]
                         }, {
@@ -391,7 +392,7 @@ var Template = /** @class */ (function () {
                                     amount: 89384.33,
                                     realAmount: 89384.33,
                                     comment: "",
-                                    status: 'inwork'
+                                    status: 'success'
                                 }
                             ]
                         }
@@ -408,7 +409,7 @@ var Template = /** @class */ (function () {
                                     amount: 34757,
                                     realAmount: 34757,
                                     comment: "V procese spracovania návrhu ÚP",
-                                    status: 'inwork'
+                                    status: 'success'
                                 }
                             ]
                         }

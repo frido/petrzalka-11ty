@@ -7,48 +7,52 @@
               </h2>
             </header>
           </div>
-          <div class="col-md-3">
-            <div class="d-flex justify-content-end align-items-baseline">
+          <div class="col-md-3 text-right">
                 rozpočet <span style="margin-left: 1rem" class="amount">{{budget.amount | value}}€</span>
-            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="progress" style="height: 3px">
+            <div class="progress">
               <div class="progress-bar bg-{{budget.statuses[0].status}}" role="progressbar" style="width: {{budget.statuses[0].usage}}%" aria-valuenow="{{budget.statuses[0].amount}}" aria-valuemin="0" aria-valuemax="{{budget.amount}}"></div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-5">
+            {% if budget.statuses[0].status !== 'error' %}
             <div>
-            <small>Aktuálne výdavky:</small><span class="amountXXX">{{budget.statuses[0].realAmount | value}}€</span>
+            <small>Aktuálne výdavky</small><span class="amount" style="margin-left: 0.5rem">{{budget.statuses[0].realAmount | value}}€</span>
             </div>
+            {% endif %} 
           </div>
+          
           <div class="col-md-5">
+          {% if budget.statuses[0].status === 'inwork' %}
             <div>
-              <small>Odhadované výdavky:</small><span class="amountXXX">{{budget.statuses[0].amount | value}}€</span>
+              <small>Odhadované výdavky</small><span class="amount" style="margin-left: 0.5rem">{{budget.statuses[0].amount | value}}€</span>
               {% if budget.statuses[0].amount > budget.amount %}
-              <span class="text-danger"><i class="fas fa-angle-double-up"></i></span>
+              <span class="text-error"><i class="fas fa-angle-double-up"></i></span>
               {% endif %}  
             </div>
+          {% endif %}
           </div>
-          <div class="col-md-2">
+          
+          <div class="col-md-2 text-right">
             <small>ku dňu: {{budget.statuses[0].date | date}}</small>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
             {% if budget.statuses[0].status === 'success' %}
-            <div class="text-success">Zrealizované <i class="fas fa-check-circle"></i></div>
+            <div class="text-success text-right">Zrealizované {# <i class="fas fa-check-circle text-success"></i> #}</div>
             {% endif %}
             {% if budget.statuses[0].status === 'inwork' %}
             {{budget.statuses[0].comment}}
             {% endif %}
             {% if budget.statuses[0].status === 'error' %}
             {{budget.statuses[0].comment}}
-            <div class="text-danger">Zrušené <i class="fas fa-ban"></i></div>
+            <div class="text-error text-right">Zrušené {# <i class="fas fa-ban"></i> #}</div>
             {% endif %}
           </div>
         </div>

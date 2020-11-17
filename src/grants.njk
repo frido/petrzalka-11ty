@@ -9,7 +9,7 @@ eleventyNavigation:
     <header>
       <h1 class="container-title">Športové granty</h1>
     </header>
-    <div class="flex-wrap c-4">
+    <div class="grants-row c-4">
       {% for grantPost in collections.sgrant | head(1)  %}
         {% set grants = grantPost.data.list %}
         {% for grant in grants  %}
@@ -25,7 +25,7 @@ eleventyNavigation:
     <header>
       <h1 class="container-title">Dotácie</h1>
     </header>
-    <div class="flex-wrap c-4">
+    <div class="grants-row c-4">
       {% for grantPost in collections.ogrant | head(1)  %}
         {% set grants = grantPost.data.list %}
         {% for grant in grants  %}
