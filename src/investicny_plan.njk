@@ -37,7 +37,7 @@ eleventyNavigation:
             <div>Zrealizované {# <i class="fas fa-check-circle text-success"></i> #}</div>
           </div>
           <div class="col-md-4">
-            {{allMyBudget.success.list.length}} <small>projektov</small>
+            {{allMyBudget.success.list.length | project}}
           </div>
           <div class="col-md-4 text-right">
             <small>Aktuálne výdavky</small><span class="amount" style="margin-left: 0.5rem">{{allMyBudget.success.realAmount | value}}€</span>
@@ -49,7 +49,7 @@ eleventyNavigation:
             <div>Realizuje sa</div>
           </div>
           <div class="col-md-4">
-            {{allMyBudget.inwork.list.length}} <small>projektov</small>
+            {{allMyBudget.inwork.list.length | project}}
           </div>
           <div class="col-md-4 text-right">
             <small>Aktuálne výdavky</small><span class="amount" style="margin-left: 0.5rem">{{allMyBudget.inwork.realAmount | value}}€</span>
@@ -61,7 +61,7 @@ eleventyNavigation:
             <div>Odložené</div>
           </div>
           <div class="col-md-4">
-            {{allMyBudget.postpone.list.length}} <small>projektov</small>
+            {{allMyBudget.postpone.list.length | project}}
           </div>
         </div>
 
@@ -70,7 +70,7 @@ eleventyNavigation:
             <div>Zrušené</div>
           </div>
           <div class="col-md-4">
-            {{allMyBudget.error.list.length}} <small>projektov</small>
+            {{allMyBudget.error.list.length | project}}
           </div>
         </div>
         

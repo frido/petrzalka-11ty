@@ -18,10 +18,10 @@ aktualizované 1.10.2020
       Zrealizované <i class="fas fa-check-circle"></i>
       </div>
       <div class="col-md-2">
-        {{success.list.length}} projektov
+        {{success.list.length | project}}
     </div>
       <div class="col-md-8">
-      Výdavky: {{success.realAmount | value}}
+      Výdavky: {{success.realAmount | value}}€
       </div>
     </div>
     {% for budget in success.list %}
@@ -36,7 +36,7 @@ aktualizované 1.10.2020
       Odložené <i class="far fa-arrow-alt-circle-right"></i>
       </div>
       <div class="col-md-2">
-        {{error.list.length}} projektov
+        {{error.list.length | project}}
     </div>
     </div>
     {% for budget in error.list %}
@@ -51,7 +51,7 @@ aktualizované 1.10.2020
       Zrušené <i class="fas fa-ban"></i>
       </div>
       <div class="col-md-2">
-        {{error.list.length}} projektov
+        {{error.list.length | project}}
     </div>
     </div>
     {% for budget in error.list %}
@@ -66,13 +66,13 @@ aktualizované 1.10.2020
       Realizuje sa
     </div>
       <div class="col-md-2">
-        {{inwork.list.length}} projektov
+        {{inwork.list.length | project}}
     </div>
       <div class="col-md-4">
-      Aktuálne výdavky: {{inwork.realAmount | value}}
+      Aktuálne výdavky: {{inwork.realAmount | value}}€
       </div>
       <div class="col-md-4">
-      Plánované výdavky: {{inwork.amount | value}}
+      Plánované výdavky: {{inwork.amount | value}}€
       </div>
     </div>
     {% for budget in inwork.list %}

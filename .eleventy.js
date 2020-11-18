@@ -84,6 +84,15 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter("date", function (timeline) {
         return timeline.toFormat("dd.LL.yyyy");
     });
+    eleventyConfig.addFilter("project", function (value) {
+        if (value === 1) {
+            return "1 projekt";
+        }
+        if (value === 2 || value === 3 || value === 4) {
+            return value + ' projekty';
+        }
+        return value + ' projektov';
+    });
     eleventyConfig.addFilter("value", function (value) {
         // const number = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'EUR' }).format(value);
         var number = numberString.toMoney(value, {
