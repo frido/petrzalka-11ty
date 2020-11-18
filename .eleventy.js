@@ -142,6 +142,7 @@ var conf = function (eleventyConfig) {
         var successItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'success'; }).sort(sorter);
         var inworkItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'inwork'; }).sort(sorter);
         var errorItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'error'; }).sort(sorter);
+        var postponeItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'postpone'; }).sort(sorter);
         var success = {
             initAmount: successItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
             amount: successItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
@@ -160,16 +161,23 @@ var conf = function (eleventyConfig) {
             realAmount: errorItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
             list: errorItems
         };
+        var postpone = {
+            initAmount: postponeItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
+            amount: postponeItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
+            realAmount: postponeItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
+            list: postponeItems
+        };
         var all = {
-            initAmount: success.initAmount + inwork.initAmount + error.initAmount,
-            amount: success.amount + inwork.amount + error.amount,
-            realAmount: success.realAmount + inwork.realAmount + error.realAmount
+            initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
+            amount: success.amount + inwork.amount + error.amount + postpone.amount,
+            realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount
         };
         var response = {
             all: all,
             success: success,
             inwork: inwork,
-            error: error
+            error: error,
+            postpone: postpone
         };
         return response;
     });

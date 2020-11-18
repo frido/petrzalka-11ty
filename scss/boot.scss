@@ -65,6 +65,9 @@
 .text-error {
     color: $error !important
 }
+.text-postpone {
+    color: $error !important
+}
 
 .bg-success {
     background-color:$success !important;
@@ -73,6 +76,9 @@
     background-color: $inwork !important;
 }
 .bg-error {
+    background-color: $error !important;
+}
+.bg-postpone {
     background-color: $error !important;
 }
 
@@ -170,6 +176,10 @@ header.logo {
     @include timeline($error);
 }
 
+.timeline.postpone {
+    @include timeline($error);
+}
+
 .timeline.pause {
     @include timeline($pause);
 }
@@ -183,6 +193,10 @@ header.logo {
 }
 
 .budget.error {
+    @include budget($error);
+}
+
+.budget.postpone {
     @include budget($error);
 }
 

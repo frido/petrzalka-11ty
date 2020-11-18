@@ -69,7 +69,7 @@ export interface Image {
 
 type Tag = "projekt" | 'template'
 type Status = "inwork" | "success" | 'error' | 'unknown' | 'pause'
-type InvPlanStatus = "inwork" | "success" | 'error'
+type InvPlanStatus = "inwork" | "success" | 'error' | 'postpone'
 
 export interface Budget {
     data(): FMBudget ;

@@ -2779,6 +2779,10 @@ progress {
   color: #CC0000 !important;
 }
 
+.text-postpone {
+  color: #CC0000 !important;
+}
+
 .bg-success {
   background-color: #00695c !important;
 }
@@ -2788,6 +2792,10 @@ progress {
 }
 
 .bg-error {
+  background-color: #CC0000 !important;
+}
+
+.bg-postpone {
   background-color: #CC0000 !important;
 }
 
@@ -3104,6 +3112,18 @@ header.logo a:hover {
   color: #CC0000;
 }
 
+.timeline.postpone {
+  border-left: solid 10px #CC0000;
+}
+
+.timeline.postpone .description {
+  color: #CC0000;
+}
+
+.timeline.postpone .subheader {
+  color: #CC0000;
+}
+
 .timeline.pause {
   border-left: solid 10px #9933CC;
 }
@@ -3137,6 +3157,14 @@ header.logo a:hover {
 }
 
 .budget.error .status-box {
+  color: #CC0000;
+}
+
+.budget.postpone {
+  border-left: solid 10px #CC0000;
+}
+
+.budget.postpone .status-box {
   color: #CC0000;
 }
 

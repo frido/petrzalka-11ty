@@ -149,6 +149,7 @@ const conf = function (eleventyConfig: any) {
     const successItems = budgetItems.filter(i => i.statuses[0].status === 'success').sort(sorter);
     const inworkItems = budgetItems.filter(i => i.statuses[0].status === 'inwork').sort(sorter);
     const errorItems = budgetItems.filter(i => i.statuses[0].status === 'error').sort(sorter);
+    const postponeItems = budgetItems.filter(i => i.statuses[0].status === 'postpone').sort(sorter);
 
     const success = {
       initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),
@@ -171,17 +172,25 @@ const conf = function (eleventyConfig: any) {
       list: errorItems
     }
 
+    const postpone = {
+      initAmount: postponeItems.map(i => i.statuses[0].initAmount).reduce(reducer),
+      amount: postponeItems.map(i => i.statuses[0].amount).reduce(reducer),
+      realAmount: postponeItems.map(i => i.statuses[0].realAmount).reduce(reducer),
+      list: postponeItems
+    }
+
     const all = {
-      initAmount: success.initAmount + inwork.initAmount + error.initAmount,
-      amount: success.amount + inwork.amount + error.amount,
-      realAmount: success.realAmount + inwork.realAmount + error.realAmount,
+      initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
+      amount: success.amount + inwork.amount + error.amount + postpone.amount,
+      realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount,
     }
 
     const response = {
       all: all,
       success: success,
       inwork: inwork,
-      error: error
+      error: error,
+      postpone: postpone
     }
 
     return response

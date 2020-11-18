@@ -1,14 +1,85 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Rozpočet
+  key: Inv. Plán
   order: 4
 ---
 <div class="paletteB">
   <section class="container vertical">
-    <h1>Rozpočty</h1>
-    {% for budget in collections.budget2 %}
+    <h1>Investičné plány</h1>
+
+{% for page in collections.budget2 %}
+    {% set allMyBudget = page.data.programs | FMBudget %}
+    <article class="article">
+        <div class="row">
+          <div class="col-md-9">
+            <header>
+              <h2>
+                <h2><a href="{{ page.url | url }}">{{ page.data.year }}</a></h2>
+              </h2>
+            </header>
+          </div>
+          <div class="col-md-3 text-right">
+                rozpočet <span style="margin-left: 0.5rem" class="amount">{{allMyBudget.all.initAmount | value}}€</span>
+          </div>
+        </div>
+
+        {# <div class="row">
+          <div class="col-md-12">
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 50%"></div>
+            </div>
+          </div>
+        </div> #}
+
+        <div class="row">
+         <div class="col-md-4 text-success">
+            <div>Zrealizované {# <i class="fas fa-check-circle text-success"></i> #}</div>
+          </div>
+          <div class="col-md-4">
+            {{allMyBudget.success.list.length}} <small>projektov</small>
+          </div>
+          <div class="col-md-4 text-right">
+            <small>Aktuálne výdavky</small><span class="amount" style="margin-left: 0.5rem">{{allMyBudget.success.realAmount | value}}€</span>
+          </div>
+        </div>
+
+        <div class="row">
+         <div class="col-md-4 text-inwork">
+            <div>Realizuje sa</div>
+          </div>
+          <div class="col-md-4">
+            {{allMyBudget.inwork.list.length}} <small>projektov</small>
+          </div>
+          <div class="col-md-4 text-right">
+            <small>Aktuálne výdavky</small><span class="amount" style="margin-left: 0.5rem">{{allMyBudget.inwork.realAmount | value}}€</span>
+          </div>
+        </div>
+
+        <div class="row">
+         <div class="col-md-4 text-postpone">
+            <div>Odložené</div>
+          </div>
+          <div class="col-md-4">
+            {{allMyBudget.postpone.list.length}} <small>projektov</small>
+          </div>
+        </div>
+
+        <div class="row">
+         <div class="col-md-4 text-error">
+            <div>Zrušené</div>
+          </div>
+          <div class="col-md-4">
+            {{allMyBudget.error.list.length}} <small>projektov</small>
+          </div>
+        </div>
+        
+      </article>
+
+{% endfor %}
+
+
+    {# {% for budget in collections.budget2 %}
      <h2><a href="{{ budget.url | url }}">rok {{ budget.data.year }}</a></h2>
-    {% endfor %}
-  </section>
+    {% endfor %} #}
 </div>

@@ -2,61 +2,82 @@
 layout: layouts/home.njk
 
 ---
+<div class="paletteB">
+  <section class="container vertical">
+    <h1>Investičný plán {{year}}</h1>
+aktualizované 1.10.2020
+</section>
+</div>
+
 {% set allMyBudget = programs | FMBudget %}
 <div class="paletteB">
   <section class="container vertical">
     {% set success = allMyBudget.success %}
     <div class="row text-success">
-    <div class="col-md-2">
+      <div class="col-md-2">
       Zrealizované <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="col-md-2">
+        {{success.list.length}} projektov
     </div>
-    <div class="col-md-2">
-      {{success.list.length}} projektov
-    </div>
-    <div class="col-md-8">
+      <div class="col-md-8">
       Výdavky: {{success.realAmount | value}}
-    </div>
+      </div>
     </div>
     {% for budget in success.list %}
       {% include "rozpocetlist.njk" %}
-    {% endfor %} 
+    {% endfor %}
+  </section>
+
+  <section class="container vertical">
+    {% set error = allMyBudget.postpone %}
+    <div class="row text-error">
+      <div class="col-md-3">
+      Odložené <i class="far fa-arrow-alt-circle-right"></i>
+      </div>
+      <div class="col-md-2">
+        {{error.list.length}} projektov
+    </div>
+    </div>
+    {% for budget in error.list %}
+      {% include "rozpocetlist.njk" %}
+    {% endfor %}
   </section>
 
   <section class="container vertical">
     {% set error = allMyBudget.error %}
     <div class="row text-error">
-    <div class="col-md-3">
-      Zrušené / Odložené <i class="fas fa-ban"></i>
-    </div>
-    <div class="col-md-2">
-      {{error.list.length}} projektov
+      <div class="col-md-3">
+      Zrušené <i class="fas fa-ban"></i>
+      </div>
+      <div class="col-md-2">
+        {{error.list.length}} projektov
     </div>
     </div>
     {% for budget in error.list %}
       {% include "rozpocetlist.njk" %}
-    {% endfor %} 
+    {% endfor %}
   </section>
 
   <section class="container vertical">
     {% set inwork = allMyBudget.inwork %}
     <div class="row" style="color: #0d47a1 !important;">
-    <div class="col-md-2">
+      <div class="col-md-2">
       Realizuje sa
     </div>
-    <div class="col-md-2">
-      {{inwork.list.length}} projektov
+      <div class="col-md-2">
+        {{inwork.list.length}} projektov
     </div>
-    <div class="col-md-4">
+      <div class="col-md-4">
       Aktuálne výdavky: {{inwork.realAmount | value}}
-    </div>
-    <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
       Plánované výdavky: {{inwork.amount | value}}
-    </div>
+      </div>
     </div>
     {% for budget in inwork.list %}
       {% include "rozpocetlist.njk" %}
-    {% endfor %} 
+    {% endfor %}
   </section>
-
 
 </div>

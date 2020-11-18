@@ -91,7 +91,7 @@ class Template implements Budget {
               ]
             },{
               amount: 80000,
-              title: 'Rekonstrukcia a modernizácia',
+              title: 'Rekonstrukcia a modernizácia komunikácii',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -115,7 +115,7 @@ class Template implements Budget {
               ]
             },{
               amount: 370000,
-              title: 'Prípravná projektová dokumentácia na budovanie nových chodníkov',
+              title: 'Prípravná projektová dokumentácia a budovanie nových chodníkov',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -238,7 +238,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                  status: 'error'
+                  status: 'postpone'
                 }
               ]
             },{
@@ -250,7 +250,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                  status: 'error'
+                  status: 'postpone'
                 }
               ]
             },{
@@ -262,7 +262,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                  status: 'error'
+                  status: 'postpone'
                 }
               ]
             }
@@ -325,24 +325,12 @@ class Template implements Budget {
           items: [
             {
               amount: 219348,
-              title: 'Nakup vozidiel a plošiny',
+              title: 'Nákup vozidiel a plošiny (žacích strojov s príslušenstvom)',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 179348,
                   realAmount: 113075.99,
-                  comment: "",
-                  status: 'inwork'
-                }
-              ]
-            },{
-              amount: 18252,
-              title: 'Prevádzkové stroje',
-              statuses: [
-                {
-                  date: luxon.DateTime.fromISO("2020-10-01"),
-                  amount: 18252,
-                  realAmount: 18252,
                   comment: "",
                   status: 'inwork'
                 }
@@ -356,7 +344,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "Prebieha identifikácia vhodných pozemkov. V roku 2020 sa nebude realizovať",
-                  status: 'error'
+                  status: 'postpone'
                 }
               ]
             },{
@@ -373,7 +361,7 @@ class Template implements Budget {
               ]
             },{
               amount: 63200,
-              title: 'Revitalizácia verejných detských ihrísk',
+              title: 'Revitalizácia verejných detských ihrísk (príslušenstvo k strojom, prístrojom, zariadeniam a technikám)',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
@@ -385,14 +373,14 @@ class Template implements Budget {
               ]
             },{
               amount: 91614,
-              title: 'Nákup nákladných automobilov a prevádzkových strojov a prístrojov',
+              title: 'Nákup nákladných automobilov a prevádzkových strojov a prístrojov (2 kusov nákladných automobilov značky Man, jadrovej vŕtačky a stolového sústruhu)',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
                   amount: 89384.33,
                   realAmount: 89384.33,
                   comment: "",
-                  status: 'inwork'
+                  status: 'success'
                 }
               ]
             }
@@ -409,7 +397,7 @@ class Template implements Budget {
                   amount: 34757,
                   realAmount: 34757,
                   comment: "V procese spracovania návrhu ÚP",
-                  status: 'inwork'
+                  status: 'success'
                 }
               ]
             }
@@ -426,7 +414,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "Nenávratný finančný prispevok bol zamietnutý. Aktuálne prebieha odvolacie konanie",
-                  status: 'error'
+                  status: 'postpone'
                 }
               ]
             },{
@@ -443,7 +431,7 @@ class Template implements Budget {
               ]
             },{
               amount: 0,
-              title: 'Riešenie sociálneho zar. pre seniorov, príp. na zvýšenie kapacity MŠ',
+              title: 'Riešenie sociálneho zariadenia pre seniorov, prípadne na zvýšenie kapacity MŠ',
               statuses: [
                 {
                   date: luxon.DateTime.fromISO("2020-10-01"),
