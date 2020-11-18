@@ -24,7 +24,7 @@ class Template implements Budget {
                   amount: 0,
                   realAmount: 0,
                   comment: "niCE life projekt. Náhradné čerpanie za neschválený pôvodný projekt. Pre potreby niCE life projektu sú potrebné iba bežné výdavky. Kapitálové výdavky v roku 2020 nebudú čerpané",
-                  status: 'success'
+                  status: 'error'
                 }
               ]
             }
