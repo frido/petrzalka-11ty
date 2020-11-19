@@ -7,9 +7,9 @@ eleventyNavigation:
 <div class="paletteA">
   <section class="container vertical">
     <header>
-      <h1 class="container-title">Časová os</h1>
+      <h1 class="container-title">Developerské projekty</h1>
     </header>
-    {% for sch in collections.allMyContent | reverse %}
+    {% for sch in collections.allMyContent | reverse | head(5) %}
       <article class="article timeline {{ sch.status }}">
         <div class="row">
           <div class="col-md-10">
@@ -80,6 +80,25 @@ eleventyNavigation:
     </a>
   </div>
 </div> #}
+
+<div class="paletteC">
+  <section class="container vertical">
+    <header>
+      <h1 class="container-title">Investičný plán</h1>
+    </header>
+    <div class="">
+      {% for page in collections.budget2 %}
+        {% set allMyBudget = page.data.programs | FMBudget %}
+        {% for budget in allMyBudget.success.list | head(5) %}
+          {% include "rozpocetlist.njk" %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </section>
+  <div class="button">
+    <a href="investicny_plan/2020">Viac</a>
+  </div>
+</div>
 
 <div class="paletteC">
   <section class="container">
