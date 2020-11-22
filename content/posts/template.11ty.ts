@@ -1,4 +1,4 @@
-import { FrontMatter, Post } from "../../../@types/eleventy";
+import { FrontMatter, Post } from "../../@types/eleventy";
 import * as luxon from "luxon";
 
 class Template implements Post {

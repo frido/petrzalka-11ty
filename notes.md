@@ -24,18 +24,6 @@ https://www.petrzalka.sk/wp-content/uploads/2020/01/Info.-1.-Investi%C4%8Dn%C3%B
 navrhovateľom, vyjadrenie k investičnému zámeru
 https://www.petrzalka.sk/wp-content/uploads/2020/11/KUPVaR-zapisnica.pdf
 
-# Samoobslužná čerpacia stanica PHM, Petržalka Juh
-https://www.petrzalka.sk/samoobsluzna-cerpacia-stanica-phm-petrzalka-juh/
-https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=67275
-  Statement {
-    link: 'https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=67275',
-    ziadatel: 'Arekon, s. r. o., Rekreačný rad 6091/37, ',
-    title: 'Samoobslužná čerpacia stanica PHM Petržalka juh',
-    place: 'MČ Bratislava – Petržalka',
-    stateDate: '06. 02. 2020',
-    publicDate: '10. 03. 2020'
-  },
-
 # Parkovaci dom
   Statement {
     https://www.petrzalka.sk/parkovaci-dom-panonska-ul-bratislava-mc-petrzalka/
