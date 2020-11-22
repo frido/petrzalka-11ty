@@ -27,6 +27,13 @@ var PolyfunkcnyObjektTematinska = /** @class */ (function () {
                             timeline: luxon.DateTime.fromISO("2020-08-27")
                         },
                         {
+                            title: "Stanovisko komisie MZ",
+                            source: "https://www.petrzalka.sk/wp-content/uploads/2020/11/KUPVaR-zapisnica.pdf",
+                            status: "success",
+                            description: "žiada ďalšie dokumenty",
+                            timeline: luxon.DateTime.fromISO("2020-10-27")
+                        },
+                        {
                             title: "Petícia proti výstavbe",
                             source: "https://www.peticie.com/peticia_proti_vystavbe_polyfunknej_stavby_na_tematinskej_ulici_pri_vekom_dradiaku_v_mestskej_asti_bratislava__petralka",
                             status: "inwork",
