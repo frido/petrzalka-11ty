@@ -1,0 +1,238 @@
+2018 -> 1143 -> Okres;Rok;spolu;16-17 rokov;16-17 rokov - ženy;17-18 rokov;17-18 rokov - ženy;18-19 rokov;18-19 rokov - ženy;19-20 rokov;19-20 rokov - ženy;20-25 rokov;20-25 rokov - ženy;25-30 rokov;25-30 rokov - ženy -> Počet mladých nezamestnaných podľa veku a pohlavia
+2018 -> 1172 -> Okres;Mestská èas�;Rok;Poèet stálych scén a divadelných subjektov -> Počet stálych scén a divadelných subjektov
+2019 -> 9993 -> Okres;Rok;1.;2.;3. -> Podiel živonarodených podľa poradia
+2018 -> 1449 -> Okres;Rok;Útvary/èlenovia;Druh;Poèet -> Útvary pravidelnej záujmovej činnosti centier voľného času so športovým zameraním a počet členov
+2018 -> 1176 -> Okres;Mestská èas�;Rok;Vedecké knižnice - poèet;Vedecké knižnice - poèet knižnièných jednotiek spolu -> Počet vedeckých knižníc a počet knižničných jednotiek
+2018 -> 975 -> Okres;Rok;Miera -> Miera evidovanej nezamestnanosti (v %)
+2018 -> 1177 -> Okres;Mestská èas�;Rok;Špeciálne knižnice - poèet;Špeciálne knižnice - poèet knižnièných jednotiek -> Počet špeciálnych knižníc a počet knižničných jednotiek
+2019 -> 9995 -> Okres;Rok;14 rokov alebo menej;Od 15 do 49 rokov;Od 15 do 19 rokov;Od 20 do 24 rokov;Od 25 do 29 rokov;Od 30 do 34 rokov;Od 35 do 39 rokov;Od 40 do 44 rokov;Od 45 do 49 rokov;50 rokov alebo viac -> Počet živorodičiek podľa vekových skupín
+2018 -> 1179 -> Okres;Mestská èas�;Rok;Školské knižnice - poèet;Školské knižnice - poèet knižnièných jednotiek -> Počet školských knižníc a počet knižničných jednotiek
+2019 -> 9883 -> Okres;Rok;Maïarská -> Počet obyvateľov maďarskej národnosti
+2018 -> 1171 -> Okres;Mestská èas�;Rok;Divadlá - poèet -> Počet divadiel
+2018 -> 1178 -> Okres;Mestská èas�;Rok;Akademické knižnice - poèet;Akademické knižnice - poèet knižnièných jednotiek -> Počet akademických knižníc a počet knižničných jednotiek
+2018 -> 1175 -> Okres;Mestská èas�;Rok;Verejné knižnice - poèet;Verejné knižnice - poèet knižnièných jednotiek spolu -> Počet verejných knižníc a počet knižničných jednotiek
+2018 -> 1173 -> Okres;Mestská èas�;Rok;Kiná stále;Sedadlá v kinách stálych -> Počet stálych kín a počet sedadiel v stálych v kinách
+2019 -> 9994 -> Okres;Rok;1.;2.;3.;4.;5. a vyššie -> Počet živonarodených podľa poradia
+2018 -> 1174 -> Okres;Mestská èas�;Rok;Premietacie sály -> Počet premietacích sál
+2018 -> 1140 -> Okres;Rok;0-3 mesiacov;10-12 mesiacov;13-18 mesiacov;19-24 mesiacov;4-6 mesiacov;7-9 mesiacov;nad 24 mesiacov;spolu -> Počet uchádzačov o zamestnanie (absolventi) podľa počtu mesiacov v evidencii UPSVaR
+2018 -> 1141 -> Okres;Rok;Poèet -> Zamestnávanie štátnych príslušníkov tretích krajín s platným povolením na zamestnanie na území SR
+2018 -> 1180 -> Okres;Mestská èas�;Rok;Múzeá -> Počet múzeí
+2020 -> 9991 -> Okres;Mestská èas�;Rok;Mesiac;Zomretí (Osoby) -> Počet zomretých
+2020 -> 9858 -> Okres;Mestská èas�;Rok;Mesiac;Migraèné saldo (Osoby) -> Migračné saldo
+2019 -> 9992 -> Okres;Mestská èas�;Rok;Živonarodení (Osoba) -> Počet živonarodených
+2020 -> 9859 -> Okres;Mestská èas�;Rok;Mesiac;Celkový prírastok obyvate¾stva (Osoby) -> Celkový prírastok/úbytok obyvateľstva
+2020 -> 10381 -> Okres;Mestská èas�;Rok;Narodení v manželstve -> Počet narodených v manželstve
+2019 -> 9861 -> Okres;Mestská èas�;Rok;Hustota obyvate¾stva (Osoba na kilometer štvorcový) -> Hustota obyvateľstva
+2020 -> 9879 -> Okres;Mestská èas�;Rok;Mesiac;Sobáše (Poèet v jednotkách) -> Počet sobášov
+2020 -> 9880 -> Okres;Mestská èas�;Rok;Mesiac;Rozvody (Poèet v jednotkách) -> Počet rozvodov
+2020 -> 9877 -> Okres;Mestská èas�;Rok;Mesiac;Narodení (Osoby) -> Počet narodených
+2018 -> 1270 -> Okres;Rok;Poèet poberate¾ov prídavkov na deti -> Počet poberateľov prídavkov na deti
+2018 -> 1272 -> Okres;Rok;Kompenzácia �ZP -> Počet poberateľov peňažných príspevkov na kompenzáciu pre ťažko zdravotne postihnutých občanov
+2018 -> 968 -> Okres;Rok;Mena;Prostriedky -> Čerpanie finančných prostriedkov na prídavky na deti
+2018 -> 1153 -> Okres;Rok;nezistené;0 - 49;50 - 249;250 a viac -> Podniky v RO podľa veľkostnej kategórie počtu zamestnancov
+2017 -> 971 -> Okres;Rok;Prostriedky -> Čerpanie finančných prostriedkov na peňažné príspevky na opatrovanie (v eurách)
+2018 -> 1146 -> Okres;Rok;Mladiství -> Počet uchádzačov o zamestnanie – mladiství
+2 -> 1274 -> Okres;Rok;Poèet poberate¾ov - na opatrovanie -> Počet poberateľov peňažných príspevkov na opatrovanie
+2018 -> 969 -> Okres;Rok;Mena;Prostriedky -> Čerpanie finančných prostriedkov na rodičovské príspevky
+2018 -> 970 -> Okres;Rok;Mena;Prostriedky -> Čerpanie finančných prostriedkov na peňažné príspevky na kompenzáciu pre ťažko zdravotne postihnutých občanov (v tis. Sk / v eurách)
+2018 -> 1271 -> Okres;Rok;Poèet poberate¾ov rodièovských príspevkov -> Počet poberateľov rodičovského príspevku
+2018 -> 1149 -> Okres;Rok;Priemerný evidenèný poèet zamestnancov (osoby) -> Priemerný evidenčný počet zamestnancov v stavebných podnikoch s 20 a viac zamestnancami
+2018 -> 1150 -> Okres;Rok;Priemerná nominálna mesaèná mzda zamestnanca (Eur) -> Priemerná mesačná mzda zamestnanca (v €) v stavebných podnikoch s 20 a viac zamestnancami
+2018 -> 1277 -> Okres;Rok;"NV - neplatené -> Spolu
+2018 -> 1279 -> Okres;Rok;NV - neplatené výživné;"NV - sirotský -> Ženy
+2018 -> 1278 -> Okres;Rok;"NV - neplatené -> Muži
+2018 -> 955 -> Okres;Mestská èas�;Rok;Poèet žiakov gymnázií; -> Počet žiakov gymnázií
+2018 -> 957 -> Okres;Mestská èas�;Rok;Poèet žiakov konzervatórií -> Počet žiakov konzervatórií
+2018 -> 956 -> Okres;Mestská èas�;Rok;Poèet konzervatórií -> Počet konzervatórií
+2018 -> 1282 -> Okres;Mestská èas�;Rok;Poèet žiakov stredných odborných škôl -> Počet žiakov stredných odborných učilíšť
+2018 -> 954 -> Okres;Mestská èas�;Rok;Poèet gymnázií; -> Počet gymnázií
+2014 -> 1397 -> Okres;Mestská èas�;Rok;Samostatne hospodáriaci ro¾níci;Slobodné povolania -> Slobodné povolanie a samostatne hospodáriaci roľníci podľa právnych foriem
+2018 -> 1330 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Úhrn zrážok za rok (v mm) -> Úhrn zrážok za rok (v mm)
+2014 -> 1283 -> Okres;Mestská èas�;Rok;Poèet stredných odborných uèilíš� -> Počet stredných odborných učilíšť
+2018 -> 958 -> Okres;Mestská èas�;Rok;Poèet stredných odborných škôl -> Počet stredných odborných škôl
+2018 -> 1151 -> Okres;Mestská èas�;Rok;Fyzické osoby - podnikatelia (osoby);Živnostníci -> Fyzické osoby – podnikatelia v RO a živnostníci podľa právnych foriem
+2018 -> 959 -> Okres;Mestská èas�;Rok;Poèet žiakov stredných odborných škôl -> Počet žiakov stredných odborných škôl
+2018 -> 963 -> Okres;Rok;Malý motocykel;Motocykel;Osobný automobil;Nákladný automobil;Autobus;Traktor;Bicykel;Dodávka;Ost. druhy vozidiel ;Nezadané -> Počet dopravných nehôd v cestnej doprave podľa druhu vozidla vinníka
+2017 -> 1296 -> Obvodné oddedelenie;Rok;Poèet trestných èinov spáchaných maloletou stíhanou, vyšetrovanou osobou;Poèet trestných èinov spáchaných mladistvou stíhanou, vyšetrovanou osobou;Poèet maloletých stíhaných, vyšetrovaných osôb;Poèet mladistvých stíhaných, vyšetrovaných osôb -> Počet trestných činov a počet stíhaných a vyšetrovaných mladistvých a maloletých osôb
+2018 -> 1311 -> Policajný okres;Rok;Základná škola;Stredná škola;Vysoká škola -> Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy podľa vzdelania
+2017 -> 1295 -> Obvodné oddedelenie;Rok;Poèet trestných èinov s vplyvom alkoholu;Poèet trestných èinov s vplyvom drog;Poèet stíhaných, vyšetrovaných  s vplyvom alkoholu;Poèet stíhaných, vyšetrovaných  s vplyvom drog -> Počet trestných činov a počet stíhaných a vyšetrovaných osôb s vplyvom alkoholu a drog
+2018 -> 1312 -> Policajný okres;Rok;Základná škola;Stredná škola;Vysoká škola -> Počet stíhaných a vyšetrovaných mladých za ekonomickú kriminalitu podľa vzdelania
+2018 -> 1206 -> Okres;Rok;Cirkevné konzervatóriá - uèitelia -> Počet učiteľov na cirkevných konzervatóriách
+2018 -> 1302 -> Policajný okres;Rok;Spolu;Ukonèené;deti do 14 rokov;14-18 rokov;19-30 rokov -> Počet stíhaných a vyšetrovaných mladých za krádeže
+2018 -> 1303 -> Policajný okres;Rok;Spolu;Ukonèené;deti do 14 rokov;14-18 rokov;19-30 rokov -> Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy
+2018 -> 1205 -> Okres;Rok;Cirkevné konzervatóriá - triedy -> Počet tried na cirkevných konzervatóriách
+2017 -> 1000 -> Okres;Mestská èas�;Rok;Rýchla zdravotnícka pomoc -> Počet zariadení poskytujúcich rýchlu zdravotnícku pomoc
+2017 -> 1297 -> Obvodné oddedelenie;Rok;Poèet trestných èinov spáchaných organizovanou formou -> Počet trestných činov spáchaných organizovanou formou
+2018 -> 1192 -> Okres;Rok;Súkromné gymnáziá - uèitelia -> Počet učiteľov na súkromných gymnáziách
+2018 -> 1152 -> Okres;Rok;Podniky spolu;Súkromný sektor;Súkromný sektor (zahranièné);Súkromný sektor (medzinárodné);Verejný sektor -> Podniky podľa vybraných druhov vlastníctva
+2018 -> 1185 -> Okres;Rok;Súkromné gymnáziá -> Počet súkromných gymnázií
+2018 -> 1191 -> Okres;Rok;Súkromné gymnáziá - triedy -> Počet tried na súkromných gymnáziách
+2018 -> 1332 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Relatívna (pomerná ) vlhkos� vzduchu v % -> Relatívna (pomerná) vlhkosť vzduchu v %
+2018 -> 1004 -> Okres;Rok;PN spolu;choroba;pracovné úrazy;ostatné úrazy -> Pracovná neschopnosť – prípady
+2017 -> 1005 -> Okres;Rok;Poèet nemocensky poistených -> Priemerný počet nemocensky poistených (zárobkovo činné osoby)
+2018 -> 1196 -> Okres;Rok;Konzervatóriá - štátne - žiaci -> Počet žiakov štátnych konzervatórií
+2017 -> 1139 -> Okres;Rok;Spotreba -> Spotreba motorovej nafty (t)
+2018 -> 1194 -> Okres;Rok;Cirkevné gymnáziá - uèitelia -> Počet učiteľov na cirkevných gymnáziách
+2018 -> 1183 -> Okres;Rok;Gymnáziá - štátne -> Počet štátnych gymnázií
+2018 -> 1215 -> Okresy;Rok;Súkromné stredné odborné školy - žiaci -> Počet žiakov súkromných stredných odborných škôl
+2018 -> 1189 -> Okres;Rok;Gymnáziá - štátne - triedy -> Počet tried na štátnych gymnáziách
+2018 -> 1199 -> Okres;Rok;Cirkevné konzervatóriá -> Počet cirkevných konzervatórií
+2018 -> 1195 -> Okres;Rok;Konzervatóriá - štátne -> Počet štátnych konzervatórií
+2020 -> 9873 -> Okres;Mestská èas�;Rok;Mesiac;Dojèenská úmrtnos� s pôrodnou hmotnos�ou 1 000 g a viac (Osoba) -> Dojčenská úmrtnosť s pôrodnou hmotnosťou 1 000 g a viac
+2018 -> 1184 -> Okres;Rok;Gymnáziá - štátne - žiaci -> Počet žiakov štátnych gymnázií
+2018 -> 1200 -> Okres;Rok;Cirkevné konzervatóriá - žiaci -> Počet žiakov cirkevných konzervatórií
+2018 -> 1188 -> Okres;Rok;Cirkevné gymnáziá - žiaci -> Počet žiakov cirkevných gymnázií
+2017 -> 1138 -> Okres;Rok;Spotreba zp -> Spotreba zemného plynu (1000 m3)
+2018 -> 1190 -> Okres;Rok;Gymnáziá - štátne - uèitelia -> Počet učiteľov na štátnych gymnáziách
+2018 -> 1187 -> Okres;Rok;Cirkevné gymnáziá -> Počet cirkevných gymnázií
+2018 -> 1305 -> Policajný okres;Rok;Spolu;Ukonèené;deti do 14 rokov;14-18 rokov;19-30 rokov -> Počet stíhaných a vyšetrovaných mladých za ostatnú kriminalitu
+2020 -> 9989 -> Okres;Mestská èas�;Rok;Mesiac;Ukonèené tehotenstvá (Poèet v jednotkách) -> Počet ukončených tehotenstiev
+2018 -> 1214 -> Okresy;Rok;Súkromné stredné odborné školy -> Počet súkromných stredných odborných škôl
+2018 -> 1186 -> Okres;Rok;Súkromné gymnáziá - žiaci -> Počet žiakov súkromných gymnázií
+2018 -> 1193 -> Okres;Rok;Cirkevné gymnáziá - triedy -> Počet tried na cirkevných gymnáziách
+2020 -> 9881 -> Okres;Mestská èas�;Rok;Mesiac;Potraty (Poèet v jednotkách) -> Počet potratov
+2020 -> 9875 -> Okres;Mestská èas�;Rok;Mesiac;Novorodenecká úmrtnos� s pôrodnou hmotnos�ou 1 000 g a viac (Osoby) -> Novorodenecka-umrtnost-s-porodnou-hmotnostou-1-000-g-a-viac
+2018 -> 1170 -> Okres;Mestská èas�;Rok;Poèet -> Počet pôšt v mestských častiach
+2018 -> 1263 -> Okres;Rok;Poèet miest v zariadeniach pre seniorov -> Počet miest v zariadeniach pre seniorov
+2018 -> 934 -> Okres;Mestská èas�;Rok;POÈET ZAÈATÝCH BYTOV V RD -> Počet začatých bytov v RD
+2018 -> 1285 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – mravnostná kriminalita
+2010 -> 1394 -> Okres;Rok;Spôsob nakladania;Zhodnocovanie materiálové;Zhodnocovanie energetické;Zhodnocovanie ostatné;Zneškodòovanie skládkovaním;Zneškodòovanie spa¾ovaním bez energetického využitia;Zneškodòovanie ostatné;Iný spôsob nakladania -> Nakladanie s komunálnym odpadom
+2018 -> 1322 -> Okres;Mestská èas�;Rok;Lekárne a výdajne liekov -> Lekárne a výdajne liekov
+2018 -> 1287 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ostatná kriminalita
+2017 -> 1001 -> Okres;Mestská èas�;Rok;Polikliniky samostatné (úz. a záv.) -> Počet polikliník
+2018 -> 1323 -> Okres;Mestská èas�;Rok;Výdajne zdravotníckych pomôcok -> Výdajne zdravotníckych pomôcok
+2017 -> 1002 -> Okres;Mestská èas�;Rok;Nemocnice všeobecné a špecializované -> Počet nemocníc
+2019 -> 9488 -> Okres;Rok;Poèet odcudzených OP -> Počet odcudzených občianskych preukazov
+2016 -> 1396 -> Okres;Rok;poèet všetkých priestupkov;poèet priestupkov riešených blokovou pokutou;poèet priestupkov riešených rozkazným konaním;poèet priestupkov riešených rozhodnutím;poèet priestupkov riešených pokarhaním -> Štatistický prehľad priestupkov na úseku občianskych preukazov
+2018 -> 936 -> Okres;Mestská èas�;Rok;POÈET ROZOSTAVANÝCH BYTOV K 1.1. V RD -> Počet rozostavaných bytov k 1.1. v RD
+2019 -> 9486 -> Okres;Rok;Vydané obèianske preukazy -> Počet vydaných občianskych preukazov
+2019 -> 9487 -> Okres;Rok;Poèet stratených OP -> Počet stratených občianskych preukazov
+2018 -> 1225 -> Okres;Rok;Školské jedálne spolu (bez VŠ. jedální a v MŠ) - miesta pri stoloch -> Počet miest pri stoloch v školských jedálňach
+2018 -> 1291 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – majetková kriminalita
+2018 -> 1144 -> Okres;Rok;Poèet -> Počet uchádzačov o zamestnanie so zdravotným postihnutím
+2018 -> 1432 -> Okres;Rok;do 5 rokov ;5-13 rokov;od 13 rokov;do 6 rokov ;6-16 rokov;od 16 rokov -> Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa veku
+2018 -> 1097 -> Okres;Mestská èas�;Rok;Domovy mládeže (internáty) spolu;Domovy mládeže (internáty) spolu - lôžka -> Počet domovov mládeže (internáty) a počet lôžok
+2018 -> 974 -> Okres;Mestská èas�;Rok;Poèet -> Počet evidovaných uchádzačov o zamestnanie
+2018 -> 1159 -> Okres;Rok;Spolu;Po¾nohospodárstvo, lesníctvo a rybolov;Priemysel spolu;�ažba a dobývanie;Priemyselná výroba;Dodávka elektriny, plynu, pary a studeného vzduchu;Dodávka vody, èistenie a odvod odpadových vôd, odpady a služby odstraòovania odpadov;Stavebníctvo;Ve¾koobchod a maloobchod, oprava motorových vozidiel a motocyklov;Doprava a skladovanie;Ubytovacie a stravovacie služby;Informácie a komunikácia;Finanèné a pois�ovacie èinnosti;Èinnosti v oblasti nehnute¾ností;Odborné, vedecké a technické èinnosti;Administratívne a podporné služby;Verejná správa a obrana, povinné sociálne zabezpeèenie;Vzdelávanie;Zdravotníctvo a sociálna pomoc;Umenie, zábava a rekreácia;Ostatné èinnosti -> Počet živnostníkov podľa vybraných ekonomických činností (SK NACE Rev.2)
+2017 -> 1399 -> Okres;Rok;Spolu;Po¾nohospodárstvo, lesníctvo a rybolov;Priemysel spolu;�ažba a dobývanie;Priemyselná výroba;Dodávka elektriny, plynu, pary a studeného vzduchu;Dodávka vody, èistenie a odvod odpadových vôd, odpady a služby odstraòovania odpadov;Stavebníctvo;Ve¾koobchod a maloobchod, oprava motorových vozidiel a motocyklov;Doprava a skladovanie;Ubytovacie a stravovacie služby;Informácie a komunikácia;Finanèné a pois�ovacie èinnosti;Èinnosti v oblasti nehnute¾ností;Odborné, vedecké a technické èinnosti;Administratívne a podporné služby;Verejná správa a obrana, povinné sociálne zabezpeèenie;Vzdelávanie;Zdravotníctvo a sociálna pomoc;Umenie, zábava a rekreácia;Ostatné èinnosti -> Priemerný evidenčný počet zamestnancov podľa ekonomickej činnosti zistení pracoviskovou metódou
+2018 -> 1426 -> Okres;Mestská èas�;Rok;Poèet zariadení -> Počet zariadení na voľný čas a záujmovú činnosť pre deti a mládež
+2018 -> 1431 -> Okres;Rok;Poèet žiadostí -> Počet žiadostí o vydanie cestovného pasu
+2018 -> 1147 -> Okres;Rok;Absolventi -> Počet uchádzačov o zamestnanie – absolventi
+2018 -> 1430 -> Okres;Rok;Poèet prenocovaní -> Počet prenocovaní návštevníkov v ubytovacích zariadeniach
+2017 -> 1161 -> Okres;Rok;Poèet -> Počet priemyselných závodov
+2018 -> 1427 -> Okres;Rok;Poèet zariadení;;;; -> Počet ubytovacích zariadení
+2017 -> 1162 -> Okres;Rok;Obrat -> Hrubý obrat priemyselných závodov (v tis. eur)
+2020 -> 10380 -> Okres;Mestská èas�;Rok;Narodení mimo manželstva (Osoby) -> Počet narodených mimo manželstva
+2018 -> 1163 -> Okres;Rok;Pridaná hodnota (tis. Eur) -> Pridaná hodnota (v tis. Eur) v priemyselných závodoch
+2018 -> 1429 -> Okres;Rok;Poèet návštevníkov;;;; -> Počet návštevníkov v ubytovacích zariadeniach
+2018 -> 1433 -> Okres;Rok;do 2 dní;30 dní;do 10 dní;offline -> Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa počtu dní
+2018 -> 1164 -> Okres;Rok;Medzispotreba (tis. Eur) -> Medzispotreba (v tis. Eur) v priemyselných závodoch
+2018 -> 1181 -> Okres;Mestská èas�;Rok;Galérie -> Počet galérií
+2017 -> 973 -> Okres;Rok;Po¾nohospodárstvo, lesníctvo a rybolov;Priemysel spolu;�ažba a dobývanie;Priemyselná výroba;Dodávka elektriny, plynu, pary a studeného vzduchu;Dodávka vody, èistenie a odvod odpadových vôd, odpady a služby odstraòovania odpadov;Stavebníctvo;Ve¾koobchod a maloobchod, oprava motorových vozidiel a motocyklov;Doprava a skladovanie;Ubytovacie a stravovacie služby;Informácie a komunikácia;Finanèné a pois�ovacie èinnosti;Èinnosti v oblasti nehnute¾ností;Odborné, vedecké a technické èinnosti;Administratívne a podporné služby;Verejná správa a obrana, povinné sociálne zabezpeèenie;Vzdelávanie;Zdravotníctvo a sociálna pomoc;Umenie, zábava a rekreácia;Ostatné èinnosti -> Priemerná nominálna mesačná mzda zamestnanca (v €) podľa ekonomickej činnosti zistená pracoviskovou metódou
+2018 -> 1428 -> Okres;Rok;Poèet lôžok -> Počet lôžok v ubytovacích zariadeniach
+2018 -> 1237 -> Okres;Rok;Nula rokov;1 rok;2 roky;3 roky;4 roky;5 rokov;6 rokov;7 rokov;8 rokov;9 rokov;10 rokov;11 rokov;12 rokov;13 rokov;14 rokov;15 rokov;16 rokov;17 rokov;18 rokov;19 rokov;20 rokov;21 rokov;22 rokov;23 rokov;24 rokov;4 roky alebo menej;Od 5 do 9 rokov;Od 10 do 14 rokov;Od 15 do 19 rokov;Od 20 do 24 rokov;25 rokov alebo viac -> Rozvody podľa dĺžky trvania manželstva a trvalého pobytu manželov
+2018 -> 1011 -> Okres;Mestská èas�;Rok;Poèet žiakov -> Počet žiakov v súkromných jazykových školách
+2019 -> 10006 -> Okres;Rok;Muži;Ženy -> Priemerný vek slobodných snúbencov pri sobáši
+2018 -> 997 -> Okres;Rok;Poèet evidovaných vodièov -> Počet evidovaných vodičov
+2018 -> 1102 -> Okres;Mestská èas�;Rok;Index ekonomickej závislosti mladých ¾udí (Percento) -> Index ekonomickej závislosti mladých ľudí
+2019 -> 9862 -> Okres;Mestská èas�;Rok;Index starnutia (Percento) -> Počet osôb v poproduktívnom veku na 100 osôb 0-14 ročných podľa mestských častí v Bratislave (v percentách)
+2018 -> 1284 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – násilná kriminalita
+2018 -> 1335 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Poèet dní v roku - mrazivých;Poèet dní v roku - ¾adových;Poèet dní v roku - so snehovou prikrývkou -> Počet dní v roku – mrazivých, ľadových a so snehovou pokrývkou
+2018 -> 1099 -> Okres;Rok;Vek: 15-24;Vek: 25-34;Vek: 35-49;Vek: 50 a viac;Spolu -> Počet uchádzačov o zamestnanie podľa vekových skupín
+2017 -> 1293 -> Obvodné oddedelenie;Rok;Poèet dodatoène objasnených trestných èinov;Poèet objasnených trestných èinov;Poèet zistených trestných èinov -> Počet zistených, objasnených a dodatočne objasnených trestných činov
+2018 -> 938 -> Okres;Mestská èas�;Rok;Poèet detí (cirkevné materské školy) -> Počet detí v cirkevných materských školách
+2018 -> 943 -> Okres;Mestská èas�;Rok;Poèet detí (súkromné materské školy) -> Počet detí v súkromných materských školách
+2018 -> 1010 -> Okres;Mestská èas�;Rok;Poèet škôl -> Počet súkromných jazykových škôl
+2018 -> 940 -> Okres;Mestská èas�;Rok;Poèet materských škôl -> Počet materských škôl
+2018 -> 1262 -> Okres;Rok;Poèet zariadení -> Počet sociálnych zariadení
+2018 -> 1267 -> Okres;Rok;Poèet miest v domovoch soc. služ. pre postihnuté deti -> Počet miest v domovoch sociálnych služieb pre postihnuté deti
+2020 -> 9872 -> Okres;Mestská èas�;Rok;Mesiac;Dojèenská úmrtnos� (Osoby) -> Dojčenská úmrtnosť
+2018 -> 1008 -> Okres;Mestská èas�;Rok;Poèet skôl -> Počet štátnych jazykových škôl
+2018 -> 1009 -> Okres;Mestská èas�;Rok;Poèet žiakov -> Počet žiakov v štátnych jazykových školách
+2010 -> 1391 -> Okres;Rok;Poèet/podiel;Zhodnocovanie materiálové;Zhodnocovanie energetické;Zhodnocovanie ostatné;Zneškodòovanie skládkovaním;Zneškodòovanie spa¾ovaním bez energetického využitia;Zneškodòovanie ostatné;Iný spôsob nakladania -> Nakladanie s odpadmi z plastov
+2018 -> 960 -> Okres;Rok;Poèet nehôd -> Počet dopravných nehôd v cestnej doprave
+2018 -> 962 -> Okres;Rok;Poèet nehôd -> Počet dopravných nehôd s usmrtením v cestnej doprave
+2018 -> 1256 -> Pris�ahovaní;Rok;Vys�ahovaní;Spolu -> Vnútorné sťahovanie medzi bratislavskými okresmi
+2019 -> 10000 -> Okres;Rok;Muži;Ženy -> Priemerný vek manželov pri rozvode
+2018 -> 1258 -> Pris�ahovaní;Rok;Vys�ahovaní;Ženy -> Ženy
+2018 -> 1327 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Teplota vzduchu v roku - priemerná na 1 d. m. (Celziov stupeò) -> priemerná, maximálna a minimálna (Celziov stupeň)
+2017 -> 1299 -> Obvodné oddedelenie;Rok;Poèet stíhaných a vyšetrovaných osôb -> Počet stíhaných a vyšetrovaných osôb
+2020 -> 9874 -> Okres;Mestská èas�;Rok;Mesiac;Novorodenecká úmrtnos� (Osoby) -> Novorodenecká úmrtnosť
+2018 -> 961 -> Okres;Rok;Poèet nehôd -> Počet dopravných nehôd s následkom na živote alebo zdraví v cestnej doprave
+2018 -> 996 -> Okres;Rok;Poèet vydaných VP -> Počet vydaných vodičských preukazov
+2020 -> 9990 -> Okres;Mestská èas�;Rok;Mesiac;Umelé potraty (Poèet v jednotkách) -> Počet umelých potratov
+2018 -> 1216 -> Okresy;Rok;Cirkevné stredné odborné školy -> Počet cirkevných stredných odborných škôl
+2018 -> 1202 -> Okres;Rok;Konzervatóriá - štátne - uèitelia -> Počet učiteľov na štátnych konzervatóriách
+2018 -> 1219 -> Okresy;Rok;Stredné odborné školy - štátne - uèitelia -> Počet učiteľov na štátnych stredných odborných školách
+2017 -> 9482 -> Budova;Rok;Zemný plyn (m3);Zemný plyn (kWh);Náklady na zemný plyn (EUR);Elektrická energia celkom (kWh);Náklady na elektrickú energiu celkom  (EUR);Teplo nakúpené z CZT (kWh);Náklady na nákup tepla z CZT (EUR);Voda pre prípravu TÚV (m3);Náklady na vodu (EUR);Ostatné náklady (údržba, opravy, servis, revízie, mzdy, odpisy, súvisiace s výrobou a dodávkou tepla) (EUR);Celkový roèný rozpoèet na energie, vodu a ostatné náklady (EUR);Drevo (prm);Drevo (kWh);Náklady na drevo (EUR);Elektrická energia celkom (kWh);Náklady na elektrickú energiu celkom  (EUR);Teplo nakúpené z CZT (kWh);Náklady na nákup tepla z CZT (EUR);Voda pre prípravu TÚV (m3);Náklady na vodu (EUR);Ostatné náklady (údržba, opravy,  mzdy, odpisy, ..)(EUR);Celkový roèný rozpoèet na energie, vodu a ostatné náklady (EUR);Koks (t);Koks (kWh);Náklady na koks (EUR);Elektrická energia celkom  (kWh);Náklady na elektrickú energiu celkom (EUR);Teplo nakúpené z CZT (kWh);Náklady na nákup tepla z CZT (EUR);Voda pre prípravu TÚV  (m3);Náklady na vodu (EUR);Ostatné náklady (údržba, opravy, servis, revízie, mzdy kurièov a obsluhy, odpisy, ..) (EUR);Celkové náklady na energie, vodu a ostatné náklady (EUR);Palivový koks (t);Palivový koks (kWh);Náklady na zemný plyn (EUR);Elektrická energia celkom  (kWh);Náklady na elektrickú energiu celkom (EUR);Teplo nakúpené z CZT (kWh);Náklady na nákup tepla z CZT (EUR);Voda pre prípravu TÚV  (m3);Náklady na vodu (EUR);Ostatné náklady (údržba, opravy, servis, revízie, mzdy kurièov a obsluhy, odpisy, ..)(EUR);Celkové náklady na energie, vodu a ostatné náklady (EUR) -> Spotreba
+2018 -> 1213 -> Okresy;Rok;Stredné odborné školy - štátne - žiaci -> Počet žiakov štátnych stredných odborných škôl
+2018 -> 1201 -> Okres;Rok;Konzervatóriá - štátne - triedy -> Počet tried na štátnych konzervatóriách
+2018 -> 1329 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Teplota vzduchu v roku - minimálna na 1 d. m. (Celziov stupeò) -> priemerná, maximálna a minimálna (Celziov stupeň)
+2018 -> 1218 -> Okresy;Rok;Stredné odborné školy - štátne - triedy -> Počet tried na štátnych stredných odborných školách
+2018 -> 1198 -> Okres;Rok;Súkromné konzervatóriá - žiaci -> Počet žiakov súkromných konzervatórií
+2018 -> 967 -> Okres;Rok;Mena;Prostriedky -> Čerpanie finančných prostriedkov na sociálne dávky
+2018 -> 1264 -> Okres;Rok;Poèet miest v domovoch soc. služ. pre postihnutých dospelých -> Počet miest v domovoch sociálnych služieb pre postihnutých dospelých
+2010 -> 1393 -> Okres;Rok;Poèet/podiel;Zhodnocovanie materiálové;Zhodnocovanie energetické;Zhodnocovanie ostatné;Zneškodòovanie skládkovaním;Zneškodòovanie spa¾ovaním bez energetického využitia;Zneškodòovanie ostatné;Iný spôsob nakladania -> Nakladanie s odpadmi z papiera
+2018 -> 1326 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Trvanie slneèného svitu za rok (v hodinách) -> Trvanie slnečného svitu za rok (v hodinách)
+2017 -> 999 -> Okres;Mestská èas�;Rok;Lieèebne, domy ošet.starost., hospice, zar.biomed.výskumu -> Počet liečební, domov ošetrovateľskej starostlivosti, hospicov a zariadení biomedicínskeho výskumu
+2010 -> 1392 -> Okres;Rok;Poèet/podiel;Zhodnocovanie materiálové;Zhodnocovanie energetické;Zhodnocovanie ostatné;Zneškodòovanie skládkovaním;Zneškodòovanie spa¾ovaním bez energetického využitia;Zneškodòovanie ostatné;Iný spôsob nakladania;;;;;;; -> Nakladanie s odpadmi zo skla
+2018 -> 1269 -> Okres;Rok;Poèet poberate¾ov -> Počet poberateľov dávok v hmotnej núdzi a príspevkov k dávke
+2018 -> 1268 -> Okres;Rok;Výdavky na dôchodky (v tis. Eur) -> Výdavky na dôchodky (v tis. Eur)
+2017 -> 1006 -> Okres;Rok;Poèet zamestnancov;;;; -> Zamestnanci na rizikových pracoviskách
+2018 -> 995 -> Okres;Rok;Poèet vydaných MVP -> Počet vydaných medzinárodných vodičských preukazov
+2018 -> 1257 -> Pris�ahovaní;Rok;Vys�ahovaní;Muži -> Muži
+2018 -> 1197 -> Okres;Rok;Súkromné konzervatóriá -> Počet súkromných konzervatórií
+2018 -> 935 -> Okres;Mestská èas�;Rok;POÈET ROZOSTAVANÝCH BYTOV K 1.1. -> Počet rozostavaných bytov k 1.1.
+2018 -> 953 -> Okres;Mestská èas�;Rok;Poèet žiakov (súkromné základné školy) -> 9. ročník)
+2018 -> 1288 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – všeobecná kriminalita
+2018 -> 1292 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – zostávajúca kriminalita
+2018 -> 1334 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Poèet dní v roku - tropických;Poèet dní v roku - letných -> Počet dní v roku – tropických a letných
+2018 -> 985 -> Okres;Rok;Miera;;;; -> Miera objasnenosti trestných činov (v %)
+2018 -> 981 -> Okres;Rok;Miera -> Miera objasnenosti ekonomických trestných činov (v %)
+2018 -> 984 -> Okres;Rok;Miera -> Miera objasnenosti násilných trestných činov (v %)
+2018 -> 948 -> Okres;Mestská èas�;Rok;Poèet štátnych základných škôl -> 9. ročník)
+2017 -> 924 -> Okres;Mestská èas�;Rok;Samostatné ambulancie praktického lekára pre dospelých;Samostatné ambulancie praktického lekára pre deti;Samostatné ambulancie praktického lekára stomatológa;Samostatné ambulancie praktického lekára gynekológa;Samostatné ambulancie lekára špecialistu -> Praktickí lekári a špecialisti
+2018 -> 1121 -> Okres;Rok;Spolu ;16 rokov;17 rokov;18 rokov;19 rokov;20 rokov;21 rokov;22 rokov;23 rokov;24 rokov;25 rokov;26 rokov;27 rokov;28 rokov;29 rokov;30 rokov;31 rokov;32 rokov;33 rokov;34 rokov;35 rokov;36 rokov;37 rokov;38 rokov;39 rokov;40 rokov;41 rokov;42 rokov;43 rokov;44 rokov;45 rokov;46 rokov;47 rokov;48 rokov;49 rokov;50 rokov;51 rokov;52 rokov;53 rokov;54 rokov;55 rokov;56 rokov;57 rokov;58 rokov;59 rokov;60 rokov;61 rokov;62 rokov;63 rokov;64 rokov;Od 16 do 17 rokov;Od 16 do 19 rokov;Od 18 do 19 rokov;Od 20 do 24 rokov;Od 25 do 29 rokov;Od 30 do 34 rokov;Od 35 do 39 rokov;Od 40 do 44 rokov;Od 45 do 49 rokov;Od 50 do 54 rokov;50 rokov alebo viac;Od 55 do 59 rokov;Od 60 do 64 rokov;65 rokov alebo viac -> Ženy
+2018 -> 1290 -> Údaje o stíhaných,vyšetrovaných osobách;Rok;Celkom osôb;Poèet malolet.;Poèet mladist.;Vplyv alkoholu;Vplyv drog -> Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ekonomická kriminalita
+2018 -> 1217 -> Okresy;Rok;Cirkevné stredné odborné školy - žiaci -> Počet žiakov cirkevných stredných odborných škôl
+2010 -> 1390 -> Okres;Rok;Poèet/podiel;Zhodnocovanie materiálové;Zhodnocovanie energetické;Zhodnocovanie ostatné;Zneškodòovanie skládkovaním;Zneškodòovanie spa¾ovaním bez energetického využitia;Zneškodòovanie ostatné;Iný spôsob nakladania -> Nakladanie s odpadmi z obalov
+2018 -> 931 -> Okres;Mestská èas�;Rok;POÈET DOKONÈENÝCH BYTOV -> Počet dokončených bytov
+2018 -> 941 -> Okres;Mestská èas�;Rok;Poèet detí (materské školy) -> Počet detí v materských školách
+2018 -> 946 -> Okres;Mestská èas�;Rok;Poèet základných škôl -> 9. ročník)
+2018 -> 949 -> Okres;Mestská èas�;Rok;Poèet žiakov (štátne základné školy) -> 9. ročník)
+2018 -> 939 -> Okres;Mestská èas�;Rok;Poèet cirkevných materských škôl -> Počet cirkevných materských škôl
+2018 -> 1328 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Teplota vzduchu v roku - maximálna na 1 d. m. (Celziov stupeò) -> priemerná, maximálna a minimálna (Celziov stupeň)
+2018 -> 1331 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Maximálne zrážky za 24 h (v mm) -> Maximálne zrážky za 24 h (v mm)
+2018 -> 1333 -> Okres;Mestská èas�;Poradové èíslo;Rok;Názov klimatickej stanice;Poèet dní v roku - jasných;Poèet dní v roku - zamraèených -> jasných a zamračených
+2018 -> 951 -> Okres;Mestská èas�;Rok;Poèet žiakov (cirkevné základné školy) -> 9. ročník)
+2018 -> 950 -> Okres;Mestská èas�;Rok;Poèet cirkevných základných škôl -> 9. ročník)
+2018 -> 1165 -> Okres;Rok;Spolu;Jednoizbové byty a garsónky;Dvojizbové byty;Trojizbové byty;Štvorizbové byty;Pä� a viacizbové byty -> Počet dokončených bytov podľa počtu izieb
+2018 -> 1212 -> Okresy;Rok;Stredné odborné školy - štátne -> Počet štátnych stredných odborných škôl
+2018 -> 942 -> Okres;Mestská èas�;Rok;Poèet súkromných materských škôl -> Počet súkromných materských škôl
+2014 -> 1182 -> Okres;Mestská èas�;Rok;Kultúrno osvetové zariadenia -> Počet kultúrno osvetových zariadení
+2019 -> 9997 -> Okres;Rok;Slobodná;Rozvedená;Vdova -> žien podľa rodinného stavu
+2018 -> 952 -> Okres;Mestská èas�;Rok;Poèet súkromných základných škôl -> 9. ročník)
+2018 -> 945 -> Okres;Mestská èas�;Rok;Poèet detí (štátne materské školy) -> Počet detí v štátnych materských školách
+2018 -> 983 -> Okres;Rok;Miera -> Miera objasnenosti mravnostných trestných činov (v %)
+2019 -> 9886 -> Okres;Rok;Moravská -> Počet obyvateľov moravskej národnosti
+2018 -> 1132 -> Okres;Rok;Nemecká -> Počet obyvateľov nemeckej národnosti
+2018 -> 1448 -> Okres;Rok;Roèník;Pohlavie;Aerobik;Atletika;Baseball;Basketbal;Bedminton;Box;Cyklistika a cyklotrial;Džudo;Florbal;Futbal;Golf;Gymnastika;Hádzaná;Horlezectvo;Iné;Jazdectvo;Jujutsu;Kanoistika rýchlostná;Karate;Kickbox;Kolky;Krasokorèu¾ovanie;¼adový hokej;Lyžovanie;Motoristické športy;Plávanie;Potápanie;Softball;Stolný tenis;Strelectvo;Taneèný šport;Tenis;Triatlon;Volejbal;Vš. šp. príprava;Zápasenie -> Počet žiakov športových tried športových gymnázií podľa druhu športu
+2018 -> 1450 -> Okres;Rok;Podujatia/úèastníci;Druh;Okres;Poèet -> Počet podujatí a účastníkov príležitostnej záujmovej činnosti centier voľného času so športovým zameraním
+2019 -> 9884 -> Okres;Rok;Rómska -> Počet obyvateľov rómskej národnosti
+2018 -> 1446 -> Okres;Rok;Roèník;Druh športu;Atletika;Basketbal;Bedminton;Florbal;Futbal;Gymnastika;Hádzaná;Horolezectvo;Kanoistika rýchlostná;Karate;¼adový hokej;Lyžovanie;Plávanie;Strelectvo;Taneèný šport;Volejbal;Zápasenie;Všestranná športová príprava -> Počet žiakov športových tried základných škôl podľa druhu športu
+2019 -> 9885 -> Okres;Rok;Èeská -> Počet obyvateľov českej národnosti
+2018 -> 1447 -> Okres;Rok;Roèník;Okres;Basketbal;Box;Branný viacboj;Futbal;Golf;Hádzaná;Hokejbal;Jazdectvo;Kulturistika;¼adový hokej;Lyžovanie;Rybolov;Taneèný šport;Tenis;Volejbal;Zápasenie -> Počet žiakov športových tried stredných škôl podľa druhu športu
+2019 -> 9882 -> Okres;Rok;Slovenská -> Počet obyvateľov slovenskej národnosti
+2020 -> 9876 -> Okres;Mestská èas�;Rok;Mesiac;Perinatálna úmrtnos� (Osoby) -> Perinatálna úmrtnosť
+2018 -> 1142 -> Okres;Rok;Spolu;Zákonodarcovia, riadiaci pracovníci;Špecialisti;Technici a odborní pracovníci;Administratívni pracovníci;Pracovníci v službách a obchode;Kvalifikovaní pracovníci v po¾nohospodárstve, lesníctve a rybárstve;Kvalifikovaní pracovníci a remeselníci;Operátori a montéri strojov a zariadení;Pomocní a nekvalifikovaní pracovníci;Príslušníci ozbrojených síl;Neuvedené zamestnanie -> Zamestnanci podľa zamestnania zistení pracoviskovou metódou
+2018 -> 1103 -> Okres;Mestská èas�;Rok;Index ekonomickej závislosti starých ¾udí (Percento) -> Index ekonomickej závislosti starých ľudí
+2019 -> 9998 -> Okres;Rok;I Infekèné a parazitárne choroby;II Nádory;III Choroby krvi a krvotvorných orgánov a daktoré poruchy imunitných mechanizmov;IV Choroby žliaz s vnútorným vyluèovaním, výživy a premeny látok;V Duševné poruchy a poruchy správania;VI Choroby nervového systému;IX Choroby obehovej sústavy;X Choroby dýchacej sústavy;XI Choroby tráviacej sústavy;XII Choroby kože a podkožného tkaniva;XIII Choroby svalovej a kostrovej sústavy a spojivového tkaniva;XIV Choroby moèovej a pohlavnej sústavy;XV �archavos�, pôrod a popôrodie;XVI Niektoré choroby vznikajúce v perinatálnej perióde;XVII Vrodené chyby, deformácie a chromozómové anomálie;XVIII Subjektívne a objektívne príznaky a abnormálne klinické a laboratórne nálezy nezatriedené inde;XIX Poranenia, otravy a daktoré iné následky vonkajších príèin;XX Vonkajšie príèiny chorobnosti a úmrtnosti -> Podiel zomretých podľa príčin smrti
+2018 -> 944 -> Okres;Mestská èas�;Rok;Poèet štátnych materských škôl -> Počet štátnych materských škôl
+2019 -> 10008 -> Okres;Rok;Muži;Ženy -> Priemerný vek vzájomne slobodných snúbencov pri sobáši
+2018 -> 1124 -> Okres;Rok;Spolu;1 000 gramov a viac;1 000 - 1 499 gramov;2 500 a viac;1 500 - 2 499 gramov;Menej ako 1 000 gramov;0 - 999 gramov -> Počet mŕtvonarodených podľa hmotnosti
+2018 -> 1123 -> Okres;Rok;Spolu;1 000 gramov a viac;1 000 - 1 499 gramov;2 500 a viac;1 500 - 2 499 gramov;Menej ako 1 000 gramov;0 - 999 gramov -> Počet živonarodených podľa hmotnosti
+2018 -> 1126 -> Okres;Rok;Spolu;Muži;Ženy -> Priemerný vek pri úmrtí podľa pohlavia
+2018 -> 982 -> Okres;Rok;Miera -> Miera objasnenosti majetkových trestných činov (v %)
+2018 -> 947 -> Okres;Mestská èas�;Rok;Poèet žiakov (základné školy) -> 9. ročník)
+2018 -> 1169 -> Okres;Mestská èas�;Rok;Úžitková plocha dokonèených bytov;Úžitková plocha dokonèených bytov v RD -> Úžitková plocha dokončených bytov a dokončených bytov v RD (v m2)
+2018 -> 1120 -> Okres;Rok;Spolu ;16 rokov;17 rokov;18 rokov;19 rokov;20 rokov;21 rokov;22 rokov;23 rokov;24 rokov;25 rokov;26 rokov;27 rokov;28 rokov;29 rokov;30 rokov;31 rokov;32 rokov;33 rokov;34 rokov;35 rokov;36 rokov;37 rokov;38 rokov;39 rokov;40 rokov;41 rokov;42 rokov;43 rokov;44 rokov;45 rokov;46 rokov;47 rokov;48 rokov;49 rokov;50 rokov;51 rokov;52 rokov;53 rokov;54 rokov;55 rokov;56 rokov;57 rokov;58 rokov;59 rokov;60 rokov;61 rokov;62 rokov;63 rokov;64 rokov;Od 16 do 17 rokov;Od 16 do 19 rokov;Od 18 do 19 rokov;Od 20 do 24 rokov;Od 25 do 29 rokov;Od 30 do 34 rokov;Od 35 do 39 rokov;Od 40 do 44 rokov;Od 45 do 49 rokov;Od 50 do 54 rokov;50 rokov alebo viac;Od 55 do 59 rokov;Od 60 do 64 rokov;65 rokov alebo viac -> Muži

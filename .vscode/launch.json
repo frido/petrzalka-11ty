@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\generators\\run.js",
+            "program": "${workspaceFolder}\\generators\\opendata.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
             ],

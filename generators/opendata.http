@@ -1,0 +1,22 @@
+@key = 1MXmzv7rPVg1v98CO9LbdVgUo5bULOiZuihK0seicZoLwZIdz7Vnx1NdqI8SDyn3qzIWfUE0olU6T1gItNpTLJch0X4YruUcUhATBzPlclnj4F0IgmuOGVMjoQJHBGxqJQmMmixifi2lnfQdnlZqaVFCtnSqbP19jxAblmq6GVFfy8Z2YI8LFyLeev5OEbJVNm8ZdEVoczQDyDlWK4FYw0jFeopMW3i5ICkGrjgkpea8Yw8EwElU1XG4H1
+
+###
+opendata.bratislava.sk/api/dataset
+page: 74
+key: {{key}}
+
+###
+opendata.bratislava.sk/api/dataset/11/
+key: {{key}}
+
+###
+opendata.bratislava.sk/api/dataset/11/files
+key: {{key}}
+
+###
+opendata.bratislava.sk/api/file/9878
+key: {{key}}
+
+###
+opendata.bratislava.sk/api/file/9991/download
+key: {{key}}

@@ -76,16 +76,33 @@ export interface Budget {
     render(data: FMBudget): string;
 }
 
+export interface PlayGroundPage {
+    data(): FMPlayGround ;
+    render(data: FMPlayGround): string;
+}
+
 export interface FMBudget {
-    // tags: BudgetTag[]
-    // title: string;
-    // icon: string;
-    // color: string;
-    // years: BudgetYear[]
     year: number;
     programs: Program[];
     layout: "layouts/rozpocet.njk";
     tags: string[];
+}
+
+export interface FMPlayGround {
+    year: number;
+    layout: "layouts/ihriska.njk";
+    tags: string[];
+    source: string;
+    playgrounds: PlayGround[];
+}
+
+type PlayGroundCategory = 'A' | 'B' | 'C'
+export interface PlayGround {
+    name: string;
+    district: number;
+    category: PlayGroundCategory[];
+    year: number;
+    flag: string[];
 }
 
 export interface Program {

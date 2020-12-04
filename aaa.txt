@@ -1,0 +1,431 @@
+9878 - Počet obyvateľov - Počet obyvateľov
+9877 - Počet narodených - Počet narodených
+9991 - Počet zomretých - Počet zomretých
+9879 - Počet sobášov - Počet sobášov
+917 - Prirodzený prírastok/úbytok obyvateľstva - Prirodzený prírastok/úbytok obyvateľstva
+918 - Počet prisťahovaných na trvalý pobyt - Počet prisťahovaných na trvalý pobyt
+9880 - Počet rozvodov - Počet rozvodov
+919 - Počet vysťahovaných z trvalého pobytu - Počet vysťahovaných z trvalého pobytu
+9858 - Migračné saldo - Migračné saldo
+9994 - Počet živonarodených podľa poradia - Počet živonarodených podľa poradia
+9859 - Celkový prírastok/úbytok obyvateľstva - Celkový prírastok/úbytok obyvateľstva
+9992 - Počet živonarodených - Počet živonarodených
+9995 - Počet živorodičiek podľa vekových skupín - Počet živorodičiek podľa vekových skupín
+9993 - Podiel živonarodených podľa poradia - Podiel živonarodených podľa poradia
+10381 - Počet narodených v manželstve - Počet narodených v manželstve
+10380 - Počet narodených mimo manželstva - Počet narodených mimo manželstva
+9861 - Hustota obyvateľstva - Hustota obyvateľstva
+9883 - Počet obyvateľov maďarskej národnosti - Počet obyvateľov maďarskej národnosti
+9882 - Počet obyvateľov slovenskej národnosti - Počet obyvateľov slovenskej národnosti
+9884 - Počet obyvateľov rómskej národnosti - Počet obyvateľov rómskej národnosti
+9886 - Počet obyvateľov moravskej národnosti - Počet obyvateľov moravskej národnosti
+1132 - Počet obyvateľov nemeckej národnosti - Počet obyvateľov nemeckej národnosti
+9988 - Počet obyvateľov podľa vekových skupín - Počet obyvateľov podľa vekových skupín
+9885 - Počet obyvateľov českej národnosti - Počet obyvateľov českej národnosti
+1446 - Počet žiakov športových tried základných škôl podľa druhu športu - Počet žiakov športových tried základných škôl podľa druhu športu
+1448 - Počet žiakov športových tried športových gymnázií podľa druhu športu - Počet žiakov športových tried športových gymnázií podľa druhu športu
+1447 - Počet žiakov športových tried stredných škôl podľa druhu športu - Počet žiakov športových tried stredných škôl podľa druhu športu
+1449 - Útvary pravidelnej záujmovej činnosti centier voľného času so športovým zameraním a počet členov - Útvary pravidelnej záujmovej činnosti centier voľného času so športovým zameraním a počet členov
+1450 - Počet podujatí a účastníkov príležitostnej záujmovej činnosti centier voľného času so športovým zameraním - Počet podujatí a účastníkov príležitostnej záujmovej činnosti centier voľného času so športovým zameraním
+1142 - Zamestnanci podľa zamestnania zistení pracoviskovou metódou - Zamestnanci podľa zamestnania zistení pracoviskovou metódou
+1140 - Počet uchádzačov o zamestnanie (absolventi) podľa počtu mesiacov v evidencii UPSVaR - Počet uchádzačov o zamestnanie (absolventi) podľa počtu mesiacov v evidencii UPSVaR
+1141 - Zamestnávanie štátnych príslušníkov tretích krajín s platným povolením na zamestnanie na území SR - Zamestnávanie štátnych príslušníkov tretích krajín s platným povolením na zamestnanie na území SR
+1143 - Počet mladých nezamestnaných podľa veku a pohlavia - Počet mladých nezamestnaných podľa veku a pohlavia
+1171 - Počet divadiel - Počet divadiel
+975 - Miera evidovanej nezamestnanosti (v %) - Miera evidovanej nezamestnanosti (v %)
+1172 - Počet stálych scén a divadelných subjektov - Počet stálych scén a divadelných subjektov
+1175 - Počet verejných knižníc a počet knižničných jednotiek - Počet verejných knižníc a počet knižničných jednotiek
+1174 - Počet premietacích sál - Počet premietacích sál
+1173 - Počet stálych kín a počet sedadiel v stálych v kinách - Počet stálych kín a počet sedadiel v stálych v kinách
+1176 - Počet vedeckých knižníc a počet knižničných jednotiek - Počet vedeckých knižníc a počet knižničných jednotiek
+1178 - Počet akademických knižníc a počet knižničných jednotiek - Počet akademických knižníc a počet knižničných jednotiek
+1177 - Počet špeciálnych knižníc a počet knižničných jednotiek - Počet špeciálnych knižníc a počet knižničných jednotiek
+1179 - Počet školských knižníc a počet knižničných jednotiek - Počet školských knižníc a počet knižničných jednotiek
+1180 - Počet múzeí - Počet múzeí
+81 - Prvá písomná zmienka o obci - Prvá písomná zmienka o obci
+1135 - Nadmorská výška obce - Nadmorská výška obce
+1271 - Počet poberateľov rodičovského príspevku - Počet poberateľov rodičovského príspevku
+1270 - Počet poberateľov prídavkov na deti - Počet poberateľov prídavkov na deti
+1272 - Počet poberateľov peňažných príspevkov na kompenzáciu pre ťažko zdravotne postihnutých občanov - Počet poberateľov peňažných príspevkov na kompenzáciu pre ťažko zdravotne postihnutých občanov
+969 - Čerpanie finančných prostriedkov na rodičovské príspevky - Čerpanie finančných prostriedkov na rodičovské príspevky
+968 - Čerpanie finančných prostriedkov na prídavky na deti - Čerpanie finančných prostriedkov na prídavky na deti
+1274 - Počet poberateľov peňažných príspevkov na opatrovanie - Počet poberateľov peňažných príspevkov na opatrovanie
+970 - Čerpanie finančných prostriedkov na peňažné príspevky na kompenzáciu pre ťažko zdravotne postihnutých občanov (v tis. Sk / v eurách) - Čerpanie finančných prostriedkov na peňažné príspevky na kompenzáciu pre ťažko zdravotne postihnutých občanov (v tis. Sk / v eurách)
+160 - Počet osôb, ktorým bol poskytnutý ochranný príspevok - Počet osôb, ktorým bol poskytnutý ochranný príspevok
+971 - Čerpanie finančných prostriedkov na peňažné príspevky na opatrovanie (v eurách) - Čerpanie finančných prostriedkov na peňažné príspevky na opatrovanie (v eurách)
+1153 - Podniky v RO podľa veľkostnej kategórie počtu zamestnancov - Podniky v RO podľa veľkostnej kategórie počtu zamestnancov
+159 - Počet osôb, ktorým bol poskytnutý aktivačný príspevok - Počet osôb, ktorým bol poskytnutý aktivačný príspevok
+1159 - Počet živnostníkov podľa vybraných ekonomických činností (SK NACE Rev.2) - Počet živnostníkov podľa vybraných ekonomických činností (SK NACE Rev.2)
+1399 - Priemerný evidenčný počet zamestnancov podľa ekonomickej činnosti zistení pracoviskovou metódou - Priemerný evidenčný počet zamestnancov podľa ekonomickej činnosti zistení pracoviskovou metódou
+1161 - Počet priemyselných závodov - Počet priemyselných závodov
+1162 - Hrubý obrat priemyselných závodov (v tis. eur) - Hrubý obrat priemyselných závodov (v tis. eur)
+1163 - Pridaná hodnota (v tis. Eur) v priemyselných závodoch - Pridaná hodnota (v tis. Eur) v priemyselných závodoch
+1164 - Medzispotreba (v tis. Eur) v priemyselných závodoch - Medzispotreba (v tis. Eur) v priemyselných závodoch
+1181 - Počet galérií - Počet galérií
+1182 - Počet kultúrno osvetových zariadení - Počet kultúrno osvetových zariadení
+1426 - Počet zariadení na voľný čas a záujmovú činnosť pre deti a mládež - Počet zariadení na voľný čas a záujmovú činnosť pre deti a mládež
+1428 - Počet lôžok v ubytovacích zariadeniach - Počet lôžok v ubytovacích zariadeniach
+1427 - Počet ubytovacích zariadení - Počet ubytovacích zariadení
+1429 - Počet návštevníkov v ubytovacích zariadeniach - Počet návštevníkov v ubytovacích zariadeniach
+1430 - Počet prenocovaní návštevníkov v ubytovacích zariadeniach - Počet prenocovaní návštevníkov v ubytovacích zariadeniach
+1431 - Počet žiadostí o vydanie cestovného pasu - Počet žiadostí o vydanie cestovného pasu
+1432 - Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa veku - Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa veku
+1433 - Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa počtu dní - Počet prijatých žiadostí o vydanie cestovného pasu občanom podľa počtu dní
+1144 - Počet uchádzačov o zamestnanie so zdravotným postihnutím - Počet uchádzačov o zamestnanie so zdravotným postihnutím
+974 - Počet evidovaných uchádzačov o zamestnanie - Počet evidovaných uchádzačov o zamestnanie
+1147 - Počet uchádzačov o zamestnanie – absolventi - Počet uchádzačov o zamestnanie – absolventi
+973 - Priemerná nominálna mesačná mzda zamestnanca (v €) podľa ekonomickej činnosti zistená pracoviskovou metódou - Priemerná nominálna mesačná mzda zamestnanca (v €) podľa ekonomickej činnosti zistená pracoviskovou metódou
+1146 - Počet uchádzačov o zamestnanie – mladiství - Počet uchádzačov o zamestnanie – mladiství
+1149 - Priemerný evidenčný počet zamestnancov v stavebných podnikoch s 20 a viac zamestnancami - Priemerný evidenčný počet zamestnancov v stavebných podnikoch s 20 a viac zamestnancami
+146 - Zamestnanci na rizikových pracoviskách - Zamestnanci na rizikových pracoviskách
+1150 - Priemerná mesačná mzda zamestnanca (v €) v stavebných podnikoch s 20 a viac zamestnancami - Priemerná mesačná mzda zamestnanca (v €) v stavebných podnikoch s 20 a viac zamestnancami
+1277 - Počet poberateľov náhradného výživného - Spolu
+1278 - Počet poberateľov náhradného výživného - Muži
+1279 - Počet poberateľov náhradného výživného - Ženy
+954 - Počet gymnázií a počet žiakov gymnázií - Počet gymnázií
+955 - Počet gymnázií a počet žiakov gymnázií - Počet žiakov gymnázií
+956 - Počet konzervatórií a počet žiakov konzervatórií - Počet konzervatórií
+957 - Počet konzervatórií a počet žiakov konzervatórií - Počet žiakov konzervatórií
+1282 - Počet stredných odborných učilíšť a počet žiakov stredných odborných učilíšť - Počet žiakov stredných odborných učilíšť
+1283 - Počet stredných odborných učilíšť a počet žiakov stredných odborných učilíšť - Počet stredných odborných učilíšť
+958 - Počet stredných odborných škôl a počet žiakov stredných odborných škôl - Počet stredných odborných škôl
+959 - Počet stredných odborných škôl a počet žiakov stredných odborných škôl - Počet žiakov stredných odborných škôl
+187 - Počet študentov denného štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (doktorandské štúdium) - Počet študentov denného štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (doktorandské štúdium)
+186 - Počet študentov denného štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (štúdium I. a II. stupňa) - Počet študentov denného štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (štúdium I. a II. stupňa)
+185 - Počet špeciálnych škôl, počet detí v predškolskom veku v špeciálnych školách a počet žiakov v školskom veku v špeciálnych školách - Počet špeciálnych škôl, počet detí v predškolskom veku v špeciálnych školách a počet žiakov v školskom veku v špeciálnych školách
+1330 - Úhrn zrážok za rok (v mm) - Úhrn zrážok za rok (v mm)
+188 - Počet študentov denného štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (štúdiu I. a II. stupňa) - Počet študentov denného štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (štúdiu I. a II. stupňa)
+1077 - Výsledky prezidentských volieb 2004 - účasť - Voľba prezidenta SR v roku 2004 podľa účasti – 1. a 2.kolo
+1397 - Slobodné povolanie a samostatne hospodáriaci roľníci podľa právnych foriem - Slobodné povolanie a samostatne hospodáriaci roľníci podľa právnych foriem
+192 - Počet študentov externého štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (štúdiu I. a II. stupňa) - Počet študentov externého štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (štúdiu I. a II. stupňa)
+1151 - Fyzické osoby – podnikatelia v RO a živnostníci podľa právnych foriem - Fyzické osoby – podnikatelia v RO a živnostníci podľa právnych foriem
+963 - Počet dopravných nehôd v cestnej doprave podľa druhu vozidla vinníka - Počet dopravných nehôd v cestnej doprave podľa druhu vozidla vinníka
+190 - Počet študentov externého štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (štúdium I. a II. stupňa) - Počet študentov externého štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (štúdium I. a II. stupňa)
+1295 - Počet trestných činov a počet stíhaných a vyšetrovaných osôb s vplyvom alkoholu a drog - Počet trestných činov a počet stíhaných a vyšetrovaných osôb s vplyvom alkoholu a drog
+189 - Počet študentov denného štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (doktorandské štúdium) - Počet študentov denného štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom
+1296 - Počet trestných činov a počet stíhaných a vyšetrovaných mladistvých a maloletých osôb - Počet trestných činov a počet stíhaných a vyšetrovaných mladistvých a maloletých osôb
+1311 - Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy podľa vzdelania - Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy podľa vzdelania
+1312 - Počet stíhaných a vyšetrovaných mladých za ekonomickú kriminalitu podľa vzdelania - Počet stíhaných a vyšetrovaných mladých za ekonomickú kriminalitu podľa vzdelania
+569 - Rozpočet Bratislavy v roku 2014 - príjmy - Rozpočet Bratislavy v roku 2014 - príjmy
+1000 - Počet zariadení poskytujúcich rýchlu zdravotnícku pomoc - Počet zariadení poskytujúcich rýchlu zdravotnícku pomoc
+571 - Rozpočet Bratislavy v roku 2014 - výdavky - Rozpočet Bratislavy v roku 2014 - výdavky
+1056 - Zoznam komunikácií k januáru 2019 - Zoznam komunikácií
+207 - Geologické podmienky - Geologické podmienky
+998 - Počet odbavených cestujúcich na letisku M. R. Štefánika v Bratislave podľa druhu dopravy - Počet odbavených cestujúcich na letisku M. R. Štefánika v Bratislave podľa druhu dopravy
+1199 - Počet cirkevných konzervatórií a počet žiakov cirkevných konzervatórií - Počet cirkevných konzervatórií
+1200 - Počet cirkevných konzervatórií a počet žiakov cirkevných konzervatórií - Počet žiakov cirkevných konzervatórií
+1152 - Podniky podľa vybraných druhov vlastníctva - Podniky podľa vybraných druhov vlastníctva
+9881 - Počet potratov - Počet potratov
+1214 - Počet súkromných stredných odborných škôl a počet žiakov súkromných stredných odborných škôl - Počet súkromných stredných odborných škôl
+1215 - Počet súkromných stredných odborných škôl a počet žiakov súkromných stredných odborných škôl - Počet žiakov súkromných stredných odborných škôl
+1205 - Počet tried a učiteľov na cirkevných konzervatóriách - Počet tried na cirkevných konzervatóriách
+1206 - Počet tried a učiteľov na cirkevných konzervatóriách - Počet učiteľov na cirkevných konzervatóriách
+1303 - Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy - Počet stíhaných a vyšetrovaných mladých za ostatné majetkové trestné činy
+1302 - Počet stíhaných a vyšetrovaných mladých za krádeže - Počet stíhaných a vyšetrovaných mladých za krádeže
+10346 - Počet ostatných udalostí od 01.01.2020 do 31.10.2020 - Počet ostatných udalostí
+1517 - Počet zmlúv o prevode spoluvlastníckeho podielu na pozemku podaných do katastra nehnuteľností na zápis vlastníckeho práva za obdobie 2004 – 2019 - Počet zmlúv o prevode spoluvlastníckeho podielu na pozemku podaných do katastra nehnuteľností na zápis vlastníckeho práva
+9959 - Dostupnosť  ambulancií  všeobecného  lekára  pre  dospelých  –  normalizovaný na stupnici 0-1 - Vplyv horúčav
+1139 - Spotreba motorovej nafty (t) - Spotreba motorovej nafty (t)
+1305 - Počet stíhaných a vyšetrovaných mladých za ostatnú kriminalitu - Počet stíhaných a vyšetrovaných mladých za ostatnú kriminalitu
+1717 - Počet hlásených infekčných ochorení - Hlásené infekčné ochorenia
+1297 - Počet trestných činov spáchaných organizovanou formou - Počet trestných činov spáchaných organizovanou formou
+1483 - Ročná správa o stave obecného bytového fondu za kalendárne roky 2016 – 2018 - Rok 2016
+1485 - Ročná správa o stave obecného bytového fondu za kalendárne roky 2016 – 2018 - Rok 2017
+1487 - Ročná správa o stave obecného bytového fondu za kalendárne roky 2016 – 2018 - Rok 2018
+1138 - Spotreba zemného plynu (1000 m3) - Spotreba zemného plynu (1000 m3)
+1185 - Počet súkromných gymnázií a počet žiakov súkromných gymnázií - Počet súkromných gymnázií
+1186 - Počet súkromných gymnázií a počet žiakov súkromných gymnázií - Počet žiakov súkromných gymnázií
+9926 - Podiel veľmi teplých plôch k celkovej rozlohe danej MČ ako normalizovaný na stupnici 0-1 - Vplyv horúčav
+1191 - Počet tried a učiteľov na súkromných gymnáziách - Počet tried na súkromných gymnáziách
+1192 - Počet tried a učiteľov na súkromných gymnáziách - Počet učiteľov na súkromných gymnáziách
+1187 - Počet cirkevných gymnázií a počet žiakov cirkevných gymnázií - Počet cirkevných gymnázií
+1188 - Počet cirkevných gymnázií a počet žiakov cirkevných gymnázií - Počet žiakov cirkevných gymnázií
+1189 - Počet tried a učiteľov na štátnych gymnáziách - Počet tried na štátnych gymnáziách
+1190 - Počet tried a učiteľov na štátnych gymnáziách - Počet učiteľov na štátnych gymnáziách
+1183 - Počet štátnych gymnázií a počet žiakov štátnych gymnázií - Počet štátnych gymnázií
+1184 - Počet štátnych gymnázií a počet žiakov štátnych gymnázií - Počet žiakov štátnych gymnázií
+9933 - Citlivosť  obyvateľstva  na  extrémne  horúčavy  (environmentálna), normalizovaná na stupnici 0-1 - Vplyv horúčav
+1195 - Počet štátnych konzervatórií a počet žiakov štátnych konzervatórií - Počet štátnych konzervatórií
+1196 - Počet štátnych konzervatórií a počet žiakov štátnych konzervatórií - Počet žiakov štátnych konzervatórií
+9875 - Novorodenecká úmrtnosť s pôrodnou hmotnosťou 1 000 g a viac - Novorodenecka-umrtnost-s-porodnou-hmotnostou-1-000-g-a-viac
+9873 - Dojčenská úmrtnosť s pôrodnou hmotnosťou 1 000 g a viac - Dojčenská úmrtnosť s pôrodnou hmotnosťou 1 000 g a viac
+1193 - Počet tried a učiteľov na cirkevných gymnáziách - Počet tried na cirkevných gymnáziách
+1194 - Počet tried a učiteľov na cirkevných gymnáziách - Počet učiteľov na cirkevných gymnáziách
+9989 - Počet ukončených tehotenstiev - Počet ukončených tehotenstiev
+9944 - Citlivosť obyvateľstva na extrémne horúčavy (celková), normalizovaná na stupnici 0-1 - Vplyv horúčav
+1005 - Priemerný počet nemocensky poistených (zárobkovo činné osoby) - Priemerný počet nemocensky poistených (zárobkovo činné osoby)
+9912 - Podiel mierne teplých plôch k celkovej rozlohe danej MČ - normalizovaný na stupnici 0-1 - Vplyv horúčav
+1332 - Relatívna (pomerná) vlhkosť vzduchu v % - Relatívna (pomerná) vlhkosť vzduchu v %
+1004 - Pracovná neschopnosť – prípady - Pracovná neschopnosť – prípady
+577 - Rozpočet Bratislavy v roku 2016 - príjmy - Rozpočet Bratislavy v roku 2016 - príjmy
+579 - Rozpočet Bratislavy v roku 2016 - výdavky - Rozpočet Bratislavy v roku 2016 - výdavky
+583 - Rozpočet Bratislavy v roku 2017 - výdavky - Rozpočet Bratislavy v roku 2017 - výdavky
+934 - Počet začatých bytov v RD - Počet začatých bytov v RD
+581 - Rozpočet Bratislavy v roku 2017 - príjmy - Rozpočet Bratislavy v roku 2017 - príjmy
+575 - Rozpočet Bratislavy v roku 2015 - výdavky - Rozpočet Bratislavy v roku 2015 - výdavky
+1170 - Počet pôšt - Počet pôšt v mestských častiach
+573 - Rozpočet Bratislavy v roku 2015 - príjmy - Rozpočet Bratislavy v roku 2015 - príjmy
+1263 - Počet miest v zariadeniach pre seniorov - Počet miest v zariadeniach pre seniorov
+419 - Vklady DTMB 2018 - Vklady DTMB 2018
+1287 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ostatná kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ostatná kriminalita
+418 - Autorizácie DTMB 2018 - Autorizácie DTMB 2018
+1285 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – mravnostná kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – mravnostná kriminalita
+357 - Výstupy DTMB 2019 - Výstupy DTMB 2019
+1394 - Nakladanie s komunálnym odpadom - Nakladanie s komunálnym odpadom
+1322 - Lekárne a výdajne liekov - Lekárne a výdajne liekov
+220 - Znečisťovanie ovzdušia tuhými znečisťujúcimi látkami podľa prevádzkovateľa a emisií - Znečisťovanie ovzdušia tuhými znečisťujúcimi látkami podľa prevádzkovateľa a emisií
+222 - Znečisťovanie ovzdušia oxidmi dusíka podľa prevádzkovateľa a emisií - Znečisťovanie ovzdušia oxidmi dusíka podľa prevádzkovateľa a emisií
+1001 - Počet polikliník a nemocníc - Počet polikliník
+1002 - Počet polikliník a nemocníc - Počet nemocníc
+1323 - Výdajne zdravotníckych pomôcok - Výdajne zdravotníckych pomôcok
+585 - Rozpočet Bratislavy v roku 2018 - príjmy - Rozpočet Bratislavy v roku 2018 - príjmy
+288 - Spotreba čierneho uhlia, hnedého uhlia a koksu (t) - Spotreba čierneho uhlia, hnedého uhlia a koksu (t)
+291 - Spotreba vykurovacích olejov (t) - Spotreba vykurovacích olejov (t)
+294 - Stavebný stav mostov v správe BA SK na cestách II. triedy v rokoch 2005 - 2018 - Stavebný stav mostov v správe BA SK na cestách II. triedy v rokoch 2005 - 2018
+936 - Počet rozostavaných bytov k 1.1. v RD - Počet rozostavaných bytov k 1.1. v RD
+1079 - Počet návštevníkov Mestského múzea v Bratislave - Počet návštevníkov Mestského múzea v Bratislave
+9486 - Počet vydaných, stratených a odcudzených občianskych preukazov - Počet vydaných občianskych preukazov
+9487 - Počet vydaných, stratených a odcudzených občianskych preukazov - Počet stratených občianskych preukazov
+9488 - Počet vydaných, stratených a odcudzených občianskych preukazov - Počet odcudzených občianskych preukazov
+1103 - Index ekonomickej závislosti starých ľudí - Index ekonomickej závislosti starých ľudí
+1396 - Štatistický prehľad priestupkov na úseku občianskych preukazov - Štatistický prehľad priestupkov na úseku občianskych preukazov
+880 - Čerpanie rozpočtu oddelenia sociálnych vecí k 30.06.2019 - Čerpanie rozpočtu oddelenia sociálnych vecí k 30.06.2019
+1225 - Počet miest pri stoloch v školských jedálňach - Počet miest pri stoloch v školských jedálňach
+1291 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – majetková kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – majetková kriminalita
+355 - Autorizácie DTMB 2019 - Autorizácie DTMB 2019
+1746 - Vyhodnotenie dĺžky cyklistickej siete v Bratislave v roku 2018 (4. kvartál) - 2018 (4. kvartál)
+1747 - Vyhodnotenie dĺžky mestských cyklotrás v Bratislave v roku 2018 (4. kvartál) - 2018 (4. kvartál)
+10350 - Počet priestupkov a výška pokút podľa skupiny udalosti od 01.01.2020 do 31.10.2020 - Počet priestupkov a výška pokút
+9874 - Novorodenecká úmrtnosť - Novorodenecká úmrtnosť
+9872 - Dojčenská úmrtnosť - Dojčenská úmrtnosť
+587 - Rozpočet Bratislavy v roku 2018 - výdavky - Rozpočet Bratislavy v roku 2018 - výdavky
+589 - Rozpočet Bratislavy v roku 2019 - príjmy - Rozpočet Bratislavy v roku 2019 - príjmy
+1102 - Index ekonomickej závislosti mladých ľudí - Index ekonomickej závislosti mladých ľudí
+9917 - Podiel teplých plôch k celkovej rozlohe danej MČ - znázornené ako normalizovaný na stupnici 0-1 - Vplyv horúčav
+9987 - Počet obyvateľov podľa pohlavia - Počet obyvateľov podľa pohlavia
+1097 - Počet domovov mládeže (internáty) a počet lôžok - Počet domovov mládeže (internáty) a počet lôžok
+9997 - Podiel snúbencov - žien podľa rodinného stavu - Podiel snúbencov - žien podľa rodinného stavu
+278 - Poštové smerovacie číslo a telefónne smerové číslo - Poštové smerovacie číslo a telefónne smerové číslo
+9482 - Prehľad ročných nákladov budov patriacich Magistrátu hlavného mesta SR Bratislavy - Spotreba
+9863 - Dotazníkový prieskum k plánovanej revitalizácii Krížnej ulice - Krížna ulica - dotazníkový prieskum - odpovede
+9853 - Mapovanie pohybu, pohlavia, vekového zloženia, spôsobu pohybu či skupinovosti a aktivít ľudí v rámci zóny Pribinova - Zóna Pribinova - mapovanie ľudí
+9908 - Počet lôžkových nemocničných a ústavných zariadení v MČ – normalizovaný na stupnici 0-1 - Vplyv horúčav
+10036 - Kvalita vody od roku 2015 - Dáta
+1718 - Zariadenia ústavnej zdravotnej starostlivosti - Zariadenia ústavnej zdravotnej starostlivosti
+607 - Počet obyvateľov vo veku 0-14 rokov podľa miesta sčítania (raster 1x1 km) - Počet obyvateľov vo veku 0-14 rokov podľa miesta sčítania (raster 1x1 km)
+599 - Dopravné výkony podľa jednotlivých trakcií – vlakové kilometre - Dopravné výkony podľa jednotlivých trakcií – vlakové kilometre
+9973 - Podiel  chladných  plôch  k  celkovej  rozlohe  danej  MČ  -  normalizovaný  na  stupnici 0-1 - Vplyv horúčav
+1088 - Počet návštevníkov Mestských galérií v Bratislave v roku 2017 - Mirbachov palác
+1089 - Počet návštevníkov Mestských galérií v Bratislave v roku 2017 - Pálffyho palác
+1053 - Počet odvozov komunálneho odpadu a frekvencia vývozu komunálneho odpadu bytových domov - Počet odvozov komunálneho odpadu a frekvencia vývozu komunálneho odpadu bytových domov
+1093 - Mestská knižnica Bratislava - knižničný fond - Mestská knižnica Bratislava - knižničný fond
+9862 - Index starnutia - Počet osôb v poproduktívnom veku na 100 osôb 0-14 ročných podľa mestských častí v Bratislave (v percentách)
+1090 - Počet návštevníkov Mestských galérií v Bratislave v roku 2018 - Mirbachov palác
+1091 - Počet návštevníkov Mestských galérií v Bratislave v roku 2018 - Pálffyho palác
+1082 - Počet návštevníkov Mestských galérií v Bratislave v roku 2014 - Mirbachov palác
+1083 - Počet návštevníkov Mestských galérií v Bratislave v roku 2014 - Pálffyho palác
+10006 - Priemerný vek slobodných snúbencov pri sobáši - Priemerný vek slobodných snúbencov pri sobáši
+1080 - Počet návštevníkov Mestských galérií v Bratislave v roku 2013 - Mirbachov palác
+1081 - Počet návštevníkov Mestských galérií v Bratislave v roku 2013 - Pálffyho palác
+10035 - Emisie základných znečisťujúcich látok podľa monitorovacích staníc od roku 2017 - Dáta
+1086 - Počet návštevníkov Mestských galérií v Bratislave v roku 2016 - Mirbachov palác
+1087 - Počet návštevníkov Mestských galérií v Bratislave v roku 2016 - Pálffyho palác
+1099 - Počet uchádzačov o zamestnanie podľa vekových skupín - Počet uchádzačov o zamestnanie podľa vekových skupín
+591 - Rozpočet Bratislavy v roku 2019 - výdavky - Rozpočet Bratislavy v roku 2019 - výdavky
+1262 - Počet sociálnych zariadení - Počet sociálnych zariadení
+148 - Pracovná neschopnosť – prípady - Pracovná neschopnosť – prípady
+10038 - Množstvo vysadených stromov od roku 2016 - Dáta
+10037 - Množstvo nádob na triedený odpad od roku 2015 - Dáta
+356 - Výstupy DTMB 2018 - Výstupy DTMB 2018
+10034 - Emisie a merné územné emisie základných látok vypustených zo stredných a veľkých stacionárnych zdrojov od roku 2001 - Dáta
+1267 - Počet miest v domovoch sociálnych služieb pre postihnuté deti - Počet miest v domovoch sociálnych služieb pre postihnuté deti
+10032 - Množstvo separovaného, spáleného, skládkového a odpadu zo zelene od roku 2015 - Dáta
+1264 - Počet miest v domovoch sociálnych služieb pre postihnutých dospelých - Počet miest v domovoch sociálnych služieb pre postihnutých dospelých
+1268 - Výdavky na dôchodky (v tis. Eur) - Výdavky na dôchodky (v tis. Eur)
+147 - Priemerný počet nemocensky poistených (zárobkovo činné osoby) - Priemerný počet nemocensky poistených (zárobkovo činné osoby)
+967 - Čerpanie finančných prostriedkov na sociálne dávky - Čerpanie finančných prostriedkov na sociálne dávky
+1006 - Zamestnanci na rizikových pracoviskách - Zamestnanci na rizikových pracoviskách
+197 - Počet štátnych základných umeleckých škôl a počet žiakov štátnych základných umeleckých škôl podľa odboru - Počet štátnych základných umeleckých škôl a počet žiakov štátnych základných umeleckých škôl podľa odboru
+1284 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – násilná kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – násilná kriminalita
+193 - Počet študentov externého štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (doktorandské štúdium) - Počet študentov externého štúdia verejných vysokých škôl v Bratislave s iným štátnym občianstvom (doktorandské štúdium)
+198 - Počet súkromných základných umeleckých škôl a počet žiakov súkromných základných umeleckých škôl podľa odboru - Počet súkromných základných umeleckých škôl a počet žiakov súkromných základných umeleckých škôl podľa odboru
+194 - Počet fakúlt a počet absolventov denného štúdia na vysokých školách v Bratislave - Počet fakúlt a počet absolventov denného štúdia na vysokých školách v Bratislave
+354 - Vklady DTMB 2019 - Vklady DTMB 2019
+191 - Počet študentov externého štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (doktorandské štúdium) - Počet študentov externého štúdia verejných vysokých škôl v Bratislave so slovenským občianstvom (doktorandské štúdium)
+1008 - Počet štátnych jazykových škôl a počet žiakov v štátnych jazykových školách - Počet štátnych jazykových škôl
+1009 - Počet štátnych jazykových škôl a počet žiakov v štátnych jazykových školách - Počet žiakov v štátnych jazykových školách
+1333 - Počet dní v roku - jasných a zamračených - Počet dní v roku - jasných a zamračených
+199 - Počet cirkevných základných umeleckých škôl a počet žiakov cirkevných základných umeleckých škôl podľa odboru - Počet cirkevných základných umeleckých škôl a počet žiakov cirkevných základných umeleckých škôl podľa odboru
+1010 - Počet súkromných jazykových škôl a počet žiakov v súkromných jazykových školách - Počet súkromných jazykových škôl
+1011 - Počet súkromných jazykových škôl a počet žiakov v súkromných jazykových školách - Počet žiakov v súkromných jazykových školách
+1335 - Počet dní v roku – mrazivých, ľadových a so snehovou pokrývkou - Počet dní v roku – mrazivých, ľadových a so snehovou pokrývkou
+223 - Znečisťovanie ovzdušia oxidom uhoľnatým podľa prevádzkovateľa a emisií - Znečisťovanie ovzdušia oxidom uhoľnatým podľa prevádzkovateľa a emisií
+221 - Znečisťovanie ovzdušia oxidmi síry podľa prevádzkovateľa a emisií - Znečisťovanie ovzdušia oxidmi síry podľa prevádzkovateľa a emisií
+1392 - Nakladanie s odpadmi zo skla - Nakladanie s odpadmi zo skla
+1395 - Výmera územia podľa druhu pozemku k 10.7.2019 - Výmera územia podľa druhu pozemku k 10.7.2019
+1334 - Počet dní v roku – tropických a letných - Počet dní v roku – tropických a letných
+1393 - Nakladanie s odpadmi z papiera - Nakladanie s odpadmi z papiera
+1391 - Nakladanie s odpadmi z plastov - Nakladanie s odpadmi z plastov
+1390 - Nakladanie s odpadmi z obalov - Nakladanie s odpadmi z obalov
+598 - Dopravné výkony podľa jednotlivých trakcií – miestové kilometre - Dopravné výkony podľa jednotlivých trakcií – miestové kilometre
+219 - Chránené územia k 31.12.2018 - Chránené územia k 31.12.2018
+1071 - Výkony cestovného ruchu v Bratislave - Počet prenocovaní  Bratislave
+1072 - Výkony cestovného ruchu v Bratislave - Počet návštevníkov v Bratislave
+924 - Praktickí lekári a špecialisti - Praktickí lekári a špecialisti
+1326 - Trvanie slnečného svitu za rok (v hodinách) - Trvanie slnečného svitu za rok (v hodinách)
+999 - Počet liečební, domov ošetrovateľskej starostlivosti, hospicov a zariadení biomedicínskeho výskumu - Počet liečební, domov ošetrovateľskej starostlivosti, hospicov a zariadení biomedicínskeho výskumu
+296 - Typy obslužného dopravného zaradenia podľa triedy cestnej komunikácie a správcu v roku 2016 - Typy obslužného dopravného zaradenia podľa triedy cestnej komunikácie a správcu v roku 2016
+995 - Počet vydaných vodičských preukazov a medzinárodných vodičských preukazov - Počet vydaných medzinárodných vodičských preukazov
+996 - Počet vydaných vodičských preukazov a medzinárodných vodičských preukazov - Počet vydaných vodičských preukazov
+961 - Počet dopravných nehôd s následkom na živote alebo zdraví v cestnej doprave - Počet dopravných nehôd s následkom na živote alebo zdraví v cestnej doprave
+962 - Počet dopravných nehôd s usmrtením v cestnej doprave - Počet dopravných nehôd s usmrtením v cestnej doprave
+960 - Počet dopravných nehôd v cestnej doprave - Počet dopravných nehôd v cestnej doprave
+295 - Stavebný stav mostov v správe BA SK na cestách III. triedy v rokoch 2005 - 2018 - Stavebný stav mostov v správe BA SK na cestách III. triedy v rokoch 2005 - 2018
+997 - Počet evidovaných vodičov - Počet evidovaných vodičov
+1084 - Počet návštevníkov Mestských galérií v Bratislave v roku 2015 - Mirbachov palác
+1085 - Počet návštevníkov Mestských galérií v Bratislave v roku 2015 - Pálffyho palác
+1096 - Počet výpožičiek kníh, periodík a dokumentov v Mestskej knižnici v Bratislave - Počet výpožičiek v Mestskej knižnici v Bratislave
+1318 - Počet sudcov vo výkone k 31.12. - Počet sudcov vo výkone k 31.12.
+1307 - Údaje za kriminalitu mladých podľa jednotlivých druhov - Údaje za kriminalitu mladých podľa jednotlivých druhov
+1306 - Počet stíhaných a vyšetrovaných mladých za zostávajúcu kriminalitu - Počet stíhaných a vyšetrovaných mladých za zostávajúcu kriminalitu
+9860 - Mediánový vek - Mediánový vek
+1309 - Počet stíhaných a vyšetrovaných mladých za mravnostnú kriminalitu podľa vzdelania - Počet stíhaných a vyšetrovaných mladých za mravnostnú kriminalitu podľa vzdelania
+1313 - Počet stíhaných a vyšetrovaných mladých za ostatnú kriminalitu podľa vzdelania - Počet stíhaných a vyšetrovaných mladých za ostatnú kriminalitu podľa vzdelania
+881 - Čerpanie rozpočtu oddelenia sociálnych vecí k 06.09.2019 - Čerpanie rozpočtu oddelenia sociálnych vecí k 06.09.2019
+407 - Počet priestupkov podľa druhu udalosti v roku 2018 - Počet priestupkov podľa druhu udalosti v roku 2018
+9782 - Počet priestupkov podľa druhu udalosti v roku 2019 - Počet priestupkov podľa druhu udalosti v roku 2019
+1012 - Počet podozrení o spáchaní trestného činu v roku 2017 - Počet podozrení o spáchaní trestného činu v roku 2017
+1325 - Počet ostatných udalostí v roku 2019 - Počet ostatných udalostí v roku 2019
+1201 - Počet tried a učiteľov na štátnych konzervatóriách - Počet tried na štátnych konzervatóriách
+1202 - Počet tried a učiteľov na štátnych konzervatóriách - Počet učiteľov na štátnych konzervatóriách
+1197 - Počet súkromných konzervatórií a počet žiakov súkromných konzervatórií - Počet súkromných konzervatórií
+1198 - Počet súkromných konzervatórií a počet žiakov súkromných konzervatórií - Počet žiakov súkromných konzervatórií
+853 - Počet ostatných udalostí v roku 2017 - Počet ostatných udalostí v roku 2017 podľa ulíc v Bratislave
+9876 - Perinatálna úmrtnosť - Perinatálna úmrtnosť
+1257 - Vnútorné sťahovanie medzi bratislavskými okresmi podľa pohlavia - Muži
+1258 - Vnútorné sťahovanie medzi bratislavskými okresmi podľa pohlavia - Ženy
+1209 - Stavebná produkcia vykonaná vlastnými zamestnancami (tis. Eur) v podnikoch s 20 a viac zamestnancami - Stavebná produkcia vykonaná vlastnými zamestnancami (tis. Eur) v podnikoch s 20 a viac zamestnancami
+9990 - Počet umelých potratov - Počet umelých potratov
+1210 - Produktivita práce na zamestnanca zo stavebnej produkcie vykonanej vlastnými zamestnancami (Eur) v podnikoch s 20 a viac zamestnancami - Produktivita práce na zamestnanca zo stavebnej produkcie vykonanej vlastnými zamestnancami (Eur) v podnikoch s 20 a viac zamestnancami
+1216 - Počet cirkevných stredných odborných škôl a počet žiakov cirkevných stredných odborných škôl - Počet cirkevných stredných odborných škôl
+1217 - Počet cirkevných stredných odborných škôl a počet žiakov cirkevných stredných odborných škôl - Počet žiakov cirkevných stredných odborných škôl
+1212 - Počet štátnych stredných odborných škôl a počet žiakov štátnych stredných odborných škôl - Počet štátnych stredných odborných škôl
+1213 - Počet štátnych stredných odborných škôl a počet žiakov štátnych stredných odborných škôl - Počet žiakov štátnych stredných odborných škôl
+1208 - Stavebná produkcia podľa dodávateľských zmlúv (tis. Eur) v podnikoch s 20 a viac zamestnancami - Stavebná produkcia podľa dodávateľských zmlúv (tis. Eur) v podnikoch s 20 a viac zamestnancami
+1269 - Počet poberateľov dávok v hmotnej núdzi a príspevkov k dávke - Počet poberateľov dávok v hmotnej núdzi a príspevkov k dávke
+1218 - Počet tried a učiteľov na štátnych stredných odborných školách - Počet tried na štátnych stredných odborných školách
+1219 - Počet tried a učiteľov na štátnych stredných odborných školách - Počet učiteľov na štátnych stredných odborných školách
+1315 - Návštevnosť v Mestskom divadle P. O. Hviezdoslava v Bratislave na vlastných predstaveniach - rok 2018
+1316 - Návštevnosť v Mestskom divadle P. O. Hviezdoslava v Bratislave na vlastných predstaveniach - rok 2019
+9938 - Citlivosť  obyvateľstva  na  extrémne  horúčavy  (spoločenská), normalizovaná na stupnici 0-1 - Vplyv horúčav
+1327 - Teplota vzduchu - priemerná, maximálna a minimálna (Celziov stupeň) - Priemerná teplota
+1328 - Teplota vzduchu - priemerná, maximálna a minimálna (Celziov stupeň) - Maximálna teplota
+1329 - Teplota vzduchu - priemerná, maximálna a minimálna (Celziov stupeň) - Minimálna teplota
+1259 - Produktivita práce na zamestnanca zo stavebnej produkcie podľa dodávateľských zmlúv (Eur) v podnikoch s 20 a viac zamestnancami - Produktivita práce na zamestnanca zo stavebnej produkcie podľa dodávateľských zmlúv (Eur) v podnikoch s 20 a viac zamestnancami
+883 - Čerpanie finančných prostriedkov dávok náhradnej rodinnej starostlivosti (v eurách) - Čerpanie finančných prostriedkov dávok náhradnej rodinnej starostlivosti (v eurách)
+1331 - Maximálne zrážky za 24 h (v mm) - Maximálne zrážky za 24 h (v mm)
+170 - Počet poberateľov príspevku na nezaopatrené dieťa - Počet poberateľov príspevku na nezaopatrené dieťa
+168 - Počet poberateľov jednorazových peňažných príspevkov na kompenzáciu ťažko zdravotne postihnutým - Počet poberateľov jednorazových peňažných príspevkov na kompenzáciu ťažko zdravotne postihnutým
+169 - Čerpanie finančných prostriedkov jednorazových peňažných príspevkov na kompenzáciu ťažko zdravotne postihnutým - Čerpanie finančných prostriedkov jednorazových peňažných príspevkov na kompenzáciu ťažko zdravotne postihnutým
+879 - Čerpanie finančných prostriedkov na príspevok na pohreb (v eurách) - Čerpanie finančných prostriedkov na príspevok na pohreb
+165 - Počet poberateľov dávok náhradnej rodinnej starostlivosti - Počet poberateľov dávok náhradnej rodinnej starostlivosti
+882 - Počet poberateľov príspevku na pohreb - Počet poberateľov príspevku na pohreb (v eurách)
+884 - Čerpanie finančných prostriedkov na príspevok na náhradné výživné (v eurách) - Čerpanie finančných prostriedkov na príspevok na náhradné výživné (v eurách)
+167 - Počet poberateľov príspevku na bývanie - Počet poberateľov príspevku na bývanie
+10347 - Počet podozrení o spáchaní trestného činu od 01.01.2020 do 31.10.2020 - Počet podozrení o spáchaní trestného činu
+1672 - Objekty (byty) vo vlastníctve Hlavného mesta SR Bratislavy, nezverené do správy mestskej časti - Objekty (byty) vo vlastníctve Hlavného mesta SR Bratislavy k 31.12.2019, nezverené do správy mestskej časti
+9823 - Objekty (byty) vo vlastníctve Hlavného mesta SR Bratislavy, nezverené do správy mestskej časti - Objekty (byty) vo vlastníctve Hlavného mesta SR Bratislavy k 30.09.2020, nezverené do správy mestskej časti
+10348 - Počet priestupkov podľa druhu udalosti od 01.01.2020 do 31.10.2020 - Počet priestupkov podľa druhu udalosti
+1497 - Transfer neštátnym školám a školským zariadeniam poskytnutý v roku 2019 - Transfer neštátnym školám a školským zariadeniam poskytnutý v roku 2019
+1669 - Odchody električiek linky č. 3 v októbri v rokoch 2017 - 2019 - 2017
+1670 - Odchody električiek linky č. 3 v októbri v rokoch 2017 - 2019 - 2018
+1671 - Odchody električiek linky č. 3 v októbri v rokoch 2017 - 2019 - 2019
+1471 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Obyvatelia spolu
+1472 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Muži vo veku 0 - 14 rokov
+1473 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Ženy vo veku 0 - 14 rokov
+1474 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Muži vo veku 15 - 64 rokov
+1475 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Ženy vo veku 15 - 64 rokov
+1476 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Muži vo veku 65 rokov a viac
+1477 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Ženy vo veku 65 rokov a viac
+1478 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Legenda - Obyvatelia spolu
+1479 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Legenda - Obyvatelia vo veku 0 - 14 rokov
+1480 - Hustota zaľudnenia Bratislavy (GRID 1x1 km) - Legenda - Obyvatelia vo veku 15 - 64 rokov a 65 rokov a viac
+238 - Výsledky prezidentských volieb 2009 - kandidáti - Voľba prezidenta SR v roku 2009 podľa kandidátov – 1. a 2.kolo
+938 - Počet cirkevných materských škôl a počet detí v cirkevných materských školách - Počet detí v cirkevných materských školách
+939 - Počet cirkevných materských škôl a počet detí v cirkevných materských školách - Počet cirkevných materských škôl
+171 - Počet poberateľov príspevku na zdravotnú starostlivosť - Počet poberateľov príspevku na zdravotnú starostlivosť
+942 - Počet súkromných materských škôl a počet detí v súkromných materských školách - Počet súkromných materských škôl
+943 - Počet súkromných materských škôl a počet detí v súkromných materských školách - Počet detí v súkromných materských školách
+1075 - Výsledky prezidentských volieb 2014 - účasť - Voľba prezidenta SR v roku 2014 podľa účasti – 1. a 2.kolo
+950 - Počet cirkevných základných škôl a počet žiakov v cirkevných základných školách (1. - 9. ročník) - Počet cirkevných základných škôl (1. - 9. ročník)
+951 - Počet cirkevných základných škôl a počet žiakov v cirkevných základných školách (1. - 9. ročník) - Počet žiakov v cirkevných základných školách (1. - 9. ročník)
+952 - Počet súkromných základných škôl a počet žiakov v súkromných základných školách (1. - 9. ročník) - Počet súkromných základných škôl (1. - 9. ročník)
+953 - Počet súkromných základných škôl a počet žiakov v súkromných základných školách (1. - 9. ročník) - Počet žiakov v súkromných základných školách (1. - 9. ročník)
+940 - Počet materských škôl a počet detí v materských školách - Počet materských škôl
+941 - Počet materských škôl a počet detí v materských školách - Počet detí v materských školách
+1280 - Obyvateľstvo podľa najvyššieho dosiahnutého vzdelania - Obyvateľstvo podľa najvyššieho dosiahnutého vzdelania
+236 - Výsledky prezidentských volieb 2004 - kandidáti - Voľba prezidenta SR v roku 2004 podľa kandidátov – 1. a 2.kolo
+1074 - Výsledky prezidentských volieb 2009 - účasť - Voľba prezidenta SR v roku 2009 podľa účasti – 1. a 2.kolo
+948 - Počet štátnych základných škôl a počet žiakov v štátnych základných školách (1. - 9. ročník) - Počet štátnych základných škôl (1. - 9. ročník)
+949 - Počet štátnych základných škôl a počet žiakov v štátnych základných školách (1. - 9. ročník) - Počet žiakov v štátnych základných školách (1. - 9. ročník)
+946 - Počet základných škôl a počet žiakov základných škôl (1. - 9. ročník) - Počet základných škôl (1. - 9. ročník)
+947 - Počet základných škôl a počet žiakov základných škôl (1. - 9. ročník) - Počet žiakov základných škôl (1. - 9. ročník)
+944 - Počet štátnych materských škôl a počet detí v štátnych materských školách - Počet štátnych materských škôl
+945 - Počet štátnych materských škôl a počet detí v štátnych materských školách - Počet detí v štátnych materských školách
+240 - Výsledky prezidentských volieb 2014 - kandidáti - Voľba prezidenta SR v roku 2014 podľa kandidátov – 1. a 2.kolo
+935 - Počet rozostavaných bytov k 1.1. - Počet rozostavaných bytov k 1.1.
+9955 - Dostupnosť  ambulancií  pre  deti  a  dorast  –  normalizovaný  na  stupnici  0-1 - Vplyv horúčav
+1165 - Počet dokončených bytov podľa počtu izieb - Počet dokončených bytov podľa počtu izieb
+1288 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – všeobecná kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – všeobecná kriminalita
+982 - Miera objasnenosti majetkových trestných činov (v %) - Miera objasnenosti majetkových trestných činov (v %)
+985 - Miera objasnenosti trestných činov (v %) - Miera objasnenosti trestných činov (v %)
+981 - Miera objasnenosti ekonomických trestných činov (v %) - Miera objasnenosti ekonomických trestných činov (v %)
+1292 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – zostávajúca kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – zostávajúca kriminalita
+1290 - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ekonomická kriminalita - Údaje o stíhaných, vyšetrovaných osobách podľa druhu kriminality v BA kraji – ekonomická kriminalita
+984 - Miera objasnenosti násilných trestných činov (v %) - Miera objasnenosti násilných trestných činov (v %)
+983 - Miera objasnenosti mravnostných trestných činov (v %) - Miera objasnenosti mravnostných trestných činov (v %)
+609 - Počet obyvateľov vo veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km) - Počet obyvateľov vo veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km)
+604 - Počet obyvateľov podľa miesta sčítania (raster 1x1 km) - Počet obyvateľov podľa miesta sčítania (raster 1x1 km) na Slovensku
+608 - Počet obyvateľov vo veku 15-64 rokov podľa miesta sčítania (raster 1x1 km) - Počet obyvateľov vo veku 15-64 rokov podľa miesta sčítania (raster 1x1 km)
+629 - Počet obyvateľov podľa najvyššieho dosiahnutého vzdelania v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa najvyššieho dosiahnutého vzdelania v základných sídelných jednotkách
+605 - Počet žien podľa miesta sčítania (raster 1x1 km) - Počet žien podľa miesta sčítania (raster 1x1 km) na Slovensku
+606 - Počet mužov podľa miesta sčítania (raster 1x1 km) - Počet mužov podľa miesta sčítania (raster 1x1 km)
+635 - Počet obyvateľov podľa miesta trvalého pobytu alebo obvyklého bydliska v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa miesta trvalého pobytu alebo obvyklého bydliska v základných sídelných jednotkách
+623 - Počet obyvateľov podľa súčasnej ekonomickej aktivity v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa súčasnej ekonomickej aktivity v základných sídelných jednotkách
+624 - Počet obyvateľov podľa pohlavia v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa pohlavia v základných sídelných jednotkách
+638 - Počet obyvateľov podľa národnosti v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa národnosti v základných sídelných jednotkách
+632 - Počet obyvateľov podľa veku v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa veku v základných sídelných jednotkách
+619 - Počet obyvateľov s vysokoškolským vzdelaním podľa miesta sčítania (raster 1x1 km) - Počet obyvateľov s vysokoškolským vzdelaním podľa miesta sčítania (raster 1x1 km)
+641 - Počet obyvateľov podľa štátnej príslušnosti v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa štátnej príslušnosti v základných sídelných jednotkách - anonymizované
+647 - Počet obyvateľov podľa dôvodu prisťahovania do súčasného miesta pobytu v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa dôvodu prisťahovania do súčasného miesta pobytu v základných sídelných jednotkách
+612 - Počet žien vo veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km) - Počet žien vo veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km)
+618 - Počet pracujúcich obyvateľov podľa miesta sčítania (raster 1x1 km) - Počet pracujúcich obyvateľov podľa miesta sčítania  (raster 1x1 km)
+611 - Počet žien vo veku 15-64 rokov podľa miesta sčítania (raster 1x1 km) - Počet žien vo veku 15-64 rokov podľa miesta sčítania (raster 1x1 km)
+644 - Počet obyvateľov podľa náboženského vyznania v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa náboženského vyznania v základných sídelných jednotkách
+615 - Počet mužov veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km) - Počet mužov veku 65 a viac rokov podľa miesta sčítania (raster 1x1 km)
+610 - Počet žien vo veku 0-14 rokov podľa miesta sčítania (raster 1x1 km) - Počet žien vo veku 0-14 rokov podľa miesta sčítania (raster 1x1 km)
+617 - Počet ekonomicky neaktívnych obyvateľov a obyvateľov s nezistenou ekonomickou aktivitou podľa miesta sčítania (raster 1x1 km) - Počet ekonomicky neaktívnych obyvateľov a obyvateľov s nezistenou ekonomickou aktivitou podľa miesta sčítania (raster 1x1 km)
+616 - Počet ekonomicky aktívnych obyvateľov podľa miesta sčítania (raster 1x1 km) - Počet ekonomicky aktívnych obyvateľov podľa miesta sčítania (raster 1x1 km)
+656 - Počet obyvateľov podľa materinského jazyka v základných sídelných jednotkách - anonymizované - Počet obyvateľov podľa materinského jazyka v základných sídelných jednotkách v Bratislave
+931 - Počet dokončených bytov - Počet dokončených bytov
+1169 - Úžitková plocha dokončených bytov  a dokončených bytov v RD (v m2) - Úžitková plocha dokončených bytov a dokončených bytov v RD (v m2)
+1126 - Priemerný vek pri úmrtí podľa pohlavia - Priemerný vek pri úmrtí podľa pohlavia
+1230 - Výmera územia - Výmera územia
+1123 - Počet živonarodených podľa hmotnosti - Počet živonarodených podľa hmotnosti
+1128 - Rozloha mestských častí - Rozloha mestských častí
+10008 - Priemerný vek vzájomne slobodných snúbencov pri sobáši - Priemerný vek vzájomne slobodných snúbencov pri sobáši
+1120 - Sobáše podľa veku snúbencov a trvalého pobytu muža a ženy - Muži
+1121 - Sobáše podľa veku snúbencov a trvalého pobytu muža a ženy - Ženy
+9998 - Podiel zomretých podľa príčin smrti - Podiel zomretých podľa príčin smrti
+1124 - Počet mŕtvonarodených podľa hmotnosti - Počet mŕtvonarodených podľa hmotnosti
+1237 - Rozvody podľa dĺžky trvania manželstva a trvalého pobytu manželov - Rozvody podľa dĺžky trvania manželstva a trvalého pobytu manželov
+1293 - Počet zistených, objasnených a dodatočne objasnených trestných činov - Počet zistených, objasnených a dodatočne objasnených trestných činov
+1299 - Počet stíhaných a vyšetrovaných osôb - Počet stíhaných a vyšetrovaných osôb
+1256 - Vnútorné sťahovanie medzi bratislavskými okresmi - Vnútorné sťahovanie medzi bratislavskými okresmi
+1443 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - 2011 - 2019
+1891 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - Január - máj 2020
+9717 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - Jún 2020
+9757 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - Júl 2020
+9795 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - August 2020
+9847 - Objednávky (tovary a služby) Magistrátu hlavného mesta SR Bratislava - September 2020
+10000 - Priemerný vek manželov pri rozvode - Priemerný vek manželov pri rozvode

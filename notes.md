@@ -4,6 +4,12 @@ Mestská časť Bratislava-Petržalka, ako príslušný stavebný úrad podľa �
 
 https://www.facebook.com/groups/409352002596836/?post_id=1299174240281270&notif_id=1593691772625916&notif_t=page_group_post&ref=notif
 
+# Kupa ZSE
+https://www.petrzalka.sk/wp-content/uploads/2020/11/7.-N%C3%A1vrh-na-k%C3%BApu-objektu-%E2%80%93-ZSE-na-ul.-Ondreja-%C5%A0tefanka-2-Bratislava-Petr%C5%BEalka-s%C3%BApisn%C3%A9-%C4%8D.-3274-vr%C3%A1tane-pri%C4%BEahl.pdf
+
+# Harmonogram revitalizacie
+https://www.petrzalka.sk/wp-content/uploads/2020/11/13.-Inform%C3%A1cia-k-verejn%C3%BDm-detsk%C3%BDm-ihrisk%C3%A1m-harmonogram-revitaliz%C3%A1cie-VDI_MZ-18_11_2020.pdf
+
 # Zdroj projektov
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-septembrovemu-zastupitelstvu-4/
 
