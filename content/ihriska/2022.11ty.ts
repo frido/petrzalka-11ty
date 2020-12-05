@@ -18,79 +18,79 @@ class Template implements PlayGroundPage {
           district: 1,
           category: ['A'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Gercenova GIB',
           district: 1,
           category: ['A'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Kopčianska',
           district: 1,
           category: ['A', 'B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Andrusovova',
           district: 2,
           category: ['A'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Ševčenkova',
           district: 2,
           category: ['A','B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Gessayova',
           district: 3,
           category: ['A', 'B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Furdekova',
           district: 3,
           category: ['A','B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Medveďovej',
           district: 4,
-          category: ['A','B'],
+          category: ['A','B', 'C'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Jankolova',
           district: 4,
           category: ['A','B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Starhradská',
           district: 5,
           category: ['A', 'B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Budatínska',
           district: 5,
           category: ['A', 'B'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Bzovícka',
           district: 6,
           category: ['A'],
           year: 2022,
-          flag: []
+          flag: null
         },{
           name: 'Žehrianska',
           district: 6,
           category: ['A', 'B'],
           year: 2022,
-          flag: []
+          flag: null
         },
         
       ]

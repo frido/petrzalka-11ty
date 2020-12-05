@@ -18,79 +18,79 @@ class Template implements PlayGroundPage {
           district: 1,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Pečnianska',
           district: 1,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: 'new'
         },{
           name: 'Vavilovova',
           district: 1,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Markova',
           district: 2,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Fedinova',
           district: 2,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Hrobákova',
           district: 3,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Lachova',
           district: 3,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Haanova',
           district: 4,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Mamateyova',
           district: 4,
           category: ['A','B'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Holíčska',
           district: 5,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Šintavská',
           district: 5,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Jasovská',
           district: 6,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },{
           name: 'Šášovská',
           district: 6,
           category: ['A'],
           year: 2021,
-          flag: []
+          flag: null
         },
         
       ]

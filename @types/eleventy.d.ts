@@ -102,7 +102,7 @@ export interface PlayGround {
     district: number;
     category: PlayGroundCategory[];
     year: number;
-    flag: string[];
+    flag: string;
 }
 
 export interface Program {

@@ -1,4 +1,4 @@
-import { BudgetItem, BudgetYear, FMBudget, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { BudgetItem, BudgetYear, FMBudget, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -112,6 +112,55 @@ const conf = function (eleventyConfig: any) {
   eleventyConfig.addFilter("log", (object: any) => {
     console.log(object);
     return object;
+  });
+
+  eleventyConfig.addFilter("playGroundCategory", (category: PlayGroundCategory[]) => {
+    if (category.length === 2) {
+      return 'pre 0 - 14r deti'
+    }
+    if (category.length === 3) {
+      return 'pre 0 - 14r + street workout'
+    }
+    return category.map(c => {
+      if (c === 'A') {
+        return 'pre 0 - 10r deti'
+      }
+      if (c === 'B') {
+        return 'pre 10 - 14r deti'
+      }
+      if (c === 'C') {
+        return 'street workout'
+      }
+    }).join(', ')
+  });
+
+  eleventyConfig.addFilter("playGroundStatus", (flag: string) => {
+    if (flag === 'new') {
+      return 'success'
+    }
+    if (flag === 'green' || flag === 'workout' || flag === 'green/workout' || flag === 'green/park') {
+      return 'error'
+    }
+    return 'inwork'
+  });
+
+  eleventyConfig.addFilter("playGroundDescription", (flag: string) => {
+    if (flag === 'new') {
+      return 'výstavba nového ihriska'
+    }
+    if (flag === 'green') {
+      return 'zrušenie ihriska'
+    }
+    if (flag === 'workout') {
+      return 'zmena na street workout'
+    }
+    if (flag === 'green/workout') {
+      return 'zrušenie alebo street workout'
+    }
+    if (flag === 'green/park') {
+      return 'výstavba parkoviska'
+    }
+    return 'rekonštrukcia'
   });
 
   // Get the first `n` elements of a collection.

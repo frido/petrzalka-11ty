@@ -110,6 +110,52 @@ var conf = function (eleventyConfig) {
         console.log(object);
         return object;
     });
+    eleventyConfig.addFilter("playGroundCategory", function (category) {
+        if (category.length === 2) {
+            return 'pre 0 - 14r deti';
+        }
+        if (category.length === 3) {
+            return 'pre 0 - 14r + street workout';
+        }
+        return category.map(function (c) {
+            if (c === 'A') {
+                return 'pre 0 - 10r deti';
+            }
+            if (c === 'B') {
+                return 'pre 10 - 14r deti';
+            }
+            if (c === 'C') {
+                return 'street workout';
+            }
+        }).join(', ');
+    });
+    eleventyConfig.addFilter("playGroundStatus", function (flag) {
+        if (flag === 'new') {
+            return 'success';
+        }
+        if (flag === 'green' || flag === 'workout' || flag === 'green/workout' || flag === 'green/park') {
+            return 'error';
+        }
+        return 'inwork';
+    });
+    eleventyConfig.addFilter("playGroundDescription", function (flag) {
+        if (flag === 'new') {
+            return 'výstavba nového ihriska';
+        }
+        if (flag === 'green') {
+            return 'zrušenie ihriska';
+        }
+        if (flag === 'workout') {
+            return 'zmena na street workout';
+        }
+        if (flag === 'green/workout') {
+            return 'zrušenie alebo street workout';
+        }
+        if (flag === 'green/park') {
+            return 'výstavba parkoviska';
+        }
+        return 'rekonštrukcia';
+    });
     // Get the first `n` elements of a collection.
     eleventyConfig.addFilter("head", function (array, n) {
         if (n < 0) {

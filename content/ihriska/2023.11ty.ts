@@ -18,73 +18,73 @@ class Template implements PlayGroundPage {
           district: 1,
           category: ['A'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Harmanecká',
           district: 1,
           category: ['A'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Černyševského 7',
           district: 1,
           category: ['A', 'B'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Prokofievova',
           district: 2,
           category: ['B'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Ambroseho',
           district: 3,
           category: ['A'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Hrobákova 1',
           district: 3,
           category: ['B'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Pankúchova',
           district: 4,
           category: ['A'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Mamateyova 28',
           district: 4,
           category: ['A'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Budatínska 25',
           district: 5,
           category: ['B'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Smolenická 8',
           district: 5,
           category: ['A', 'B'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Šášovská JAMA',
           district: 6,
           category: ['B', 'C'],
           year: 2023,
-          flag: []
+          flag: null
         },{
           name: 'Krásnohorská',
           district: 6,
           category: [],
           year: 2023,
-          flag: []
+          flag: 'workout'
         },
         
       ]

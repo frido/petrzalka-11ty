@@ -1,0 +1,79 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Ihriska
+  order: 5
+---
+<div class="paletteB">
+  <section class="container vertical">
+    <h1>Plán obnovy verejných detských ihrísk</h1>
+    <div class="gallery">
+      <figure>
+        <a href="img/ihriska/obvod1.jpg">
+          <img src="img/ihriska/obvod1.jpg">
+        </a>
+        <caption>obvod 1</caption>
+      </figure>
+      <figure>
+        <a href="img/ihriska/obvod2.jpg">
+          <img src="img/ihriska/obvod2.jpg">
+        </a>
+        <caption>obvod 2</caption>
+      </figure>
+      <figure>
+        <a href="img/ihriska/obvod3.jpg">
+          <img src="img/ihriska/obvod3.jpg">
+        </a>
+        <caption>obvod 3</caption>
+      </figure>
+      <figure>
+        <a href="img/ihriska/obvod4.jpg">
+          <img src="img/ihriska/obvod4.jpg">
+        </a>
+        <caption>obvod 4</caption>
+      </figure>
+      <figure>
+        <a href="img/ihriska/obvod5.jpg">
+          <img src="img/ihriska/obvod5.jpg">
+        </a>
+        <caption>obvod 5</caption>
+      </figure>
+      <figure>
+        <a href="img/ihriska/obvod6.jpg">
+          <img src="img/ihriska/obvod6.jpg">
+        </a>
+        <caption>obvod 6</caption>
+      </figure>
+    </div>
+  </section>
+  {% for page in collections.playground %}
+    <section class="container vertical">
+      <h2>
+        <a href="{{ page.url | url }}">v roku {{ page.data.year }}</a>
+      </h2>
+      {% for play in page.data.playgrounds %}
+        <article class="article timeline {{ play.flag | playGroundStatus }}">
+          <div class="row">
+            <div class="col-md-3">
+              <header>
+                <h4>
+                  {{ play.name }}
+                </h4>
+              </header>
+            </div>
+            <div class="col-md-2">
+              {{ play.category | playGroundCategory}}
+            </div>
+            <div class="col-md-4">
+              {{ play.flag | playGroundDescription}}
+            </div>
+            <div class="col-md-3 text-right">
+                obvod {{ play.district }}
+            </div>
+          </div>
+
+        </article>
+      {% endfor %}
+    </section>
+  {% endfor %}
+</div>

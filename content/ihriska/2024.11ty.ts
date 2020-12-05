@@ -18,79 +18,79 @@ class Template implements PlayGroundPage {
           district: 1,
           category: ['B'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: ' Nobelovo nám.',
           district: 1,
           category: ['A', 'B'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: 'Kapicova',
           district: 1,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green'
         },{
           name: 'Pifflova',
           district: 1,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green'
         },{
           name: 'Rovniakova',
           district: 3,
           category: ['A', 'B'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: 'Bradáčova',
           district: 3,
           category: ['B'],
           year: 2024,
-          flag: []
+          flag: 'new'
         },{
           name: 'Osuského',
           district: 3,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green/workout'
         },{
           name: 'Mlynarovičova',
           district: 4,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green/workout'
         },{
           name: 'Topoľčianska',
           district: 5,
           category: ['A', 'B'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: 'Smolenická 1',
           district: 5,
           category: ['B'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: 'Znievska 8',
           district: 5,
           category: ['A'],
           year: 2024,
-          flag: []
+          flag: null
         },{
           name: 'Znievska 9',
           district: 5,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green/park'
         },{
           name: 'Budatínska 41',
           district: 5,
           category: [],
           year: 2024,
-          flag: []
+          flag: 'green'
         },
         
       ]
