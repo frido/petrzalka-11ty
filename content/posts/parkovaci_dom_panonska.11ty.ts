@@ -47,13 +47,16 @@ class Template implements Post {
 
   render(data: FrontMatter) {
     return `
-    Predložená dokumentácia rieši: umiestnenie parkovacieho domu ako I. etapy v lokalite, kde je
+    <p>
+    Umiestnenie parkovacieho domu ako I. etapy v lokalite, kde je
     v súčasnosti nefunkčný objekt servisného centra PEUGEOT, určený na asanáciu. Pre dotknuté
     územie bola spracovaná Urbanistická štúdia Panónska – Dolnozemská (čistopis 05/2019), ako
     podklad pre schválenie zmien a doplnkov Územného plánu hlavného mesta SR Bratislavy, rok 2007
     v znení zmien a doplnkov. V II. etape bude na pozemku na mieste asanovaného objektu servisného
     centra PEUGEOT umiestnený investičný zámer v zmysle uvedenej štúdie až po schválení zmien
     a doplnkov ÚPN hlavného mesta SR Bratislavy.
+    </p>
+    <p>
     Aktuálne umiestňovaný parkovací dom uvažuje v 1. podzemnom podlaží prevádzku autoservisu, 4
     nadzemné podlažia a strecha objektu sú určené pre parkovanie, s kapacitou 93 parkovacích miest. 6
     parkovacích miest je umiestnených na teréne pred objektom. Príjazdová komunikácia
@@ -62,7 +65,7 @@ class Template implements Post {
     Poloha a kapacita parkovacieho domu je z hľadiska dopravného riešenia v súlade s riešením
     spracovanej UŠ Panónska – Dolnozemská, 25 parkovacích miest je určených pre autoservis
     a zvyšné parkovacie miesta pre súčasnú okolitú bytovú zástavbu.
-    `;
+    </p>`;
   }
 }
 

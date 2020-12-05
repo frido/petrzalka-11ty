@@ -179,8 +179,6 @@ const conf = function (eleventyConfig: any) {
   });
 
   eleventyConfig.addFilter("FMBudget", (programs: Program[]) => {
-    console.log(programs);
-    
     const budgetItems = programs
       .flatMap(p => p.items)
       .map((i: BudgetItem) => {
