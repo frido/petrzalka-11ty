@@ -7,9 +7,6 @@ https://www.facebook.com/groups/409352002596836/?post_id=1299174240281270&notif_
 # Kupa ZSE
 https://www.petrzalka.sk/wp-content/uploads/2020/11/7.-N%C3%A1vrh-na-k%C3%BApu-objektu-%E2%80%93-ZSE-na-ul.-Ondreja-%C5%A0tefanka-2-Bratislava-Petr%C5%BEalka-s%C3%BApisn%C3%A9-%C4%8D.-3274-vr%C3%A1tane-pri%C4%BEahl.pdf
 
-# Harmonogram revitalizacie
-https://www.petrzalka.sk/wp-content/uploads/2020/11/13.-Inform%C3%A1cia-k-verejn%C3%BDm-detsk%C3%BDm-ihrisk%C3%A1m-harmonogram-revitaliz%C3%A1cie-VDI_MZ-18_11_2020.pdf
-
 # Zdroj projektov
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-septembrovemu-zastupitelstvu-4/
 
@@ -35,3 +32,11 @@ Investičný zámer - Petržalská pláž (276 KB); Petržalská pláž - vizual
 Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 KB); Polyfunkčná budova Digital Systems Údernícka 9/A (204 KB)
 ### Matadorka
 https://www.petrzalka.sk/wp-content/uploads/2019/01/UPVaD_01_21_10_Rekonstrukcia_a_dostavba_vyrobnych_hal_Matador.pdf
+
+# Zamietnute
+
+Ubytovacie zariadenie TARPAN -> https://www.petrzalka.sk/wp-content/uploads/2020/12/KUPVaR-zapisnica_2020-12-01_overena.pdf
+„Dopravné napojenie na Einsteinovu ulicu" pre stavbu „Polyfunkčný komplex budov, Einsteinova ulica“ -> https://www.petrzalka.sk/wp-content/uploads/2020/12/KUPVaR-zapisnica_2020-12-01_overena.pdf
+
+#Ukludnovanie dopracy
+https://www.petrzalka.sk/wp-content/uploads/2020/12/Rekon%C5%A1trukcie-chodn%C3%ADkov-M%C4%8C-Petr%C5%BEalka-komprim.pdf

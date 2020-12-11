@@ -1,4 +1,4 @@
-import { BudgetItem, BudgetYear, FMBudget, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { BudgetItem, BudgetItem2, BudgetYear, FMBudget, FMBudget2, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -83,6 +83,10 @@ const conf = function (eleventyConfig: any) {
 
   eleventyConfig.addFilter("date", (timeline: luxon.DateTime) => {
     return timeline.toFormat("dd.LL.yyyy");
+  });
+
+  eleventyConfig.addFilter("sortInvPlan", (page: any[]) => {
+    return page.sort((a, b) => b.data.year - a.data.year);
   });
 
   eleventyConfig.addFilter("project", (value: number) => {
@@ -240,6 +244,67 @@ const conf = function (eleventyConfig: any) {
       initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
       amount: success.amount + inwork.amount + error.amount + postpone.amount,
       realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount,
+    }
+
+    const response = {
+      all: all,
+      success: success,
+      inwork: inwork,
+      error: error,
+      postpone: postpone
+    }
+
+    return response
+  });
+
+  eleventyConfig.addFilter("FMBudget2", (items: BudgetItem2[]) => {
+    const budgetItems = items
+      .map((bi: BudgetItem2) => {
+        let amountRef = bi.amountUpdated === 0 ? bi.amountOriginal : bi.amountUpdated;
+        bi.usage = amountRef === 0 ? 0 : Math.round(bi.amountReal / amountRef);
+        return bi;
+      });
+
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    const sorter = (a: BudgetItem2, b:BudgetItem2) => b.amountOriginal - a.amountOriginal;
+
+    const successItems = budgetItems.filter(i => i.status === 'success').sort(sorter);
+    const inworkItems = budgetItems.filter(i => i.status === 'inwork').sort(sorter);
+    const errorItems = budgetItems.filter(i => i.status === 'error').sort(sorter);
+    const postponeItems = budgetItems.filter(i => i.status === 'postpone').sort(sorter);
+
+    const success = {
+      amountOriginal: successItems.map(i => i.amountOriginal).reduce(reducer, 0),
+      amountUpdated: successItems.map(i => i.amountUpdated).reduce(reducer, 0),
+      amountReal: successItems.map(i => i.amountReal).reduce(reducer, 0),
+      list: successItems
+    }
+
+    const inwork = {
+      amountOriginal: inworkItems.map(i => i.amountOriginal).reduce(reducer, 0),
+      amountUpdated: inworkItems.map(i => i.amountUpdated).reduce(reducer, 0),
+      amountReal: inworkItems.map(i => i.amountReal).reduce(reducer, 0),
+      list: inworkItems
+    }
+
+    const error = {
+      amountOriginal: errorItems.map(i => i.amountOriginal).reduce(reducer, 0),
+      amountUpdated: errorItems.map(i => i.amountUpdated).reduce(reducer, 0),
+      amountReal: errorItems.map(i => i.amountReal).reduce(reducer, 0),
+      list: errorItems
+    }
+
+    const postpone = {
+      amountOriginal: postponeItems.map(i => i.amountOriginal).reduce(reducer, 0),
+      amountUpdated: postponeItems.map(i => i.amountUpdated).reduce(reducer, 0),
+      amountReal: postponeItems.map(i => i.amountReal).reduce(reducer, 0),
+      list: postponeItems
+    }
+
+    const all = {
+      amountOriginal: success.amountOriginal + inwork.amountOriginal + error.amountOriginal + postpone.amountOriginal,
+      amountUpdated: success.amountUpdated + inwork.amountUpdated + error.amountUpdated + postpone.amountUpdated,
+      amountReal: success.amountReal + inwork.amountReal + error.amountReal + postpone.amountReal,
     }
 
     const response = {

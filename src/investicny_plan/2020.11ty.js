@@ -12,507 +12,256 @@ var Template = /** @class */ (function () {
             year: 2020,
             layout: "layouts/rozpocet.njk",
             tags: ["budget2"],
-            programs: [
+            updatedDate: luxon.DateTime.fromISO("2020-10-01"),
+            items: [
                 {
+                    title: 'Moderná prezentácia pamiatok a pamätihodností MČ',
                     program: 1,
-                    items: [
-                        {
-                            amount: 0,
-                            title: 'Moderná prezentácia pamiatok a pamätihodností MČ',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "niCE life projekt. Náhradné čerpanie za neschválený pôvodný projekt. Pre potreby niCE life projektu sú potrebné iba bežné výdavky. Kapitálové výdavky v roku 2020 nebudú čerpané",
-                                    status: 'error'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: "niCE life projekt. Náhradné čerpanie za neschválený pôvodný projekt. Pre potreby niCE life projektu sú potrebné iba bežné výdavky. Kapitálové výdavky v roku 2020 nebudú čerpané",
+                    status: 'error'
                 }, {
+                    title: 'Nákup licencie software na verejné obstarávanie',
                     program: 2,
-                    items: [
-                        {
-                            amount: 3000,
-                            title: 'Nákup licencie software na verejné obstarávanie',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 1500,
-                                    realAmount: 0,
-                                    comment: "Príprava podkladov na verejné obstarávanie",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 30000,
-                            title: 'Virtualizácie serverov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 30000,
-                                    realAmount: 0,
-                                    comment: "priebežne sa plní",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 35000,
-                            title: 'Komunikačná infraštruktúra',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 30000,
-                                    realAmount: 16253.42,
-                                    comment: "priebežne sa plní",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 3000,
+                    amountUpdated: 1500,
+                    amountReal: 0,
+                    comment: 'Príprava podkladov na verejné obstarávanie',
+                    status: 'inwork'
                 }, {
-                    program: 3,
-                    items: []
+                    title: 'Virtualizácie serverov',
+                    program: 2,
+                    amountOriginal: 30000,
+                    amountUpdated: 30000,
+                    amountReal: 0,
+                    comment: 'priebežne sa plní',
+                    status: 'inwork'
                 }, {
+                    title: 'Komunikačná infraštruktúra',
+                    program: 2,
+                    amountOriginal: 35000,
+                    amountUpdated: 30000,
+                    amountReal: 16253.42,
+                    comment: 'priebežne sa plní',
+                    status: 'inwork'
+                }, {
+                    title: 'Rekonštrukcia chodníkov',
                     program: 4,
-                    items: [
-                        {
-                            amount: 100000,
-                            title: 'Rekonštrukcia chodníkov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 95000,
-                                    realAmount: 36836,
-                                    comment: "",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 80000,
-                            title: 'Rekonstrukcia a modernizácia komunikácii',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 145000,
-                            title: 'Vybudovanie cyklotrasy, prípadne nových chodníkov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 15852,
-                                    realAmount: 5352,
-                                    comment: "platba za PD, aktualne prebiehaju zistovania vlastnickych vztahov na pozemkoch cyklotras",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 370000,
-                            title: 'Prípravná projektová dokumentácia a budovanie nových chodníkov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Nerealizuje sa, bolo by vhodné od MZ presunúť na opravu jestvujúcich chodnikov",
-                                    status: 'error'
-                                }
-                            ]
-                        }, {
-                            amount: 23000,
-                            title: 'Projektová dokumentácia na nové parkoviská',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 14437.8,
-                                    realAmount: 14437.8,
-                                    comment: "zrealizované",
-                                    status: 'success'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 100000,
+                    amountUpdated: 95000,
+                    amountReal: 36836,
+                    comment: '',
+                    status: 'inwork'
                 }, {
+                    title: 'Rekonstrukcia a modernizácia komunikácii',
+                    program: 4,
+                    amountOriginal: 80000,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: '',
+                    status: 'inwork'
+                }, {
+                    title: 'Vybudovanie cyklotrasy, prípadne nových chodníkov',
+                    program: 4,
+                    amountOriginal: 145000,
+                    amountUpdated: 15852,
+                    amountReal: 5352,
+                    comment: 'platba za PD, aktualne prebiehaju zistovania vlastnickych vztahov na pozemkoch cyklotras',
+                    status: 'inwork'
+                }, {
+                    title: 'Prípravná projektová dokumentácia a budovanie nových chodníkov',
+                    program: 4,
+                    amountOriginal: 370000,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Nerealizuje sa, bolo by vhodné od MZ presunúť na opravu jestvujúcich chodnikov',
+                    status: 'error'
+                }, {
+                    title: 'Projektová dokumentácia na nové parkoviská',
+                    program: 4,
+                    amountOriginal: 23000,
+                    amountUpdated: 14437.8,
+                    amountReal: 14437.8,
+                    comment: 'zrealizované',
+                    status: 'success'
+                }, {
+                    title: 'Rekonštrukcia školkských zariadení',
                     program: 5,
-                    items: [
-                        {
-                            amount: 911536,
-                            title: 'Rekonštrukcia školkských zariadení',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 867554.53,
-                                    realAmount: 454520.07,
-                                    comment: "realizuje sa",
-                                    status: 'inwork',
-                                    items: [
-                                        {
-                                            title: 'PD rekonštrukcia priestorov kuchyne - realizačná dokumentácia',
-                                            status: 'success',
-                                            description: 'zrealizované'
-                                        }, {
-                                            title: 'PD rekonštrukcia odpadov zo ŠJ vrátane lapača tukov',
-                                            status: 'success',
-                                            description: 'zrealizované'
-                                        }, , {
-                                            title: 'PD rekonštrukcia šatní pri telocvični a bazéne ',
-                                            status: 'success',
-                                            description: 'zrealizované'
-                                        }, , {
-                                            title: 'Rekonštrukcia hygienických zariadení v pavilóne B3',
-                                            status: 'inwork',
-                                            description: 'Realizuje sa termín ukončenia 30.9.2020'
-                                        }, , {
-                                            title: 'Rekonštrukcia šatní pri telocvični a bazéne ',
-                                            status: 'inwork',
-                                            description: 'Realizuje sa termín ukončenia 30.9.2020'
-                                        }, , {
-                                            title: 'Rekonštrukcia priestorov kuchyne a toaliet ŠKD na 2.NP pavilónu A1 vrátane gastrozariadení',
-                                            status: 'inwork',
-                                            description: 'Termín ukončenia prác koniec 10/2020'
-                                        }, , {
-                                            title: 'Rekonštrukcia okien na 3. a 4. poschodí v pavilóne prístavby',
-                                            status: 'success',
-                                            description: 'zrealizované'
-                                        }, , {
-                                            title: 'Rekonštrukcia vonkajšej terasy vstupov do 2. NP',
-                                            status: 'inwork',
-                                            description: 'realizuje sa, predpokadaný termín ukončenia prác 18.9.2020'
-                                        }, , {
-                                            title: 'Prestavba školníckeho bytu na triedu MŠ a úniková cesta z 2.NP',
-                                            status: 'inwork',
-                                            description: 'Príprava súťaže'
-                                        }, , {
-                                            title: 'Prestavba školníckeho bytu na triedu MŠ a zvýšenie kapacity kuchyne  vrátane gastrozariadenia',
-                                            status: 'inwork',
-                                            description: 'Príprava súťaže'
-                                        }, , {
-                                            title: 'Prestavba hospodárskeho pavilónu',
-                                            status: 'inwork',
-                                            description: 'realizuje sa, spracováva sa zmena využitia stavby'
-                                        }, , {
-                                            title: 'Prestavba hospodárskeho pavilónu',
-                                            status: 'inwork',
-                                            description: 'zrealizované, prebieha zmena účelu využívania'
-                                        }, , {
-                                            title: 'Úprava oplotenia areálu MŠ',
-                                            status: 'error',
-                                            description: 'nerealizuje sa'
-                                        }, , {
-                                            title: 'Rekonštrukcia hydroizolácie strechy',
-                                            status: 'inwork',
-                                            description: 'Žačali sa prvé rokovania s projektantom čakáme na CP za projekt'
-                                        }, , {
-                                            title: 'Rekonštrukcia a vybavenie odborných učební',
-                                            status: 'inwork',
-                                            description: 'NFP schválený, dodavatel vysutazeny (s realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020 )'
-                                        }, , {
-                                            title: 'Rekonštrukcia a modernizácia kuchýň a zariadení',
-                                            status: 'success',
-                                            description: 'zrealizované'
-                                        }, , {
-                                            title: 'Vyplatenie zádržného dodávateľom prác na školských objektoch',
-                                            status: 'inwork',
-                                            description: 'priebežne sa plní'
-                                        }, , {
-                                            title: 'Rekonštrukcia hygienických zariadení v pavilóne B3',
-                                            status: 'inwork',
-                                            description: 'prebiehajú práce, predpokladaný termín odovzdania 18.9.2020'
-                                        },
-                                    ]
-                                }
-                            ]
-                        }, {
-                            amount: 777246,
-                            title: 'Dotácia na obnovu odborných učební ZŠ',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                                    status: 'postpone'
-                                }
-                            ]
-                        }, {
-                            amount: 18740,
-                            title: 'Rekonštrukcia časti objektu za účelom zvýšenia kapacity',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                                    status: 'postpone'
-                                }
-                            ]
-                        }, {
-                            amount: 94734,
-                            title: 'Rekonštrukcia a vybavenie odborných učební',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020",
-                                    status: 'postpone'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 911536,
+                    amountUpdated: 867554.53,
+                    amountReal: 454520.07,
+                    comment: 'realizuje sa',
+                    status: 'inwork'
                 }, {
+                    title: 'Dotácia na obnovu odborných učební ZŠ',
+                    program: 5,
+                    amountOriginal: 777246,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020',
+                    status: 'postpone'
+                }, {
+                    title: 'Rekonštrukcia časti objektu za účelom zvýšenia kapacity',
+                    program: 5,
+                    amountOriginal: 18740,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020',
+                    status: 'postpone'
+                }, {
+                    title: 'Rekonštrukcia a vybavenie odborných učební',
+                    program: 5,
+                    amountOriginal: 94734,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Nenávratný finančný príspevok bol schválený. Dodávateľ je vysúťažený. Zmluvy sú na kontrole na ministerstve. S realizáciou projektu plánujeme začať od roku 2021, nepredpokladáme čerpanie v roku 2020',
+                    status: 'postpone'
+                }, {
+                    title: 'Vybudovanie klimatizácie v DK Zrkadlový háj',
                     program: 6,
-                    items: [
-                        {
-                            amount: 0,
-                            title: 'Vybudovanie klimatizácie v DK Zrkadlový háj ',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Spracováva sa projektová dokumentácia v réžii KZP",
-                                    status: 'error'
-                                }
-                            ]
-                        }, {
-                            amount: 0,
-                            title: 'Rekonštrukcia jestvujúceho multifunkčného ihriska',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Zrealizované cez bežné výdavky",
-                                    status: 'success'
-                                }
-                            ]
-                        }, {
-                            amount: 67123,
-                            title: 'Revitalizácia športového areálu,  multifunkčného ihriska - I. fáza',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 30000,
-                                    realAmount: 0,
-                                    comment: "Realiyovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže.",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 0,
-                            title: 'Výmena mantinelov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 18534,
-                                    realAmount: 18534,
-                                    comment: "Realizácia v polovici 10/2020",
-                                    status: 'success'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Spracováva sa projektová dokumentácia v réžii KZP',
+                    status: 'error'
                 }, {
+                    title: 'Rekonštrukcia jestvujúceho multifunkčného ihriska',
+                    program: 6,
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Zrealizované cez bežné výdavky',
+                    status: 'success'
+                }, {
+                    title: 'Revitalizácia športového areálu,  multifunkčného ihriska - I. fáza',
+                    program: 6,
+                    amountOriginal: 67123,
+                    amountUpdated: 30000,
+                    amountReal: 0,
+                    comment: 'Realiyovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže.',
+                    status: 'inwork'
+                }, {
+                    title: 'Výmena mantinelov',
+                    program: 6,
+                    amountOriginal: 0,
+                    amountUpdated: 18534,
+                    amountReal: 18534,
+                    comment: 'Realizácia v polovici 10/2020',
+                    status: 'success'
+                }, {
+                    title: 'Nákup vozidiel a plošiny (žacích strojov s príslušenstvom)',
                     program: 7,
-                    items: [
-                        {
-                            amount: 219348,
-                            title: 'Nákup vozidiel a plošiny (žacích strojov s príslušenstvom)',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 179348,
-                                    realAmount: 113075.99,
-                                    comment: "",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 0,
-                            title: 'Vybudovanie jedného nového výbehu pre psov',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Prebieha identifikácia vhodných pozemkov. V roku 2020 sa nebude realizovať",
-                                    status: 'postpone'
-                                }
-                            ]
-                        }, {
-                            amount: 10000,
-                            title: 'Príspevky na stavebné úpravy a vybudovanie nových kontajnerových stanovíšť',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 10000,
-                                    realAmount: 0,
-                                    comment: "Priebežne sa plní",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 63200,
-                            title: 'Revitalizácia verejných detských ihrísk (príslušenstvo k strojom, prístrojom, zariadeniam a technikám)',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 53322,
-                                    realAmount: 38322,
-                                    comment: "Prebieha inventarizácia stavu detských ihrísk",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 91614,
-                            title: 'Nákup nákladných automobilov a prevádzkových strojov a prístrojov (2 kusov nákladných automobilov značky Man, jadrovej vŕtačky a stolového sústruhu)',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 89384.33,
-                                    realAmount: 89384.33,
-                                    comment: "",
-                                    status: 'success'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 219348,
+                    amountUpdated: 179348,
+                    amountReal: 113075.99,
+                    comment: '',
+                    status: 'inwork'
                 }, {
+                    title: 'Vybudovanie jedného nového výbehu pre psov',
+                    program: 7,
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Prebieha identifikácia vhodných pozemkov. V roku 2020 sa nebude realizovať',
+                    status: 'postpone'
+                }, {
+                    title: 'Príspevky na stavebné úpravy a vybudovanie nových kontajnerových stanovíšť',
+                    program: 7,
+                    amountOriginal: 10000,
+                    amountUpdated: 10000,
+                    amountReal: 0,
+                    comment: 'Priebežne sa plní',
+                    status: 'inwork'
+                }, {
+                    title: 'Revitalizácia verejných detských ihrísk (príslušenstvo k strojom, prístrojom, zariadeniam a technikám)',
+                    program: 7,
+                    amountOriginal: 63200,
+                    amountUpdated: 53322,
+                    amountReal: 38322,
+                    comment: 'Prebieha inventarizácia stavu detských ihrísk',
+                    status: 'inwork'
+                }, {
+                    title: 'Nákup nákladných automobilov a prevádzkových strojov a prístrojov (2 kusov nákladných automobilov značky Man, jadrovej vŕtačky a stolového sústruhu)',
+                    program: 7,
+                    amountOriginal: 91614,
+                    amountUpdated: 89384.33,
+                    amountReal: 89384.33,
+                    comment: '',
+                    status: 'success'
+                }, {
+                    title: 'Dofinancovanie ÚP zóny Kapitulský dvor',
                     program: 8,
-                    items: [
-                        {
-                            amount: 34757,
-                            title: 'Dofinancovanie ÚP zóny Kapitulský dvor',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 34757,
-                                    realAmount: 34757,
-                                    comment: "V procese spracovania návrhu ÚP",
-                                    status: 'success'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 34757,
+                    amountUpdated: 34757,
+                    amountReal: 34757,
+                    comment: 'V procese spracovania návrhu ÚP',
+                    status: 'success'
                 }, {
+                    title: 'Vybudovanie denného stacionáru',
                     program: 9,
-                    items: [
-                        {
-                            amount: 34651,
-                            title: 'Vybudovanie denného stacionáru',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Nenávratný finančný prispevok bol zamietnutý. Aktuálne prebieha odvolacie konanie",
-                                    status: 'postpone'
-                                }
-                            ]
-                        }, {
-                            amount: 34730,
-                            title: 'Participatívny výskum na Nám. Republiky a Šrobárovom námestí',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 23570,
-                                    realAmount: 8200,
-                                    comment: "",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 0,
-                            title: 'Riešenie sociálneho zariadenia pre seniorov, prípadne na zvýšenie kapacity MŠ',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Prebratie objektu Hrobákova, na obhliadke objektu Hrobáková sa určila cena rekonštrukcie ref, investičných činností na sumu 450 000 - 520 000 €",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 15100,
-                            title: 'Nákup budov, objektov a ich časti',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 15100,
-                                    realAmount: 15100,
-                                    comment: "Zrealizované",
-                                    status: 'success'
-                                }
-                            ]
-                        }, {
-                            amount: 29000,
-                            title: 'Vyhotovenie projektových dokumentácií k novým projektom podľa vyhlásených výziev',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 2065,
-                                    realAmount: 0,
-                                    comment: "Neočakáva sa ďalšie čerpanie",
-                                    status: 'success'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 34651,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Nenávratný finančný prispevok bol zamietnutý. Aktuálne prebieha odvolacie konanie',
+                    status: 'postpone'
                 }, {
+                    title: 'Participatívny výskum na Nám. Republiky a Šrobárovom námestí',
+                    program: 9,
+                    amountOriginal: 34730,
+                    amountUpdated: 23570,
+                    amountReal: 8200,
+                    comment: '',
+                    status: 'inwork'
+                }, {
+                    title: 'Riešenie sociálneho zariadenia pre seniorov, prípadne na zvýšenie kapacity MŠ',
+                    program: 9,
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Prebratie objektu Hrobákova, na obhliadke objektu Hrobáková sa určila cena rekonštrukcie ref, investičných činností na sumu 450 000 - 520 000 €',
+                    status: 'inwork'
+                }, {
+                    title: 'Nákup budov, objektov a ich časti',
+                    program: 9,
+                    amountOriginal: 15100,
+                    amountUpdated: 15100,
+                    amountReal: 15100,
+                    comment: 'Zrealizované',
+                    status: 'success'
+                }, {
+                    title: 'Vyhotovenie projektových dokumentácií k novým projektom podľa vyhlásených výziev',
+                    program: 9,
+                    amountOriginal: 29000,
+                    amountUpdated: 2065,
+                    amountReal: 0,
+                    comment: 'Neočakáva sa ďalšie čerpanie',
+                    status: 'success'
+                }, {
+                    title: 'Zabezpečenie klimatizácie do ZSS na Vavilovovej ulici',
                     program: 10,
-                    items: [
-                        {
-                            amount: 0,
-                            title: 'Zabezpečenie klimatizácie do ZSS na Vavilovovej ulici',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 0,
-                                    realAmount: 0,
-                                    comment: "Z dôvodu pandémie nebolo možné realizovať. 26/07/2020 požiadalo ZSS o dotáciu pre zabezpečenie klimatizázie vo vlastnej réžii",
-                                    status: 'error'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 0,
+                    amountUpdated: 0,
+                    amountReal: 0,
+                    comment: 'Z dôvodu pandémie nebolo možné realizovať. 26/07/2020 požiadalo ZSS o dotáciu pre zabezpečenie klimatizázie vo vlastnej réžii',
+                    status: 'error'
                 }, {
+                    title: 'Obstaranie špeciálneho vozidla pre DVPZ Petržalka',
                     program: 11,
-                    items: [
-                        {
-                            amount: 20000,
-                            title: 'Obstaranie špeciálneho vozidla pre DVPZ Petržalka',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 20000,
-                                    realAmount: 0,
-                                    comment: "V príprave",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }, {
-                            amount: 100000,
-                            title: 'Nákup telekomunikačnej techniky - kamery',
-                            statuses: [
-                                {
-                                    date: luxon.DateTime.fromISO("2020-10-01"),
-                                    amount: 100000,
-                                    realAmount: 0,
-                                    comment: "",
-                                    status: 'inwork'
-                                }
-                            ]
-                        }
-                    ]
+                    amountOriginal: 20000,
+                    amountUpdated: 20000,
+                    amountReal: 0,
+                    comment: 'V príprave',
+                    status: 'inwork'
+                }, {
+                    title: 'Nákup telekomunikačnej techniky - kamery',
+                    program: 11,
+                    amountOriginal: 100000,
+                    amountUpdated: 100000,
+                    amountReal: 0,
+                    comment: '',
+                    status: 'inwork'
                 }
             ]
         };

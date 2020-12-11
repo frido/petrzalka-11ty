@@ -72,8 +72,8 @@ type Status = "inwork" | "success" | 'error' | 'unknown' | 'pause'
 type InvPlanStatus = "inwork" | "success" | 'error' | 'postpone'
 
 export interface Budget {
-    data(): FMBudget ;
-    render(data: FMBudget): string;
+    data(): FMBudget2 ;
+    render(data: FMBudget2): string;
 }
 
 export interface PlayGroundPage {
@@ -86,6 +86,25 @@ export interface FMBudget {
     programs: Program[];
     layout: "layouts/rozpocet.njk";
     tags: string[];
+}
+
+export interface FMBudget2 {
+    year: number;
+    items: BudgetItem2[];
+    layout: "layouts/rozpocet.njk";
+    tags: string[];
+    updatedDate: DateTime;
+}
+
+export interface BudgetItem2 {
+    title: string;
+    program: number;
+    amountOriginal: number;
+    amountUpdated: number;
+    amountReal: number;
+    comment: string;
+    status: InvPlanStatus;
+    usage?: number;
 }
 
 export interface FMPlayGround {

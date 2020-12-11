@@ -88,7 +88,7 @@ eleventyNavigation:
     </header>
     <div class="">
       {% for page in collections.budget2 %}
-        {% set allMyBudget = page.data.programs | FMBudget %}
+        {% set allMyBudget = page.data.items | FMBudget2 %}
         {% for budget in allMyBudget.success.list | head(5) %}
           {% include "rozpocetlist.njk" %}
         {% endfor %}

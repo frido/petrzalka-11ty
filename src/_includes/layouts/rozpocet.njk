@@ -5,79 +5,87 @@ layout: layouts/home.njk
 <div class="paletteB">
   <section class="container vertical">
     <h1>Investičný plán {{year}}</h1>
-aktualizované 1.10.2020
-</section>
+aktualizované {{ updatedDate | date}}
+  </section>
 </div>
 
-{% set allMyBudget = programs | FMBudget %}
+{% set allMyBudget = items | FMBudget2 %}
 <div class="paletteB">
-  <section class="container vertical">
-    {% set success = allMyBudget.success %}
-    <div class="row text-success">
-      <div class="col-md-2">
+
+  {% set success = allMyBudget.success %}
+  {% if success.list.length > 0 %}
+    <section class="container vertical">
+      <div class="row text-success">
+        <div class="col-md-2">
       Zrealizované <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="col-md-2">
+          {{success.list.length | project}}
+        </div>
+        <div class="col-md-8">
+      Výdavky: {{success.amountReal | value}}€
       </div>
-      <div class="col-md-2">
-        {{success.list.length | project}}
-    </div>
-      <div class="col-md-8">
-      Výdavky: {{success.realAmount | value}}€
       </div>
-    </div>
-    {% for budget in success.list %}
-      {% include "rozpocetlist.njk" %}
-    {% endfor %}
-  </section>
+      {% for budget in success.list %}
+        {% include "rozpocetlist.njk" %}
+      {% endfor %}
+    </section>
+  {% endif %}
 
-  <section class="container vertical">
-    {% set error = allMyBudget.postpone %}
-    <div class="row text-error">
-      <div class="col-md-3">
+  {% set postpone = allMyBudget.postpone %}
+  {% if postpone.list.length > 0 %}
+    <section class="container vertical">
+      <div class="row text-error">
+        <div class="col-md-3">
       Odložené <i class="far fa-arrow-alt-circle-right"></i>
+        </div>
+        <div class="col-md-2">
+          {{postpone.list.length | project}}
+        </div>
       </div>
-      <div class="col-md-2">
-        {{error.list.length | project}}
-    </div>
-    </div>
-    {% for budget in error.list %}
-      {% include "rozpocetlist.njk" %}
-    {% endfor %}
-  </section>
+      {% for budget in postpone.list %}
+        {% include "rozpocetlist.njk" %}
+      {% endfor %}
+    </section>
+  {% endif %}
 
-  <section class="container vertical">
-    {% set error = allMyBudget.error %}
-    <div class="row text-error">
-      <div class="col-md-3">
+  {% set error = allMyBudget.error %}
+  {% if error.list.length > 0 %}
+    <section class="container vertical">
+      <div class="row text-error">
+        <div class="col-md-3">
       Zrušené <i class="fas fa-ban"></i>
+        </div>
+        <div class="col-md-2">
+          {{error.list.length | project}}
+        </div>
       </div>
-      <div class="col-md-2">
-        {{error.list.length | project}}
-    </div>
-    </div>
-    {% for budget in error.list %}
-      {% include "rozpocetlist.njk" %}
-    {% endfor %}
-  </section>
+      {% for budget in error.list %}
+        {% include "rozpocetlist.njk" %}
+      {% endfor %}
+    </section>
+  {% endif %}
 
-  <section class="container vertical">
-    {% set inwork = allMyBudget.inwork %}
-    <div class="row" style="color: #0d47a1 !important;">
-      <div class="col-md-2">
+  {% set inwork = allMyBudget.inwork %}
+  {% if inwork.list.length > 0 %}
+    <section class="container vertical">
+      <div class="row" style="color: #0d47a1 !important;">
+        <div class="col-md-2">
       Realizuje sa
     </div>
-      <div class="col-md-2">
-        {{inwork.list.length | project}}
-    </div>
-      <div class="col-md-4">
-      Aktuálne výdavky: {{inwork.realAmount | value}}€
+        <div class="col-md-2">
+          {{inwork.list.length | project}}
+        </div>
+        <div class="col-md-4">
+      Aktuálne výdavky: {{inwork.amountReal | value}}€
       </div>
-      <div class="col-md-4">
-      Plánované výdavky: {{inwork.amount | value}}€
+        <div class="col-md-4">
+      Plánované výdavky: {{inwork.amountUpdated | value}}€
       </div>
-    </div>
-    {% for budget in inwork.list %}
-      {% include "rozpocetlist.njk" %}
-    {% endfor %}
-  </section>
-
+      </div>
+      {% for budget in inwork.list %}
+        {% include "rozpocetlist.njk" %}
+      {% endfor %}
+    </section>
+  {% endif %}
 </div>

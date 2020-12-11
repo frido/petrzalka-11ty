@@ -84,6 +84,9 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter("date", function (timeline) {
         return timeline.toFormat("dd.LL.yyyy");
     });
+    eleventyConfig.addFilter("sortInvPlan", function (page) {
+        return page.sort(function (a, b) { return b.data.year - a.data.year; });
+    });
     eleventyConfig.addFilter("project", function (value) {
         if (value === 1) {
             return "1 projekt";
@@ -170,7 +173,6 @@ var conf = function (eleventyConfig) {
         return [];
     });
     eleventyConfig.addFilter("FMBudget", function (programs) {
-        console.log(programs);
         var budgetItems = programs
             .flatMap(function (p) { return p.items; })
             .map(function (i) {
@@ -226,6 +228,57 @@ var conf = function (eleventyConfig) {
             initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
             amount: success.amount + inwork.amount + error.amount + postpone.amount,
             realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount
+        };
+        var response = {
+            all: all,
+            success: success,
+            inwork: inwork,
+            error: error,
+            postpone: postpone
+        };
+        return response;
+    });
+    eleventyConfig.addFilter("FMBudget2", function (items) {
+        var budgetItems = items
+            .map(function (bi) {
+            var amountRef = bi.amountUpdated === 0 ? bi.amountOriginal : bi.amountUpdated;
+            bi.usage = amountRef === 0 ? 0 : Math.round(bi.amountReal / amountRef);
+            return bi;
+        });
+        var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
+        var sorter = function (a, b) { return b.amountOriginal - a.amountOriginal; };
+        var successItems = budgetItems.filter(function (i) { return i.status === 'success'; }).sort(sorter);
+        var inworkItems = budgetItems.filter(function (i) { return i.status === 'inwork'; }).sort(sorter);
+        var errorItems = budgetItems.filter(function (i) { return i.status === 'error'; }).sort(sorter);
+        var postponeItems = budgetItems.filter(function (i) { return i.status === 'postpone'; }).sort(sorter);
+        var success = {
+            amountOriginal: successItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
+            amountUpdated: successItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
+            amountReal: successItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
+            list: successItems
+        };
+        var inwork = {
+            amountOriginal: inworkItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
+            amountUpdated: inworkItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
+            amountReal: inworkItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
+            list: inworkItems
+        };
+        var error = {
+            amountOriginal: errorItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
+            amountUpdated: errorItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
+            amountReal: errorItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
+            list: errorItems
+        };
+        var postpone = {
+            amountOriginal: postponeItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
+            amountUpdated: postponeItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
+            amountReal: postponeItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
+            list: postponeItems
+        };
+        var all = {
+            amountOriginal: success.amountOriginal + inwork.amountOriginal + error.amountOriginal + postpone.amountOriginal,
+            amountUpdated: success.amountUpdated + inwork.amountUpdated + error.amountUpdated + postpone.amountUpdated,
+            amountReal: success.amountReal + inwork.amountReal + error.amountReal + postpone.amountReal
         };
         var response = {
             all: all,
