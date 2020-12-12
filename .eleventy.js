@@ -37,8 +37,8 @@ var eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
-var zverejnovanie_1 = require("./generators/zverejnovanie");
 var numberString = require("number-string");
+var invPlan_1 = require("./invPlan");
 // TODO: deprecated
 var gallery = function (content) {
     return "<div class=\"gallery\">" + content + "</div>";
@@ -71,6 +71,7 @@ var conf = function (eleventyConfig) {
         return luxon.DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy");
     });
     eleventyConfig.addFilter("json", function (object) {
+        console.log(object);
         return JSON.stringify(object);
     });
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
@@ -166,129 +167,7 @@ var conf = function (eleventyConfig) {
         }
         return array.slice(0, n);
     });
-    eleventyConfig.addCollection("zverejnovanieBaStanoviska", function (collection) {
-        var downloader = new zverejnovanie_1.ZverejnovanieDownloader();
-        // return downloader.load();
-        // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
-        return [];
-    });
-    eleventyConfig.addFilter("FMBudget", function (programs) {
-        var budgetItems = programs
-            .flatMap(function (p) { return p.items; })
-            .map(function (i) {
-            i.statuses.forEach(function (s) {
-                s.initAmount = i.amount;
-                var percentPoint = s.amount / 100;
-                if (s.status === 'success') {
-                    percentPoint = s.initAmount / 100;
-                }
-                if (percentPoint == 0) {
-                    s.usage = 0;
-                }
-                else {
-                    s.usage = Math.round(s.realAmount / percentPoint);
-                }
-            });
-            if (i.statuses[0]) {
-                i.lastStatusAmount = i.statuses[0].amount;
-            }
-            return i;
-        });
-        var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
-        var sorter = function (a, b) { return b.statuses[0].amount - a.statuses[0].amount; };
-        var successItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'success'; }).sort(sorter);
-        var inworkItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'inwork'; }).sort(sorter);
-        var errorItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'error'; }).sort(sorter);
-        var postponeItems = budgetItems.filter(function (i) { return i.statuses[0].status === 'postpone'; }).sort(sorter);
-        var success = {
-            initAmount: successItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
-            amount: successItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
-            realAmount: successItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
-            list: successItems
-        };
-        var inwork = {
-            initAmount: inworkItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
-            amount: inworkItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
-            realAmount: inworkItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
-            list: inworkItems
-        };
-        var error = {
-            initAmount: errorItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
-            amount: errorItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
-            realAmount: errorItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
-            list: errorItems
-        };
-        var postpone = {
-            initAmount: postponeItems.map(function (i) { return i.statuses[0].initAmount; }).reduce(reducer),
-            amount: postponeItems.map(function (i) { return i.statuses[0].amount; }).reduce(reducer),
-            realAmount: postponeItems.map(function (i) { return i.statuses[0].realAmount; }).reduce(reducer),
-            list: postponeItems
-        };
-        var all = {
-            initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
-            amount: success.amount + inwork.amount + error.amount + postpone.amount,
-            realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount
-        };
-        var response = {
-            all: all,
-            success: success,
-            inwork: inwork,
-            error: error,
-            postpone: postpone
-        };
-        return response;
-    });
-    eleventyConfig.addFilter("FMBudget2", function (items) {
-        var budgetItems = items
-            .map(function (bi) {
-            var amountRef = bi.amountUpdated === 0 ? bi.amountOriginal : bi.amountUpdated;
-            bi.usage = amountRef === 0 ? 0 : Math.round(bi.amountReal / amountRef);
-            return bi;
-        });
-        var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
-        var sorter = function (a, b) { return b.amountOriginal - a.amountOriginal; };
-        var successItems = budgetItems.filter(function (i) { return i.status === 'success'; }).sort(sorter);
-        var inworkItems = budgetItems.filter(function (i) { return i.status === 'inwork'; }).sort(sorter);
-        var errorItems = budgetItems.filter(function (i) { return i.status === 'error'; }).sort(sorter);
-        var postponeItems = budgetItems.filter(function (i) { return i.status === 'postpone'; }).sort(sorter);
-        var success = {
-            amountOriginal: successItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
-            amountUpdated: successItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
-            amountReal: successItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
-            list: successItems
-        };
-        var inwork = {
-            amountOriginal: inworkItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
-            amountUpdated: inworkItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
-            amountReal: inworkItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
-            list: inworkItems
-        };
-        var error = {
-            amountOriginal: errorItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
-            amountUpdated: errorItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
-            amountReal: errorItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
-            list: errorItems
-        };
-        var postpone = {
-            amountOriginal: postponeItems.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
-            amountUpdated: postponeItems.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
-            amountReal: postponeItems.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
-            list: postponeItems
-        };
-        var all = {
-            amountOriginal: success.amountOriginal + inwork.amountOriginal + error.amountOriginal + postpone.amountOriginal,
-            amountUpdated: success.amountUpdated + inwork.amountUpdated + error.amountUpdated + postpone.amountUpdated,
-            amountReal: success.amountReal + inwork.amountReal + error.amountReal + postpone.amountReal
-        };
-        var response = {
-            all: all,
-            success: success,
-            inwork: inwork,
-            error: error,
-            postpone: postpone
-        };
-        return response;
-    });
+    invPlan_1.invPlanAddon(eleventyConfig);
     eleventyConfig.addCollection("allMyContent", function (collection) {
         var scheduleList = [];
         var now = luxon.DateTime.local();

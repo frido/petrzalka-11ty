@@ -87,11 +87,9 @@ eleventyNavigation:
       <h1 class="container-title">Investičný plán</h1>
     </header>
     <div class="">
-      {% for page in collections.budget2 %}
-        {% set allMyBudget = page.data.items | FMBudget2 %}
-        {% for budget in allMyBudget.success.list | head(5) %}
-          {% include "rozpocetlist.njk" %}
-        {% endfor %}
+      {% for budget in collections.invPlanCollection | invPlanFilterByYear(2021) | invPlanGroupByStatus %}
+        {{ budget | json}}
+        {% include "rozpocetlist.njk" %}
       {% endfor %}
     </div>
   </section>

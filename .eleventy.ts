@@ -1,4 +1,4 @@
-import { BudgetItem, BudgetItem2, BudgetYear, FMBudget, FMBudget2, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
+import { BudgetItem, BudgetItem2, BudgetYear, FMBudget, FMBudget2, FrontMatter, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 import * as luxon from "luxon";
 // const { DateTime } = require("luxon");
@@ -13,6 +13,8 @@ import * as markdownIt from "markdown-it";
 import { ZverejnovanieDownloader } from "./generators/zverejnovanie";
 
 import * as numberString from "number-string";
+
+import {invPlanAddon} from './invPlan';
 
 // TODO: deprecated
 const gallery = (content: string): string => {
@@ -68,6 +70,7 @@ const conf = function (eleventyConfig: any) {
   });
 
   eleventyConfig.addFilter("json", (object: any) => {
+    console.log(object);
     return JSON.stringify(object);
   });
 
@@ -174,156 +177,15 @@ const conf = function (eleventyConfig: any) {
     }
     return array.slice(0, n);
   });
+  
+  invPlanAddon(eleventyConfig);
 
-  eleventyConfig.addCollection("zverejnovanieBaStanoviska", (collection: TemplateCollection) => {
-    const downloader = new ZverejnovanieDownloader();
-    // return downloader.load();
-    // TODO: for the future, I can publish list of all stanovisk, for now I need list only for myself
-    return [];
-  });
-
-  eleventyConfig.addFilter("FMBudget", (programs: Program[]) => {
-    const budgetItems = programs
-      .flatMap(p => p.items)
-      .map((i: BudgetItem) => {
-        i.statuses.forEach((s) => {
-          s.initAmount = i.amount;
-          let percentPoint = s.amount / 100;
-          if (s.status === 'success') {
-            percentPoint = s.initAmount / 100;
-          }
-          if (percentPoint == 0) {
-            s.usage = 0;
-          } else {
-            s.usage = Math.round(s.realAmount / percentPoint);
-          }
-        });
-        if (i.statuses[0]) {
-          i.lastStatusAmount = i.statuses[0].amount;
-        }
-        return i;
-      });
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const sorter = (a: BudgetItem, b:BudgetItem) => b.statuses[0].amount - a.statuses[0].amount;
-
-    const successItems = budgetItems.filter(i => i.statuses[0].status === 'success').sort(sorter);
-    const inworkItems = budgetItems.filter(i => i.statuses[0].status === 'inwork').sort(sorter);
-    const errorItems = budgetItems.filter(i => i.statuses[0].status === 'error').sort(sorter);
-    const postponeItems = budgetItems.filter(i => i.statuses[0].status === 'postpone').sort(sorter);
-
-    const success = {
-      initAmount: successItems.map(i => i.statuses[0].initAmount).reduce(reducer),
-      amount: successItems.map(i => i.statuses[0].amount).reduce(reducer),
-      realAmount: successItems.map(i => i.statuses[0].realAmount).reduce(reducer),
-      list: successItems
-    }
-
-    const inwork = {
-      initAmount: inworkItems.map(i => i.statuses[0].initAmount).reduce(reducer),
-      amount: inworkItems.map(i => i.statuses[0].amount).reduce(reducer),
-      realAmount: inworkItems.map(i => i.statuses[0].realAmount).reduce(reducer),
-      list: inworkItems
-    }
-
-    const error = {
-      initAmount: errorItems.map(i => i.statuses[0].initAmount).reduce(reducer),
-      amount: errorItems.map(i => i.statuses[0].amount).reduce(reducer),
-      realAmount: errorItems.map(i => i.statuses[0].realAmount).reduce(reducer),
-      list: errorItems
-    }
-
-    const postpone = {
-      initAmount: postponeItems.map(i => i.statuses[0].initAmount).reduce(reducer),
-      amount: postponeItems.map(i => i.statuses[0].amount).reduce(reducer),
-      realAmount: postponeItems.map(i => i.statuses[0].realAmount).reduce(reducer),
-      list: postponeItems
-    }
-
-    const all = {
-      initAmount: success.initAmount + inwork.initAmount + error.initAmount + postpone.initAmount,
-      amount: success.amount + inwork.amount + error.amount + postpone.amount,
-      realAmount: success.realAmount + inwork.realAmount + error.realAmount + postpone.realAmount,
-    }
-
-    const response = {
-      all: all,
-      success: success,
-      inwork: inwork,
-      error: error,
-      postpone: postpone
-    }
-
-    return response
-  });
-
-  eleventyConfig.addFilter("FMBudget2", (items: BudgetItem2[]) => {
-    const budgetItems = items
-      .map((bi: BudgetItem2) => {
-        let amountRef = bi.amountUpdated === 0 ? bi.amountOriginal : bi.amountUpdated;
-        bi.usage = amountRef === 0 ? 0 : Math.round(bi.amountReal / amountRef);
-        return bi;
-      });
-
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    const sorter = (a: BudgetItem2, b:BudgetItem2) => b.amountOriginal - a.amountOriginal;
-
-    const successItems = budgetItems.filter(i => i.status === 'success').sort(sorter);
-    const inworkItems = budgetItems.filter(i => i.status === 'inwork').sort(sorter);
-    const errorItems = budgetItems.filter(i => i.status === 'error').sort(sorter);
-    const postponeItems = budgetItems.filter(i => i.status === 'postpone').sort(sorter);
-
-    const success = {
-      amountOriginal: successItems.map(i => i.amountOriginal).reduce(reducer, 0),
-      amountUpdated: successItems.map(i => i.amountUpdated).reduce(reducer, 0),
-      amountReal: successItems.map(i => i.amountReal).reduce(reducer, 0),
-      list: successItems
-    }
-
-    const inwork = {
-      amountOriginal: inworkItems.map(i => i.amountOriginal).reduce(reducer, 0),
-      amountUpdated: inworkItems.map(i => i.amountUpdated).reduce(reducer, 0),
-      amountReal: inworkItems.map(i => i.amountReal).reduce(reducer, 0),
-      list: inworkItems
-    }
-
-    const error = {
-      amountOriginal: errorItems.map(i => i.amountOriginal).reduce(reducer, 0),
-      amountUpdated: errorItems.map(i => i.amountUpdated).reduce(reducer, 0),
-      amountReal: errorItems.map(i => i.amountReal).reduce(reducer, 0),
-      list: errorItems
-    }
-
-    const postpone = {
-      amountOriginal: postponeItems.map(i => i.amountOriginal).reduce(reducer, 0),
-      amountUpdated: postponeItems.map(i => i.amountUpdated).reduce(reducer, 0),
-      amountReal: postponeItems.map(i => i.amountReal).reduce(reducer, 0),
-      list: postponeItems
-    }
-
-    const all = {
-      amountOriginal: success.amountOriginal + inwork.amountOriginal + error.amountOriginal + postpone.amountOriginal,
-      amountUpdated: success.amountUpdated + inwork.amountUpdated + error.amountUpdated + postpone.amountUpdated,
-      amountReal: success.amountReal + inwork.amountReal + error.amountReal + postpone.amountReal,
-    }
-
-    const response = {
-      all: all,
-      success: success,
-      inwork: inwork,
-      error: error,
-      postpone: postpone
-    }
-
-    return response
-  });
-
-  eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection) => {
+  eleventyConfig.addCollection("allMyContent", (collection: TemplateCollection<FrontMatter>) => {
     let scheduleList: Schedule[] = [];
-    const now = luxon.DateTime.local();
+    const now = luxon.DateTime.local();  
     collection
       .getFilteredByTag("projekt")
-      .flatMap((page: TemplateCollectionItem) => {
+      .flatMap((page: TemplateCollectionItem<FrontMatter>) => {
         return page.data.schedule.map((schedule: Schedule) => {
           schedule.page = page; // TODO: I dont need all page
           schedule.sub.filter((sub) => sub.timeline < now).forEach((sub) => (schedule.timeline = sub.timeline));
@@ -358,7 +220,7 @@ const conf = function (eleventyConfig: any) {
 
   eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable("code"));
 
-  eleventyConfig.addCollection("tagList", (collection: TemplateCollection) => {
+  eleventyConfig.addCollection("tagList", (collection: TemplateCollection<FrontMatter>) => {
     let tagSet = new Set<string>();
     collection.getAll().forEach((item) => {
       if ("tags" in item.data) {

@@ -1,18 +1,18 @@
 import { DateTime } from "luxon";
 
-export interface TemplateCollection {
-    getAll(): TemplateCollectionItem[];
-    getFilteredByTag(tag: string): TemplateCollectionItem[]
+export interface TemplateCollection<T> {
+    getAll(): TemplateCollectionItem<T>[];
+    getFilteredByTag(tag: string): TemplateCollectionItem<T>[]
 }
 
-export interface TemplateCollectionItem {
+export interface TemplateCollectionItem<T> {
     inputPath: string;
     fileSlug: string;
     filePathStem: string;
     date: Date;
     outputPath: string;
     url: string;
-    data: FrontMatter;
+    data: T;
     template: any;
 }
 
@@ -28,7 +28,7 @@ export interface Schedule {
     timeline?: DateTime;
     // timeline2?: Date;
     sub: ScheduleItem[];
-    page?: TemplateCollectionItem;
+    page?: TemplateCollectionItem<FrontMatter>;
 }
 
 export interface ScheduleItem {
@@ -47,6 +47,7 @@ export interface Post {
     render(data: FrontMatter): string;
 }
 
+// TODO: front matter by mal byt generic
 export interface FrontMatter {
     title: string;
     date: string;
@@ -98,6 +99,9 @@ export interface FMBudget2 {
 
 export interface BudgetItem2 {
     title: string;
+    id: string;
+    previous?: string;
+    year?: number; // calculated
     program: number;
     amountOriginal: number;
     amountUpdated: number;

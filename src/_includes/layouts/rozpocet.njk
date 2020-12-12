@@ -9,7 +9,7 @@ aktualizované {{ updatedDate | date}}
   </section>
 </div>
 
-{% set allMyBudget = items | FMBudget2 %}
+{% set allMyBudget = collections.invPlanCollection | invPlanFilterByYear(year) | invPlanGroupByStatus %}
 <div class="paletteB">
 
   {% set success = allMyBudget.success %}

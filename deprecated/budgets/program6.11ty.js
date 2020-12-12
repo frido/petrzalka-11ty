@@ -49,7 +49,7 @@ var Template = /** @class */ (function () {
                                     date: luxon.DateTime.fromISO("2020-10-01"),
                                     amount: 30000,
                                     realAmount: 0,
-                                    comment: "Realiyovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže.",
+                                    comment: "Realizovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže.",
                                     status: 'inwork'
                                 }
                             ]

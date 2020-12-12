@@ -11,18 +11,11 @@
                 rozpočet <span style="margin-left: 0.5rem" class="amount">{{budget.amountOriginal | value}}€</span>
     </div>
   </div>
-  {# <div class="row">
-          <div class="col-md-12">
-            <div class="progress">
-              <div class="progress-bar bg-{{budget.status}}" role="progressbar" style="width: {{budget.usage}}%" aria-valuenow="{{budget.amount}}" aria-valuemin="0" aria-valuemax="{{budget.amount}}"></div>
-            </div>
-          </div>
-        </div> #}
 
   {% if budget.status === 'success' %}
     <div class="row">
       <div class="col-md-6">
-        <small>Aktuálne výdavky</small>
+        Aktuálne výdavky
         <span class="amount" style="margin-left: 0.5rem">{{budget.amountReal | value}}€</span>
       </div>
       <div class="col-md-6 text-right text-success">
@@ -34,7 +27,7 @@
   {% if budget.status === 'inwork' %}
     <div class="row">
       <div class="col-md-6">
-        <small>Aktuálne výdavky</small>
+        Aktuálne výdavky
         <span class="amount" style="margin-left: 0.5rem">{{budget.amountReal | value}}€</span>
       </div>
       {% if budget.amountUpdated != 0 %}
@@ -71,6 +64,23 @@
         <div>Zrušené {# <i class="fas fa-ban"></i> #}</div>
       </div>
     </div>
+  {% endif %}
+
+  {% if budget.previous != null %}
+    Prenesené predchádzajúcich období
+    {% set parentBudget = collections.invPlanCollection | invPlanFindById(budget.previous) %}
+    <div class="row budget-parent-box">
+      <div class="col-md-9">
+        <strong>{{ parentBudget.title }}</strong> - <small>{{ parentBudget.year }}</small>
+      </div>
+      <div class="col-md-3 text-right">
+      výdavky <span class="amount" style="margin-left: 0.5rem">{{parentBudget.amountReal | value}}€</span>
+      </div>
+      <div class="col-md-12">
+        {{parentBudget.comment}}
+      </div>
+    </div>
+
   {% endif %}
 
 </article>

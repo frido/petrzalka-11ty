@@ -4,7 +4,7 @@
         "downlevelIteration": true,
         "allowJs": true
     },
-    "include": [".eleventy.ts", "generators/*"],
+    "include": [".eleventy.ts", "invPlan.ts", "generators/*"],
     "exclude": ["node_modules"],
     
 }
