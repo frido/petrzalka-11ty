@@ -88,10 +88,6 @@ const conf = function (eleventyConfig: any) {
     return timeline.toFormat("dd.LL.yyyy");
   });
 
-  eleventyConfig.addFilter("sortInvPlan", (page: any[]) => {
-    return page.sort((a, b) => b.data.year - a.data.year);
-  });
-
   eleventyConfig.addFilter("project", (value: number) => {
     if (value === 1) {
       return "1 projekt"

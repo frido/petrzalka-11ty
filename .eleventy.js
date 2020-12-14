@@ -85,9 +85,6 @@ var conf = function (eleventyConfig) {
     eleventyConfig.addFilter("date", function (timeline) {
         return timeline.toFormat("dd.LL.yyyy");
     });
-    eleventyConfig.addFilter("sortInvPlan", function (page) {
-        return page.sort(function (a, b) { return b.data.year - a.data.year; });
-    });
     eleventyConfig.addFilter("project", function (value) {
         if (value === 1) {
             return "1 projekt";

@@ -59,11 +59,15 @@ function filterByYear(input, year) {
     log("filterByYear:OUT:" + out.length);
     return out;
 }
+function sortbyYear(page) {
+    return page.sort(function (a, b) { return b.data.year - a.data.year; });
+}
 // Filter na vratenie items podla roka - nepotrebujem, to mam v page
 function invPlanAddon(eleventyConfig) {
     eleventyConfig.addFilter("invPlanGroupByStatus", groupByStatus);
     eleventyConfig.addCollection("invPlanCollection", collection);
     eleventyConfig.addFilter("invPlanFindById", findById);
     eleventyConfig.addFilter("invPlanFilterByYear", filterByYear);
+    eleventyConfig.addFilter("invPlanSortByYear", sortbyYear);
 }
 exports.invPlanAddon = invPlanAddon;

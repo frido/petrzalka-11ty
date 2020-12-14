@@ -1,18 +1,4 @@
-import { BudgetItem, BudgetItem2, BudgetYear, FMBudget, FMBudget2, InvPlanStatus, PlayGroundCategory, Program, Schedule, ScheduleItem, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
-
-import * as luxon from "luxon";
-// const { DateTime } = require("luxon");
-
-import * as eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-// const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
-import * as eleventyPluginRss from "@11ty/eleventy-plugin-rss";
-// const pluginRss = require("@11ty/eleventy-plugin-rss");
-
-import * as markdownIt from "markdown-it";
-import { ZverejnovanieDownloader } from "./generators/zverejnovanie";
-
-import * as numberString from "number-string";
+import { BudgetItem2, FMBudget2, InvPlanStatus, TemplateCollection, TemplateCollectionItem } from "./@types/eleventy";
 
 var log = require("debug")("Petrzalka:InvPlan");
 
@@ -80,10 +66,15 @@ function filterByYear(input: BudgetItem2[], year: number) {
   return out;
 }
 
+function sortbyYear(page: TemplateCollectionItem<FMBudget2>[]) {
+  return page.sort((a, b) => b.data.year - a.data.year);
+}
+
 // Filter na vratenie items podla roka - nepotrebujem, to mam v page
 export function invPlanAddon(eleventyConfig: any) {
   eleventyConfig.addFilter("invPlanGroupByStatus", groupByStatus);
   eleventyConfig.addCollection("invPlanCollection", collection);
   eleventyConfig.addFilter("invPlanFindById", findById);
   eleventyConfig.addFilter("invPlanFilterByYear", filterByYear);
+  eleventyConfig.addFilter("invPlanSortByYear", sortbyYear);
 }

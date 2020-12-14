@@ -8,7 +8,7 @@ eleventyNavigation:
   <section class="container vertical">
     <h1>Investičné plány</h1>
 
-    {% for page in collections.budget2 | sortInvPlan %}
+    {% for page in collections.budget2 | invPlanSortByYear %}
       {% set allMyBudget = collections.invPlanCollection | invPlanFilterByYear(page.data.year) | invPlanGroupByStatus %}
       <article class="article">
         <div class="row">

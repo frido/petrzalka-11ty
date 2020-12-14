@@ -47,6 +47,7 @@ class Template implements Budget {
         {
           title: "Obnova komunikácií",
           id: "2021-4",
+          previous: '2020-4',
           program: 4,
           amountOriginal: 200000,
           amountUpdated: 0,
