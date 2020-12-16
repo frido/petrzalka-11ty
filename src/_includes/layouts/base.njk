@@ -59,30 +59,39 @@
       </ul>
     </header> #}
 
-    <header class="paletteA d-flex flex-column flex-md-row align-items-center justify-content-between px-md-4 border-bottom shadow-sm logo">
-      <img src="img/logo-s.png"></h1>
-    <a href="/">
-      <h1 class="my-0 font-weight-normal logo-text">Projekty v Petržalke</h1>
-    </a>
-    <nav class="my-2 my-md-0 mr-md-3">
+    <header class="row paletteA px-md-4 border-bottom shadow-sm logo">
+      <div class="col-md-1">
+        <img src="img/logo-m.png">
+      </div>
+      <div class="col-md-11">
+        <div class="row">
+          <a href="/">
+            <h1 class="my-0 font-weight-normal logo-text">Projekty v Petržalke</h1>
+          </a>
+        </div>
+        <div class="row">
+          <nav class="row">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <div class="col-md-2">
+              <a class=" p-2 nav-item{% if entry.url == page.url %} nav-item-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+              </div>
+            {%- endfor %}
+          </nav>
+        </div>
+      </div>
+    </header>
 
-      {%- for entry in collections.all | eleventyNavigation %}
-        <a class="p-2 nav-item{% if entry.url == page.url %} nav-item-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
-      {%- endfor %}
-    </nav>
-  </header>
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
 
-  <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-    {{ content | safe }}
-  </main>
+    <footer class="paletteA">
+      <div class="container text-center">
+        <small>Copyright © 2020 Peter Fridrich</small>
+        <a href="https://www.facebook.com/petrzalka.info">
+          <i class="fab fa-facebook-square"></i>petrzalka.info</a>
+      </div>
+    </footer>
 
-  <footer class="paletteA">
-    <div class="container text-center">
-      <small>Copyright © 2020 Peter Fridrich</small>
-      <a href="https://www.facebook.com/petrzalka.info">
-        <i class="fab fa-facebook-square"></i>petrzalka.info</a>
-    </div>
-  </footer>
-
-</body>
+  </body>
 </html>

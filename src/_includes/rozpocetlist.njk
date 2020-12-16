@@ -27,8 +27,10 @@
   {% if budget.status === 'inwork' %}
     <div class="row">
       <div class="col-md-6">
+        {% if budget.amountReal != 0 %}
         Aktuálne výdavky
         <span class="amount" style="margin-left: 0.5rem">{{budget.amountReal | value}}€</span>
+        {% endif %}
       </div>
       {% if budget.amountUpdated != 0 %}
         <div class="col-md-6 text-right">

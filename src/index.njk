@@ -68,33 +68,22 @@ eleventyNavigation:
     <a href="projects/">Viac</a>
   </div>
 </div>
-{# <div class="paletteA">
-  <section class="container vertical">
-    {% for post in collections.projekt | reverse | head(4) %}
-      {% include "postslist.njk" %}
-    {% endfor %}
-  </section>
-  <div class="button">
-    <a href="projects/">
-      Viac
-    </a>
-  </div>
-</div> #}
 
 <div class="paletteC">
   <section class="container vertical">
     <header>
-      <h1 class="container-title">Investičný plán</h1>
+      <h1 class="container-title">Investičný plán 2021</h1>
     </header>
     <div class="">
-      {% for budget in collections.invPlanCollection | invPlanFilterByYear(2021) | invPlanGroupByStatus %}
-        {{ budget | json}}
+      {% set allMyBudget = collections.invPlanCollection | invPlanFilterByYear(2021) | invPlanGroupByStatus %}
+      {% set all = allMyBudget.all %}
+      {% for budget in all.list | head(5) %}
         {% include "rozpocetlist.njk" %}
       {% endfor %}
     </div>
   </section>
   <div class="button">
-    <a href="investicny_plan/2020">Viac</a>
+    <a href="investicny_plan/2021">Viac</a>
   </div>
 </div>
 

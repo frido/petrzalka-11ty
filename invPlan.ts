@@ -6,13 +6,13 @@ const reducer = (accumulator, currentValue) => accumulator + currentValue;
 const sorter = (a: BudgetItem2, b: BudgetItem2) => b.amountOriginal - a.amountOriginal;
 
 function grouper(items: BudgetItem2[], status: InvPlanStatus) {
-  let list = items;
+  let list = items.sort(sorter);
   if (status) {
     list = items.filter((i) => i.status === status).sort(sorter);
   }
   return {
     amountOriginal: list.map((i) => i.amountOriginal).reduce(reducer, 0),
-    amountUpdated: list.map((i) => i.amountUpdated).reduce(reducer, 0),
+    amountUpdated: list.map((i) => i.amountUpdated ? i.amountUpdated : i.amountOriginal).reduce(reducer, 0),
     amountReal: list.map((i) => i.amountReal).reduce(reducer, 0),
     list: list,
   };

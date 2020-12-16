@@ -5,13 +5,13 @@ var log = require("debug")("Petrzalka:InvPlan");
 var reducer = function (accumulator, currentValue) { return accumulator + currentValue; };
 var sorter = function (a, b) { return b.amountOriginal - a.amountOriginal; };
 function grouper(items, status) {
-    var list = items;
+    var list = items.sort(sorter);
     if (status) {
         list = items.filter(function (i) { return i.status === status; }).sort(sorter);
     }
     return {
         amountOriginal: list.map(function (i) { return i.amountOriginal; }).reduce(reducer, 0),
-        amountUpdated: list.map(function (i) { return i.amountUpdated; }).reduce(reducer, 0),
+        amountUpdated: list.map(function (i) { return i.amountUpdated ? i.amountUpdated : i.amountOriginal; }).reduce(reducer, 0),
         amountReal: list.map(function (i) { return i.amountReal; }).reduce(reducer, 0),
         list: list
     };

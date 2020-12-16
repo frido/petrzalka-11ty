@@ -133,8 +133,6 @@ header.logo {
     display: flex;  
     padding-left: 1.5rem;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     background-image: linear-gradient(to right, $color4, $color3);
     h1 {
         color: $color2
@@ -146,6 +144,12 @@ header.logo {
             animation-duration: 4s;
             animation-iteration-count: infinite;
         }
+    }
+    img {
+        margin-right: 2rem;
+        height: 100px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 

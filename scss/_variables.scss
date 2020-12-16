@@ -16,11 +16,11 @@ $green: $success;
 $timetable-border: $color3;
 
 @keyframes example {
-    0% {color: $color4;}
-    50% {color: $color3;}
+    0% {color: $color3;}
+    50% {color: $color4;}
 }
 
 @keyframes example2 {
     0% {color: white;}
-    50% {color: $color4;}
+    50% {color: $color3;}
 }

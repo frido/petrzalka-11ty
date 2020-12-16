@@ -40,3 +40,6 @@ Ubytovacie zariadenie TARPAN -> https://www.petrzalka.sk/wp-content/uploads/2020
 
 #Ukludnovanie dopracy
 https://www.petrzalka.sk/wp-content/uploads/2020/12/Rekon%C5%A1trukcie-chodn%C3%ADkov-M%C4%8C-Petr%C5%BEalka-komprim.pdf
+
+* Chodnikova komisia
+* Komisia na poradie opravy ihrisk
