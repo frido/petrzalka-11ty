@@ -20,13 +20,13 @@
         },
         {
             "type": "typescript",
-            "tsconfig": "content/tsconfig.json",
+            "tsconfig": "src/tsconfig.json",
             "option": "watch",
             "problemMatcher": [
                 "$tsc-watch"
             ],
             "group": "build",
-            "label": "tsc: watch - content"
+            "label": "tsc: watch - src"
         },
         {
             "type": "typescript",
@@ -49,12 +49,12 @@
         },
         {
             "type": "typescript",
-            "tsconfig": "content/tsconfig.json",
+            "tsconfig": "src/tsconfig.json",
             "problemMatcher": [
                 "$tsc"
             ],
             "group": "build",
-            "label": "tsc: build - content"
+            "label": "tsc: build - src"
         }
     ]
 }

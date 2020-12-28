@@ -4,7 +4,7 @@
         "downlevelIteration": true,
         "allowJs": true
     },
-    "include": [".eleventy.ts", "invPlan.ts", "generators/*"],
+    "include": [".eleventy.ts", "addons/*", "generators/*", "addons/project/projectAddon.ts", "addons/playground/playGrounds.ts", "addons/budget/budgetAddon.ts"],
     "exclude": ["node_modules"],
     
 }

@@ -14,7 +14,7 @@
 			{
 				"format": "expanded",
 				"extensionName": ".css",
-				"savePath": "/src/static/css"
+				"savePath": "/eleventy/static/css"
 			}
 		]
 	}

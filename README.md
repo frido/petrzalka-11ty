@@ -12,7 +12,7 @@ You can access the page on [petrzalka.info](http://petrzalka.info/) or [frido.gi
 
 run vscode task: ```tsc: watch - eleventy``` to compile `.eleventy.ts` file
 
-run vscode task: ```tsc: watch - content``` to compile `content` folder
+run vscode task: ```tsc: watch - src``` to compile `src` folder
 
 ## Build
 
