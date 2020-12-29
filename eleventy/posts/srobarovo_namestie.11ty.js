@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -14,7 +14,7 @@ var Template = /** @class */ (function () {
             gallery: [
                 { link: 'img/srobarovo-namestie/peticia.jpeg' }
             ],
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "sources": [
                 "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",

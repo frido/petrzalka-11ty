@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Projekt revitalizácie Námestia Republiky",
             "date": "2020-07-14",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "V súčasnosti sa spevnená časť námestia využíva na spoločenské a kultúrne podujatia mestskej časti. Už tradične sa tu konajú navštevované Petržalské vianočné trhy. Plocha bývalého parkoviska susediaca s Chorvátskym ramenom slúži ako spomínaný skatepark. ",
             "icon": "/img/revitalizacia-namestia-republiky/revitalizacia-namestia-republiky.jpg",

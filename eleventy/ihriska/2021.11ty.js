@@ -13,8 +13,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var playgroundData_1 = require("../addons/playground/playgroundData");
-var playgroundAddon_1 = require("../addons/playground/playgroundAddon");
+var playground_data_1 = require("../addons/playground/playground-data");
+var playground_addon_1 = require("../addons/playground/playground-addon");
 // https://www.petrzalka.sk/wp-content/uploads/2020/11/13.-Inform%C3%A1cia-k-verejn%C3%BDm-detsk%C3%BDm-ihrisk%C3%A1m-harmonogram-revitaliz%C3%A1cie-VDI_MZ-18_11_2020.pdf
 var Template = /** @class */ (function (_super) {
     __extends(Template, _super);
@@ -22,8 +22,8 @@ var Template = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return this.frontMatterWrapper(playgroundData_1.YEAR_2021);
+        return this.frontMatterWrapper(playground_data_1.YEAR_2021);
     };
     return Template;
-}(playgroundAddon_1.PlayGroundPage));
+}(playground_addon_1.PlayGroundPage));
 module.exports = Template;

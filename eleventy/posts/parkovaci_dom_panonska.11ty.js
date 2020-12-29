@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Parkovací dom, Panónska ul.",
             date: "2020-11-22",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "parkovací dom uvažuje v 1. podzemnom podlaží prevádzku autoservisu, 4 nadzemné podlažia a strecha objektu sú určené pre parkovanie, s kapacitou 93 parkovacích miest. 6 parkovacích miest je umiestnených na teréne pred objektom.",
             icon: "",
@@ -17,7 +17,7 @@ var Template = /** @class */ (function () {
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "pause",
                     description: "prerušené",
                     sub: [

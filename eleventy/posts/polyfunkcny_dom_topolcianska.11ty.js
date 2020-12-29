@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Polyfunkčný dom Topoľčianska",
             "date": "2020-06-27",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Polyfunkčný objekt s prevládajúcou funkciou bývania (68 %) s 8 nadzemnými a 2 podzemnými podlažiami, dopravne prístupným cez jestvujúce miestne komunikácie. V objekte sú priestory obchodu (10), služieb, administratívy (16) a bývania (60). Navrhnuté sú 2 dopravné vjazdy – rampa do garáže na 1. a 2. podzemnom podlaží (78 parkovacích miest) a priamy vjazd na spevnenú plochu na teréne (20 parkovacích miest).",
             "icon": "/img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg",
@@ -25,7 +25,7 @@ var Template = /** @class */ (function () {
             "amount": 0,
             "execution": [
                 {
-                    "title": projectAddon_1.EXE_TITLE_UK,
+                    "title": project_addon_1.EXE_TITLE_UK,
                     "status": "pause",
                     "description": "prerušené",
                     "sub": [

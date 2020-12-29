@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,14 +9,14 @@ var Template = /** @class */ (function () {
         return {
             title: "Samoobslužná čerpacia stanica PHM, Petržalka Juh",
             date: "2020-11-22",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Samoobslužná čerpacia stanica pohonných hmôt pre osobné autá (2 dvojproduktové stojany), navrhnutá ako samostatná stavba s dopravnou väzbou na súbežne posudzovanú stavbu „samoobslužná autoumyváreň“ t. j. s dopravnou obsluhou, využívajúcou účelové komunikácie areálu „samoobslužná autoumyváreň“ s dopravným pripojením (vjazdom/výjazdom) na priľahlú obslužnú komunikáciu v území Južného mesta – zóna A (Labutia ulica), s následným pripojením na Panónsku cestu.",
             icon: "",
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "pause",
                     description: "prerušené",
                     sub: [

@@ -4,10 +4,10 @@ import * as eleventyPluginRss from "@11ty/eleventy-plugin-rss";
 import * as markdownIt from "markdown-it";
 import * as numberString from "number-string";
 
-import {budgetAddon} from './src/addons/budget/budgetAddon';
-import {projectAddon} from './src/addons/project/projectAddon';
-import {playgroundAddon} from './src/addons/playground/playgroundAddon';
-import {grantAddon} from './src/addons/grant/grantAddon';
+import {budgetAddon} from './src/addons/budget/budget-addon';
+import {projectAddon} from './src/addons/project/project-addon';
+import {playgroundAddon} from './src/addons/playground/playground-addon';
+import {grantAddon} from './src/addons/grant/grant-addon';
 
 const conf = function (eleventyConfig: any) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);

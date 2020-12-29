@@ -13,16 +13,16 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var playgroundData_1 = require("../addons/playground/playgroundData");
-var playgroundAddon_1 = require("../addons/playground/playgroundAddon");
+var playground_data_1 = require("../addons/playground/playground-data");
+var playground_addon_1 = require("../addons/playground/playground-addon");
 var Template = /** @class */ (function (_super) {
     __extends(Template, _super);
     function Template() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return this.frontMatterWrapper(playgroundData_1.YEAR_2024);
+        return this.frontMatterWrapper(playground_data_1.YEAR_2024);
     };
     return Template;
-}(playgroundAddon_1.PlayGroundPage));
+}(playground_addon_1.PlayGroundPage));
 module.exports = Template;

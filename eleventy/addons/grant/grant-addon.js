@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
 exports.grantAddon = void 0;
-var grantSportData_1 = require("./grantSportData");
-var grantOZData_1 = require("./grantOZData");
+var grant_sport_data_1 = require("./grant-sport-data");
+var grant_oz_data_1 = require("./grant-oz-data");
 var CURRENT_YEAR = 2020;
 var GrantImpl = /** @class */ (function () {
     function GrantImpl(g) {
@@ -15,11 +15,11 @@ var GrantImpl = /** @class */ (function () {
     return GrantImpl;
 }());
 function sportCollection() {
-    return grantSportData_1.SPORT_GRANTS.map(function (x) { return new GrantImpl(x); });
+    return grant_sport_data_1.SPORT_GRANTS.map(function (x) { return new GrantImpl(x); });
 }
 ;
 function ozCollection() {
-    return grantOZData_1.OZ_GRANTS.map(function (x) { return new GrantImpl(x); });
+    return grant_oz_data_1.OZ_GRANTS.map(function (x) { return new GrantImpl(x); });
 }
 ;
 function grantAddon(eleventyConfig) {

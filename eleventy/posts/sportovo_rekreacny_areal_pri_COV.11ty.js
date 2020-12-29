@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Športovo Rekreačný Areál Pri ČOV",
             "date": "2020-06-14",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Zámerom urbanistického návrhu je športovo-rekreačný kampus, výškovo diferencovaná krajina s halovými športovými objektmi, externými športoviskami, zariadeniami občianskej vybavenosti nadväzujúcimi na hlavnú funkciu /napr. ubytovne, hotely, penzióny/ a pobytovou a parkovou zeleňou",
             "icon": "/img/sportovo_rekreacny_areal_pri_COV/image--000.jpg",

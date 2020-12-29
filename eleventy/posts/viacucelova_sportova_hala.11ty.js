@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Viacúčelová športová hala – univerzitné športové centrum pri EU",
             date: "2020-11-02",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Viacúčelová športová hala bude mať hraciu plochu minimálne 42x24 metrov s grafickým vyznačením viacerých ihrísk pre rôzne športy (volejbal, basketbal, futsal, florbal, hádzaná či bedminton), 8 šatní s celkovou kapacitou 130 športovcov, šatňami pre trénerov a rozhodcov a taktiež priestory pre relax a regeneráciu športovcov.",
             icon: "/img/viacucelova_sportova_hala/usmiestnenie.jpg",
@@ -19,7 +19,7 @@ var Template = /** @class */ (function () {
             ],
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "pause",
                     description: "prerušené",
                     sub: [

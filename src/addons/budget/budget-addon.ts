@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 import { Budget, CollectionApi, FMBudget, InvPlanStatus, Page, Post } from "../../@types/eleventy";
-import { BUDGET_2020, BUDGET_2021 } from "./budgetData";
+import { BUDGET_2020, BUDGET_2021 } from "./budget-data";
 
 var log = require("debug")("Petrzalka:Budget");
 

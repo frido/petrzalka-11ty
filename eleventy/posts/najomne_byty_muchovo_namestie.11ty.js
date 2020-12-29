@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Nájomné byty, Muchovo námestie",
             date: "2020-11-05",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "",
             icon: "https://bratislavskykraj.sk/wp-content/uploads/2020/09/119068162_3541246765938335_4381885082729630819_o-1024x722.jpg",
@@ -18,7 +18,7 @@ var Template = /** @class */ (function () {
             ],
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "inwork",
                     description: "",
                     sub: [

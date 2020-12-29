@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Vybudovanie denného stacionáru pre seniorov na Vavilovovej ul",
             "date": "2020-06-06",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Cieľom projektu „Vybudovanie denného stacionáru pre seniorov na Vavilovovej ul., Bratislava“ je vybudovanie denného stacionára pre seniorov na Vavilovovej ulici č. 18 v Mestskej časti Bratislava-Petržalka",
             "sources": [

@@ -1,5 +1,5 @@
-import { YEAR_2023 } from "../addons/playground/playgroundData";
-import { PlayGroundPage } from "../addons/playground/playgroundAddon";
+import { YEAR_2023 } from "../addons/playground/playground-data";
+import { PlayGroundPage } from "../addons/playground/playground-addon";
 
 
 class Template extends PlayGroundPage {

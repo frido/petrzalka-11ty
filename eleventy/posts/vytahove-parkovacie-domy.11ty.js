@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Výťahové parkovacie domy",
             "date": "2020-10-27",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Zámer budovania výťahových parkovacích domov spoločnosťou UpDown Parking v Petržalke",
             "icon": "/img/vytahove-parkovacie-domy/3.png",

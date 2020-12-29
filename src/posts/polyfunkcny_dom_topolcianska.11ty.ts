@@ -1,5 +1,5 @@
 import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/projectAddon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
 
 class Template implements Post<FMProject> {

@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Rekonštrukcia a vybavenie odborných učební",
             "date": "2020-06-06",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             description: "Cieľom projektov je vytvorenie podmienok na zabezpečenie kvalitného primárneho vzdelávania a nižšieho stredného vzdelávania prispievajúceho k zvládnutiu povinnej školskej dochádzky. Tento cieľ sa naplní realizáciou aktivít jednotlivých projektov zameraných na vytvorenie odborných učební, čím sa vytvoria predpoklady pre zabezpečenie prístupu ku kvalitnejším verejným službám v oblasti povinnej školskej dochádzky a výchovy.",
             "sources": [
@@ -19,7 +19,7 @@ var Template = /** @class */ (function () {
             "amountAll": 871980,
             "execution": [
                 {
-                    "title": projectAddon_1.EXE_TITLE_PP,
+                    "title": project_addon_1.EXE_TITLE_PP,
                     "status": "success",
                     "description": "hotovo",
                     "startReal": "2016",

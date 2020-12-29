@@ -15,7 +15,7 @@ var __extends = (this && this.__extends) || (function () {
 exports.__esModule = true;
 var luxon = require("luxon");
 var budgetData_1 = require("../addons/budget/budgetData");
-var budgetAddon_1 = require("../addons/budget/budgetAddon");
+var budget_addon_1 = require("../addons/budget/budget-addon");
 var Template = /** @class */ (function (_super) {
     __extends(Template, _super);
     function Template() {
@@ -25,5 +25,5 @@ var Template = /** @class */ (function (_super) {
         return this.frontMatterWrapper(2021, luxon.DateTime.fromISO("2020-12-15"), budgetData_1.BUDGET_2021);
     };
     return Template;
-}(budgetAddon_1.BudgetPage));
+}(budget_addon_1.BudgetPage));
 module.exports = Template;

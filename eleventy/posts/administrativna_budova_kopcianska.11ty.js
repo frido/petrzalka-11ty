@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,19 +9,19 @@ var Template = /** @class */ (function () {
         return {
             title: "Administratívna budova, Kopčianska",
             date: "2020-11-23",
-            tags: [projectAddon_1.TAG_PROJECT],
-            layout: projectAddon_1.LAYOUT_PROJECT,
+            tags: [project_addon_1.TAG_PROJECT],
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Trojpodlažná nepodpivničená administratívna budova, slúžiaca pre potreby riadenia spoločnosti, s 1 služobným bytom na 3. nadzemnom podlaží a extenzívnou vegetačnou strechou. Súčasťou riešenia bude aj dopravné pripojenie z priľahlej miestnej komunikácie Kopčianskej ulice a parkovanie na spevnených plochách na vlastnom pozemku v počte 7 parkovacích miest.",
             icon: "",
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "success",
                     description: "",
                     sub: [
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZKMZ,
+                            title: project_addon_1.EXE_SUB_TITLE_ZKMZ,
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68659",
                             status: "success",
                             description: "súhlasí",

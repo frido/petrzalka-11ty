@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var PolyfunkcnyObjektTematinska = /** @class */ (function () {
     function PolyfunkcnyObjektTematinska() {
@@ -9,14 +9,14 @@ var PolyfunkcnyObjektTematinska = /** @class */ (function () {
         return {
             title: "Polyfunkčný objekt Tematínska",
             date: "2020-11-17",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Polyfunkčná stavba s dvoma samostatnými objektami a troma prevádzkovými celkami. Má jedno podzemné parkovacie podlažie, štyri nadzemné a jedno ustúpené piate podlažie. V objektoch sa nachádza 55 bytov a občianska vybavenosť – reštaurácia, kancelárske priestory, telocvičňa v prízemnom trakte pozdĺž bulváru.",
             sources: ["https://www.petrzalka.sk/wp-content/uploads/2020/10/elektronick%C3%A9-zverejnenie-inform%C3%A1cie-v-zmysle-%C2%A7-82-ods.-3-zakona-V.D.-LAKE-1.pdf"],
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "inwork",
                     description: "prebieha",
                     sub: [

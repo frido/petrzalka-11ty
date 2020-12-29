@@ -1,7 +1,7 @@
 import { FMBudget } from "../@types/eleventy";
 import * as luxon from "luxon";
 import { BUDGET_2021 } from "../addons/budget/budgetData";
-import { BudgetPage } from "../addons/budget/budgetAddon";
+import { BudgetPage } from "../addons/budget/budget-addon";
 
 class Template extends BudgetPage {
   data(): FMBudget {

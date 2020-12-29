@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Urban E",
             "date": "2020-07-05",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Medzinárodný projekt URBAN-E je zameraný na rozvoj elektromobility, podporu rozširovania infraštruktúry elektronabíjacích staníc a prepojenia na iné druhy dopravy, na znižovanie znečistenia ovzdušia v hlavných mestách Slovinska, Chorvátska a Slovenska – v Ľubľane, Záhrebe a Bratislave.",
             "icon": "",

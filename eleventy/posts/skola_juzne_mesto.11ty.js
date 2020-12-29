@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             "title": "Škola Južné mesto",
             "date": "2020-07-29",
-            "tags": [projectAddon_1.TAG_PROJECT],
+            "tags": [project_addon_1.TAG_PROJECT],
             "layout": "layouts/post2.njk",
             "description": "Škola je situovaná v rozvojovom území na pozemku s funkčným využitím občianska vybavenosť celomestského a nadmestského významu kód 201, severozápadná časť budovy je umiestňovaná na hranicu funkčnej plochy sadovnícke a lesoparkové úpravy, kód funkcie 1110. Návrh plôch pre školskú telesnú výchovu a šport je riešený ako športový areál s bežeckým oválom 250 m + 100 m dráhou a multifunkčným ihriskom 20 x 40 m. ",
             "icon": "/img/skola-juzne-mesto/4.jpg",
@@ -28,7 +28,7 @@ var Template = /** @class */ (function () {
             "amount": 0,
             "execution": [
                 {
-                    "title": projectAddon_1.EXE_TITLE_UK,
+                    "title": project_addon_1.EXE_TITLE_UK,
                     "status": "success",
                     "description": "hotovo",
                     "sub": [

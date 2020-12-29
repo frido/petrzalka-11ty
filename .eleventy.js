@@ -4,10 +4,10 @@ var eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 var eleventyPluginRss = require("@11ty/eleventy-plugin-rss");
 var markdownIt = require("markdown-it");
 var numberString = require("number-string");
-var budgetAddon_1 = require("./src/addons/budget/budgetAddon");
-var projectAddon_1 = require("./src/addons/project/projectAddon");
-var playgroundAddon_1 = require("./src/addons/playground/playgroundAddon");
-var grantAddon_1 = require("./src/addons/grant/grantAddon");
+var budget_addon_1 = require("./src/addons/budget/budget-addon");
+var project_addon_1 = require("./src/addons/project/project-addon");
+var playground_addon_1 = require("./src/addons/playground/playground-addon");
+var grant_addon_1 = require("./src/addons/grant/grant-addon");
 var conf = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPluginRss);
@@ -50,10 +50,10 @@ var conf = function (eleventyConfig) {
         }
         return array.slice(0, n);
     });
-    budgetAddon_1.budgetAddon(eleventyConfig);
-    playgroundAddon_1.playgroundAddon(eleventyConfig);
-    projectAddon_1.projectAddon(eleventyConfig);
-    grantAddon_1.grantAddon(eleventyConfig);
+    budget_addon_1.budgetAddon(eleventyConfig);
+    playground_addon_1.playgroundAddon(eleventyConfig);
+    project_addon_1.projectAddon(eleventyConfig);
+    grant_addon_1.grantAddon(eleventyConfig);
     var markdownItOptions = {
         html: true,
         breaks: false,

@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Bratislavský dunajský park",
             date: "2020-11-03",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Hlavným cieľom zriadenia a vybudovania Bratislavského dunajského parku je vytvoriť prijemné estetické a prírodné prostredie. Miera upravenosti a organizovanosti bude rôzna, tak ako je to aj v súčasnosti. Park bude integrovať miesta rôzneho charakteru",
             icon: "https://www.yimba.sk/upload/Projekty/Downtown/Nov%C3%A9%20Lido/StudiaLido_01/03_Lido_Letecky_pohlad_01.jpg",
@@ -20,12 +20,12 @@ var Template = /** @class */ (function () {
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "inwork",
                     description: "prebieha",
                     sub: [
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZKMZ,
+                            title: project_addon_1.EXE_SUB_TITLE_ZKMZ,
                             source: "https://www.petrzalka.sk/wp-content/uploads/2020/06/z%C3%A1pisnica-K%C5%BDP-28.05.2020-podp%C3%ADsan%C3%A1.pdf",
                             status: "success",
                             description: "súhlasí",

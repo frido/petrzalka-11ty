@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Golfvillage ",
             date: "2020-11-07",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Dokumentácia sa funkciou, usporiadaním a kapacitou obytnej zóny zaoberá iba schematicky, riešením je návrh komunikačnej siete zóny s dopravným pripojením na nadradenú komunikačnú sieť (cestu I/2) cez miestnu komunikáciu vo výstavbe (FT C3 – vetva Y – vydané je stavebné povolenie) pre susednú dočasnú stavbu golfového klubu Energau. ",
             icon: "",
@@ -25,19 +25,19 @@ var Template = /** @class */ (function () {
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "pause",
                     description: "prerušené",
                     sub: [
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZKMZ,
+                            title: project_addon_1.EXE_SUB_TITLE_ZKMZ,
                             source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/Zapisnica_UPVaD_19_6_2017.pdf",
                             status: "error",
                             description: "nebolo schválené",
                             date: luxon.DateTime.fromISO("2017-06-17")
                         },
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZSHM,
+                            title: project_addon_1.EXE_SUB_TITLE_ZSHM,
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&id_dokumenty=38329",
                             status: "success",
                             description: "súhlasí",

@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 exports.budgetAddon = exports.BudgetPage = exports.TAG_BUDGET = exports.LAYOUT_BUDGET = void 0;
-var budgetData_1 = require("./budgetData");
+var budget_data_1 = require("./budget-data");
 var log = require("debug")("Petrzalka:Budget");
 exports.LAYOUT_BUDGET = "layouts/rozpocet.njk";
 exports.TAG_BUDGET = "budget2";
@@ -104,7 +104,7 @@ var BudgetAddon = /** @class */ (function () {
 }());
 // Filter na vratenie items podla roka - nepotrebujem, to mam v page
 function budgetAddon(eleventyConfig) {
-    var addon = new BudgetAddon(budgetData_1.BUDGET_2020.concat(budgetData_1.BUDGET_2021));
+    var addon = new BudgetAddon(budget_data_1.BUDGET_2020.concat(budget_data_1.BUDGET_2021));
     eleventyConfig.addCollection("budgetCollection", addon.collection);
     eleventyConfig.addFilter("budgetFilterByYear", BudgetAddon.filterByYear);
     eleventyConfig.addFilter("budgetFilterGroupByStatus", BudgetAddon.filterGroupByStatus);

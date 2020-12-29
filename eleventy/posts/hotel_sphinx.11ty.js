@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var projectAddon_1 = require("../addons/project/projectAddon");
+var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
 var Template = /** @class */ (function () {
     function Template() {
@@ -9,7 +9,7 @@ var Template = /** @class */ (function () {
         return {
             title: "Hotel Sphinx",
             date: "2020-11-11",
-            tags: [projectAddon_1.TAG_PROJECT],
+            tags: [project_addon_1.TAG_PROJECT],
             layout: "layouts/post2.njk",
             description: "Hotel bude čiastočne podpivničený, s 8 nadzemnými podlažiami, z toho 2 ustúpené. V objekte sa nachádza raňajkáreň/kaviareň, recepcia, 2 byty, 16 hotelových izieb a prislúchajúce zázemie hotela.",
             icon: "img/hotel_sphinx/2.png",
@@ -23,19 +23,19 @@ var Template = /** @class */ (function () {
             amount: 0,
             execution: [
                 {
-                    title: projectAddon_1.EXE_TITLE_UK,
+                    title: project_addon_1.EXE_TITLE_UK,
                     status: "inwork",
                     description: "prebieha",
                     sub: [
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZSHM,
+                            title: project_addon_1.EXE_SUB_TITLE_ZSHM,
                             source: "https://zverejnovanie.bratislava.sk/assets/File.ashx?id_org=700026&amp;id_dokumenty=68661",
                             status: "success",
                             description: "súhlasí",
                             date: luxon.DateTime.fromISO("2020-05-11")
                         },
                         {
-                            title: projectAddon_1.EXE_SUB_TITLE_ZKMZ,
+                            title: project_addon_1.EXE_SUB_TITLE_ZKMZ,
                             source: "https://www.petrzalka.sk/wp-content/uploads/2019/09/KUPVaD-zapisnica_2019-09-10_overena.pdf",
                             status: "error",
                             description: "neschválené",
