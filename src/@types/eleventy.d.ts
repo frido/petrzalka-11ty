@@ -53,6 +53,10 @@ export interface FMBudget extends FrontMatter {
   updatedDate: DateTime;
 }
 
+export interface FMGrant extends FrontMatter {
+  grants: Grant[];
+}
+
 export interface Image {
   link: string;
   title?: string;
@@ -108,6 +112,17 @@ export interface Playground {
   category: PlaygroundCategory[];
   year: number;
   flag: string;
+}
+
+export interface Grant {
+  title: string;
+  amount: GrantAmount[];
+}
+
+export interface GrantAmount {
+  year: number;
+  amount: number;
+  detail: string;
 }
 
 // export interface Program {

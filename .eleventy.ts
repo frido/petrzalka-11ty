@@ -7,6 +7,7 @@ import * as numberString from "number-string";
 import {budgetAddon} from './src/addons/budget/budgetAddon';
 import {projectAddon} from './src/addons/project/projectAddon';
 import {playgroundAddon} from './src/addons/playground/playgroundAddon';
+import {grantAddon} from './src/addons/grant/grantAddon';
 
 const conf = function (eleventyConfig: any) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -62,6 +63,7 @@ const conf = function (eleventyConfig: any) {
   budgetAddon(eleventyConfig);
   playgroundAddon(eleventyConfig);
   projectAddon(eleventyConfig);
+  grantAddon(eleventyConfig);
 
   const markdownItOptions: markdownIt.Options = {
     html: true,

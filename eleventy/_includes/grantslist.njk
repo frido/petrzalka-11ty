@@ -4,10 +4,10 @@
       <h2>{{ grant.title }}</h2>
     </header>
     <p>
-      <span class="amount">{{ grant.amount }}€</span>
+      <span class="amount">{{ grant.currentAmount | value }}€</span>
     </p>
     <p>
-      {{ grant.detail }}
+      {{ grant.currentDetail }}
     </p>
   </article>
 </div> 

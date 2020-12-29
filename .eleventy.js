@@ -7,6 +7,7 @@ var numberString = require("number-string");
 var budgetAddon_1 = require("./src/addons/budget/budgetAddon");
 var projectAddon_1 = require("./src/addons/project/projectAddon");
 var playgroundAddon_1 = require("./src/addons/playground/playgroundAddon");
+var grantAddon_1 = require("./src/addons/grant/grantAddon");
 var conf = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPluginRss);
@@ -52,6 +53,7 @@ var conf = function (eleventyConfig) {
     budgetAddon_1.budgetAddon(eleventyConfig);
     playgroundAddon_1.playgroundAddon(eleventyConfig);
     projectAddon_1.projectAddon(eleventyConfig);
+    grantAddon_1.grantAddon(eleventyConfig);
     var markdownItOptions = {
         html: true,
         breaks: false,

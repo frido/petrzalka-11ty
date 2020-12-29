@@ -4,4 +4,4 @@
         "downlevelIteration": true,
         "outDir": "../eleventy",
     },
-    "include": ["./investicny_plan/*", "./posts/*", "./ihriska/*", "../addons/*"]}
+    "include": ["./**/*"]}

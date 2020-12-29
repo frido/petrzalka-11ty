@@ -1,1 +1,2 @@
+$env:DEBUG = "Eleventy*, -Eleventy:ComputedData, -Eleventy:TemplatePassthrough, -Eleventy:TemplateData, -Eleventy:TemplateData, -Eleventy:TemplateConfig, -Eleventy:TemplateWriter, -Eleventy:Template"
 npx @11ty/eleventy
