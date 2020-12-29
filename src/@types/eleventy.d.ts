@@ -122,7 +122,7 @@ export interface Grant {
 export interface GrantAmount {
   year: number;
   amount: number;
-  detail: string;
+  detail?: string;
 }
 
 // export interface Program {

@@ -59,11 +59,13 @@ var conf = function (eleventyConfig) {
         breaks: false,
         linkify: true
     };
-    eleventyConfig.addPassthroughCopy({ "eleventy/static/css": "css" });
-    eleventyConfig.addPassthroughCopy({ "eleventy/static/fonts": "fonts" });
-    eleventyConfig.addPassthroughCopy({ "eleventy/static/webfonts": "webfonts" });
-    eleventyConfig.addPassthroughCopy({ "eleventy/static/img": "img" });
-    eleventyConfig.addPassthroughCopy({ "eleventy/static/js": "js" });
+    // dont neet to copy everything every time
+    // enable it only if something in here change
+    // eleventyConfig.addPassthroughCopy({ "eleventy/static/css": "css" });
+    // eleventyConfig.addPassthroughCopy({ "eleventy/static/fonts": "fonts" });
+    // eleventyConfig.addPassthroughCopy({ "eleventy/static/webfonts": "webfonts" });
+    // eleventyConfig.addPassthroughCopy({ "eleventy/static/img": "img" });
+    // eleventyConfig.addPassthroughCopy({ "eleventy/static/js": "js" });
     eleventyConfig.setLibrary("md", markdownIt(markdownItOptions).disable("code"));
     return {
         templateFormats: ["11ty.js", "md", "njk", "html"],
