@@ -19,8 +19,8 @@ export const EXE_SUB_TITLE_ZSHM = "Záväzné stanovisko hlavného mesta";
 
 function collection(collection: CollectionApi<FMProject>) {
   const now = luxon.DateTime.local();
-  return collection
-    .getFilteredByTag("projekt")
+  const x = collection
+    .getFilteredByTag(TAG_PROJECT)
     .flatMap((page: Page<FMProject>) => {
       return page.data.execution.map((schedule: Execution) => {
         schedule.page = page;
@@ -29,8 +29,8 @@ function collection(collection: CollectionApi<FMProject>) {
       });
     })
     .filter((schedule) => schedule.date)
-    .filter((schedule) => schedule.date < now)
-    .sort((a, b) => a.date.toMillis() - b.date.toMillis());
+    .filter((schedule) => schedule.date < now);
+    return x.sort((a, b) => a.date.toMillis() - b.date.toMillis());
 }
 
 function project(value: number) {

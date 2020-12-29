@@ -13,8 +13,8 @@ exports.EXE_SUB_TITLE_ZKMZ = 'Stanovisko komisie MZ';
 exports.EXE_SUB_TITLE_ZSHM = "Záväzné stanovisko hlavného mesta";
 function collection(collection) {
     var now = luxon.DateTime.local();
-    return collection
-        .getFilteredByTag("projekt")
+    var x = collection
+        .getFilteredByTag(exports.TAG_PROJECT)
         .flatMap(function (page) {
         return page.data.execution.map(function (schedule) {
             schedule.page = page;
@@ -23,8 +23,8 @@ function collection(collection) {
         });
     })
         .filter(function (schedule) { return schedule.date; })
-        .filter(function (schedule) { return schedule.date < now; })
-        .sort(function (a, b) { return a.date.toMillis() - b.date.toMillis(); });
+        .filter(function (schedule) { return schedule.date < now; });
+    return x.sort(function (a, b) { return a.date.toMillis() - b.date.toMillis(); });
 }
 function project(value) {
     if (value === 1) {
