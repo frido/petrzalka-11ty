@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../../_site/css/timetable.scss"
-    ],
-    "names": [],
-    "file": "timetable.css"
-}

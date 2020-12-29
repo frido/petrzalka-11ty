@@ -73,6 +73,7 @@ const conf = function (eleventyConfig: any) {
 
   eleventyConfig.addPassthroughCopy({ "eleventy/static/css": "css" });
   eleventyConfig.addPassthroughCopy({ "eleventy/static/fonts": "fonts" });
+  eleventyConfig.addPassthroughCopy({ "eleventy/static/webfonts": "webfonts" });
   eleventyConfig.addPassthroughCopy({ "eleventy/static/img": "img" });
   eleventyConfig.addPassthroughCopy({ "eleventy/static/js": "js" });
 
