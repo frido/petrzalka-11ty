@@ -4,7 +4,7 @@ import { BUDGET_2020, BUDGET_2021 } from "./budget-data";
 
 var log = require("debug")("Petrzalka:Budget");
 
-export const LAYOUT_BUDGET = "layouts/rozpocet.njk";
+export const LAYOUT_BUDGET = "layouts/budget.njk";
 export const TAG_BUDGET = "budget2";
 
 class BudgetImpl implements Budget {

@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Skladovo-prevádzkový areál - DEKTER, s.r.o.",
       date: "2020-11-05",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "",
       icon: "",
       execution: [

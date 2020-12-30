@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Bratislavský dunajský park",
       date: "2020-11-03",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Hlavným cieľom zriadenia a vybudovania Bratislavského dunajského parku je vytvoriť prijemné estetické a prírodné prostredie. Miera upravenosti a organizovanosti bude rôzna, tak ako je to aj v súčasnosti. Park bude integrovať miesta rôzneho charakteru",
       icon: "https://www.yimba.sk/upload/Projekty/Downtown/Nov%C3%A9%20Lido/StudiaLido_01/03_Lido_Letecky_pohlad_01.jpg",
       gallery: [

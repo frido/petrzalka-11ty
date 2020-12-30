@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Polyfunkčný objekt Septimo II - Offices",
       date: "2020-11-23",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       source: 'https://offices.vigroup.sk/',
       description: "Polyfunkčný päť podlažný objekt s dvomi podzemnými a s tromi nadzemnými podlažiami, kde 3.NP je uskočené. Podzemné podlažia slúžia ako garáž a príslušenstvo (sklady a technické priestory), na 1.NP sú navrhnuté obchodné priestory a na 2. – 5.NP sú navrhnuté byty – 20 bytových jednotiek. ",
       icon: "img/polyfunkcny_objekt_septimo_II_offices/1.jpg",

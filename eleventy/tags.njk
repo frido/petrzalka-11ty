@@ -17,7 +17,7 @@ permalink: /tags/{{ tag }}/
 ---
 <h1>ccc Tagged “{{ tag }}”</h1>
 {% for post in collections[ tag ] %}
-  {% include "postslist.njk" %}
+  {% include "project-box.njk" %}
 {% endfor %}
 
 <p>See <a href="{{ '/tags/' | url }}">all tags</a>.</p>

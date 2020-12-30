@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       "title": "Športovo Rekreačný Areál Pri ČOV",
       "date": "2020-06-14",
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       "description": "Zámerom urbanistického návrhu je športovo-rekreačný kampus, výškovo diferencovaná krajina s halovými športovými objektmi, externými športoviskami, zariadeniami občianskej vybavenosti nadväzujúcimi na hlavnú funkciu /napr. ubytovne, hotely, penzióny/ a pobytovou a parkovou zeleňou",
       "icon": "/img/sportovo_rekreacny_areal_pri_COV/image--000.jpg",
       gallery: [

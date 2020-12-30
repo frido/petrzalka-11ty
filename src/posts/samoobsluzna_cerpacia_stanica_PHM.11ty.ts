@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Samoobslužná čerpacia stanica PHM, Petržalka Juh",
       date: "2020-11-22",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Samoobslužná čerpacia stanica pohonných hmôt pre osobné autá (2 dvojproduktové stojany), navrhnutá ako samostatná stavba s dopravnou väzbou na súbežne posudzovanú stavbu „samoobslužná autoumyváreň“ t. j. s dopravnou obsluhou, využívajúcou účelové komunikácie areálu „samoobslužná autoumyváreň“ s dopravným pripojením (vjazdom/výjazdom) na priľahlú obslužnú komunikáciu v území Južného mesta – zóna A (Labutia ulica), s následným pripojením na Panónsku cestu.",
       icon: "",
       amount: 0,

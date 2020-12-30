@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       "title": "Rekonštrukcia a vybavenie odborných učební",
       "date": "2020-06-06",
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       description: "Cieľom projektov je vytvorenie podmienok na zabezpečenie kvalitného primárneho vzdelávania a nižšieho stredného vzdelávania prispievajúceho k zvládnutiu povinnej školskej dochádzky. Tento cieľ sa naplní realizáciou aktivít jednotlivých projektov zameraných na vytvorenie odborných učební, čím sa vytvoria predpoklady pre zabezpečenie prístupu ku kvalitnejším verejným službám v oblasti povinnej školskej dochádzky a výchovy.",
       "sources": [
          "https://www.petrzalka.sk/oblasti/projektove-riadenie/budovanie-a-zlepsenie-technickeho-vybavenia-jazykovych-ucebni-skolskych-kniznic-odbornych-ucebni-rozneho-druhu-v-zakladnych-skolach/"

@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Samoobslužná autoumyváreň Panónska cesta, Bratislava",
       date: "2020-11-05",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Autoumyváreň na Panónskej ceste.",
       icon: "",
       execution: [

@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Nájomné byty, Muchovo námestie",
       date: "2020-11-05",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "",
       icon: "https://bratislavskykraj.sk/wp-content/uploads/2020/09/119068162_3541246765938335_4381885082729630819_o-1024x722.jpg",
       gallery: [

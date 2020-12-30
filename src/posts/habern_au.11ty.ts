@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Bytový dom Habern Au",
       date: "2020-11-11",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Bytový dom Habern Au na ulici A. Gwerkovej.",
       icon: "",
       execution: [

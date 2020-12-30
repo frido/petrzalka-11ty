@@ -25,9 +25,9 @@ templateClass: tmpl-post
             </div>
         {%- endif %}
 
-        {% if schedule %}
+        {% if execution %}
             <div class="timetable">
-                {% for sch in schedule %}
+                {% for sch in execution %}
                     <div class="timeline {{ sch.status }}">
                         <div class="header">
                             <span class="title">{{ sch.title }}</span>

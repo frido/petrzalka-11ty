@@ -5,7 +5,7 @@ const log = require("debug")("Petrzalka:Projects");
 const statusOrder = { success: 0, inwork: 1, error: 2 };
 
 
-export const LAYOUT_PROJECT = "layouts/post2.njk";
+export const LAYOUT_PROJECT = "layouts/project.njk";
 
 export const TAG_PROJECT = "project";
 export const TAG_TEMPLATE = "template";

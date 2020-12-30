@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Hotel Sphinx",
       date: "2020-11-11",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Hotel bude čiastočne podpivničený, s 8 nadzemnými podlažiami, z toho 2 ustúpené. V objekte sa nachádza raňajkáreň/kaviareň, recepcia, 2 byty, 16 hotelových izieb a prislúchajúce zázemie hotela.",
       icon: "img/hotel_sphinx/2.png",
       gallery: [

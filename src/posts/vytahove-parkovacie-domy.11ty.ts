@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       "title": "Výťahové parkovacie domy",
       "date": "2020-10-27",
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       "description": "Zámer budovania výťahových parkovacích domov spoločnosťou UpDown Parking v Petržalke",
       "icon": "/img/vytahove-parkovacie-domy/3.png",
       gallery: [

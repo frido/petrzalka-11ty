@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       title: "Golfvillage ",
       date: "2020-11-07",
       tags: [TAG_PROJECT],
-      layout: "layouts/post2.njk",
+      layout: LAYOUT_PROJECT,
       description: "Dokumentácia sa funkciou, usporiadaním a kapacitou obytnej zóny zaoberá iba schematicky, riešením je návrh komunikačnej siete zóny s dopravným pripojením na nadradenú komunikačnú sieť (cestu I/2) cez miestnu komunikáciu vo výstavbe (FT C3 – vetva Y – vydané je stavebné povolenie) pre susednú dočasnú stavbu golfového klubu Energau. ",
       icon: "",
       gallery: [

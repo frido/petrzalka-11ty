@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       "title": "Polyfunkčný dom Tematínska",
       "date": "2019-02-07",
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       "description": "Rekonštrukcia, prestavba a nadstavba v súčasnosti 2-podlažného objektu (pôvodná funkcia školstvo a vzdelávanie) na 3-podlažný polyfunkčný objekt (prechodné ubytovanie – 27 apartmánov a bývanie – 12 b. j.), s dopravným pripojením na priľahlú zaslepenú miestnu komunikáciu Tematínska ulica. Súčasťou dopravného riešenia stavby je aj riešenie statickej dopravy - parkovisko na teréne (37 státí) a parkovanie v hromadnej garáži na 1.NP (13 státí) ",
       "icon": "",
       "sources": [

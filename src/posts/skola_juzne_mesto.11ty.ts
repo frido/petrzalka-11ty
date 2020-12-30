@@ -8,7 +8,7 @@ class Template implements Post<FMProject> {
       "title": "Škola Južné mesto",
       "date": "2020-07-29",
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       "description": "Škola je situovaná v rozvojovom území na pozemku s funkčným využitím občianska vybavenosť celomestského a nadmestského významu kód 201, severozápadná časť budovy je umiestňovaná na hranicu funkčnej plochy sadovnícke a lesoparkové úpravy, kód funkcie 1110. Návrh plôch pre školskú telesnú výchovu a šport je riešený ako športový areál s bežeckým oválom 250 m + 100 m dráhou a multifunkčným ihriskom 20 x 40 m. ",
       "icon": "/img/skola-juzne-mesto/4.jpg",
       gallery: [

@@ -13,7 +13,7 @@ class Template implements Post<FMProject> {
         { link: 'img/srobarovo-namestie/peticia.jpeg' }
       ],
       "tags": [TAG_PROJECT],
-      "layout": "layouts/post2.njk",
+      "layout": LAYOUT_PROJECT,
       "sources": [
          "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",
          "http://www.vistatower.com/_sk/poloha.html"

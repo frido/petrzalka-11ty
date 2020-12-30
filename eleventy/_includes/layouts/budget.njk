@@ -27,7 +27,7 @@ aktualizované {{ updatedDate | date}}
       </div>
       </div>
       {% for budget in success.list %}
-        {% include "rozpocetlist.njk" %}
+        {% include "budget-box.njk" %}
       {% endfor %}
     </section>
   {% endif %}
@@ -44,7 +44,7 @@ aktualizované {{ updatedDate | date}}
         </div>
       </div>
       {% for budget in postpone.list %}
-        {% include "rozpocetlist.njk" %}
+        {% include "budget-box.njk" %}
       {% endfor %}
     </section>
   {% endif %}
@@ -61,7 +61,7 @@ aktualizované {{ updatedDate | date}}
         </div>
       </div>
       {% for budget in error.list %}
-        {% include "rozpocetlist.njk" %}
+        {% include "budget-box.njk" %}
       {% endfor %}
     </section>
   {% endif %}
@@ -84,7 +84,7 @@ aktualizované {{ updatedDate | date}}
       </div>
       </div>
       {% for budget in inwork.list %}
-        {% include "rozpocetlist.njk" %}
+        {% include "budget-box.njk" %}
       {% endfor %}
     </section>
   {% endif %}
