@@ -3,7 +3,7 @@ import { PlayGroundPage } from "../addons/playground/playground-addon";
 
 class Template extends PlayGroundPage {
   data() {
-    return this.frontMatterWrapper(YEAR_2022);
+    return this.frontMatterWrapper(2022, YEAR_2022);
   }
 }
 

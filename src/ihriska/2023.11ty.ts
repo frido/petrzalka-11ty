@@ -4,7 +4,7 @@ import { PlayGroundPage } from "../addons/playground/playground-addon";
 
 class Template extends PlayGroundPage {
   data() {
-    return this.frontMatterWrapper(YEAR_2023);
+    return this.frontMatterWrapper(2023, YEAR_2023);
   }
 }
 

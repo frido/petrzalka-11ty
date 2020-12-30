@@ -13,8 +13,9 @@ var PlayGroundPage = /** @class */ (function () {
     PlayGroundPage.prototype.render = function (data) {
         return "";
     };
-    PlayGroundPage.prototype.frontMatterWrapper = function (playgrounds) {
+    PlayGroundPage.prototype.frontMatterWrapper = function (year, playgrounds) {
         return {
+            year: year,
             layout: exports.LAYOUT_PLAYGROUND,
             tags: [exports.TAG_PLAYGROUND],
             playgrounds: playgrounds

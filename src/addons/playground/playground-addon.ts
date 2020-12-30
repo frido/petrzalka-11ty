@@ -1,4 +1,5 @@
 import { FMPlayGround, Playground, PlaygroundCategory, Post } from "../../@types/eleventy";
+import { YEAR_2021 } from "./playground-data";
 
 var log = require("debug")("Petrzalka:Playground");
 
@@ -12,8 +13,9 @@ export class PlayGroundPage implements Post<FMPlayGround> {
   render(data: FMPlayGround): string {
     return "";
   }
-  frontMatterWrapper(playgrounds: Playground[]): FMPlayGround {
+  frontMatterWrapper(year: number, playgrounds: Playground[]): FMPlayGround {
     return {
+      year: year,
       layout: LAYOUT_PLAYGROUND,
       tags: [TAG_PLAYGROUND],
       playgrounds: playgrounds, // TODO: i dont need it in here

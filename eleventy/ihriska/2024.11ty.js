@@ -21,7 +21,7 @@ var Template = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return this.frontMatterWrapper(playground_data_1.YEAR_2024);
+        return this.frontMatterWrapper(2024, playground_data_1.YEAR_2024);
     };
     return Template;
 }(playground_addon_1.PlayGroundPage));

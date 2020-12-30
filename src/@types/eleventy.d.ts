@@ -39,6 +39,7 @@ export interface FMProject extends FrontMatter {
 }
 
 export interface FMPlayGround extends FrontMatter {
+  year: number;
   playgrounds: Playground[];
 }
 

@@ -22,7 +22,7 @@ var Template = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return this.frontMatterWrapper(playground_data_1.YEAR_2021);
+        return this.frontMatterWrapper(2021, playground_data_1.YEAR_2021);
     };
     return Template;
 }(playground_addon_1.PlayGroundPage));
