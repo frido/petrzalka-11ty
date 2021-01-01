@@ -10,7 +10,7 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
             title: "Polyfunkčný dom na Humenskom námestí",
             date: "2020-06-23",
             tags: [project_addon_1.TAG_PROJECT],
-            layout: "layouts/post2.njk",
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.",
             icon: "/img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg",
             sources: [

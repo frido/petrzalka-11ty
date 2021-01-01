@@ -33,36 +33,37 @@ class Template implements Post<FMProject> {
          }, 
          {
             "title": "Architektonická súťaž",
-            "status": "unknown",
-            "description": "",
+            "status": "inwork",
+            "description": "prebieha",
             "startExpected": "2021",
             "endExpected": "2021/2022",
             date: luxon.DateTime.fromISO("2021-01-01"),
             "sub": [ 
                {
                   "title": "Vypracovanie zadania architektonickej súťaže",
-                  "status": "unknown",
+                  "status": "success",
                   description: '',
-                  "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+                  "source": "https://www.petrzalka.sk/wp-content/uploads/2020/12/%C5%A0t%C3%BAdia-PRINT-FINAL.pdf",
+                  date: luxon.DateTime.fromISO("2020-12-01"),
                   "startExpected": "2021",
                   "endExpected": "2021"
-               },
-               {
-                  "title": "Vyhlásenie architektonickej súťaže",
-                  "status": "unknown",
-                  description: '',
-                  "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-                  "startExpected": "2021",
-                  "endExpected": "2021"
-               },
-               {
-                  "title": "Výsledky architektonickej súťaže",
-                  "status": "unknown",
-                  description: '',
-                  "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-                  "startExpected": "2021",
-                  "endExpected": "2021/2022"
                }
+               // {
+               //    "title": "Vyhlásenie architektonickej súťaže",
+               //    "status": "unknown",
+               //    description: '',
+               //    "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+               //    "startExpected": "2021",
+               //    "endExpected": "2021"
+               // },
+               // {
+               //    "title": "Výsledky architektonickej súťaže",
+               //    "status": "unknown",
+               //    description: '',
+               //    "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+               //    "startExpected": "2021",
+               //    "endExpected": "2021/2022"
+               // }
             ]
          },
          {

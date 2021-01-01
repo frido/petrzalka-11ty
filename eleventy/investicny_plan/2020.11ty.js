@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var luxon = require("luxon");
-var budgetData_1 = require("../addons/budget/budgetData");
+var budget_data_1 = require("../addons/budget/budget-data");
 var budget_addon_1 = require("../addons/budget/budget-addon");
 var Template = /** @class */ (function (_super) {
     __extends(Template, _super);
@@ -22,7 +22,7 @@ var Template = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return this.frontMatterWrapper(2020, luxon.DateTime.fromISO("2020-10-01"), budgetData_1.BUDGET_2020);
+        return this.frontMatterWrapper(2020, luxon.DateTime.fromISO("2020-10-01"), budget_data_1.BUDGET_2020);
     };
     return Template;
 }(budget_addon_1.BudgetPage));

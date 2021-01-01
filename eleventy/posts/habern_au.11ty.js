@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             title: "Bytový dom Habern Au",
             date: "2020-11-11",
             tags: [project_addon_1.TAG_PROJECT],
-            layout: "layouts/post2.njk",
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Bytový dom Habern Au na ulici A. Gwerkovej.",
             icon: "",
             execution: [

@@ -4,7 +4,7 @@ exports.projectAddon = exports.EXE_SUB_TITLE_ZSHM = exports.EXE_SUB_TITLE_ZKMZ =
 var luxon = require("luxon");
 var log = require("debug")("Petrzalka:Projects");
 var statusOrder = { success: 0, inwork: 1, error: 2 };
-exports.LAYOUT_PROJECT = "layouts/post2.njk";
+exports.LAYOUT_PROJECT = "layouts/project.njk";
 exports.TAG_PROJECT = "project";
 exports.TAG_TEMPLATE = "template";
 exports.EXE_TITLE_UK = 'Uzemne konanie';

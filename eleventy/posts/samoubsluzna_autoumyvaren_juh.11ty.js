@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             title: "Samoobslužná autoumyváreň Panónska cesta, Bratislava",
             date: "2020-11-05",
             tags: [project_addon_1.TAG_PROJECT],
-            layout: "layouts/post2.njk",
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Autoumyváreň na Panónskej ceste.",
             icon: "",
             execution: [

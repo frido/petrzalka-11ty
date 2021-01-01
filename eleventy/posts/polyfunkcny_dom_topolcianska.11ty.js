@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             "title": "Polyfunkčný dom Topoľčianska",
             "date": "2020-06-27",
             "tags": [project_addon_1.TAG_PROJECT],
-            "layout": "layouts/post2.njk",
+            "layout": project_addon_1.LAYOUT_PROJECT,
             "description": "Polyfunkčný objekt s prevládajúcou funkciou bývania (68 %) s 8 nadzemnými a 2 podzemnými podlažiami, dopravne prístupným cez jestvujúce miestne komunikácie. V objekte sú priestory obchodu (10), služieb, administratívy (16) a bývania (60). Navrhnuté sú 2 dopravné vjazdy – rampa do garáže na 1. a 2. podzemnom podlaží (78 parkovacích miest) a priamy vjazd na spevnenú plochu na teréne (20 parkovacích miest).",
             "icon": "/img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg",
             "sources": [

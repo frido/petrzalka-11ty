@@ -2,7 +2,7 @@
 exports.__esModule = true;
 exports.playgroundAddon = exports.PlaygroundAddon = exports.PlayGroundPage = exports.TAG_PLAYGROUND = exports.LAYOUT_PLAYGROUND = void 0;
 var log = require("debug")("Petrzalka:Playground");
-exports.LAYOUT_PLAYGROUND = "layouts/ihriska.njk";
+exports.LAYOUT_PLAYGROUND = "layouts/playground.njk";
 exports.TAG_PLAYGROUND = "playground";
 var PlayGroundPage = /** @class */ (function () {
     function PlayGroundPage() {

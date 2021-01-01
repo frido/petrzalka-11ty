@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             "title": "Urban E",
             "date": "2020-07-05",
             "tags": [project_addon_1.TAG_PROJECT],
-            "layout": "layouts/post2.njk",
+            "layout": project_addon_1.LAYOUT_PROJECT,
             "description": "Medzinárodný projekt URBAN-E je zameraný na rozvoj elektromobility, podporu rozširovania infraštruktúry elektronabíjacích staníc a prepojenia na iné druhy dopravy, na znižovanie znečistenia ovzdušia v hlavných mestách Slovinska, Chorvátska a Slovenska – v Ľubľane, Záhrebe a Bratislave.",
             "icon": "",
             "amount": 0,

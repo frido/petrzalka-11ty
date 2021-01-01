@@ -28,12 +28,6 @@ class Template implements Post<FMProject> {
                   "description": "",
                   source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
                   date: luxon.DateTime.fromISO("2017-05-06")
-               }, {
-                  "title": "Materiál na rokovanie MZ",
-                  "status": "success",
-                  "description": "",
-                  source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                  date: luxon.DateTime.fromISO("2020-12-31")
                }
             ]
          }

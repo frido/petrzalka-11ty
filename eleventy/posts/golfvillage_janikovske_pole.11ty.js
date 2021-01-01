@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             title: "Golfvillage ",
             date: "2020-11-07",
             tags: [project_addon_1.TAG_PROJECT],
-            layout: "layouts/post2.njk",
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Dokumentácia sa funkciou, usporiadaním a kapacitou obytnej zóny zaoberá iba schematicky, riešením je návrh komunikačnej siete zóny s dopravným pripojením na nadradenú komunikačnú sieť (cestu I/2) cez miestnu komunikáciu vo výstavbe (FT C3 – vetva Y – vydané je stavebné povolenie) pre susednú dočasnú stavbu golfového klubu Energau. ",
             icon: "",
             gallery: [

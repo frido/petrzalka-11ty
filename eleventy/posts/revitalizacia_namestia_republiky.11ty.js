@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             "title": "Projekt revitalizácie Námestia Republiky",
             "date": "2020-07-14",
             "tags": [project_addon_1.TAG_PROJECT],
-            "layout": "layouts/post2.njk",
+            "layout": project_addon_1.LAYOUT_PROJECT,
             "description": "V súčasnosti sa spevnená časť námestia využíva na spoločenské a kultúrne podujatia mestskej časti. Už tradične sa tu konajú navštevované Petržalské vianočné trhy. Plocha bývalého parkoviska susediaca s Chorvátskym ramenom slúži ako spomínaný skatepark. ",
             "icon": "/img/revitalizacia-namestia-republiky/revitalizacia-namestia-republiky.jpg",
             "sources": ["https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-14_overena.pdf"
@@ -35,36 +35,37 @@ var Template = /** @class */ (function () {
                 },
                 {
                     "title": "Architektonická súťaž",
-                    "status": "unknown",
-                    "description": "",
+                    "status": "inwork",
+                    "description": "prebieha",
                     "startExpected": "2021",
                     "endExpected": "2021/2022",
                     date: luxon.DateTime.fromISO("2021-01-01"),
                     "sub": [
                         {
                             "title": "Vypracovanie zadania architektonickej súťaže",
-                            "status": "unknown",
+                            "status": "success",
                             description: '',
-                            "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+                            "source": "https://www.petrzalka.sk/wp-content/uploads/2020/12/%C5%A0t%C3%BAdia-PRINT-FINAL.pdf",
+                            date: luxon.DateTime.fromISO("2020-12-01"),
                             "startExpected": "2021",
                             "endExpected": "2021"
-                        },
-                        {
-                            "title": "Vyhlásenie architektonickej súťaže",
-                            "status": "unknown",
-                            description: '',
-                            "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-                            "startExpected": "2021",
-                            "endExpected": "2021"
-                        },
-                        {
-                            "title": "Výsledky architektonickej súťaže",
-                            "status": "unknown",
-                            description: '',
-                            "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-                            "startExpected": "2021",
-                            "endExpected": "2021/2022"
                         }
+                        // {
+                        //    "title": "Vyhlásenie architektonickej súťaže",
+                        //    "status": "unknown",
+                        //    description: '',
+                        //    "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+                        //    "startExpected": "2021",
+                        //    "endExpected": "2021"
+                        // },
+                        // {
+                        //    "title": "Výsledky architektonickej súťaže",
+                        //    "status": "unknown",
+                        //    description: '',
+                        //    "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
+                        //    "startExpected": "2021",
+                        //    "endExpected": "2021/2022"
+                        // }
                     ]
                 },
                 {

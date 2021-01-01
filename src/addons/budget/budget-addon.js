@@ -3,7 +3,7 @@ exports.__esModule = true;
 exports.budgetAddon = exports.BudgetPage = exports.TAG_BUDGET = exports.LAYOUT_BUDGET = void 0;
 var budget_data_1 = require("./budget-data");
 var log = require("debug")("Petrzalka:Budget");
-exports.LAYOUT_BUDGET = "layouts/rozpocet.njk";
+exports.LAYOUT_BUDGET = "layouts/budget.njk";
 exports.TAG_BUDGET = "budget2";
 var BudgetImpl = /** @class */ (function () {
     function BudgetImpl(i) {

@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             "title": "Rekonštrukcia a vybavenie odborných učební",
             "date": "2020-06-06",
             "tags": [project_addon_1.TAG_PROJECT],
-            "layout": "layouts/post2.njk",
+            "layout": project_addon_1.LAYOUT_PROJECT,
             description: "Cieľom projektov je vytvorenie podmienok na zabezpečenie kvalitného primárneho vzdelávania a nižšieho stredného vzdelávania prispievajúceho k zvládnutiu povinnej školskej dochádzky. Tento cieľ sa naplní realizáciou aktivít jednotlivých projektov zameraných na vytvorenie odborných učební, čím sa vytvoria predpoklady pre zabezpečenie prístupu ku kvalitnejším verejným službám v oblasti povinnej školskej dochádzky a výchovy.",
             "sources": [
                 "https://www.petrzalka.sk/oblasti/projektove-riadenie/budovanie-a-zlepsenie-technickeho-vybavenia-jazykovych-ucebni-skolskych-kniznic-odbornych-ucebni-rozneho-druhu-v-zakladnych-skolach/"
@@ -30,12 +30,6 @@ var Template = /** @class */ (function () {
                             "description": "",
                             source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
                             date: luxon.DateTime.fromISO("2017-05-06")
-                        }, {
-                            "title": "Materiál na rokovanie MZ",
-                            "status": "success",
-                            "description": "",
-                            source: "https://www.petrzalka.sk/wp-content/uploads/2017/05/10_Odsuhlasenie_projektov_vybavenie_odbornych_ucebni_v_ZS_Aktual.pdf",
-                            date: luxon.DateTime.fromISO("2020-12-31")
                         }
                     ]
                 }

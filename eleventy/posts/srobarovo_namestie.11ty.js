@@ -15,7 +15,7 @@ var Template = /** @class */ (function () {
                 { link: 'img/srobarovo-namestie/peticia.jpeg' }
             ],
             "tags": [project_addon_1.TAG_PROJECT],
-            "layout": "layouts/post2.njk",
+            "layout": project_addon_1.LAYOUT_PROJECT,
             "sources": [
                 "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",
                 "http://www.vistatower.com/_sk/poloha.html"

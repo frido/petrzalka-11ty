@@ -10,7 +10,7 @@ var Template = /** @class */ (function () {
             title: "Nové Domino na Jasovskej ulici",
             date: "2020-11-01",
             tags: [project_addon_1.TAG_PROJECT],
-            layout: "layouts/post2.njk",
+            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Skelet nedokončenej stavby stojí na pozemku, ktorý je podľa platného územného plánu určený na výstavbu bývania. Projekt má stále platné a nezrušiteľné územné rozhodnutie. Neexistuje teda legálny a právny spôsob, ako stavbu odstrániť, no ak by sa v nej nepokračovalo ďalej, schátraný skelet by pravdepodobne zotrval na svojom mieste ešte veľmi dlhý čas.",
             icon: "https://www.novedomino.sk/img/obr5.jpg",
             source: "https://www.novedomino.sk/",
