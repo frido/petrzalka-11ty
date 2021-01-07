@@ -35,6 +35,7 @@ export interface FMProject extends FrontMatter {
   sources?: string[];
   amount?: number;
   amountAll?: number;
+  budgetRef?: string;
   execution: Execution[];
 }
 

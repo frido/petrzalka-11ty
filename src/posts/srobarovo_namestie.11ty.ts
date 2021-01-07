@@ -6,11 +6,16 @@ class Template implements Post<FMProject> {
   data(): FMProject {
     return {
       "title": "Šrobárovo námestie",
-      "date": "2020-08-17",
-      "description": "Idea zriadenia verejného parku s výsadbou zelene a cvičebnými prvkami na Šrobárovom námestí",
-      "icon": "/img/srobarovo-namestie/peticia.jpeg",
+      "date": "2021-01-07",
+      "description": "Mestská časť plánuje v priestore Šrobárovho námestia vysadiť približne 50 stromov. Ďalšie úpravy verejného priestoru sa týkajú rekonštrukcie chodníkov. Súčasťou bude aj ich rozšírenie. Následne pôjde o výmenu mobiliáru (lavičky, koše). Pribudne psí výbeh na odhľahlejšom pozemku, pitná fontánka a street-workoutové  ihrisko v areály školy.  V ďalšej etape je naplánovaná obnova tartanovej dráhy. Cieľom celej revitalizácie námestia je zachovanie najmä parkového charakteru.  Na stretnutí svoje námietky predostreli občania z priľahlého bytového domu so zástupcami mestskej časti, ktorí požadovali vynechanie pavilónu z projektovej dokumentácie.",
+      "icon": "/img/srobarovo-namestie/2.png",
       gallery: [
-        { link: 'img/srobarovo-namestie/peticia.jpeg' }
+        { link: 'img/srobarovo-namestie/peticia.jpeg' },
+        { link: 'img/srobarovo-namestie/1.png' },
+        { link: 'img/srobarovo-namestie/2.png' },
+        { link: 'img/srobarovo-namestie/3.png' },
+        { link: 'img/srobarovo-namestie/4.png' },
+        { link: 'img/srobarovo-namestie/5.png' }
       ],
       "tags": [TAG_PROJECT],
       "layout": LAYOUT_PROJECT,
@@ -18,6 +23,8 @@ class Template implements Post<FMProject> {
          "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",
          "http://www.vistatower.com/_sk/poloha.html"
       ],
+      source: 'https://www.petrzalka.sk/2021-01-05-na-srobarovom-namesti-vznikne-novy-zeleny-priestor/',
+      budgetRef: '2021-22',
       "execution": [
          {
             "title": "Príprava projektu",
@@ -55,7 +62,7 @@ class Template implements Post<FMProject> {
 
   render(data: FMProject) {
     return `
-    Idea zriadenia verejného parku s výsadbou zelene a cvičebnými prvkami na Šrobárovom námestí
+    Mestská časť plánuje v priestore Šrobárovho námestia vysadiť približne 50 stromov. Ďalšie úpravy verejného priestoru sa týkajú rekonštrukcie chodníkov. Súčasťou bude aj ich rozšírenie. Následne pôjde o výmenu mobiliáru (lavičky, koše). Pribudne psí výbeh na odhľahlejšom pozemku, pitná fontánka a street-workoutové  ihrisko v areály školy.  V ďalšej etape je naplánovaná obnova tartanovej dráhy. Cieľom celej revitalizácie námestia je zachovanie najmä parkového charakteru.  Na stretnutí svoje námietky predostreli občania z priľahlého bytového domu so zástupcami mestskej časti, ktorí požadovali vynechanie pavilónu z projektovej dokumentácie.
     `;
   }
 }

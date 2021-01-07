@@ -67,6 +67,11 @@ templateClass: tmpl-post
             </div>
         {% endif %}
 
+        {% if budgetRef %}
+            {% set budget = collections.budgetCollection | budgetFilterById(budgetRef) %}
+            {% include "budget-box.njk" %}
+        {% endif %}
+
         {% if gallery %}
             <div class="gallery">
                 {% for image in gallery %}
