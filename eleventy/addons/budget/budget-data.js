@@ -593,7 +593,7 @@ exports.BUDGET_2021 = [
     },
     {
         year: 2021,
-        title: "PD + realizácia - Šrobárovo námestie",
+        title: "Revitalizácia - Šrobárovo námestie",
         id: "2021-22",
         previous: "2020-25",
         program: 9,

@@ -15,7 +15,7 @@ templateClass: tmpl-post
                 </time>
             {% endif %}
         </div>
-
+        <!-- TODO: remove  amount or amountAll -->
         {%- if amount or amountAll %}
             <div class="budget">
                 <span class="amount">{{ amount }}€</span> z rozpočtu Petržalky
@@ -26,6 +26,7 @@ templateClass: tmpl-post
         {%- endif %}
 
         {% if execution %}
+            <h2>Časová os</h2>
             <div class="timetable">
                 {% for sch in execution %}
                     <div class="timeline {{ sch.status }}">
@@ -35,31 +36,31 @@ templateClass: tmpl-post
                         </div>
                         <div class="timeline-wrap-sub">
                             {% for sub in sch.sub %}
-                                <div class="timeline-sub {{ sub.status }}">
-                                    <div class="header">
-                                        {% if sub.source %}
-                                            <a href="{{ sub.source }}" target="blank">
-                                                <span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
-                                        {% else %}
-                                            <span class="title">{{ sub.title }}</span>
-                                        {% endif %}
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="timeline-sub {{ sub.status }}">
+                                            <div class="header">
+                                                {% if sub.source %}
+                                                    <a href="{{ sub.source }}" target="blank">
+                                                        <span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
+                                                {% else %}
+                                                    <span class="title">{{ sub.title }}</span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-right">
                                         <span class="date">
-                                            {% if sub.startExpected %}
-                                                <span class="dateExpected">{{ sub.startExpected }}</span>
+                                            {% if sub.date %}
+                                                <span class="dateReal">{{ sub.date | date}}</span>
                                             {% endif %}
-                                            {% if sub.startReal %}
-                                                <span class="dateReal">{{ sub.startReal | postDate }}</span>
-                                            {% endif %}
-                                            {% if sub.endExpected %}
-                                                <span class="dateExpected">- {{ sub.endExpected }}</span>
-                                            {% endif %}
-                                            {% if sub.endReal %}
-                                                <span class="dateReal">- {{ sub.endReal | postDate }}</span>
-                                            {% endif %}
-                                            <span class="description">{{sub.description}}</span>
                                         </span>
                                     </div>
+                                    <div class="col-md-2 text-right {{ sub.status }}">
+                                        <span class="description">{{ sub.description }}</span>
+                                    </div>
                                 </div>
+
                             {% endfor %}
                         </div>
                     </div>
@@ -68,6 +69,7 @@ templateClass: tmpl-post
         {% endif %}
 
         {% if budgetRef %}
+            <h2>Rozpočet</h2>
             {% set budget = collections.budgetCollection | budgetFilterById(budgetRef) %}
             {% include "budget-box.njk" %}
         {% endif %}
