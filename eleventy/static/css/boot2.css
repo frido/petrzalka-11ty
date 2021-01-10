@@ -8887,6 +8887,24 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -8915,6 +8933,14 @@ a:hover {
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+h3, .h3 {
+  font-weight: 600;
+}
+
+section.section {
+  padding-bottom: 2rem;
 }
 
 section.section .box {
@@ -8960,13 +8986,27 @@ section.section .box.pause {
   }
 }
 
+.budget-summary .row {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .budget-summary .row {
+    padding-top: 0.1rem;
+  }
+}
+
 .budget .sub {
   border-top: solid #e2e2e2 1px;
   padding-top: 0.5rem;
   margin-top: 0.5rem;
 }
 
-.grant.box {
+.grant {
+  padding-top: 1rem;
+}
+
+.grant .box {
   height: 100%;
   margin-top: 0 !important;
 }
@@ -8986,6 +9026,10 @@ header.logo {
 
 header.logo h1, header.logo .h1 {
   color: white;
+  font-size: 3.0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 900 !important;
 }
 
 header.logo a {
@@ -9007,13 +9051,6 @@ header.logo img {
   height: 100px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.logo h1, .logo .h1 {
-  font-size: 3.0rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 900 !important;
 }
 
 .amount {
@@ -9060,18 +9097,12 @@ header.logo img {
   text-align: center !important;
 }
 
-.padding-top {
-  padding-top: 1rem;
-}
-
-.padding-bottom {
-  padding-bottom: 1rem;
+.padding-right {
+  padding-right: 1rem;
 }
 
 div.button {
   text-align: center;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 div.button > a {
@@ -9108,5 +9139,10 @@ figure img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.muted {
+  color: gray;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=boot2.css.map */

@@ -68,7 +68,7 @@ type Tag = 'project' | 'template' | 'playground' | 'budget2';
 type Layout = 'layouts/project.njk' | 'layouts/playground.njk' | 'layouts/budget.njk';
 type ExecutionStatus = "inwork" | "success" | "error" | "unknown" | "pause";
 type InvPlanStatus = "inwork" | "success" | "error" | "postpone";
-type ExecTitle = 'Uzemne konanie' | 'Príprava projektu' | "Analýza súčasného stavu" | "Architektonická súťaž" | "Realizácia víťazného návrhu" | "Urbanistický návrh" | "Projektová dokumentácia" | "Verejné obstarávanie" | "Výstavba" | "Investičný zámer";
+type ExecTitle = 'Územné konanie' | 'Príprava projektu' | "Analýza súčasného stavu" | "Architektonická súťaž" | "Realizácia víťazného návrhu" | "Urbanistický návrh" | "Projektová dokumentácia" | "Verejné obstarávanie" | "Výstavba" | "Investičný zámer";
 
 export interface Execution {
     title: ExecTitle;

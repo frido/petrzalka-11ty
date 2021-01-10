@@ -9,7 +9,7 @@ eleventyNavigation:
     <header>
       <h1>Športové granty</h1>
     </header>
-    <div class="row padding-bottom">
+    <div class="row">
       {% for grantPost in collections.sgrant | head(1) %}
         {% set grants = grantPost.data.list %}
         {% for grant in grants %}

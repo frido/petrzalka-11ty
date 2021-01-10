@@ -9,7 +9,9 @@ eleventyNavigation:
     <header>
       <h1>Časová os projektov</h1>
     </header>
-    {% for sch in collections.projectCollection | reverse  %}
+    {% for sch in collections.projectCollection | reverse %}
+      {% set schUrl = sch.page.url %}
+      {% set schTitle = sch.page.data.title %}
       {% include "project-execution-box.njk" %}
     {% endfor %}
   </section>

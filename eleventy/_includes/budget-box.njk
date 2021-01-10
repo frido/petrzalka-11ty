@@ -4,7 +4,8 @@
       <h3>{{ budget.title }}</h3>
     </div>
     <div class="col-md-3 text-right">
-      rozpočet <span style="margin-left: 0.5rem" class="amount">{{budget.amountOriginal | value}}€</span>
+      <span class="muted">rozpočet</span>
+      <span class="amount">{{budget.amountOriginal | value}}€</span>
     </div>
   </div>
 
@@ -12,7 +13,7 @@
     <div class="row">
       <div class="col-md-6">
         Aktuálne výdavky
-        <span class="amount" style="margin-left: 0.5rem">{{budget.amountReal | value}}€</span>
+        <span class="amount" >{{budget.amountReal | value}}€</span>
       </div>
       <div class="col-md-6 text-right status-text success">
         <div>Zrealizované {# <i class="fas fa-check-circle text-success"></i> #}</div>
@@ -25,13 +26,13 @@
       <div class="col-md-6">
         {% if budget.amountReal != 0 %}
         Aktuálne výdavky
-        <span class="amount" style="margin-left: 0.5rem">{{budget.amountReal | value}}€</span>
+        <span class="amount" >{{budget.amountReal | value}}€</span>
         {% endif %}
       </div>
       {% if budget.amountUpdated != 0 %}
         <div class="col-md-6 text-right">
-          <small>Odhadované výdavky</small>
-          <span class="amount" style="margin-left: 0.5rem">{{budget.amountUpdated | value}}€</span>
+          <span class="muted">Odhadované výdavky</span>
+          <span class="amount" >{{budget.amountUpdated | value}}€</span>
           {% if budget.amountOriginal > budget.amountOriginal %}
             <span class="text-error">
               <i class="fas fa-angle-double-up"></i>
@@ -47,7 +48,7 @@
       <div class="col-md-10">
         {{budget.comment}}
       </div>
-      <div class="col-md-2 status-text postpone">
+      <div class="col-md-2 status-text postpone text-right">
         <div>Odložené {# <i class="fas fa-ban"></i> #}</div>
       </div>
     </div>
@@ -73,7 +74,8 @@
           <strong>{{ parentBudget.title }}</strong> - <small>{{ parentBudget.year }}</small>
         </div>
         <div class="col-md-3 text-right">
-      výdavky <span class="amount" style="margin-left: 0.5rem">{{parentBudget.amountReal | value}}€</span>
+      <span class="muted">výdavky</span>
+      <span class="amount" >{{parentBudget.amountReal | value}}€</span>
         </div>
         <div class="col-md-12">
           {{parentBudget.comment}}

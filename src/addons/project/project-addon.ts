@@ -10,7 +10,7 @@ export const LAYOUT_PROJECT = "layouts/project.njk";
 export const TAG_PROJECT = "project";
 export const TAG_TEMPLATE = "template";
 
-export const EXE_TITLE_UK = 'Uzemne konanie';
+export const EXE_TITLE_UK = 'Územné konanie';
 export const EXE_TITLE_PP = "Príprava projektu";
 
 export const EXE_SUB_TITLE_ZKMZ = 'Stanovisko komisie MZ';

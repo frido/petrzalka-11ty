@@ -5,7 +5,7 @@ layout: layouts/home.njk
 <div class="paletteB">
   <section class="section">
     <h1>Investičný plán {{year}}</h1>
-aktualizované {{ updatedDate | date}}
+    <span class="muted">aktualizované {{ updatedDate | date}}</span>
   </section>
 </div>
 
@@ -15,9 +15,9 @@ aktualizované {{ updatedDate | date}}
   {% set success = allMyBudget.success %}
   {% if success.list.length > 0 %}
     <section class="section">
-      <div class="row padding-top status-text success">
+      <div class="row status-text success">
         <div class="col-md-2">
-      Zrealizované <i class="fas fa-check-circle"></i>
+      Zrealizované <i class="far fa-check-circle"></i>
         </div>
         <div class="col-md-2">
           {{success.list.length | projectFilterProject}}
@@ -35,7 +35,7 @@ aktualizované {{ updatedDate | date}}
   {% set postpone = allMyBudget.postpone %}
   {% if postpone.list.length > 0 %}
     <section class="section">
-      <div class="row padding-top status-text postpone">
+      <div class="row status-text postpone">
         <div class="col-md-3">
       Odložené <i class="far fa-arrow-alt-circle-right"></i>
         </div>
@@ -52,9 +52,9 @@ aktualizované {{ updatedDate | date}}
   {% set error = allMyBudget.error %}
   {% if error.list.length > 0 %}
     <section class="section">
-      <div class="row padding-top status-text error">
+      <div class="row status-text error">
         <div class="col-md-3">
-      Zrušené <i class="fas fa-ban"></i>
+      Zrušené <i class="far fa-stop-circle"></i>
         </div>
         <div class="col-md-2">
           {{error.list.length | projectFilterProject}}
@@ -69,9 +69,9 @@ aktualizované {{ updatedDate | date}}
   {% set inwork = allMyBudget.inwork %}
   {% if inwork.list.length > 0 %}
     <section class="section">
-      <div class="row padding-top status-text inwork" style="color: #0d47a1 !important;">
+      <div class="row status-text inwork">
         <div class="col-md-2">
-          Realizuje sa
+          Realizuje sa <i class="far fa-play-circle"></i>
         </div>
         <div class="col-md-2">
           {{inwork.list.length | projectFilterProject}}

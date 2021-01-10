@@ -20,15 +20,15 @@ var Template = /** @class */ (function () {
                 {
                     "title": "Analýza súčasného stavu",
                     "status": "success",
-                    "description": "prebieha",
+                    "description": "hotovo",
                     "startReal": "marec 2020",
                     "endExpected": "december 2020",
                     "sub": [
                         {
                             "title": "Analýza súčasného stavu",
                             "source": "https://www.petrzalka.sk/projekt-revitalizacie-namestia-republiky/",
-                            "status": "inwork",
-                            description: 'prebieha',
+                            "status": "success",
+                            description: 'hotovo',
                             date: luxon.DateTime.fromISO("2020-03-01")
                         }
                     ]
@@ -70,8 +70,8 @@ var Template = /** @class */ (function () {
                 },
                 {
                     "title": "Realizácia víťazného návrhu",
-                    "status": "unknown",
-                    description: '',
+                    "status": "inwork",
+                    description: 'v pláne',
                     "startExpected": "2022",
                     "endExpected": "2026",
                     date: luxon.DateTime.fromISO("2022-01-01"),

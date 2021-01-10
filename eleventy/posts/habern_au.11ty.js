@@ -36,7 +36,7 @@ var Template = /** @class */ (function () {
                         {
                             title: 'Stanovisko komisie MZ',
                             source: "https://www.petrzalka.sk/wp-content/uploads/2020/06/KUPVaR-zapisnica_2020-05-26_overena.pdf",
-                            status: "success",
+                            status: "error",
                             description: "žiada prepracovanie",
                             date: luxon.DateTime.fromISO("2020-05-26")
                         },

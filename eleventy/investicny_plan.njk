@@ -10,19 +10,16 @@ eleventyNavigation:
 
     {% for page in collections.budget2 | budgetFilterSortByYear %}
       {% set allMyBudget = collections.budgetCollection | budgetFilterByYear(page.data.year) | budgetFilterGroupByStatus %}
-      <article class="box {{ "inwork" if page.data.year == "2021" else "success" }}">
+      <article class="budget-summary box {{ "inwork" if page.data.year == "2021" else "success" }}">
         <div class="row">
           <div class="col-md-9">
-            <header>
-              <h2>
                 <h2>
-                  <a href="{{ page.url | url }}">rok {{ page.data.year }}</a>
+                  <a href="{{ page.url | url }}">Rok {{ page.data.year }}</a>
                 </h2>
-              </h2>
-            </header>
           </div>
           <div class="col-md-3 text-right">
-                rozpočet <span style="margin-left: 0.5rem" class="amount">{{allMyBudget.all.amountOriginal | value}}€</span>
+                <span class="muted">rozpočet</span>
+                <span class="amount">{{allMyBudget.all.amountOriginal | value}}€</span>
           </div>
         </div>
 
@@ -34,8 +31,8 @@ eleventyNavigation:
             {{allMyBudget.success.list.length | projectFilterProject}}
           </div>
           <div class="col-md-4 text-right">
-            <small>Aktuálne výdavky</small>
-            <span class="amount" style="margin-left: 0.5rem">{{allMyBudget.success.amountReal | value}}€</span>
+            Aktuálne výdavky
+            <span class="amount">{{allMyBudget.success.amountReal | value}}€</span>
           </div>
         </div>
 
@@ -47,8 +44,8 @@ eleventyNavigation:
             {{allMyBudget.inwork.list.length | projectFilterProject}}
           </div>
           <div class="col-md-4 text-right">
-            <small>Aktuálne výdavky</small>
-            <span class="amount" style="margin-left: 0.5rem">{{allMyBudget.inwork.amountReal | value}}€</span>
+            Aktuálne výdavky
+            <span class="amount">{{allMyBudget.inwork.amountReal | value}}€</span>
           </div>
         </div>
 

@@ -8,76 +8,44 @@ templateClass: tmpl-post
             <h1>{{ title }}</h1>
         </header>
 
-        <div class="updated">
+        <div class="muted">
             {% if date %}
                 <time datetime="{{ date }}">
                     aktualizované: {{ date | postDate }}
                 </time>
             {% endif %}
         </div>
-        <!-- TODO: remove  amount or amountAll -->
-        {%- if amount or amountAll %}
+    </section>
+    <!-- TODO: remove  amount or amountAll -->
+    {%- if amount or amountAll %}
+        <section class="section">
             <div class="budget">
                 <span class="amount">{{ amount }}€</span> z rozpočtu Petržalky
             {% if amountAll %}
                     <span class="amount">{{ amountAll }}€</span> celková cena projektu
             {% endif %}
             </div>
-        {%- endif %}
+        </section>
+    {%- endif %}
 
-<!-- TODO: duplicitne ako project-execution-box.njk -->
-        {% if execution %}
-            <h2 class="padding-top">Časová os</h2>
-            <div class="XXX">
-                {% for sch in execution %}
-                    <article class="execution box {{ sch.status }}">
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5 class="status-text {{ sch.status }}">{{ sch.title }}</h5>
-                            </div>
-                            <div class="col-md-2 text-right">
-                                <span class="status-text {{ sch.status }}">{{sch.description}}</span>
-                            </div>
-                        </div>
+    {% if execution %}
+        <section class="section">
+            <h2>Časová os</h2>
+            {% for sch in execution %}
+                {% include "project-execution-box.njk" %}
+            {% endfor %}
+        </section>
+    {% endif %}
 
-                        <div class="sub">
-                            {% for sub in sch.sub | reverse %}
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        {% if sub.source %}
-                                            <a href="{{ sub.source }}" target="blank">
-                                                <span>{{ sub.title }}</span>
-                                            </a>
-                                        {% else %}
-                                            <span>{{ sub.title }}</span>
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        {% if sub.date %}
-                                            <span>{{ sub.date | date}}</span>
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="col-md-2 text-right">
-                                        <span class="status-text {{ sub.status }}">{{ sub.description }}</span>
-                                    </div>
-
-                                </div>
-                            {% endfor %}
-                        </div>
-
-                    </article>
-                {% endfor %}
-            </div>
-        {% endif %}
-
-        {% if budgetRef %}
-            <h2  class="padding-top">Rozpočet</h2>
+    {% if budgetRef %}
+        <section class="section">
+            <h2>Rozpočet</h2>
             {% set budget = collections.budgetCollection | budgetFilterById(budgetRef) %}
             {% include "budget-box.njk" %}
-        {% endif %}
+        </section>
+    {% endif %}
 
+    <section class="section">
         {% if gallery %}
             <div class="gallery">
                 {% for image in gallery %}
@@ -106,5 +74,4 @@ templateClass: tmpl-post
         </p>
     </section>
 </div>
-
 {{ end }}

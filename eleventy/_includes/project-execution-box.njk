@@ -2,9 +2,11 @@
     <div class="row">
         <div class="col-md-10">
             <h5 class="status-text {{ sch.status }}">{{ sch.title }}</h5>
+            {% if schUrl %}
             <h3>
-                <a href="{{ sch.page.url }}">{{ sch.page.data.title }}</a>
+                <a href="{{ schUrl }}">{{ schTitle }}</a>
             </h3>
+            {% endif %}
         </div>
         <div class="col-md-2 text-right">
             <span class="status-text {{ sch.status }}">{{sch.description}}</span>
@@ -16,21 +18,18 @@
             <div class="row">
                 <div class="col-md-8">
                     {% if sub.source %}
-                        <a href="{{ sub.source }}" target="blank">
-                            <span>{{ sub.title }}</span>
+                        <a href="{{ sub.source }}" target="blank" >
+                            <span class="padding-right">{{ sub.title }}</span>
                         </a>
                     {% else %}
-                        <span>{{ sub.title }}</span>
+                        <span class="padding-right">{{ sub.title }}</span>
                     {% endif %}
-                </div>
-
-                <div class="col-md-2">
                     {% if sub.date %}
-                        <span>{{ sub.date | date}}</span>
+                        <span class="muted">{{ sub.date | date}}</span>
                     {% endif %}
                 </div>
 
-                <div class="col-md-2 text-right">
+                <div class="col-md-4 text-right">
                     <span class="status-text {{ sub.status }}">{{ sub.description }}</span>
                 </div>
 

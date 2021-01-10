@@ -7,15 +7,19 @@ eleventyNavigation:
 <div class="paletteA">
   <section class="section">
     <header>
-      <h1>Developerské projekty</h1>
+      <h1>Časová os projektov</h1>
     </header>
     {% for sch in collections.projectCollection | reverse | head(5) %}
+      {% set schUrl = sch.page.url %}
+      {% set schTitle = sch.page.data.title %}
       {% include "project-execution-box.njk" %}
     {% endfor %}
   </section>
-  <div class="button">
-    <a href="projects/">Viac</a>
-  </div>
+  <section class="section">
+    <div class="button">
+      <a href="casova_os/">Viac</a>
+    </div>
+  </section>
 </div>
 
 <div class="paletteC">
@@ -31,9 +35,11 @@ eleventyNavigation:
       {% endfor %}
     </div>
   </section>
-  <div class="button">
-    <a href="investicny_plan/2021">Viac</a>
-  </div>
+  <section class="section">
+    <div class="button">
+      <a href="investicny_plan/2021">Viac</a>
+    </div>
+  </section>
 </div>
 
 <div class="paletteC">
@@ -41,7 +47,7 @@ eleventyNavigation:
     <header>
       <h1>Športové granty</h1>
     </header>
-    <div class="row padding-bottom">
+    <div class="row">
       {% for grantPost in collections.sgrant | head(1) %}
         {% set grants = grantPost.data.list | head(4) %}
         {% for grant in grants %}
@@ -65,7 +71,9 @@ eleventyNavigation:
       {% endfor %}
     </div>
   </section>
-  <div class="button">
-    <a href="grants">Viac</a>
-  </div>
+  <section class="section">
+    <div class="button">
+      <a href="grants">Viac</a>
+    </div>
+  </section>
 </div>

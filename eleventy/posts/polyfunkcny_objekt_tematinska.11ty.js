@@ -30,7 +30,7 @@ var PolyfunkcnyObjektTematinska = /** @class */ (function () {
                         {
                             title: "Stanovisko komisie MZ",
                             source: "https://www.petrzalka.sk/wp-content/uploads/2020/11/KUPVaR-zapisnica.pdf",
-                            status: "success",
+                            status: "error",
                             description: "žiada ďalšie dokumenty",
                             date: luxon.DateTime.fromISO("2020-10-27")
                         },
