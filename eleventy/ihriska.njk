@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 5
 ---
 <div class="paletteB">
-  <section class="container vertical">
+  <section class="section">
     <h1>Plán obnovy verejných detských ihrísk</h1>
     <div class="row">
       <div class="col-md-4">
@@ -58,7 +58,7 @@ eleventyNavigation:
       </div>
     </div>
   </section>
-  <section class="container vertical">
+  <section class="section">
     <p>
 Petržalka má v súčasnosti v správe 55 verejných detských ihrísk (VDI). Na
 základe výsledkov revíznej správy, by takmer všetky ihriská (okrem troch) neprešli
@@ -79,12 +79,12 @@ eur s DPH.
   </section>
 
   {% for page in collections.playground %}
-    <section class="container vertical">
+    <section class="section padding-top">
       <h2>
         Rekonštrukcie v roku {{ page.data.year }}
       </h2>
       {% for play in page.data.playgrounds %}
-        <article class="article timeline {{ play.flag | playgroundFilterStatus }}">
+        <article class="box {{ play.flag | playgroundFilterStatus }}">
           <div class="row">
             <div class="col-md-3">
               <header>

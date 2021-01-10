@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <div class="paletteA">
-    <article class="container article">
+    <section class="section">
         <header>
             <h1>{{ title }}</h1>
         </header>
@@ -25,51 +25,55 @@ templateClass: tmpl-post
             </div>
         {%- endif %}
 
+<!-- TODO: duplicitne ako project-execution-box.njk -->
         {% if execution %}
-            <h2>Časová os</h2>
-            <div class="timetable">
+            <h2 class="padding-top">Časová os</h2>
+            <div class="XXX">
                 {% for sch in execution %}
-                    <div class="timeline {{ sch.status }}">
-                        <div class="header">
-                            <span class="title">{{ sch.title }}</span>
-                            <span class="description">{{sch.description}}</span>
+                    <article class="execution box {{ sch.status }}">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <h5 class="status-text {{ sch.status }}">{{ sch.title }}</h5>
+                            </div>
+                            <div class="col-md-2 text-right">
+                                <span class="status-text {{ sch.status }}">{{sch.description}}</span>
+                            </div>
                         </div>
-                        <div class="timeline-wrap-sub">
-                            {% for sub in sch.sub %}
+
+                        <div class="sub">
+                            {% for sub in sch.sub | reverse %}
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <div class="timeline-sub {{ sub.status }}">
-                                            <div class="header">
-                                                {% if sub.source %}
-                                                    <a href="{{ sub.source }}" target="blank">
-                                                        <span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
-                                                {% else %}
-                                                    <span class="title">{{ sub.title }}</span>
-                                                {% endif %}
-                                            </div>
-                                        </div>
+                                        {% if sub.source %}
+                                            <a href="{{ sub.source }}" target="blank">
+                                                <span>{{ sub.title }}</span>
+                                            </a>
+                                        {% else %}
+                                            <span>{{ sub.title }}</span>
+                                        {% endif %}
                                     </div>
-                                    <div class="col-md-2 text-right">
-                                        <span class="date">
-                                            {% if sub.date %}
-                                                <span class="dateReal">{{ sub.date | date}}</span>
-                                            {% endif %}
-                                        </span>
-                                    </div>
-                                    <div class="col-md-2 text-right {{ sub.status }}">
-                                        <span class="description">{{ sub.description }}</span>
-                                    </div>
-                                </div>
 
+                                    <div class="col-md-2">
+                                        {% if sub.date %}
+                                            <span>{{ sub.date | date}}</span>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="col-md-2 text-right">
+                                        <span class="status-text {{ sub.status }}">{{ sub.description }}</span>
+                                    </div>
+
+                                </div>
                             {% endfor %}
                         </div>
-                    </div>
+
+                    </article>
                 {% endfor %}
             </div>
         {% endif %}
 
         {% if budgetRef %}
-            <h2>Rozpočet</h2>
+            <h2  class="padding-top">Rozpočet</h2>
             {% set budget = collections.budgetCollection | budgetFilterById(budgetRef) %}
             {% include "budget-box.njk" %}
         {% endif %}
@@ -100,7 +104,7 @@ templateClass: tmpl-post
         <p>
             <a href="{{ '/' | url }}">← Home</a>
         </p>
-    </article>
+    </section>
 </div>
 
 {{ end }}

@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 2
 ---
 <div class="paletteA">
-  <section class="container vertical">
+  <section class="section">
     {% for post in collections.project | reverse %}
       {% include "project-box.njk" %}
     {% endfor %}

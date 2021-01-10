@@ -35,7 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     {# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> #}
-    <link rel="stylesheet" href="{{ '/css/boot.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/boot2.css' | url }}">
 
     <script src="js/index.js"></script>
 
@@ -68,15 +68,13 @@
             <h1 class="my-0 font-weight-normal logo-text">Projekty v Petržalke</h1>
           </a>
         </div>
-        <div class="row">
-          <nav class="row">
-            {%- for entry in collections.all | eleventyNavigation %}
-              <div class="col-md-2">
+        <nav class="row">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <div class="col-md-2 col-sm-4 col-6">
               <a class=" p-2 nav-item{% if entry.url == page.url %} nav-item-active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
-              </div>
-            {%- endfor %}
-          </nav>
-        </div>
+            </div>
+          {%- endfor %}
+        </nav>
       </div>
     </header>
 

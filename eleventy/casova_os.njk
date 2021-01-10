@@ -5,9 +5,9 @@ eleventyNavigation:
   order: 2
 ---
 <div class="paletteA">
-  <section class="container vertical">
+  <section class="section">
     <header>
-      <h1 class="container-title">Časová os projektov</h1>
+      <h1>Časová os projektov</h1>
     </header>
     {% for sch in collections.projectCollection | reverse  %}
       {% include "project-execution-box.njk" %}

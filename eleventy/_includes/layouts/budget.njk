@@ -3,7 +3,7 @@ layout: layouts/home.njk
 
 ---
 <div class="paletteB">
-  <section class="container vertical">
+  <section class="section">
     <h1>Investičný plán {{year}}</h1>
 aktualizované {{ updatedDate | date}}
   </section>
@@ -14,8 +14,8 @@ aktualizované {{ updatedDate | date}}
 
   {% set success = allMyBudget.success %}
   {% if success.list.length > 0 %}
-    <section class="container vertical">
-      <div class="row text-success">
+    <section class="section">
+      <div class="row padding-top status-text success">
         <div class="col-md-2">
       Zrealizované <i class="fas fa-check-circle"></i>
         </div>
@@ -34,8 +34,8 @@ aktualizované {{ updatedDate | date}}
 
   {% set postpone = allMyBudget.postpone %}
   {% if postpone.list.length > 0 %}
-    <section class="container vertical">
-      <div class="row text-error">
+    <section class="section">
+      <div class="row padding-top status-text postpone">
         <div class="col-md-3">
       Odložené <i class="far fa-arrow-alt-circle-right"></i>
         </div>
@@ -51,8 +51,8 @@ aktualizované {{ updatedDate | date}}
 
   {% set error = allMyBudget.error %}
   {% if error.list.length > 0 %}
-    <section class="container vertical">
-      <div class="row text-error">
+    <section class="section">
+      <div class="row padding-top status-text error">
         <div class="col-md-3">
       Zrušené <i class="fas fa-ban"></i>
         </div>
@@ -68,11 +68,11 @@ aktualizované {{ updatedDate | date}}
 
   {% set inwork = allMyBudget.inwork %}
   {% if inwork.list.length > 0 %}
-    <section class="container vertical">
-      <div class="row" style="color: #0d47a1 !important;">
+    <section class="section">
+      <div class="row padding-top status-text inwork" style="color: #0d47a1 !important;">
         <div class="col-md-2">
-      Realizuje sa
-    </div>
+          Realizuje sa
+        </div>
         <div class="col-md-2">
           {{inwork.list.length | projectFilterProject}}
         </div>

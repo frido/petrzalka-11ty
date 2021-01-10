@@ -5,9 +5,9 @@ eleventyNavigation:
   order: 1
 ---
 <div class="paletteA">
-  <section class="container vertical">
+  <section class="section">
     <header>
-      <h1 class="container-title">Developerské projekty</h1>
+      <h1>Developerské projekty</h1>
     </header>
     {% for sch in collections.projectCollection | reverse | head(5) %}
       {% include "project-execution-box.njk" %}
@@ -19,11 +19,11 @@ eleventyNavigation:
 </div>
 
 <div class="paletteC">
-  <section class="container vertical">
+  <section class="section">
     <header>
-      <h1 class="container-title">Investičný plán 2021</h1>
+      <h1>Investičný plán 2021</h1>
     </header>
-    <div class="">
+    <div>
       {% set allMyBudget = collections.budgetCollection | budgetFilterByYear(2021) | budgetFilterGroupByStatus %}
       {% set all = allMyBudget.all %}
       {% for budget in all.list | head(5) %}
@@ -37,11 +37,11 @@ eleventyNavigation:
 </div>
 
 <div class="paletteC">
-  <section class="container">
+  <section class="section">
     <header>
-      <h1 class="container-title">Športové granty</h1>
+      <h1>Športové granty</h1>
     </header>
-    <div class="grants-row c-4">
+    <div class="row padding-bottom">
       {% for grantPost in collections.sgrant | head(1) %}
         {% set grants = grantPost.data.list | head(4) %}
         {% for grant in grants %}
@@ -52,11 +52,11 @@ eleventyNavigation:
   </section>
 </div>
 <div class="paletteC">
-  <section class="container">
+  <section class="section">
     <header>
-      <h1 class="container-title">Dotácie</h1>
+      <h1>Dotácie</h1>
     </header>
-    <div class="grants-row c-4">
+    <div class="row">
       {% for grantPost in collections.ogrant | head(1) %}
         {% set grants = grantPost.data.list | head(4) %}
         {% for grant in grants %}

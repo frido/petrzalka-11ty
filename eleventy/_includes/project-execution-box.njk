@@ -1,48 +1,37 @@
-<article class="article timeline {{ sch.status }}">
+<article class="execution box {{ sch.status }}">
     <div class="row">
         <div class="col-md-10">
-            <div class="header">
-                <header class="title">
-                    <div class="subheader">{{ sch.title }}</div>
-                    <h3>
-                        <a href="{{ sch.page.url }}">
-                            {{ sch.page.data.title }}
-                        </a>
-                    </h3>
-                </header>
-            </div>
+            <h5 class="status-text {{ sch.status }}">{{ sch.title }}</h5>
+            <h3>
+                <a href="{{ sch.page.url }}">{{ sch.page.data.title }}</a>
+            </h3>
         </div>
         <div class="col-md-2 text-right">
-            <span class="description">{{sch.description}}</span>
+            <span class="status-text {{ sch.status }}">{{sch.description}}</span>
         </div>
     </div>
 
-    <div class="timeline-wrap-sub">
+    <div class="sub">
         {% for sub in sch.sub | reverse %}
             <div class="row">
                 <div class="col-md-8">
-                    <div class="timeline-sub {{ sub.status }}">
-                        <div class="header">
-                            {% if sub.source %}
-                                <a href="{{ sub.source }}" target="blank">
-                                    <span class="title">{{ sub.title }}</span><img class="source" src="/img/external-link.svg" ></a>
-                            {% else %}
-                                <span class="title">{{ sub.title }}</span>
-                            {% endif %}
-                        </div>
-                    </div>
+                    {% if sub.source %}
+                        <a href="{{ sub.source }}" target="blank">
+                            <span>{{ sub.title }}</span>
+                        </a>
+                    {% else %}
+                        <span>{{ sub.title }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="col-md-2">
+                    {% if sub.date %}
+                        <span>{{ sub.date | date}}</span>
+                    {% endif %}
                 </div>
 
                 <div class="col-md-2 text-right">
-                    <span class="date">
-                        {% if sub.date %}
-                            <span class="dateReal">{{ sub.date | date}}</span>
-                        {% endif %}
-                    </span>
-                </div>
-
-                <div class="col-md-2 text-right {{ sub.status }}">
-                    <span class="description">{{ sub.description }}</span>
+                    <span class="status-text {{ sub.status }}">{{ sub.description }}</span>
                 </div>
 
             </div>

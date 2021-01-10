@@ -5,12 +5,12 @@ eleventyNavigation:
   order: 4
 ---
 <div class="paletteB">
-  <section class="container vertical">
+  <section class="section">
     <h1>Investičné plány</h1>
 
     {% for page in collections.budget2 | budgetFilterSortByYear %}
       {% set allMyBudget = collections.budgetCollection | budgetFilterByYear(page.data.year) | budgetFilterGroupByStatus %}
-      <article class="article">
+      <article class="box {{ "inwork" if page.data.year == "2021" else "success" }}">
         <div class="row">
           <div class="col-md-9">
             <header>
@@ -26,17 +26,9 @@ eleventyNavigation:
           </div>
         </div>
 
-        {# <div class="row">
-          <div class="col-md-12">
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 50%"></div>
-            </div>
-          </div>
-        </div> #}
-
         <div class="row">
           <div class="col-md-4 text-success">
-            <div>Zrealizované {# <i class="fas fa-check-circle text-success"></i> #}</div>
+            <div>Zrealizované</div>
           </div>
           <div class="col-md-4">
             {{allMyBudget.success.list.length | projectFilterProject}}
@@ -82,7 +74,4 @@ eleventyNavigation:
 
     {% endfor %}
 
-    {# {% for budget in collections.budget2 %}
-     <h2><a href="{{ budget.url | url }}">rok {{ budget.data.year }}</a></h2>
-    {% endfor %} #}
   </div>
