@@ -1,16 +1,29 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 exports.__esModule = true;
 var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
-var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
+var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function (_super) {
+    __extends(PolyfunkcnyDomNaHumenskomNamesti2, _super);
     function PolyfunkcnyDomNaHumenskomNamesti2() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     PolyfunkcnyDomNaHumenskomNamesti2.prototype.data = function () {
-        return {
+        return this.frontMatterWrapper({
             title: "Polyfunkčný dom na Humenskom námestí",
             date: "2020-06-23",
-            tags: [project_addon_1.TAG_PROJECT],
-            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.",
             icon: "/img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg",
             sources: [
@@ -25,7 +38,6 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                 { link: "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg" },
                 { link: "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg" }
             ],
-            amount: 0,
             execution: [
                 {
                     title: project_addon_1.EXE_TITLE_UK,
@@ -91,11 +103,11 @@ var PolyfunkcnyDomNaHumenskomNamesti2 = /** @class */ (function () {
                     ]
                 },
             ]
-        };
+        });
     };
     PolyfunkcnyDomNaHumenskomNamesti2.prototype.render = function (data) {
         return "\n    Novostavba polyfunk\u010Dn\u00E9ho domu s 1 podzemn\u00FDm a 4 nadzemn\u00FDmi podla\u017Eiami, s 2 priestormi obchodu a slu\u017Eieb, komunitn\u00FDmi priestormi, administrat\u00EDvnymi priestormi pre 23 zamestnancov (9 nebytov\u00FDch priestorov) a 27 bytmi. Dopravn\u00E1 obsluha objektu bude zabezpe\u010Den\u00E1 po jestvuj\u00FAcich miestnych komunik\u00E1ci\u00E1ch a parkovisku (Jasovsk\u00E1 ul., Humensk\u00E9 n\u00E1m). S\u00FA\u010Das\u0165ou rie\u0161enia je aj nov\u00E9 parkovanie - v gar\u00E1\u017Ei na 1. podzemnom podla\u017E\u00ED 26 st\u00E1t\u00ED s obsluhou autov\u00FD\u0165ahom s obojstrann\u00FDm vjazdom, pod budovou na \u00FArovni 1. nadzemn\u00E9ho podla\u017Eia (4 st\u00E1tia) a na vonkaj\u0161om parkovisku (24 st\u00E1t\u00ED), z \u010Doho je 7 st\u00E1t\u00ED n\u00E1hradou za stavbou zabrat\u00E9 jestvuj\u00FAce parkovacie miesta.\n    ";
     };
     return PolyfunkcnyDomNaHumenskomNamesti2;
-}());
+}(project_addon_1.ProjectPage));
 module.exports = PolyfunkcnyDomNaHumenskomNamesti2;

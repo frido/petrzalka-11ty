@@ -1,21 +1,18 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Polyfunkčný objekt Septimo II - Offices",
       date: "2020-11-23",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       source: 'https://offices.vigroup.sk/',
       description: "Polyfunkčný päť podlažný objekt s dvomi podzemnými a s tromi nadzemnými podlažiami, kde 3.NP je uskočené. Podzemné podlažia slúžia ako garáž a príslušenstvo (sklady a technické priestory), na 1.NP sú navrhnuté obchodné priestory a na 2. – 5.NP sú navrhnuté byty – 20 bytových jednotiek. ",
       icon: "img/polyfunkcny_objekt_septimo_II_offices/1.jpg",
       gallery: [
         { link: 'img/polyfunkcny_objekt_septimo_II_offices/1.jpg' }
       ],
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -32,7 +29,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ]
-    };
+    });
   }
 
   render(data: FMProject) {

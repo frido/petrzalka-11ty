@@ -1,5 +1,6 @@
 import { DateTime } from "luxon";
-import { Budget, CollectionApi, FMBudget, InvPlanStatus, Page, Post } from "../../@types/eleventy";
+import { Budget, BudgetStatus, FMBudget } from "../../@types/budget";
+import { CollectionApi, Page, Post } from "../../@types/eleventy";
 import { BUDGET_2020, BUDGET_2021 } from "./budget-data";
 
 var log = require("debug")("Petrzalka:Budget");
@@ -17,7 +18,7 @@ class BudgetImpl implements Budget {
   readonly amountUpdated: number;
   readonly amountReal: number;
   readonly comment: string;
-  readonly status: InvPlanStatus;
+  readonly status: BudgetStatus;
   usage: number;
 
   constructor(i: Budget){
@@ -73,7 +74,7 @@ class BudgetAddon {
   static reducer = (accumulator, currentValue) => accumulator + currentValue;
   static sorter = (a: BudgetImpl, b: BudgetImpl) => b.amountOriginal - a.amountOriginal;
 
-  static grouper(items: BudgetImpl[], status: InvPlanStatus) {
+  static grouper(items: BudgetImpl[], status: BudgetStatus) {
     let list = items.sort(BudgetAddon.sorter);
     if (status) {
       list = items.filter((i) => i.status === status).sort(BudgetAddon.sorter);

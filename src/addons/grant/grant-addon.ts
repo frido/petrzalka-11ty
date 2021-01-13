@@ -1,6 +1,6 @@
-import { CollectionApi, FMBudget, Grant, GrantAmount } from "../../@types/eleventy";
 import { SPORT_GRANTS } from "./grant-sport-data";
 import { OZ_GRANTS } from "./grant-oz-data";
+import { Grant, GrantAmount } from "../../@types/grant";
 
 
 const CURRENT_YEAR = 2020;

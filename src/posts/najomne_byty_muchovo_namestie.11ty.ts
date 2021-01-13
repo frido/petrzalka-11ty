@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Nájomné byty, Muchovo námestie",
       date: "2020-11-05",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "",
       icon: "https://bratislavskykraj.sk/wp-content/uploads/2020/09/119068162_3541246765938335_4381885082729630819_o-1024x722.jpg",
       gallery: [
@@ -30,7 +28,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ]
-    };
+    });
   }
 
   render(data: FMProject) {

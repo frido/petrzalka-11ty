@@ -1,17 +1,14 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Samoobslužná čerpacia stanica PHM, Petržalka Juh",
       date: "2020-11-22",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Samoobslužná čerpacia stanica pohonných hmôt pre osobné autá (2 dvojproduktové stojany), navrhnutá ako samostatná stavba s dopravnou väzbou na súbežne posudzovanú stavbu „samoobslužná autoumyváreň“ t. j. s dopravnou obsluhou, využívajúcou účelové komunikácie areálu „samoobslužná autoumyváreň“ s dopravným pripojením (vjazdom/výjazdom) na priľahlú obslužnú komunikáciu v území Južného mesta – zóna A (Labutia ulica), s následným pripojením na Panónsku cestu.",
       icon: "",
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -28,7 +25,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ]
-    };
+    });
   }
 
   render(data: FMProject) {

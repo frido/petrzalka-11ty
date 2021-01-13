@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_SUB_TITLE_ZSHM, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_SUB_TITLE_ZSHM, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Golfvillage ",
       date: "2020-11-07",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Dokumentácia sa funkciou, usporiadaním a kapacitou obytnej zóny zaoberá iba schematicky, riešením je návrh komunikačnej siete zóny s dopravným pripojením na nadradenú komunikačnú sieť (cestu I/2) cez miestnu komunikáciu vo výstavbe (FT C3 – vetva Y – vydané je stavebné povolenie) pre susednú dočasnú stavbu golfového klubu Energau. ",
       icon: "",
       gallery: [
@@ -20,7 +18,6 @@ class Template implements Post<FMProject> {
         "https://www.petrzalka.sk/wp-content/uploads/2017/07/Golfvillage_Janikovske-pole.pdf", 
         "https://www.petrzalka.sk/golfvillage-infrastruktura-jarovce-petrzalka/"
       ],
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -44,7 +41,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ]
-    };
+    });
   }
 
   render(data: FMProject) {

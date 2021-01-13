@@ -1,20 +1,16 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_PP, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_PP, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+   return this.frontMatterWrapper( {
       "title": "Rekonštrukcia a vybavenie odborných učební",
       "date": "2020-06-06",
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       description: "Cieľom projektov je vytvorenie podmienok na zabezpečenie kvalitného primárneho vzdelávania a nižšieho stredného vzdelávania prispievajúceho k zvládnutiu povinnej školskej dochádzky. Tento cieľ sa naplní realizáciou aktivít jednotlivých projektov zameraných na vytvorenie odborných učební, čím sa vytvoria predpoklady pre zabezpečenie prístupu ku kvalitnejším verejným službám v oblasti povinnej školskej dochádzky a výchovy.",
       "sources": [
          "https://www.petrzalka.sk/oblasti/projektove-riadenie/budovanie-a-zlepsenie-technickeho-vybavenia-jazykovych-ucebni-skolskych-kniznic-odbornych-ucebni-rozneho-druhu-v-zakladnych-skolach/"
       ],
-      "amount": 43599,
-      "amountAll": 871980,
       "execution": [
          {
             "title": EXE_TITLE_PP,
@@ -32,7 +28,7 @@ class Template implements Post<FMProject> {
             ]
          }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

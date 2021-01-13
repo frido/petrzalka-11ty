@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+   return this.frontMatterWrapper( {
       "title": "Škola Južné mesto",
       "date": "2020-07-29",
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       "description": "Škola je situovaná v rozvojovom území na pozemku s funkčným využitím občianska vybavenosť celomestského a nadmestského významu kód 201, severozápadná časť budovy je umiestňovaná na hranicu funkčnej plochy sadovnícke a lesoparkové úpravy, kód funkcie 1110. Návrh plôch pre školskú telesnú výchovu a šport je riešený ako športový areál s bežeckým oválom 250 m + 100 m dráhou a multifunkčným ihriskom 20 x 40 m. ",
       "icon": "/img/skola-juzne-mesto/4.jpg",
       gallery: [
@@ -23,7 +21,6 @@ class Template implements Post<FMProject> {
          "https://www.petrzalka.sk/wp-content/uploads/2017/12/EIA_skola_Juzne_mesto.pdf",
          "https://www.minzp.sk/uradna-tabula/vody/skola-juzne-mesto-bratislava-petrzalka.html"
       ],
-      "amount": 0,
       "execution": [
          {
             "title": EXE_TITLE_UK,
@@ -47,7 +44,7 @@ class Template implements Post<FMProject> {
             ]
          }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

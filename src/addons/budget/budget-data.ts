@@ -1,4 +1,4 @@
-import { Budget } from "../../@types/eleventy";
+import { Budget } from "../../@types/budget";
 
 export const BUDGET_2020: Budget[] = [
   {

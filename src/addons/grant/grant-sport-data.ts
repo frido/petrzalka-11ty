@@ -1,4 +1,4 @@
-import { Grant } from "../../@types/eleventy";
+import { Grant } from "../../@types/grant";
 
 export const SPORT_GRANTS: Grant[] = [
   {

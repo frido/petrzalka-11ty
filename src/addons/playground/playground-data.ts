@@ -1,4 +1,4 @@
-import { Playground } from "../../@types/eleventy";
+import { Playground } from "../../@types/playground";
 
 export const YEAR_2021: Playground[] = [
   {

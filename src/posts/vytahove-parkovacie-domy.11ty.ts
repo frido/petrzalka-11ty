@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+   return this.frontMatterWrapper( {
       "title": "Výťahové parkovacie domy",
       "date": "2020-10-27",
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       "description": "Zámer budovania výťahových parkovacích domov spoločnosťou UpDown Parking v Petržalke",
       "icon": "/img/vytahove-parkovacie-domy/3.png",
       gallery: [
@@ -27,7 +25,6 @@ class Template implements Post<FMProject> {
       "sources": [
          "http://updownparking.sk/assets/dist/images/presentation.pdf"
       ],
-      "amount": 0,
       "execution": [
          {
             "title": "Investičný zámer",
@@ -44,7 +41,7 @@ class Template implements Post<FMProject> {
             ]
          }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

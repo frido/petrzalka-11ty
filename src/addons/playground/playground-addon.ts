@@ -1,5 +1,5 @@
-import { FMPlayGround, Playground, PlaygroundCategory, Post } from "../../@types/eleventy";
-import { YEAR_2021 } from "./playground-data";
+import { Post } from "../../@types/eleventy";
+import { FMPlayGround, Playground, PlaygroundCategory } from "../../@types/playground";
 
 var log = require("debug")("Petrzalka:Playground");
 

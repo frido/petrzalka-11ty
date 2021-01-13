@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class PolyfunkcnyDomNaHumenskomNamesti2 implements Post<FMProject> {
+class PolyfunkcnyDomNaHumenskomNamesti2 extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Polyfunkčný dom na Humenskom námestí",
       date: "2020-06-23",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Novostavba polyfunkčného domu s 1 podzemným a 4 nadzemnými podlažiami, s 2 priestormi obchodu a služieb, komunitnými priestormi, administratívnymi priestormi pre 23 zamestnancov (9 nebytových priestorov) a 27 bytmi. Dopravná obsluha objektu bude zabezpečená po jestvujúcich miestnych komunikáciách a parkovisku (Jasovská ul., Humenské nám). Súčasťou riešenia je aj nové parkovanie - v garáži na 1. podzemnom podlaží 26 státí s obsluhou autovýťahom s obojstranným vjazdom, pod budovou na úrovni 1. nadzemného podlažia (4 státia) a na vonkajšom parkovisku (24 státí), z čoho je 7 státí náhradou za stavbou zabraté jestvujúce parkovacie miesta.",
       icon: "/img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_2.jpg",
       sources: [
@@ -22,7 +20,6 @@ class PolyfunkcnyDomNaHumenskomNamesti2 implements Post<FMProject> {
         { link: "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_1.jpg" },
         { link: "img/polyfunkcny_dom_humenske_nam/polyfunkcny_dom_humenske_nam_4.jpg" }
       ],
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -88,7 +85,7 @@ class PolyfunkcnyDomNaHumenskomNamesti2 implements Post<FMProject> {
           ],
         },
       ],
-    };
+    });
   }
 
   render(data: FMProject) {

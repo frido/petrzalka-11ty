@@ -1,21 +1,18 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Nové Domino na Jasovskej ulici",
       date: "2020-11-01",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Skelet nedokončenej stavby stojí na pozemku, ktorý je podľa platného územného plánu určený na výstavbu bývania. Projekt má stále platné a nezrušiteľné územné rozhodnutie. Neexistuje teda legálny a právny spôsob, ako stavbu odstrániť, no ak by sa v nej nepokračovalo ďalej, schátraný skelet by pravdepodobne zotrval na svojom mieste ešte veľmi dlhý čas.",
       icon: "https://www.novedomino.sk/img/obr5.jpg",
       source: "https://www.novedomino.sk/",
       gallery: [
         { link: "https://www.novedomino.sk/img/obr5.jpg" }
       ],
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -39,7 +36,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ]
-    };
+    });
   }
 
   render(data: FMProject) {

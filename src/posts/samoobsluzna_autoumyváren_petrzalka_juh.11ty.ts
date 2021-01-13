@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_SUB_TITLE_ZSHM, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_SUB_TITLE_ZSHM, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Samoobslužná autoumyváreň, Petržalka Juh",
       date: "2020-11-05",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Autoumyváreň na Panónskej ceste.",
       icon: "",
       sources: [
@@ -30,7 +28,7 @@ class Template implements Post<FMProject> {
           ]
         }
       ],
-    };
+    });
   }
 
   render(data: FMProject) {

@@ -22,3 +22,5 @@ export interface Budget {
   status: BudgetStatus;
   usage?: number;
 }
+
+// type InvPlanStatus = "inwork" | "success" | "error" | "postpone";

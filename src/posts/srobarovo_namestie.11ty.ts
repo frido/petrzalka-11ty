@@ -1,10 +1,10 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+   return this.frontMatterWrapper( {
       "title": "Šrobárovo námestie",
       "date": "2021-01-07",
       "description": "Mestská časť plánuje v priestore Šrobárovho námestia vysadiť približne 50 stromov. Ďalšie úpravy verejného priestoru sa týkajú rekonštrukcie chodníkov. Súčasťou bude aj ich rozšírenie. Následne pôjde o výmenu mobiliáru (lavičky, koše). Pribudne psí výbeh na odhľahlejšom pozemku, pitná fontánka a street-workoutové  ihrisko v areály školy.  V ďalšej etape je naplánovaná obnova tartanovej dráhy. Cieľom celej revitalizácie námestia je zachovanie najmä parkového charakteru.  Na stretnutí svoje námietky predostreli občania z priľahlého bytového domu so zástupcami mestskej časti, ktorí požadovali vynechanie pavilónu z projektovej dokumentácie.",
@@ -17,8 +17,6 @@ class Template implements Post<FMProject> {
         { link: 'img/srobarovo-namestie/4.png' },
         { link: 'img/srobarovo-namestie/5.png' }
       ],
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       "sources": [
          "https://www.enviroportal.sk/sk_SK/eia/detail/vista-tower-polyfunkcny-objekt-srobarovo-namestie-ba-petrzalka",
          "http://www.vistatower.com/_sk/poloha.html"
@@ -57,7 +55,7 @@ class Template implements Post<FMProject> {
             ]
          }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

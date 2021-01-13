@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+   return this.frontMatterWrapper( {
       "title": "Polyfunkčný dom Topoľčianska",
       "date": "2020-06-27",
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       "description": "Polyfunkčný objekt s prevládajúcou funkciou bývania (68 %) s 8 nadzemnými a 2 podzemnými podlažiami, dopravne prístupným cez jestvujúce miestne komunikácie. V objekte sú priestory obchodu (10), služieb, administratívy (16) a bývania (60). Navrhnuté sú 2 dopravné vjazdy – rampa do garáže na 1. a 2. podzemnom podlaží (78 parkovacích miest) a priamy vjazd na spevnenú plochu na teréne (20 parkovacích miest).",
       "icon": "/img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg",
       "sources": [
@@ -20,7 +18,6 @@ class Template implements Post<FMProject> {
       gallery: [
         {link: "img/polyfunkcny-dom-topolcianska/Topolcianska_riesene_uzemie.jpg"}
       ],
-      "amount": 0,
       "execution": [
          {
             "title": EXE_TITLE_UK,
@@ -79,7 +76,7 @@ class Template implements Post<FMProject> {
             ]
          }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

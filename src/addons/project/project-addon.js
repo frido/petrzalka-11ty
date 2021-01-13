@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.projectAddon = exports.EXE_SUB_TITLE_ZSHM = exports.EXE_SUB_TITLE_ZKMZ = exports.EXE_TITLE_PP = exports.EXE_TITLE_UK = exports.TAG_TEMPLATE = exports.TAG_PROJECT = exports.LAYOUT_PROJECT = void 0;
+exports.projectAddon = exports.ProjectPage = exports.EXE_SUB_TITLE_ZSHM = exports.EXE_SUB_TITLE_ZKMZ = exports.EXE_TITLE_PP = exports.EXE_TITLE_UK = exports.TAG_TEMPLATE = exports.TAG_PROJECT = exports.LAYOUT_PROJECT = void 0;
 var luxon = require("luxon");
 var log = require("debug")("Petrzalka:Projects");
 var statusOrder = { success: 0, inwork: 1, error: 2 };
@@ -11,6 +11,33 @@ exports.EXE_TITLE_UK = 'Územné konanie';
 exports.EXE_TITLE_PP = "Príprava projektu";
 exports.EXE_SUB_TITLE_ZKMZ = 'Stanovisko komisie MZ';
 exports.EXE_SUB_TITLE_ZSHM = "Záväzné stanovisko hlavného mesta";
+var ProjectPage = /** @class */ (function () {
+    function ProjectPage() {
+    }
+    ProjectPage.prototype.data = function () {
+        throw new Error("Method not implemented.");
+    };
+    ProjectPage.prototype.render = function (data) {
+        throw new Error("Method not implemented.");
+    };
+    ProjectPage.prototype.frontMatterWrapper = function (p) {
+        return {
+            title: p.title,
+            date: p.date,
+            gallery: p.gallery,
+            description: p.description,
+            icon: p.icon,
+            source: p.source,
+            sources: p.sources,
+            budgetRef: p.budgetRef,
+            execution: p.execution,
+            tags: [exports.TAG_PROJECT],
+            layout: exports.LAYOUT_PROJECT
+        };
+    };
+    return ProjectPage;
+}());
+exports.ProjectPage = ProjectPage;
 function collection(collection) {
     var now = luxon.DateTime.local();
     var x = collection

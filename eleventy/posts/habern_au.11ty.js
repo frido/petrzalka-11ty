@@ -1,16 +1,29 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 exports.__esModule = true;
 var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
-var Template = /** @class */ (function () {
+var Template = /** @class */ (function (_super) {
+    __extends(Template, _super);
     function Template() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return {
+        return this.frontMatterWrapper({
             title: "Bytový dom Habern Au",
             date: "2020-11-11",
-            tags: [project_addon_1.TAG_PROJECT],
-            layout: project_addon_1.LAYOUT_PROJECT,
             description: "Bytový dom Habern Au na ulici A. Gwerkovej.",
             icon: "",
             execution: [
@@ -50,11 +63,11 @@ var Template = /** @class */ (function () {
                     ]
                 }
             ]
-        };
+        });
     };
     Template.prototype.render = function (data) {
         return "\n    Bytov\u00FD dom Habern Au na ulici A. Gwerkovej.\n    ";
     };
     return Template;
-}());
+}(project_addon_1.ProjectPage));
 module.exports = Template;

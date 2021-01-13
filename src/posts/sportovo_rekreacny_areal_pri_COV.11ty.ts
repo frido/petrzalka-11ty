@@ -1,14 +1,12 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       "title": "Športovo Rekreačný Areál Pri ČOV",
       "date": "2020-06-14",
-      "tags": [TAG_PROJECT],
-      "layout": LAYOUT_PROJECT,
       "description": "Zámerom urbanistického návrhu je športovo-rekreačný kampus, výškovo diferencovaná krajina s halovými športovými objektmi, externými športoviskami, zariadeniami občianskej vybavenosti nadväzujúcimi na hlavnú funkciu /napr. ubytovne, hotely, penzióny/ a pobytovou a parkovou zeleňou",
       "icon": "/img/sportovo_rekreacny_areal_pri_COV/image--000.jpg",
       gallery: [
@@ -26,7 +24,6 @@ class Template implements Post<FMProject> {
          "https://www.petrzalka.sk/wp-content/uploads/2020/02/KUPVaR-zapisnica_2020-01-21_overena.pdf",
          "https://www.petrzalka.sk/wp-content/uploads/2020/02/z%C3%A1pis-z-komisie-29-1.2020.pdf"
       ],
-      "amount": 0,
       "execution": [
           {
             "title": "Urbanistický návrh",
@@ -43,7 +40,7 @@ class Template implements Post<FMProject> {
             ]
           }
       ]
-   };
+   });
   }
 
   render(data: FMProject) {

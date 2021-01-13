@@ -1,16 +1,29 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 exports.__esModule = true;
 var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
-var Template = /** @class */ (function () {
+var Template = /** @class */ (function (_super) {
+    __extends(Template, _super);
     function Template() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return {
+        return this.frontMatterWrapper({
             "title": "Výťahové parkovacie domy",
             "date": "2020-10-27",
-            "tags": [project_addon_1.TAG_PROJECT],
-            "layout": project_addon_1.LAYOUT_PROJECT,
             "description": "Zámer budovania výťahových parkovacích domov spoločnosťou UpDown Parking v Petržalke",
             "icon": "/img/vytahove-parkovacie-domy/3.png",
             gallery: [
@@ -29,7 +42,6 @@ var Template = /** @class */ (function () {
             "sources": [
                 "http://updownparking.sk/assets/dist/images/presentation.pdf"
             ],
-            "amount": 0,
             "execution": [
                 {
                     "title": "Investičný zámer",
@@ -46,11 +58,11 @@ var Template = /** @class */ (function () {
                     ]
                 }
             ]
-        };
+        });
     };
     Template.prototype.render = function (data) {
         return "\n    Z\u00E1mer budovania v\u00FD\u0165ahov\u00FDch parkovac\u00EDch domov spolo\u010Dnos\u0165ou UpDown Parking v Petr\u017Ealke.\n    ";
     };
     return Template;
-}());
+}(project_addon_1.ProjectPage));
 module.exports = Template;

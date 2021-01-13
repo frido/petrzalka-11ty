@@ -1,21 +1,18 @@
-import { FMProject, Post } from "../@types/eleventy";
-import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, TAG_PROJECT } from "../addons/project/project-addon";
+import { EXE_SUB_TITLE_ZKMZ, EXE_TITLE_UK, LAYOUT_PROJECT, ProjectPage, TAG_PROJECT } from "../addons/project/project-addon";
 import * as luxon from "luxon";
+import { FMProject } from "../@types/project";
 
-class Template implements Post<FMProject> {
+class Template extends ProjectPage {
   data(): FMProject {
-    return {
+    return this.frontMatterWrapper( {
       title: "Bratislavský dunajský park",
       date: "2020-11-03",
-      tags: [TAG_PROJECT],
-      layout: LAYOUT_PROJECT,
       description: "Hlavným cieľom zriadenia a vybudovania Bratislavského dunajského parku je vytvoriť prijemné estetické a prírodné prostredie. Miera upravenosti a organizovanosti bude rôzna, tak ako je to aj v súčasnosti. Park bude integrovať miesta rôzneho charakteru",
       icon: "https://www.yimba.sk/upload/Projekty/Downtown/Nov%C3%A9%20Lido/StudiaLido_01/03_Lido_Letecky_pohlad_01.jpg",
       gallery: [
         { link: 'https://www.yimba.sk/upload/Projekty/Downtown/Nov%C3%A9%20Lido/StudiaLido_01/03_Lido_Letecky_pohlad_01.jpg' }
       ],
       source: "https://www.bdp.sk/studia.pdf",
-      amount: 0,
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -32,7 +29,7 @@ class Template implements Post<FMProject> {
           ],
         },
       ],
-    };
+    });
   }
 
   render(data: FMProject) {

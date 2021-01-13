@@ -1,23 +1,35 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 exports.__esModule = true;
 var project_addon_1 = require("../addons/project/project-addon");
 var luxon = require("luxon");
-var Template = /** @class */ (function () {
+var Template = /** @class */ (function (_super) {
+    __extends(Template, _super);
     function Template() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     Template.prototype.data = function () {
-        return {
+        return this.frontMatterWrapper({
             title: "Polyfunkčný objekt Septimo II - Offices",
             date: "2020-11-23",
-            tags: [project_addon_1.TAG_PROJECT],
-            layout: project_addon_1.LAYOUT_PROJECT,
             source: 'https://offices.vigroup.sk/',
             description: "Polyfunkčný päť podlažný objekt s dvomi podzemnými a s tromi nadzemnými podlažiami, kde 3.NP je uskočené. Podzemné podlažia slúžia ako garáž a príslušenstvo (sklady a technické priestory), na 1.NP sú navrhnuté obchodné priestory a na 2. – 5.NP sú navrhnuté byty – 20 bytových jednotiek. ",
             icon: "img/polyfunkcny_objekt_septimo_II_offices/1.jpg",
             gallery: [
                 { link: 'img/polyfunkcny_objekt_septimo_II_offices/1.jpg' }
             ],
-            amount: 0,
             execution: [
                 {
                     title: project_addon_1.EXE_TITLE_UK,
@@ -34,11 +46,11 @@ var Template = /** @class */ (function () {
                     ]
                 }
             ]
-        };
+        });
     };
     Template.prototype.render = function (data) {
         return "\n    <p>\n    V\u00FDstavba polyfunk\u010Dn\u00E9ho p\u00E4\u0165 podla\u017En\u00E9ho objektu s dvomi podzemn\u00FDmi a s tromi nadzemn\u00FDmi podla\u017Eiami, kde 3.NP je usko\u010Den\u00E9. Podzemn\u00E9 podla\u017Eia sl\u00FA\u017Eia ako gar\u00E1\u017E a pr\u00EDslu\u0161enstvo (sklady a technick\u00E9 priestory), na 1.NP s\u00FA navrhnut\u00E9 obchodn\u00E9 priestory a na 2. \u2013 5.NP s\u00FA navrhnut\u00E9 byty \u2013 20 bytov\u00FDch jednotiek. Objekt je mierne \u010Dlenit\u00E9ho p\u00F4dorysu s celkov\u00FDmi rozmermi 15,75 x 23,80 m. P\u00F4dorysne maj\u00FA podla\u017Eia mierne odli\u0161n\u00E9 rozmery.\n    </p><p>\n    Dopravn\u00FD pr\u00EDstup je rie\u0161en\u00FD priamym vjazdom z pri\u013Eahlej komunik\u00E1cie komunik\u00E1ciu \u00DAdern\u00EDcka ul. Statick\u00E1 doprava je rie\u0161en\u00E1 v podzemn\u00FDch podla\u017Eiach objektu a na ter\u00E9ne na vlastnom pozemku. Predlo\u017Een\u00E9 rie\u0161enie je predmetom II. etapy projektu, pri\u010Dom I. etapa (susedn\u00FD objekt), ktor\u00E1 je jeho s\u00FA\u010Das\u0165ou nebola predlo\u017Een\u00E1 na pos\u00FAdenie hlavn\u00E9mu mestu SR Bratislava.\n    </p>\n    ";
     };
     return Template;
-}());
+}(project_addon_1.ProjectPage));
 module.exports = Template;
