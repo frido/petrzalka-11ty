@@ -7,6 +7,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 23306.73
+            }, {
+                year: 2021,
+                amount: 39576.66
             }]
     },
     {
@@ -14,6 +17,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 17122.48
+            }, {
+                year: 2021,
+                amount: 32203.96
             }]
     },
     {
@@ -21,6 +27,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 13340.78
+            }, {
+                year: 2021,
+                amount: 19301.73
             }]
     },
     {
@@ -28,6 +37,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 9374.50
+            }, {
+                year: 2021,
+                amount: 13492.04
             }]
     },
     {
@@ -35,6 +47,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 9026.02
+            }, {
+                year: 2021,
+                amount: 17586.35
             }]
     },
     {
@@ -42,6 +57,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 8783.54
+            }, {
+                year: 2021,
+                amount: 16285.20
             }]
     },
     {
@@ -49,6 +67,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 8014.47
+            }, {
+                year: 2021,
+                amount: 12644.18
             }]
     },
     {
@@ -56,6 +77,9 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 7034.93
+            }, {
+                year: 2021,
+                amount: 15421.23
             }]
     },
     {
@@ -63,6 +87,18 @@ exports.SPORT_GRANTS = [
         amount: [{
                 year: 2020,
                 amount: 3996.55
+            }, {
+                year: 2021,
+                amount: 5342.75
+            }]
+    }, {
+        title: "Športová škola Karate Bratislava",
+        amount: [{
+                year: 2020,
+                amount: 0
+            }, {
+                year: 2021,
+                amount: 15021.88
             }]
     }
 ];

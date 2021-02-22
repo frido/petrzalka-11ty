@@ -48,11 +48,8 @@ eleventyNavigation:
       <h1>Športové granty</h1>
     </header>
     <div class="row">
-      {% for grantPost in collections.sgrant | head(1) %}
-        {% set grants = grantPost.data.list | head(4) %}
-        {% for grant in grants %}
+        {% for grant in collections.grantSportCollection | head(4) %}
           {% include "grant-box.njk" %}
-        {% endfor %}
       {% endfor %}
     </div>
   </section>
@@ -63,12 +60,9 @@ eleventyNavigation:
       <h1>Dotácie</h1>
     </header>
     <div class="row">
-      {% for grantPost in collections.ogrant | head(1) %}
-        {% set grants = grantPost.data.list | head(4) %}
-        {% for grant in grants %}
+        {% for grant in collections.grantOZCollection | head(4) %}
           {% include "grant-box.njk" %}
         {% endfor %}
-      {% endfor %}
     </div>
   </section>
   <section class="section">

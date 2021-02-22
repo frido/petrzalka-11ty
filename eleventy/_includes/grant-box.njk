@@ -2,10 +2,15 @@
   <article class="box h-100 inwork text-center">
       <h3>{{ grant.title }}</h3>
     <p>
-      <span class="amount">{{ grant.amount | value }}€</span>
+      <span class="amount">{{ grant.currentAmount | value }}€</span>
     </p>
     <p>
       {{ grant.currentDetail }}
     </p>
+    {% for amount in grant.amount %}
+    <div>
+      <small>{{amount.amount | value}} ({{amount.year}})</small>
+    </div>
+    {% endfor %}
   </article>
 </div> 

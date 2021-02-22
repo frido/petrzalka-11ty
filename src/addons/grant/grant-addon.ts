@@ -3,7 +3,7 @@ import { OZ_GRANTS } from "./grant-oz-data";
 import { Grant, GrantAmount } from "../../@types/grant";
 
 
-const CURRENT_YEAR = 2020;
+const CURRENT_YEAR = 2021;
 
 class GrantImpl implements Grant {
   title: string;
@@ -13,9 +13,9 @@ class GrantImpl implements Grant {
 
   constructor(g: Grant ) {
     this.title = g.title;
-    this.amount = g.amount;
-    this.currentAmount = this.amount.find(x => x.year === CURRENT_YEAR)?.amount;
-    this.currentDetail = this.amount.find(x => x.year === CURRENT_YEAR)?.detail;
+    this.amount = g.amount.filter(x => x.year !== CURRENT_YEAR ).sort((a, b) => b.year - a.year);
+    this.currentAmount = g.amount.find(x => x.year === CURRENT_YEAR)?.amount ?? 0;
+    this.currentDetail = g.amount.find(x => x.year === CURRENT_YEAR)?.detail;
   }
 }
 
