@@ -74,21 +74,21 @@ var Template = /** @class */ (function (_super) {
                             date: luxon.DateTime.fromISO("2018-12-20")
                         }
                     ]
-                },
-                {
-                    "title": "Výstavba",
-                    "status": "inwork",
-                    "description": "prebieha",
-                    "sub": [
-                        {
-                            "title": "Koniec výstavby",
-                            "status": "inwork",
-                            "description": "",
-                            source: 'https://www.petrzalka.sk/wp-content/uploads/2018/10/Zmluva_335_2018.pdf',
-                            date: luxon.DateTime.fromISO("2021-03-01")
-                        }
-                    ]
                 }
+                // {
+                //    "title": "Výstavba",
+                //    "status": "inwork",
+                //    "description": "prebieha",
+                //    "sub": [
+                //       {
+                //          "title": "Koniec výstavby",
+                //          "status": "inwork",
+                //          "description": "",
+                //          source: 'https://www.petrzalka.sk/wp-content/uploads/2018/10/Zmluva_335_2018.pdf',
+                //          date: luxon.DateTime.fromISO("2021-03-01")
+                //       }
+                //    ]
+                // }
             ]
         });
     };

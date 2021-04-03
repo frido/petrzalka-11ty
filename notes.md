@@ -1,12 +1,9 @@
-Oznámenie podľa § 3 ods. 6 zákona č. 71/1967 Zb. o správnom konaní v znení neskorších predpisov
 
-Mestská časť Bratislava-Petržalka, ako príslušný stavebný úrad podľa § 117 zákona č. 50/1976 Zb. o územnom plánovaní a stavebnom poriadku (stavebný zákon) v znení neskorších v spojitosti s § 7b zákona č. 377/1990 Zb. o hlavnom meste Slovenskej republiky Bratislave v znení neskorších predpisov (ďalej len „stavebný úrad“) v súlade s § 3 ods. 6 zákona č. 71/1967 Zb. o správnom konaní v znení neskorších predpisov (správny poriadok) informuje verejnosť o nasledovnom konaní:
+https://bratislava.blob.core.windows.net/media/Default/Dokumenty/Str%C3%A1nky/Chcem%20vediet/centralna%20rozvojova%20os%20PE/01_TEXT_US_centralna%20od%20petrzalka.pdf
+
+https://www.petrzalka.sk/2018-10-04-petrzalka-ma-ako-prva-studiu-pesej-dopravy/
 
 https://www.facebook.com/groups/409352002596836/?post_id=1299174240281270&notif_id=1593691772625916&notif_t=page_group_post&ref=notif
-
-# Kupa ZSE
-https://www.petrzalka.sk/wp-content/uploads/2020/11/7.-N%C3%A1vrh-na-k%C3%BApu-objektu-%E2%80%93-ZSE-na-ul.-Ondreja-%C5%A0tefanka-2-Bratislava-Petr%C5%BEalka-s%C3%BApisn%C3%A9-%C4%8D.-3274-vr%C3%A1tane-pri%C4%BEahl.pdf
-
 # Zdroj projektov
 https://www.petrzalka.sk/samosprava/komisie-miestneho-zastupitelstva/zasadnutia-komisii-k-septembrovemu-zastupitelstvu-4/
 
@@ -33,12 +30,10 @@ Investičný zámer - Polyfunkčná budova Digital Systems Údernícka 9/A (140 
 ### Matadorka
 https://www.petrzalka.sk/wp-content/uploads/2019/01/UPVaD_01_21_10_Rekonstrukcia_a_dostavba_vyrobnych_hal_Matador.pdf
 
-# Zamietnute
-
 Ubytovacie zariadenie TARPAN -> https://www.petrzalka.sk/wp-content/uploads/2020/12/KUPVaR-zapisnica_2020-12-01_overena.pdf
 „Dopravné napojenie na Einsteinovu ulicu" pre stavbu „Polyfunkčný komplex budov, Einsteinova ulica“ -> https://www.petrzalka.sk/wp-content/uploads/2020/12/KUPVaR-zapisnica_2020-12-01_overena.pdf
 
-#Ukludnovanie dopracy
+# Ukludnovanie dopracy
 https://www.petrzalka.sk/wp-content/uploads/2020/12/Rekon%C5%A1trukcie-chodn%C3%ADkov-M%C4%8C-Petr%C5%BEalka-komprim.pdf
 
 * Chodnikova komisia
