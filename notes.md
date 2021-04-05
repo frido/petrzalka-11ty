@@ -1,3 +1,4 @@
+https://mib.sk/sutaz/lavky-cez-chorvatske-rameno-v-petrzalke/?fbclid=IwAR16xcz6Ql7kGz5bRpXU7nRz-6aWyQQi_xj-ogqj822WExkFgHvf3-SOWAc
 
 https://bratislava.blob.core.windows.net/media/Default/Dokumenty/Str%C3%A1nky/Chcem%20vediet/centralna%20rozvojova%20os%20PE/01_TEXT_US_centralna%20od%20petrzalka.pdf
 
