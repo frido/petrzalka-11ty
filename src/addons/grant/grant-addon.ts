@@ -20,11 +20,11 @@ class GrantImpl implements Grant {
 }
 
 function sportCollection() { 
-  return SPORT_GRANTS.map(x => new GrantImpl(x)); 
+  return SPORT_GRANTS.map(x => new GrantImpl(x)).sort((a, b) => b.currentAmount - a.currentAmount); 
 };
 
 function ozCollection() { 
-  return OZ_GRANTS.map(x => new GrantImpl(x)); 
+  return OZ_GRANTS.map(x => new GrantImpl(x)).sort((a, b) => b.currentAmount - a.currentAmount); 
 };
 
 export function grantAddon(eleventyConfig: any) {

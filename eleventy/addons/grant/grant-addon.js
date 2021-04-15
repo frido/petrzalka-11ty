@@ -15,11 +15,11 @@ var GrantImpl = /** @class */ (function () {
     return GrantImpl;
 }());
 function sportCollection() {
-    return grant_sport_data_1.SPORT_GRANTS.map(function (x) { return new GrantImpl(x); });
+    return grant_sport_data_1.SPORT_GRANTS.map(function (x) { return new GrantImpl(x); }).sort(function (a, b) { return b.currentAmount - a.currentAmount; });
 }
 ;
 function ozCollection() {
-    return grant_oz_data_1.OZ_GRANTS.map(function (x) { return new GrantImpl(x); });
+    return grant_oz_data_1.OZ_GRANTS.map(function (x) { return new GrantImpl(x); }).sort(function (a, b) { return b.currentAmount - a.currentAmount; });
 }
 ;
 function grantAddon(eleventyConfig) {

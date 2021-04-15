@@ -3,8 +3,124 @@ exports.__esModule = true;
 exports.OZ_GRANTS = void 0;
 exports.OZ_GRANTS = [
     {
+        "title": "OZ Moonshine camp",
+        amount: [{
+                year: 2021,
+                amount: 3260,
+                "detail": "Na palube jednorožca"
+            }]
+    },
+    {
+        "title": "OZ Petržalská hokejbalová liga",
+        amount: [{
+                year: 2021,
+                amount: 5000,
+                "detail": "Vráťme hokejbal do ulíc"
+            }]
+    },
+    {
+        "title": "OZ Bratislavský klub slalomových a zjazdových vodákov",
+        amount: [{
+                year: 2021,
+                amount: 1729,
+                "detail": "Poďme na vodu"
+            }]
+    },
+    {
+        "title": "OZ Jeden23223",
+        amount: [{
+                year: 2021,
+                amount: 1904,
+                "detail": "Tanečné leto – Gala 2021"
+            }]
+    },
+    {
+        "title": "OZ Sportsclub FunnyDance",
+        amount: [{
+                year: 2021,
+                amount: 2039,
+                "detail": "ROZHÝB SA PETRŽALKA 2021"
+            }]
+    },
+    {
+        "title": "OZ Tenisová akadémia Edmund Pavlík",
+        amount: [{
+                year: 2021,
+                amount: 1893,
+                "detail": "Rozvoj pravidelného športovania detí a mládeže v Petržalke"
+            }]
+    },
+    {
+        "title": "OZ Stolnotenisový klub štadión",
+        amount: [{
+                year: 2021,
+                amount: 2089,
+                "detail": "Podpora stolného tenisu v Petržalke"
+            }]
+    },
+    {
+        "title": "BE COOL",
+        amount: [{
+                year: 2021,
+                amount: 1030,
+                "detail": "ČSOB Bratislava Marathon 2021"
+            }]
+    },
+    {
+        "title": "OZ Rodičovské združenie – Borkáčik",
+        amount: [{
+                year: 2021,
+                amount: 4493,
+                "detail": "Lezieme za zdravím"
+            }]
+    },
+    {
+        "title": "OZ SRRZ RZ pri MŠ Lachova 31",
+        amount: [{
+                year: 2021,
+                amount: 4484,
+                "detail": "Aby sme dobre dopadli..."
+            }]
+    },
+    {
+        "title": "OZ Supertrieda",
+        amount: [{
+                year: 2021,
+                amount: 4855,
+                "detail": "Supertrieda Petržalka"
+            }]
+    },
+    {
+        "title": "OZ Záhrada Dvory",
+        amount: [{
+                year: 2021,
+                amount: 2800,
+                "detail": "Komunitná záhrada Dvory žije"
+            }]
+    },
+    {
+        "title": "OZ #Som Petržalčan",
+        amount: [{
+                year: 2021,
+                amount: 2020,
+                "detail": "Spoznaj zákutia Petržalky"
+            }]
+    },
+    {
+        "title": "OZ Otvorená lodenica",
+        amount: [{
+                year: 2021,
+                amount: 4613,
+                "detail": "Petržalský dunajský chodník"
+            }]
+    },
+    {
         "title": "OZ Múzeum Petržalského opevnenia",
         amount: [{
+                year: 2021,
+                amount: 3274,
+                "detail": "Bunker plný energie"
+            }, {
                 year: 2020,
                 amount: 4500,
                 "detail": "Petržalka pre bunkre, bunkre pre Petržalku"
@@ -21,6 +137,10 @@ exports.OZ_GRANTS = [
     {
         "title": "DEPAUL SLOVENSKO n.o.",
         amount: [{
+                year: 2021,
+                amount: 5000,
+                "detail": "Strava pre ľudí bez domova z Petržalky"
+            }, {
                 year: 2020,
                 amount: 4203,
                 "detail": "Strava pre ľudí bez domova - prvý krok k integrácii"
@@ -37,6 +157,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ Hájenka",
         amount: [{
+                year: 2021,
+                amount: 3231,
+                detail: "33. sezóna DFS Hájenka"
+            }, {
                 year: 2020,
                 amount: 4128,
                 "detail": "DFS Hájenka - 32. sezóna"
@@ -45,6 +169,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ TK Petržalka",
         amount: [{
+                year: 2021,
+                amount: 4191,
+                "detail": "Pravidelný šport deťom"
+            }, {
                 year: 2020,
                 amount: 4000,
                 "detail": "Pravidelný šport deťom"
@@ -85,6 +213,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ DOMKA",
         amount: [{
+                year: 2021,
+                amount: 878,
+                "detail": "Orientačné dni – zážitok pre triedu"
+            }, {
                 year: 2020,
                 amount: 3330,
                 "detail": "Hudbou zahnať smútok a strach"
@@ -101,6 +233,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ Basketbalový klub mládeže Petržalka - Five Stars",
         amount: [{
+                year: 2021,
+                amount: 4926,
+                "detail": "Športové činnosti a vybavenie BKM Petržalka"
+            }, {
                 year: 2020,
                 amount: 3265,
                 "detail": "Športové vybavenie BKM Petržalka"
@@ -173,6 +309,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ Vodníček Rodičovské združenie pri materskej škole Tupolevova 20",
         amount: [{
+                year: 2021,
+                amount: 4565,
+                "detail": "S Vodníčkom spoznávaj svet"
+            }, {
                 year: 2020,
                 amount: 1786,
                 "detail": "Remeslo má zlaté dno"
@@ -189,6 +329,10 @@ exports.OZ_GRANTS = [
     {
         "title": "OZ STOPA SLOVENSKO",
         amount: [{
+                year: 2021,
+                amount: 2413,
+                "detail": "Integrácia Petržalka 2021"
+            }, {
                 year: 2020,
                 amount: 1582,
                 "detail": "Integrácia Petržalka 2020"
@@ -205,6 +349,10 @@ exports.OZ_GRANTS = [
     {
         "title": "ABCedu pre vzdelanie",
         amount: [{
+                year: 2021,
+                amount: 4312,
+                "detail": "Učím sa rozumieť peniazom"
+            }, {
                 year: 2020,
                 amount: 498,
                 "detail": "Ako sa naučiť správne hospodáriť s peniazmi"
