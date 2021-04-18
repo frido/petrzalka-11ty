@@ -1,23 +1,21 @@
 package com.example.springboot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
 @Component
 public class MainRunner implements CommandLineRunner {
 
-    @PersistenceContext
-    private EntityManager em;
+    @Autowired
+    BudgetService budgetService;
 
     @Override
     public void run(String... args) throws Exception {
         System.out.println("It Works!");
 
         PageWriter pw = new PageWriter(new Configuration());
-        pw.write(new IndexPage());
+        pw.write(new IndexPage(budgetService));
 
     }
 }

@@ -18,9 +18,9 @@ public class ArticleProject extends HtmlTag{
                 .with(new Div("col-md-10")
                         .with(new H(5, "status-text inwork", "Príprava projektu")
                         .with(new H(3,"", new AHref("", "/posts/lavky_cez_chorvatske_rameno/", new HtmlNoTag("Lávky cez Chorvátske rameno"))))
-                        )
+                        ))
                 .with(new Div("col-md-2 text-right")
-                        .with(new Span("status-text inwork", "prebieha"))));
+                        .with(new Span("status-text inwork", "prebieha")));
         Div sub = new Div("sub");
         addContent(sub);
         Div row2 = new Div("row");

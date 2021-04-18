@@ -53,6 +53,15 @@ public class HtmlTag {
         return this;
     }
 
+    public HtmlTag with(String content) {
+        return with(new HtmlNoTag(content));
+    }
+
+    public HtmlTag clazz(String value) {
+        addClass(value);
+        return this;
+    }
+
     public HtmlTag as(String name, String value) {
         attributes.add(name, value);
         return this;

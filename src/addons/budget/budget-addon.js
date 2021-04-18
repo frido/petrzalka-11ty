@@ -112,3 +112,17 @@ function budgetAddon(eleventyConfig) {
     eleventyConfig.addFilter("budgetFilterSortByYear", BudgetAddon.filterSortByYear);
 }
 exports.budgetAddon = budgetAddon;
+budget_data_1.BUDGET_2020.map(function (x) {
+    var t = "INSERT INTO `world`.`budget` (`title`, `year`, `program`, `amount_original`, `amount_updated`, `amount_real`, `comment`, `status`) VALUES (";
+    t = t + '"' + x.title + '", ';
+    t = t + '"' + x.year + '", ';
+    t = t + '"' + x.program + '", ';
+    t = t + '"' + x.amountOriginal + '", ';
+    t = t + '"' + x.amountUpdated + '", ';
+    t = t + '"' + x.amountReal + '", ';
+    t = t + '"' + x.comment + '", ';
+    t = t + '"' + x.status;
+    +'"';
+    t = t + ");\n";
+    console.log(t);
+});

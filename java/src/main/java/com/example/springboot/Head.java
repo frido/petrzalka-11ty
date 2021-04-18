@@ -3,9 +3,12 @@ package com.example.springboot;
 import com.example.springboot.core.*;
 
 public class Head extends HtmlTag {
+
+    private String base = "file:///C:/home/repos/11ty-petrzalka/java/_site/"; // TODO: configurable
+
     public Head() {
         super("head");
-        addContent(new HtmlTag("base").as("href", "/"));
+        addContent(new HtmlTag("base").as("href", base));
         addContent(new HtmlTag("title").with(new HtmlNoTag("Projekty v Petržalke")));
         addContent(new HtmlTag("meta").as("charset", "utf-8"));
         addContent(new Meta("Description", "Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery"));

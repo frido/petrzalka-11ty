@@ -132,3 +132,18 @@ export function budgetAddon(eleventyConfig: any) {
   eleventyConfig.addFilter("budgetFilterById", BudgetAddon.filterById);
   eleventyConfig.addFilter("budgetFilterSortByYear", BudgetAddon.filterSortByYear);
 }
+
+
+BUDGET_2020.map(x => {
+  let t = "INSERT INTO `world`.`budget` (`title`, `year`, `program`, `amount_original`, `amount_updated`, `amount_real`, `comment`, `status`) VALUES (";
+  t = t + '"' + x.title + '", '
+  t = t + '"' + x.year + '", '
+  t = t + '"' + x.program + '", '
+  t = t + '"' + x.amountOriginal + '", '
+  t = t + '"' + x.amountUpdated + '", '
+  t = t + '"' + x.amountReal + '", '
+  t = t + '"' + x.comment + '", '
+  t = t + '"' + x.status; + '"'
+  t  = t + ");\n";
+  console.log(t);
+})

@@ -11,4 +11,8 @@ public class Div extends HtmlTag{
         this(clazz);
         addContent(content);
     }
+
+    public Div(String clazz, String content) {
+        this(clazz, new HtmlNoTag(content));
+    }
 }
