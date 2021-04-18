@@ -1,2 +1,8 @@
 node_modules/
 _site/
+java/build/
+java/target/
+java/.gradle/
+java/.idea/
+java/.mvn
+java/gradle

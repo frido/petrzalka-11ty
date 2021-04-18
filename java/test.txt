@@ -1,0 +1,8 @@
+<html lang="sk">
+<head>
+<meta name="Description" content="Petržalka, investičný plán, projekty, rozpočet, štúdie, zámery">
+</meta>
+</head>
+<body>
+</body>
+</html>
