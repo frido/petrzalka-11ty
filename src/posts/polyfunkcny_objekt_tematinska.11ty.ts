@@ -6,9 +6,16 @@ class PolyfunkcnyObjektTematinska extends ProjectPage {
   data(): FMProject {
     return this.frontMatterWrapper( {
       title: "Polyfunkčný objekt Tematínska",
-      date: "2020-11-17",
+      date: "2021-04-20",
       description: "Polyfunkčná stavba s dvoma samostatnými objektami a troma prevádzkovými celkami. Má jedno podzemné parkovacie podlažie, štyri nadzemné a jedno ustúpené piate podlažie. V objektoch sa nachádza 55 bytov a občianska vybavenosť – reštaurácia, kancelárske priestory, telocvičňa v prízemnom trakte pozdĺž bulváru.",
       sources: ["https://www.petrzalka.sk/wp-content/uploads/2020/10/elektronick%C3%A9-zverejnenie-inform%C3%A1cie-v-zmysle-%C2%A7-82-ods.-3-zakona-V.D.-LAKE-1.pdf"],
+      icon: "img/polyfunkcny_objekt_tematinska/3.jpg",
+      gallery: [
+        { link: 'img/polyfunkcny_objekt_tematinska/1.jpg' },
+        { link: 'img/polyfunkcny_objekt_tematinska/2.jpg' },
+        { link: 'img/polyfunkcny_objekt_tematinska/3.jpg' },
+        { link: 'img/polyfunkcny_objekt_tematinska/4.jpg' }
+      ],
       execution: [
         {
           title: EXE_TITLE_UK,
@@ -35,6 +42,13 @@ class PolyfunkcnyObjektTematinska extends ProjectPage {
               status: "inwork",
               description: "",
               date: luxon.DateTime.fromISO("2020-11-17")
+            },
+            {
+              title: "Ministerstvo dopravy a výstavby SR Okresný úrad ŽP Bratislava",
+              source: "https://www.enviroportal.sk/sk/eia/detail/polyfunkcny-objekt-tematinska-bratislava",
+              status: "inwork",
+              description: "",
+              date: luxon.DateTime.fromISO("2021-04-08")
             }
           ]
         }
