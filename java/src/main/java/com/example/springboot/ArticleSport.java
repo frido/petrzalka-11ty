@@ -2,12 +2,15 @@ package com.example.springboot;
 
 import com.example.springboot.core.*;
 
-public class ArticleSport extends HtmlTag {
-    private final Grant grant;
+import java.util.HashMap;
+import java.util.Map;
 
-    public ArticleSport(Grant grant) {
+public class ArticleSport extends HtmlTag {
+    private GrantService grantService;
+
+    public ArticleSport(GrantService grantService) {
         super("article");
-        this.grant = grant;
+        this.grantService = grantService;
     }
 
     @Override
@@ -15,24 +18,38 @@ public class ArticleSport extends HtmlTag {
         Div row = new Div("row");
         addContent(row);
 
-        for(int i = 0; i < 4 ; i++) {
+        Map<Integer, GrantDto> data = new HashMap<>();
+        for(Grant grant : grantService.getAll()){
+            GrantDto dto = data.getOrDefault(grant.getSubject().getId(), new GrantDto(grant.getSubject()));
+            dto.addGrant(grant);
+            data.put(grant.getSubject().getId(), dto);
+        }
+
+        for(GrantDto grant : data.values()) {
             row.addContent(grant(grant));
         }
 
         return super.toString();
     }
 
-    private HtmlTag grant(Grant grant) {
+    private HtmlTag grant(GrantDto grant) {
         return new Div("grant col-lg-3 col-md-6 col-sm-6")
                 .with(article(grant));
     }
 
-    private HtmlTag article(Grant grant) {
-        return new HtmlTag("article").clazz("box h-100 inwork text-center")
-                .with(new H(3, "", "FC Petržalka"))
-                .with(new HtmlTag("p").with(new Span("amount", "39 576,66€")))
-                .with(new HtmlTag("p"))
-                .with(new Div("", new Small("23 306,73 (2020)")));
+    private HtmlTag article(GrantDto grant) {
+        HtmlTag article = new HtmlTag("article").clazz("box h-100 inwork text-center")
+                .with(new H(3, "", grant.getTitle()))
+                .with(new HtmlTag("p").with(new Span("amount", grant.getCurrentAmount().toString())));
+        for(Grant older : grant.getOldGrants()) {
+            article.with(new HtmlTag("p"))
+                    .with(new Div("", new Small(getOldDescription(older))));
+        }
+        return article;
+    }
+
+    private String getOldDescription(Grant grant) {
+        return grant.getAmount().toString() + " (" + grant.getYear() + ")";
     }
 
 }

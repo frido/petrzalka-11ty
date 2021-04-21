@@ -5,9 +5,11 @@ import com.example.springboot.core.*;
 public class IndexPage implements Page {
 
     private final BudgetService budgetService;
+    private final GrantService grantService;
 
-    public IndexPage(BudgetService budgetService) {
+    public IndexPage(BudgetService budgetService, GrantService grantService) {
         this.budgetService = budgetService;
+        this.grantService = grantService;
     }
 
     @Override
@@ -33,7 +35,7 @@ public class IndexPage implements Page {
         Section sport = new Section();
         root.addContent(sport);
         sport.addContent(new Title("Športové granty"));
-        sport.addContent(new ArticleSport(new Grant()));
+        sport.addContent(new ArticleSport(grantService));
 
         return root;
     }

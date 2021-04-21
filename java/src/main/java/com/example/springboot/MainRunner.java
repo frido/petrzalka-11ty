@@ -10,12 +10,15 @@ public class MainRunner implements CommandLineRunner {
     @Autowired
     BudgetService budgetService;
 
+    @Autowired
+    GrantService grantService;
+
     @Override
     public void run(String... args) throws Exception {
         System.out.println("It Works!");
 
         PageWriter pw = new PageWriter(new Configuration());
-        pw.write(new IndexPage(budgetService));
+        pw.write(new IndexPage(budgetService, grantService));
 
     }
 }

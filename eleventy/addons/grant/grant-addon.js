@@ -27,3 +27,23 @@ function grantAddon(eleventyConfig) {
     eleventyConfig.addCollection("grantOZCollection", ozCollection);
 }
 exports.grantAddon = grantAddon;
+
+grant_sport_data_1.SPORT_GRANTS.map(function (x) {
+    var t = "INSERT INTO `world`.`grant_subject` (`title`) VALUES (";
+    t = t + '"' + x.title + '"';
+    t = t + ");\n";
+    console.log(t);
+});
+
+grant_sport_data_1.SPORT_GRANTS.map(function (x) {
+    x.amount.map(function (g) {
+        var t = "insert into world.grant (subject, year, amount, detail)";
+        t = t + ' select id, ';
+        t = t + '' + g.year + ', ';
+        t = t + '' + g.amount + ', ';
+        t = t + '' + null + ' ';
+        t = t + 'from world.grant_subject where title = ';
+        t = t + '"' + x.title + '";';
+        console.log(t);
+    })
+});
