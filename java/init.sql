@@ -29,7 +29,10 @@ CREATE TABLE `world`.`grant_subject` (
   `title` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
 
-CREATE TABLE `world`.`grant` (
+ALTER TABLE `world`.`grant_subject`
+    ADD COLUMN `category` VARCHAR(45) NOT NULL DEFAULT 'OZ' AFTER `title`;
+
+CREATE TABLE `world`.`grant_item` (
 `id` INT NOT NULL AUTO_INCREMENT,
 `subject` INT NOT NULL,
 `year` INT NOT NULL,

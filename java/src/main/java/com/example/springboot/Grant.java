@@ -3,7 +3,7 @@ package com.example.springboot;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
-@Entity(name = "donation")
+@Entity(name = "grant_item")
 public class Grant {
     @Id
     private int id;

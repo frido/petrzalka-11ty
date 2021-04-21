@@ -1,5 +1,6 @@
 package com.example.springboot;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
@@ -11,8 +12,11 @@ public class Budget {
     private String title;
     private int year;
     private int program;
+    @Column(name = "amount_original")
     private BigDecimal amountOriginal;
+    @Column(name = "amount_updated")
     private BigDecimal amountUpdated;
+    @Column(name = "amount_real")
     private BigDecimal amountReal;
     private String comment;
     private String status;
