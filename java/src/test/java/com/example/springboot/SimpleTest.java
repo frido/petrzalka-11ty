@@ -1,5 +1,9 @@
 package com.example.springboot;
 
+import com.example.springboot.model.Simple;
+import com.example.springboot.service.SimpleService;
+import com.example.springboot.test.LockBlock;
+import com.example.springboot.test.TransactionBlock;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -13,7 +17,6 @@ import javax.persistence.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
