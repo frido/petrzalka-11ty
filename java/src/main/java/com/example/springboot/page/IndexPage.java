@@ -27,23 +27,31 @@ public class IndexPage implements Page {
 
     private HtmlTag getContent() {
         Div root = new Div("");
+        root.addContent(projects());
+        root.addContent(budgets());
+        root.addContent(sport());
+        return root;
+    }
 
+    private HtmlTag projects() {
         Section timeline = new Section();
-        root.addContent(timeline);
         timeline.addContent(new Title("Časová os projektov"));
         timeline.addContent(new ArticleProject(new Project()));
+        return timeline;
+    }
 
+    private HtmlTag budgets() {
         Section plan = new Section();
-        root.addContent(plan);
         plan.addContent(new Title("Investičný plán 2021"));
-        plan.addContent(new ArticlePlan(budgetService.getPlan()));
+        plan.addContent(new ArticleBudgetListComponent(budgetService.getBudgetForIndex()));
+        return plan;
+    }
 
+    private HtmlTag sport() {
         Section sport = new Section();
-        root.addContent(sport);
         sport.addContent(new Title("Športové granty"));
-        sport.addContent(new ArticleSport(grantService));
-
-        return root;
+        sport.addContent(new ArticleSportListComponent(grantService.getSportsForIndex()));
+        return sport;
     }
 
     @Override

@@ -14,6 +14,7 @@ export interface Page<T extends FrontMatter> {
   url: string;
   data: T;
   template: any;
+  templateContent?: any;
 }
 
 export interface Post<T extends FrontMatter> {

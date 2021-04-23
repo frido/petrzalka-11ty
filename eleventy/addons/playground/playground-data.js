@@ -11,7 +11,7 @@ exports.YEAR_2021 = [
     },
     {
         name: "Pečnianska",
-        district: 1,
+        ini: 1,
         category: ["A", "B"],
         year: 2021,
         flag: "new"

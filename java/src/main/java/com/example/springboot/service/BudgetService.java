@@ -17,7 +17,7 @@ public class BudgetService {
     @PersistenceContext
     private EntityManager em;
 
-    public List<Budget> getPlan() {
+    public List<Budget> getBudgetForIndex() {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Budget> q = cb.createQuery(Budget.class);
         Root<Budget> c = q.from(Budget.class);

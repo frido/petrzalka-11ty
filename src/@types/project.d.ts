@@ -11,6 +11,11 @@ export interface Project {
   sources?: string[];
   budgetRef?: string;
   execution: Execution[];
+  page?: TmpFix;
+}
+
+export interface TmpFix {
+  fileSlug: string;
 }
 
 export interface FMProject extends Project, FrontMatter {

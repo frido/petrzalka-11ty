@@ -1,8 +1,6 @@
 package com.example.springboot.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
@@ -11,7 +9,8 @@ public class Budget {
     private int id;
     private String title;
     private int year;
-    private int program;
+    @Convert(converter = ProgramAttributeConverter.class)
+    private Program program;
     @Column(name = "amount_original")
     private BigDecimal amountOriginal;
     @Column(name = "amount_updated")
@@ -19,7 +18,9 @@ public class Budget {
     @Column(name = "amount_real")
     private BigDecimal amountReal;
     private String comment;
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private BudgetStatus status;
+    // TODO: previous column
 
     public int getId() {
         return id;
@@ -45,11 +46,11 @@ public class Budget {
         this.year = year;
     }
 
-    public int getProgram() {
+    public Program getProgram() {
         return program;
     }
 
-    public void setProgram(int program) {
+    public void setProgram(Program program) {
         this.program = program;
     }
 
@@ -85,11 +86,26 @@ public class Budget {
         this.comment = comment;
     }
 
-    public String getStatus() {
+    public BudgetStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(BudgetStatus status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Budget{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", year=" + year +
+                ", program=" + program +
+                ", amountOriginal=" + amountOriginal +
+                ", amountUpdated=" + amountUpdated +
+                ", amountReal=" + amountReal +
+                ", comment='" + comment + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

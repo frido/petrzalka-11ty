@@ -40,6 +40,44 @@ var ProjectPage = /** @class */ (function () {
 exports.ProjectPage = ProjectPage;
 function collection(collection) {
     var now = luxon.DateTime.local();
+    var y = collection
+        .getFilteredByTag(exports.TAG_PROJECT)
+        .forEach(function (x) {
+        // var t = "INSERT INTO `world`.`project` (`title`, `date`, `description`, `url`) VALUES (";
+        // t = t + '"' + x.data.title + '",';
+        // t = t + '"' + x.data.date + '",';
+        // t = t + '"' + x.data.description + '",';
+        // t = t + '"' + x.data.page.fileSlug + '"';
+        // t = t + ");\n";
+        // console.log(t);
+        // x.data.gallery?.forEach(g => {
+        //   var t = "insert into world.image (project_id, title, source)";
+        //   t = t + ' select id, ';
+        //   t = t + '"' + (g.title ? g.title : "") + '", ';
+        //   t = t + '"' + g.link + '" ';
+        //   t = t + 'from world.project where url = ';
+        //   t = t + '"' + x.data.page.fileSlug + '";';
+        //   console.log(t);
+        // });
+        x.data.execution.flatMap(function (e) { return e.sub; }).forEach(function (s) {
+            var _a;
+            var t = "insert into world.statement (project_id, title, source, date, status, status_description)";
+            t = t + ' select id, ';
+            t = t + '"' + s.title + '", ';
+            t = t + '"' + s.source + '", ';
+            if (s.date) {
+                t = t + '"' + ((_a = s.date) === null || _a === void 0 ? void 0 : _a.toISODate()) + '", ';
+            }
+            else {
+                t = t + 'null, ';
+            }
+            t = t + '"' + s.status + '", ';
+            t = t + '"' + s.description + '" ';
+            t = t + 'from world.project where url = ';
+            t = t + '"' + x.data.page.fileSlug + '";';
+            console.log(t);
+        });
+    });
     var x = collection
         .getFilteredByTag(exports.TAG_PROJECT)
         .flatMap(function (page) {

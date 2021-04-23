@@ -5,11 +5,12 @@ import com.example.springboot.html.*;
 
 import java.util.List;
 
-public class ArticlePlan extends HtmlTag {
+public class ArticleBudgetListComponent extends HtmlTag {
     private final List<Budget> plan;
 
-    public ArticlePlan(List<Budget> plan) {
+    public ArticleBudgetListComponent(List<Budget> plan) {
         super("article");
+        plan.forEach(System.out::println);
         this.plan = plan;
     }
 

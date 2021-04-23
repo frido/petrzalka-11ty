@@ -17,7 +17,7 @@ public class GrantService {
     @PersistenceContext
     private EntityManager em;
 
-    public List<Grant> getAll() {
+    public List<Grant> getSportsForIndex() {
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Grant> q = cb.createQuery(Grant.class);
         Root<Grant> c = q.from(Grant.class);

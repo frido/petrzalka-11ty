@@ -18,12 +18,16 @@ public class GrantDto {
         this.grants = new ArrayList<>();
     }
 
+    public GrantDto(Grant grant) {
+        this.grants = new ArrayList<>();
+    }
+
     public void addGrant(Grant g) {
         grants.add(g);
     }
 
     public String getTitle() {
-        return subject.getTitle();
+        return ""; // TODO
     }
 
     public Optional<Grant> getCurrentGrant() {

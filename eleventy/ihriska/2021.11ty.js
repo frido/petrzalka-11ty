@@ -27,3 +27,14 @@ var Template = /** @class */ (function (_super) {
     return Template;
 }(playground_addon_1.PlayGroundPage));
 module.exports = Template;
+
+playground_data_1.YEAR_2024.map(function (x) {
+    var t = "INSERT INTO `world`.`playground` (`title`, `district`,`category`,`year`,`flag`) VALUES (";
+    t = t + '"' + x.name + '",';
+    t = t + '"' + x.district + '",';
+    t = t + '"' + x.category.join('') + '",';
+    t = t + '"' + x.year + '",';
+    t = t + '"' + x.flag + '"';
+    t = t + ");\n";
+    console.log(t);
+});
