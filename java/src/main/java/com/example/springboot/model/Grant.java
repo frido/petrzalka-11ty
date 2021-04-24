@@ -11,6 +11,8 @@ public class Grant {
     @ManyToOne()
     @JoinColumn(name = "subject", referencedColumnName = "id")
     private GrantSubject subject;
+    @Column(name = "subject", insertable = false, updatable = false)
+    private int subjectId;
     private int year;
     private BigDecimal amount;
     private String detail;
@@ -29,6 +31,14 @@ public class Grant {
 
     public void setSubject(GrantSubject subject) {
         this.subject = subject;
+    }
+
+    public int getSubjectId() {
+        return subjectId;
+    }
+
+    public void setSubjectId(int subjectId) {
+        this.subjectId = subjectId;
     }
 
     public int getYear() {
