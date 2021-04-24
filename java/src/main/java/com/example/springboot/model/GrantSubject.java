@@ -36,4 +36,13 @@ public class GrantSubject {
     public void setCategory(GrantCategory category) {
         this.category = category;
     }
+
+    @Override
+    public String toString() {
+        return "GrantSubject{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", category=" + category +
+                '}';
+    }
 }

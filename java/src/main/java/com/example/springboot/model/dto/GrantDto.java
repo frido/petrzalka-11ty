@@ -1,7 +1,7 @@
 package com.example.springboot.model.dto;
 
+import com.example.springboot.model.GrantItem;
 import com.example.springboot.model.GrantSubject;
-import com.example.springboot.model.Grant;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -11,34 +11,47 @@ import java.util.stream.Collectors;
 
 public class GrantDto {
     private GrantSubject subject;
-    private List<Grant> grants;
+    private List<GrantItem> grantItems;
 
     public GrantDto(GrantSubject subject) {
         this.subject = subject;
-        this.grants = new ArrayList<>();
+        this.grantItems = new ArrayList<>();
     }
 
-    public GrantDto(Grant grant) {
-        this.grants = new ArrayList<>();
-    }
-
-    public void addGrant(Grant g) {
-        grants.add(g);
+    public void addGrant(GrantItem g) {
+        grantItems.add(g);
     }
 
     public String getTitle() {
-        return ""; // TODO
+        return subject.getTitle();
     }
 
-    public Optional<Grant> getCurrentGrant() {
-        return grants.stream().filter(Grant::isCurrent).findFirst();
+    public Optional<GrantItem> getCurrentGrant() {
+        return grantItems.stream().filter(GrantItem::isCurrent).findFirst();
     }
 
-    public List<Grant> getOldGrants() {
-        return grants.stream().filter(Grant::isOld).collect(Collectors.toList());
+    public List<GrantItem> getOldGrants() {
+        return grantItems.stream().filter(GrantItem::isOld).collect(Collectors.toList());
     }
 
     public BigDecimal getCurrentAmount() {
-        return getCurrentGrant().map(Grant::getAmount).orElse(BigDecimal.ZERO);
+        return getCurrentGrant().map(GrantItem::getAmount).orElse(BigDecimal.ZERO);
+    }
+
+    public String getCurrentDetail() {
+        return getCurrentGrant().map(GrantItem::getDetail).orElse(null);
+    }
+
+    public GrantDto withGrant(GrantItem g) {
+        addGrant(g);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "GrantDto{" +
+                "subject=" + subject +
+                ", grantItems=" + grantItems +
+                '}';
     }
 }

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity(name = "grant_item")
-public class Grant {
+public class GrantItem {
     @Id
     private int id;
 
@@ -73,5 +73,17 @@ public class Grant {
     @Transient
     public boolean isOld() {
         return !isCurrent();
+    }
+
+    @Override
+    public String toString() {
+        return "GrantItem{" +
+                "id=" + id +
+                ", subject=" + subject +
+                ", subjectId=" + subjectId +
+                ", year=" + year +
+                ", amount=" + amount +
+                ", detail='" + detail + '\'' +
+                '}';
     }
 }

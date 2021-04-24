@@ -2,9 +2,14 @@ package com.example.springboot.page;
 
 import com.example.springboot.component.*;
 import com.example.springboot.core.*;
+import com.example.springboot.criteria.EqualsCriteriaBuilder;
+import com.example.springboot.criteria.SubqueryInCriteriaBuilder;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
 import com.example.springboot.html.Section;
+import com.example.springboot.model.GrantCategory;
+import com.example.springboot.model.GrantItem_;
+import com.example.springboot.model.GrantSubject_;
 import com.example.springboot.service.BudgetService;
 import com.example.springboot.service.GrantService;
 
@@ -30,6 +35,7 @@ public class IndexPage implements Page {
         root.addContent(projects());
         root.addContent(budgets());
         root.addContent(sport());
+        root.addContent(oz());
         return root;
     }
 
@@ -50,7 +56,14 @@ public class IndexPage implements Page {
     private HtmlTag sport() {
         Section sport = new Section();
         sport.addContent(new Title("Športové granty"));
-        sport.addContent(new ArticleSportListComponent(grantService.getSportsForIndex()));
+        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.SPORT)));
+        return sport;
+    }
+
+    private HtmlTag oz() {
+        Section sport = new Section();
+        sport.addContent(new Title("Dotácie"));
+        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.OZ)));
         return sport;
     }
 

@@ -1,20 +1,20 @@
 package com.example.springboot.component;
 
-import com.example.springboot.model.Grant;
+import com.example.springboot.model.GrantItem;
 import com.example.springboot.model.dto.GrantDto;
-import com.example.springboot.service.GrantService;
 import com.example.springboot.html.*;
 
-import java.util.HashMap;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ArticleSportListComponent extends HtmlTag {
-    private List<Grant> grants;
+    private Collection<GrantDto> grantItems;
 
-    public ArticleSportListComponent(List<Grant> grants) {
+    public ArticleSportListComponent(Collection<GrantDto> grantItems) {
         super("article");
-        this.grants = grants;
+        this.grantItems = grantItems;
     }
 
     @Override
@@ -22,31 +22,38 @@ public class ArticleSportListComponent extends HtmlTag {
         Div row = new Div("row");
         addContent(row);
 
-        for(Grant grant : grants) {
-            row.addContent(grant(grant));
+        List<GrantDto> sortedList = grantItems.stream()
+                .sorted((a, b) -> b.getCurrentAmount().compareTo(a.getCurrentAmount()))
+                .collect(Collectors.toList());
+
+        for(GrantDto grantItem : sortedList) {
+            row.addContent(grant(grantItem));
         }
 
         return super.toString();
     }
 
-    private HtmlTag grant(Grant grant) {
+    private HtmlTag grant(GrantDto grantItem) {
         return new Div("grant col-lg-3 col-md-6 col-sm-6")
-                .with(article(new GrantDto(grant)));
+                .with(article(grantItem));
     }
 
     private HtmlTag article(GrantDto grant) {
         HtmlTag article = new HtmlTag("article").clazz("box h-100 inwork text-center")
                 .with(new H(3, "", grant.getTitle()))
                 .with(new HtmlTag("p").with(new Span("amount", grant.getCurrentAmount().toString())));
-        for(Grant older : grant.getOldGrants()) {
+        if (grant.getCurrentDetail() != null) {
+            article.with(new HtmlTag("p").with(grant.getCurrentDetail()));
+        }
+        for(GrantItem older : grant.getOldGrants()) {
             article.with(new HtmlTag("p"))
                     .with(new Div("", new Small(getOldDescription(older))));
         }
         return article;
     }
 
-    private String getOldDescription(Grant grant) {
-        return grant.getAmount().toString() + " (" + grant.getYear() + ")";
+    private String getOldDescription(GrantItem grantItem) {
+        return grantItem.getAmount().toString() + " (" + grantItem.getYear() + ")";
     }
 
 }

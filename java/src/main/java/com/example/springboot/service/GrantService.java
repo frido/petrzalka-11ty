@@ -1,19 +1,19 @@
 package com.example.springboot.service;
 
 import com.example.springboot.criteria.CriteriaQueryContext;
+import com.example.springboot.criteria.EqualsCriteriaBuilder;
 import com.example.springboot.criteria.InterfaceCriteriaBuilder;
+import com.example.springboot.criteria.SubqueryInCriteriaBuilder;
 import com.example.springboot.model.*;
+import com.example.springboot.model.dto.GrantDto;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
-import javax.persistence.criteria.Subquery;
-import java.util.Collections;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class GrantService {
@@ -21,27 +21,22 @@ public class GrantService {
     @PersistenceContext
     private EntityManager em;
 
-    public List<Grant> getSportsForIndex() {
-        CriteriaBuilder cb = em.getCriteriaBuilder();
-        CriteriaQuery<Grant> q = cb.createQuery(Grant.class);
-        Root<Grant> c = q.from(Grant.class);
-        c.fetch(Grant_.subject);
-        q.where(c.get(Grant_.subjectId).in(subquery(cb, q)));
+    public Collection<GrantDto> getGrantTreeByCategory(GrantCategory category) {
+        List<GrantItem> grantList = this.findByCriteria(
+                new SubqueryInCriteriaBuilder<>(GrantItem_.subjectId, GrantSubject_.id,
+                    new EqualsCriteriaBuilder(GrantSubject_.category, category)));
 
-        TypedQuery<Grant> query = em.createQuery(q);
-        List<Grant> results = query.getResultList();
-        return  Collections.emptyList();
+        Map<GrantSubject, GrantDto> dtoList = new HashMap<>();
+        grantList.forEach(x -> {
+            dtoList.put(
+                    x.getSubject(),
+                    dtoList.getOrDefault(x.getSubject(), new GrantDto(x.getSubject())).withGrant(x)
+            );
+        });
+        return dtoList.values();
     }
 
-    public Subquery<Integer> subquery(CriteriaBuilder cb, CriteriaQuery<Grant> q) {
-        Subquery<Integer> sub = q.subquery(Integer.class);
-        Root<GrantSubject> r = sub.from(GrantSubject.class);
-        sub.select(r.get(GrantSubject_.id));
-        sub.where(cb.equal(r.get(GrantSubject_.category), GrantCategory.SPORT));
-        return sub;
-    }
-
-    public List<GrantSubject> getSubjectByCategory(InterfaceCriteriaBuilder<GrantSubject> qcb) {
-        return new CriteriaQueryContext(em, Grant.class).apply(qcb).getResultList();
+    private List<GrantItem> findByCriteria(InterfaceCriteriaBuilder<GrantItem> criteriaBuilder) {
+        return new CriteriaQueryContext(em, GrantItem.class).apply(criteriaBuilder).getResultList();
     }
 }
