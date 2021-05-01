@@ -1,26 +1,24 @@
 package com.example.springboot.page;
 
 import com.example.springboot.component.*;
-import com.example.springboot.core.*;
-import com.example.springboot.criteria.EqualsCriteriaBuilder;
-import com.example.springboot.criteria.SubqueryInCriteriaBuilder;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
 import com.example.springboot.html.Section;
 import com.example.springboot.model.GrantCategory;
-import com.example.springboot.model.GrantItem_;
-import com.example.springboot.model.GrantSubject_;
 import com.example.springboot.service.BudgetService;
 import com.example.springboot.service.GrantService;
+import com.example.springboot.service.ProjectService;
 
 public class IndexPage implements Page {
 
     private final BudgetService budgetService;
     private final GrantService grantService;
+    private ProjectService projectService;
 
-    public IndexPage(BudgetService budgetService, GrantService grantService) {
+    public IndexPage(BudgetService budgetService, GrantService grantService, ProjectService projectService) {
         this.budgetService = budgetService;
         this.grantService = grantService;
+        this.projectService = projectService;
     }
 
     @Override
@@ -42,7 +40,7 @@ public class IndexPage implements Page {
     private HtmlTag projects() {
         Section timeline = new Section();
         timeline.addContent(new Title("Časová os projektov"));
-        timeline.addContent(new ArticleProject(new Project()));
+        timeline.addContent(new ArticleProject(projectService.getProjectForIndex()));
         return timeline;
     }
 

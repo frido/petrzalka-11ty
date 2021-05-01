@@ -1,31 +1,39 @@
 package com.example.springboot.component;
 
-import com.example.springboot.core.Project;
 import com.example.springboot.html.*;
+import com.example.springboot.model.Project;
+
+import java.util.List;
 
 public class ArticleProject extends HtmlTag {
 
-    private final Project project;
+    private final List<Project> project;
 
-    public ArticleProject(Project project) {
-        super("article");
+    public ArticleProject(List<Project> project) {
+        super("div");
         this.project = project;
     }
 
     @Override
     public String toString() {
-        addClass("execution box inwork");
+        project.forEach(p -> addContent(article(p)));
+        return super.toString();
+    }
+
+    private HtmlTag article(Project project) {
+        HtmlTag article = new HtmlTag("article");
+        article.addClass("execution box inwork");
         Div row = new Div("row");
-        addContent(row);
+        article.addContent(row);
         row
                 .with(new Div("col-md-10")
                         .with(new H(5, "status-text inwork", "Príprava projektu")
-                        .with(new H(3,"", new AHref("", "/posts/lavky_cez_chorvatske_rameno/", new HtmlNoTag("Lávky cez Chorvátske rameno"))))
+                        .with(new H(3,"", new AHref("", "/posts/lavky_cez_chorvatske_rameno/", new HtmlNoTag(project.getTitle()))))
                         ))
                 .with(new Div("col-md-2 text-right")
                         .with(new Span("status-text inwork", "prebieha")));
         Div sub = new Div("sub");
-        addContent(sub);
+        article.addContent(sub);
         Div row2 = new Div("row");
         sub.addContent(row2);
         row2.with(
@@ -34,6 +42,6 @@ public class ArticleProject extends HtmlTag {
                         .with(new Span("", "11.02.2021")));
         row2.with(new Div("col-md-4 text-right")
                         .with(new Span("status-text inwork", "prebieha")));
-        return super.toString();
+        return article;
     }
 }

@@ -52,4 +52,9 @@ public class SubCriteriaQueryContext<T> implements QueryContext<T> {
     public List<GrantSubject> getResultList() {
         throw new RuntimeException("getResultList");
     }
+
+    @Override
+    public void order(List<Order> order) {
+        throw new RuntimeException("getResultList");
+    }
 }

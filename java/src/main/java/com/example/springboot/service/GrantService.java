@@ -1,9 +1,6 @@
 package com.example.springboot.service;
 
-import com.example.springboot.criteria.CriteriaQueryContext;
-import com.example.springboot.criteria.EqualsCriteriaBuilder;
-import com.example.springboot.criteria.InterfaceCriteriaBuilder;
-import com.example.springboot.criteria.SubqueryInCriteriaBuilder;
+import com.example.springboot.criteria.*;
 import com.example.springboot.model.*;
 import com.example.springboot.model.dto.GrantDto;
 import org.springframework.stereotype.Component;
@@ -20,11 +17,12 @@ public class GrantService {
 
     @PersistenceContext
     private EntityManager em;
+    private InterfaceCriteriaBuilder defaultOrder = new AttributeOrderCriteriaBuilder(GrantItem_.amount);
 
     public Collection<GrantDto> getGrantTreeByCategory(GrantCategory category) {
         List<GrantItem> grantList = this.findByCriteria(
                 new SubqueryInCriteriaBuilder<>(GrantItem_.subjectId, GrantSubject_.id,
-                    new EqualsCriteriaBuilder(GrantSubject_.category, category)));
+                    new EqualsCriteriaBuilder(GrantSubject_.category, category)), 4);
 
         Map<GrantSubject, GrantDto> dtoList = new HashMap<>();
         grantList.forEach(x -> {
@@ -36,7 +34,7 @@ public class GrantService {
         return dtoList.values();
     }
 
-    private List<GrantItem> findByCriteria(InterfaceCriteriaBuilder<GrantItem> criteriaBuilder) {
-        return new CriteriaQueryContext(em, GrantItem.class).apply(criteriaBuilder).getResultList();
+    private List<GrantItem> findByCriteria(InterfaceCriteriaBuilder<GrantItem> criteriaBuilder, int limit) {
+        return new CriteriaQueryContext(em, GrantItem.class).apply(criteriaBuilder).apply(defaultOrder).getResultList(limit);
     }
 }

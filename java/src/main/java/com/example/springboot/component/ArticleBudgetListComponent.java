@@ -9,26 +9,26 @@ public class ArticleBudgetListComponent extends HtmlTag {
     private final List<Budget> plan;
 
     public ArticleBudgetListComponent(List<Budget> plan) {
-        super("article");
-        plan.forEach(System.out::println);
+        super("div");
         this.plan = plan;
     }
 
     @Override
     public String toString() {
-        addClass("budget box inwork");
-        Div row = new Div("row");
-        addContent(row);
-        row.with(title());
-        row.with(amount("rozpočet", "365 000€"));
-        Div sub = new Div("sub");
-        addContent(sub);
-        Div row2 = new Div("row");
-        sub.addContent(row2);
-        row2.addContent(subTitle());
-        row2.with(amount("výdavky", "113 075,99€"));
-        row2.with(new Div("col-md-12","Realizovať sa bude projektová dokumentácia na multifunkčné ihrisko a dráhu. Prebieha príprava súťaže"));
+        plan.forEach(p -> addContent(article(p)));
         return super.toString();
+    }
+
+    private HtmlTag article(Budget plan) {
+        HtmlTag article = new HtmlTag("article");
+        article.addClass("budget box inwork");
+        Div row = new Div("row");
+        row.addContent(new Div("col-md-9").with(new H(3, null, plan.getTitle())));
+        row.addContent(new Div("col-md-3 text-right")
+            .with(new Span("muted", "rozpočet"))
+            .with(new Span("amount", plan.getAmountOriginal().toString())));
+        article.addContent(row);
+        return article;
     }
 
     private HtmlTag amount(String title, String amount) {

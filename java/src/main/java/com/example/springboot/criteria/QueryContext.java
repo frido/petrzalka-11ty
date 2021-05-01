@@ -2,6 +2,7 @@ package com.example.springboot.criteria;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.*;
+import java.util.List;
 
 public interface QueryContext<T> {
     void where(Expression<Boolean> restriction);
@@ -13,4 +14,6 @@ public interface QueryContext<T> {
     Subquery<Integer> subquery();
 
     Root<T> getRoot();
+
+    void order(List<Order> order);
 }

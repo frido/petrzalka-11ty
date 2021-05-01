@@ -41,13 +41,19 @@ public class CriteriaQueryContext<T> implements QueryContext<T> {
         return this;
     }
 
-    public List<T> getResultList() {
+    public List<T> getResultList(int limit) {
         TypedQuery<T> q = em.createQuery(query);
+        q.setMaxResults(limit);
         return q.getResultList();
     }
 
     @Override
     public void where(Expression<Boolean> restriction) {
         query.where(restriction);
+    }
+
+    @Override
+    public void order(List<Order> order) {
+        query.orderBy(order);
     }
 }
