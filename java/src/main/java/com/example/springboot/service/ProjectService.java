@@ -27,4 +27,8 @@ public class ProjectService {
     private List<Project> findByCriteria(InterfaceCriteriaBuilder<Project> criteriaBuilder, int limit) {
         return new CriteriaQueryContext(em, Project.class).apply(criteriaBuilder).apply(defaultOrder).getResultList(limit);
     }
+
+    public List<Project> getAllProjects() {
+        return findByCriteria(new NoCriteriaBuilder<>(), 100);
+    }
 }

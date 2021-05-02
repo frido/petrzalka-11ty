@@ -9,26 +9,13 @@ import com.example.springboot.service.BudgetService;
 import com.example.springboot.service.GrantService;
 import com.example.springboot.service.ProjectService;
 
-public class IndexPage implements Page {
-
-    private final BudgetService budgetService;
-    private final GrantService grantService;
-    private ProjectService projectService;
+public class IndexPage extends BasePage {
 
     public IndexPage(BudgetService budgetService, GrantService grantService, ProjectService projectService) {
-        this.budgetService = budgetService;
-        this.grantService = grantService;
-        this.projectService = projectService;
+        super(budgetService, grantService, projectService);
     }
 
-    @Override
-    public String toString() {
-        Template template = new Template();
-        template.setContent(getContent());
-        return template.toString();
-    }
-
-    private HtmlTag getContent() {
+    protected HtmlTag getContent() {
         Div root = new Div("");
         root.addContent(projects());
         root.addContent(budgets());
