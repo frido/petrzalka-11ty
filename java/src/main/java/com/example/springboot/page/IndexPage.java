@@ -40,7 +40,7 @@ public class IndexPage implements Page {
     private HtmlTag projects() {
         Section timeline = new Section();
         timeline.addContent(new Title("Časová os projektov"));
-        timeline.addContent(new ArticleProject(projectService.getProjectForIndex()));
+        timeline.addContent(new ArticleProjectListComponent(projectService.getProjectForIndex()));
         return timeline;
     }
 

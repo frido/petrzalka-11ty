@@ -2,14 +2,15 @@ package com.example.springboot.component;
 
 import com.example.springboot.html.*;
 import com.example.springboot.model.Project;
+import com.example.springboot.model.Statement;
 
 import java.util.List;
 
-public class ArticleProject extends HtmlTag {
+public class ArticleProjectListComponent extends HtmlTag {
 
     private final List<Project> project;
 
-    public ArticleProject(List<Project> project) {
+    public ArticleProjectListComponent(List<Project> project) {
         super("div");
         this.project = project;
     }
@@ -28,20 +29,24 @@ public class ArticleProject extends HtmlTag {
         row
                 .with(new Div("col-md-10")
                         .with(new H(5, "status-text inwork", "Príprava projektu")
-                        .with(new H(3,"", new AHref("", "/posts/lavky_cez_chorvatske_rameno/", new HtmlNoTag(project.getTitle()))))
+                        .with(new H(3,"", new AHref("", "/posts/" + project.getUrl() + "/", new HtmlNoTag(project.getTitle()))))
                         ))
                 .with(new Div("col-md-2 text-right")
                         .with(new Span("status-text inwork", "prebieha")));
         Div sub = new Div("sub");
         article.addContent(sub);
+        project.getStatements().forEach(s -> sub.addContent(subArticle(s)));
+        return article;
+    }
+
+    private HtmlTag subArticle(Statement statement) {
         Div row2 = new Div("row");
-        sub.addContent(row2);
         row2.with(
                 new Div("col-md-8")
-                        .with(new AHref("", "...", new Span("padding-right", "Súťaž")))
-                        .with(new Span("", "11.02.2021")));
+                        .with(new AHref("", statement.getSource(), new Span("padding-right", statement.getTitle())))
+                        .with(new Span("muted", statement.getDate().toString())));
         row2.with(new Div("col-md-4 text-right")
-                        .with(new Span("status-text inwork", "prebieha")));
-        return article;
+                        .with(new Span("status-text inwork", statement.getStatusDescription())));
+        return row2;
     }
 }

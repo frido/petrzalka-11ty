@@ -13,7 +13,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
-@Component
+@Component // TODO: component vs resource
 public class ProjectService {
 
     @PersistenceContext

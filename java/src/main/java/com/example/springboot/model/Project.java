@@ -2,6 +2,8 @@ package com.example.springboot.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "project")
@@ -21,6 +23,9 @@ public class Project {
     private String phase;
     @Enumerated(EnumType.STRING)
     private ProjectStatus status;
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OrderBy("date DESC")
+    private Set<Statement> statements = new HashSet<>(0);
 
     public String getTitle() {
         return title;
@@ -92,5 +97,13 @@ public class Project {
 
     public void setStatus(ProjectStatus status) {
         this.status = status;
+    }
+
+    public Set<Statement> getStatements() {
+        return statements;
+    }
+
+    public void setStatements(Set<Statement> statements) {
+        this.statements = statements;
     }
 }
