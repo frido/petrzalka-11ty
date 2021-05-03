@@ -7,4 +7,8 @@ public class AHref extends HtmlTag {
         addAttr("href", href);
         addContent(content);
     }
+
+    public AHref(String href, String content) {
+        this("", href, new HtmlNoTag(content));
+    }
 }

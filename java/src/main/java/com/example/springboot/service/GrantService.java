@@ -19,10 +19,10 @@ public class GrantService {
     private EntityManager em;
     private InterfaceCriteriaBuilder defaultOrder = new AttributeOrderCriteriaBuilder(GrantItem_.amount);
 
-    public Collection<GrantDto> getGrantTreeByCategory(GrantCategory category) {
+    public Collection<GrantDto> getGrantTreeByCategory(GrantCategory category, int limit) {
         List<GrantItem> grantList = this.findByCriteria(
                 new SubqueryInCriteriaBuilder<>(GrantItem_.subjectId, GrantSubject_.id,
-                    new EqualsCriteriaBuilder(GrantSubject_.category, category)), 4);
+                    new EqualsCriteriaBuilder(GrantSubject_.category, category)), limit);
 
         Map<GrantSubject, GrantDto> dtoList = new HashMap<>();
         grantList.forEach(x -> {

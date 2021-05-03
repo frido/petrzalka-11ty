@@ -24,29 +24,28 @@ public class ArticleProjectListComponent extends HtmlTag {
     private HtmlTag article(Project project) {
         HtmlTag article = new HtmlTag("article");
         article.addClass("execution box inwork");
-        Div row = new Div("row");
-        article.addContent(row);
-        row
+        HtmlTag row = new Div("row")
                 .with(new Div("col-md-10")
-                        .with(new H(5, "status-text inwork", "Príprava projektu")
+                        .with(new H(5, "status-text inwork", "Príprava projektu"))
                         .with(new H(3,"", new AHref("", "/posts/" + project.getUrl() + "/", new HtmlNoTag(project.getTitle()))))
-                        ))
+                        )
                 .with(new Div("col-md-2 text-right")
                         .with(new Span("status-text inwork", "prebieha")));
-        Div sub = new Div("sub");
-        article.addContent(sub);
+        article.addContent(row);
+        HtmlTag content = article.createContent(new Div("row"));
+        content.with(new Div("col-md-3").with(new Img("", "").clazz("preview card-img")));
+        HtmlTag cardContent = new Div("card-text").with(project.getDescription());
+        content.with(new Div("col-md-9").with(cardContent));
+        HtmlTag sub = cardContent.createContent(new Div("sub"));
+
         project.getStatements().forEach(s -> sub.addContent(subArticle(s)));
         return article;
     }
 
     private HtmlTag subArticle(Statement statement) {
-        Div row2 = new Div("row");
-        row2.with(
-                new Div("col-md-8")
-                        .with(new AHref("", statement.getSource(), new Span("padding-right", statement.getTitle())))
-                        .with(new Span("muted", String.valueOf(statement.getDate()))));
-        row2.with(new Div("col-md-4 text-right")
-                        .with(new Span("status-text inwork", statement.getStatusDescription())));
-        return row2;
+        return new Div("sub-row")
+                .with(new AHref("", statement.getSource(), new Span("padding-right", statement.getTitle())))
+                .with(new Span("status-text inwork padding-right", statement.getStatusDescription()))
+                .with(new Span("muted", String.valueOf(statement.getDate())));
     }
 }

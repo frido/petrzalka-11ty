@@ -1,10 +1,6 @@
 package com.example.springboot.service;
 
-import com.example.springboot.criteria.EqualsCriteriaBuilder;
-import com.example.springboot.criteria.SubqueryInCriteriaBuilder;
 import com.example.springboot.model.GrantCategory;
-import com.example.springboot.model.GrantItem_;
-import com.example.springboot.model.GrantSubject_;
 import com.example.springboot.model.dto.GrantDto;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -20,7 +16,7 @@ class GrantItemServiceTest {
         ctx.refresh();
         GrantService grantService = ctx.getBean(GrantService.class);
 //        grantService.getSubjectByCategory(new EqualsCriteriaBuilder(GrantSubject_.category, GrantCategory.SPORT));
-        Collection<GrantDto> result = grantService.getGrantTreeByCategory(GrantCategory.SPORT);
+        Collection<GrantDto> result = grantService.getGrantTreeByCategory(GrantCategory.SPORT, 4);
         System.out.println(result);
         ctx.close();
     }

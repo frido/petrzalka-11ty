@@ -41,14 +41,14 @@ public class IndexPage extends BasePage {
     private HtmlTag sport() {
         Section sport = new Section();
         sport.addContent(new Title("Športové granty"));
-        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.SPORT)));
+        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.SPORT, 4)));
         return sport;
     }
 
     private HtmlTag oz() {
         Section sport = new Section();
         sport.addContent(new Title("Dotácie"));
-        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.OZ)));
+        sport.addContent(new ArticleSportListComponent(grantService.getGrantTreeByCategory(GrantCategory.OZ, 4)));
         return sport;
     }
 

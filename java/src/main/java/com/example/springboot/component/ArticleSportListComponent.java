@@ -53,7 +53,7 @@ public class ArticleSportListComponent extends HtmlTag {
     }
 
     private String getOldDescription(GrantItem grantItem) {
-        return grantItem.getAmount().toString() + " (" + grantItem.getYear() + ")";
+        return grantItem.getAmount().toString() + " (rok " + grantItem.getYear() + ")";
     }
 
 }
