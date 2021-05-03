@@ -44,7 +44,7 @@ public class ArticleProjectListComponent extends HtmlTag {
 
     private HtmlTag subArticle(Statement statement) {
         return new Div("sub-row")
-                .with(new AHref("", statement.getSource(), new Span("padding-right", statement.getTitle())))
+                .with(new AHref("", statement.getSource(), new Span("", statement.getTitle())))
                 .with(new Span("status-text inwork padding-right", statement.getStatusDescription()))
                 .with(new Span("muted", String.valueOf(statement.getDate())));
     }
