@@ -48,6 +48,10 @@ public class HtmlTag {
         this.contents.add(content);
     }
 
+    public void addContent(List<HtmlTag> contents) {
+        this.contents.addAll(contents);
+    }
+
     public HtmlTag createContent(HtmlTag content) {
         addContent(content);
         return content;

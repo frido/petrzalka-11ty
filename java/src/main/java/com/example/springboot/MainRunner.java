@@ -1,6 +1,7 @@
 package com.example.springboot;
 
 import com.example.springboot.core.PageWriter;
+import com.example.springboot.page.BudgetPage;
 import com.example.springboot.page.GrantPage;
 import com.example.springboot.page.IndexPage;
 import com.example.springboot.page.ProjectPage;
@@ -31,6 +32,7 @@ public class MainRunner implements CommandLineRunner {
         pw.write(new IndexPage(budgetService, grantService, projectService));
         pw.write(new ProjectPage(budgetService, grantService, projectService));
         pw.write(new GrantPage(budgetService, grantService, projectService));
+        pw.write(new BudgetPage(budgetService, grantService, projectService));
 
     }
 }
