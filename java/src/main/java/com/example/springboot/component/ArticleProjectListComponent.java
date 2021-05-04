@@ -23,14 +23,14 @@ public class ArticleProjectListComponent extends HtmlTag {
 
     private HtmlTag article(Project project) {
         HtmlTag article = new HtmlTag("article");
-        article.addClass("execution box inwork");
+        article.clazz("box").clazz(project.getStatus().name());
         HtmlTag row = new Div("row")
                 .with(new Div("col-md-10")
-                        .with(new H(5, "status-text inwork", "Príprava projektu"))
-                        .with(new H(3,"", new AHref("", "/posts/" + project.getUrl() + "/", new HtmlNoTag(project.getTitle()))))
+                        .with(new H(5).clazz("status-text").clazz(project.getStatus().name()).with(project.getPhase()))
+                        .with(new H(3).with(new AHref("/posts/" + project.getUrl() + "/", project.getTitle())))
                         )
                 .with(new Div("col-md-2 text-right")
-                        .with(new Span("status-text inwork", "prebieha")));
+                        .with(new Span("status-text", project.getStatus().name()).clazz(project.getStatus().name())));
         article.addContent(row);
         HtmlTag content = article.createContent(new Div("row"));
         content.with(new Div("col-md-3").with(new Img("", "").clazz("preview card-img")));
@@ -45,7 +45,7 @@ public class ArticleProjectListComponent extends HtmlTag {
     private HtmlTag subArticle(Statement statement) {
         return new Div("sub-row")
                 .with(new AHref("", statement.getSource(), new Span("", statement.getTitle())))
-                .with(new Span("status-text inwork padding-right", statement.getStatusDescription()))
+                .with(new Span("status-text padding-right", statement.getStatusDescription()).clazz(statement.getStatus()))
                 .with(new Span("muted", String.valueOf(statement.getDate())));
     }
 }

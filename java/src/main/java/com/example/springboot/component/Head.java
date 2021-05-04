@@ -1,12 +1,13 @@
 package com.example.springboot.component;
 
 import com.example.springboot.html.*;
+import com.example.springboot.page.HeadProvider;
 
 public class Head extends HtmlTag {
 
     private String base = "file:///C:/home/repos/11ty-petrzalka/java/_site/"; // TODO: configurable
 
-    public Head() {
+    public Head(HeadProvider headProvider) {
         super("head");
         addContent(new HtmlTag("base").as("href", base));
         addContent(new HtmlTag("title").with(new HtmlNoTag("Projekty v Petržalke")));

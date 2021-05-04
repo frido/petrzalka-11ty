@@ -11,11 +11,18 @@ import com.example.springboot.service.ProjectService;
 
 public class IndexPage extends BasePage {
 
+    private final BudgetService budgetService;
+    private final GrantService grantService;
+    private final ProjectService projectService;
+
     public IndexPage(BudgetService budgetService, GrantService grantService, ProjectService projectService) {
-        super(budgetService, grantService, projectService);
+
+        this.budgetService = budgetService;
+        this.grantService = grantService;
+        this.projectService = projectService;
     }
 
-    protected HtmlTag getContent() {
+    public HtmlTag getContent() {
         Div root = new Div("");
         root.addContent(projects());
         root.addContent(budgets());

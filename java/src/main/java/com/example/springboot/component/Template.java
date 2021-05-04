@@ -1,25 +1,29 @@
 package com.example.springboot.component;
 
-import com.example.springboot.component.Head;
-import com.example.springboot.component.PageHeader;
 import com.example.springboot.html.Html;
 import com.example.springboot.html.HtmlTag;
+import com.example.springboot.page.HeadProvider;
+import com.example.springboot.page.PageHeaderProvider;
 
 public class Template {
 
-    private HtmlTag content;
+    private final HeadProvider headProvider;
+    private final PageHeaderProvider pageheaderProvider;
+    private final ContentProvider contentProvider;
 
-    public void setContent(HtmlTag content) {
-        this.content = content;
+    public Template(ContentProvider contentProvider, HeadProvider headProvider, PageHeaderProvider pageheaderProvider) {
+        this.contentProvider = contentProvider;
+        this.headProvider = headProvider;
+        this.pageheaderProvider = pageheaderProvider;
     }
 
     @Override
     public String toString() {
         Html html = new Html("sk");
-        html.addContent(new Head());
+        html.addContent(new Head(headProvider));
         HtmlTag body = new HtmlTag("body");
-        body.addContent(new PageHeader());
-        body.addContent(content);
+        body.addContent(new PageHeader(pageheaderProvider));
+        body.addContent(contentProvider.getContent());
         html.addContent(body);
         return html.toString();
     }

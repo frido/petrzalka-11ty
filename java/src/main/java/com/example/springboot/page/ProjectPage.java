@@ -14,11 +14,14 @@ import com.example.springboot.service.ProjectService;
 
 public class ProjectPage extends BasePage {
 
-    public ProjectPage(BudgetService budgetService, GrantService grantService, ProjectService projectService) {
-        super(budgetService, grantService, projectService);
+    protected final ProjectService projectService;
+
+    public ProjectPage(ProjectService projectService) {
+        super();
+        this.projectService = projectService;
     }
 
-    protected HtmlTag getContent() {
+    public HtmlTag getContent() {
         Div root = new Div("");
         root.addContent(projects());
         return root;

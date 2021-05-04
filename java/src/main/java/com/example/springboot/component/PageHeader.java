@@ -1,10 +1,11 @@
 package com.example.springboot.component;
 
 import com.example.springboot.html.*;
+import com.example.springboot.page.PageHeaderProvider;
 
 public class PageHeader extends Header {
 
-    public PageHeader() {
+    public PageHeader(PageHeaderProvider pageheaderProvider) {
         super("row paletteA px-md-4 border-bottom shadow-sm logo");
     }
 

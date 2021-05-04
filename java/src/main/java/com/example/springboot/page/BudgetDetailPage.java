@@ -6,17 +6,21 @@ import com.example.springboot.component.Title;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
 import com.example.springboot.html.Section;
-import com.example.springboot.service.BudgetService;
-import com.example.springboot.service.GrantService;
-import com.example.springboot.service.ProjectService;
+import com.example.springboot.model.Budget;
+import com.example.springboot.model.BudgetStatus;
+import com.example.springboot.model.Project;
 
-public class BudgetPage extends BasePage {
+import java.util.List;
+import java.util.Map;
 
-    private final BudgetService budgetService;
+public class BudgetDetailPage extends BasePage {
 
-    public BudgetPage(BudgetService budgetService) {
-        super();
-        this.budgetService = budgetService;
+    private final Map<BudgetStatus, List<Budget>> budgetMap;
+    private final int year;
+
+    public BudgetDetailPage(Map<BudgetStatus, List<Budget>> budgetMap, int year) {
+        this.budgetMap = budgetMap;
+        this.year = year;
     }
 
     public HtmlTag getContent() {
@@ -27,13 +31,13 @@ public class BudgetPage extends BasePage {
 
     private HtmlTag budgets() {
         Section plan = new Section();
-        plan.addContent(new Title("Investičný plán 2020"));
         plan.addContent(new Title("Investičný plán 2021"));
+        plan.addContent(new ArticleBudgetListComponent(budgetMap));
         return plan;
     }
 
     @Override
     public String getFileName() {
-        return "budgets";
+        return "budgets/" + year + "/index";
     }
 }

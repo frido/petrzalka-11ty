@@ -12,11 +12,14 @@ import com.example.springboot.service.ProjectService;
 
 public class GrantPage extends BasePage {
 
-    public GrantPage(BudgetService budgetService, GrantService grantService, ProjectService projectService) {
-        super(budgetService, grantService, projectService);
+    private final GrantService grantService;
+
+    public GrantPage(GrantService grantService) {
+        super();
+        this.grantService = grantService;
     }
 
-    protected HtmlTag getContent() {
+    public HtmlTag getContent() {
         Div root = new Div("");
         root.addContent(sport());
         root.addContent(oz());
