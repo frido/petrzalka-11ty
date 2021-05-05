@@ -1,9 +1,6 @@
 package com.example.springboot.page;
 
-import com.example.springboot.component.ArticleBudgetListComponent;
-import com.example.springboot.component.ArticleProjectListComponent;
-import com.example.springboot.component.ArticleSportListComponent;
-import com.example.springboot.component.Title;
+import com.example.springboot.component.*;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
 import com.example.springboot.html.Section;
@@ -36,6 +33,6 @@ public class ProjectPage extends BasePage {
 
     @Override
     public String getFileName() {
-        return "projects";
+        return PageHeader.POSTS + "/index";
     }
 }

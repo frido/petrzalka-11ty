@@ -26,6 +26,9 @@ public class Project {
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @OrderBy("date DESC")
     private Set<Statement> statements = new HashSet<>(0);
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OrderBy("source ASC")
+    private Set<Image> images = new HashSet<>(0);
 
     public String getTitle() {
         return title;
@@ -105,5 +108,13 @@ public class Project {
 
     public void setStatements(Set<Statement> statements) {
         this.statements = statements;
+    }
+
+    public Set<Image> getImages() {
+        return images;
+    }
+
+    public void setImages(Set<Image> images) {
+        this.images = images;
     }
 }

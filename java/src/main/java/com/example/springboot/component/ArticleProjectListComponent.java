@@ -23,23 +23,30 @@ public class ArticleProjectListComponent extends HtmlTag {
 
     private HtmlTag article(Project project) {
         HtmlTag article = new HtmlTag("article");
-        article.clazz("box").clazz(project.getStatus().name());
-        HtmlTag row = new Div("row")
-                .with(new Div("col-md-10")
-                        .with(new H(5).clazz("status-text").clazz(project.getStatus().name()).with(project.getPhase()))
-                        .with(new H(3).with(new AHref("/posts/" + project.getUrl() + "/", project.getTitle())))
-                        )
-                .with(new Div("col-md-2 text-right")
-                        .with(new Span("status-text", project.getStatus().name()).clazz(project.getStatus().name())));
-        article.addContent(row);
-        HtmlTag content = article.createContent(new Div("row"));
-        content.with(new Div("col-md-3").with(new Img("", "").clazz("preview card-img")));
-        HtmlTag cardContent = new Div("card-text").with(project.getDescription());
-        content.with(new Div("col-md-9").with(cardContent));
+        article.clazz("box").clazz(project.getStatus().clazz());
+        Row row = (Row) article.createContent(new Row());
+                row.column("col-md-10")
+                        .with(new H(5)
+                                .clazz("status-text")
+                                .clazz(project.getStatus().clazz())
+                                .with(project.getPhase()))
+                        .with(new H(3)
+                                .with(new AHref(resolve(project.getUrl()), project.getTitle())));
+                row.column("col-md-2 text-right")
+                        .with(new Span("status-text", project.getStatus().label()).clazz(project.getStatus().clazz()));
+        Row content = (Row) article.createContent(new Row());
+        if (project.getIcon() != null) {
+            content.column("col-md-3").with(new Img(project.getIcon().getSource(), project.getIcon().getTitle()).clazz("preview card-img"));
+        }
+        HtmlTag cardContent = content.column("col-md-9").createContent(new Div("card-text").with(project.getDescription()));
         HtmlTag sub = cardContent.createContent(new Div("sub"));
 
         project.getStatements().forEach(s -> sub.addContent(subArticle(s)));
         return article;
+    }
+
+    private String resolve(String url) {
+        return PageHeader.POSTS + url + "/";
     }
 
     private HtmlTag subArticle(Statement statement) {

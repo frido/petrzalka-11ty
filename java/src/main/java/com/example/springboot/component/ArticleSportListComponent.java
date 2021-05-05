@@ -1,5 +1,6 @@
 package com.example.springboot.component;
 
+import com.example.springboot.core.Amount;
 import com.example.springboot.model.GrantItem;
 import com.example.springboot.model.dto.GrantDto;
 import com.example.springboot.html.*;
@@ -41,7 +42,7 @@ public class ArticleSportListComponent extends HtmlTag {
     private HtmlTag article(GrantDto grant) {
         HtmlTag article = new HtmlTag("article").clazz("box h-100 inwork text-center")
                 .with(new H(3, "", grant.getTitle()))
-                .with(new HtmlTag("p").with(new Span("amount", grant.getCurrentAmount().toString())));
+                .with(new HtmlTag("p").with(new Span("amount", Amount.of(grant.getCurrentAmount()).toString())));
         if (grant.getCurrentDetail() != null) {
             article.with(new HtmlTag("p").with(grant.getCurrentDetail()));
         }
@@ -53,7 +54,7 @@ public class ArticleSportListComponent extends HtmlTag {
     }
 
     private String getOldDescription(GrantItem grantItem) {
-        return grantItem.getAmount().toString() + " (rok " + grantItem.getYear() + ")";
+        return Amount.of(grantItem.getAmount()) + " (rok " + grantItem.getYear() + ")";
     }
 
 }

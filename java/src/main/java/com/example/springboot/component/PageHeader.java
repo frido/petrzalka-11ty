@@ -1,9 +1,14 @@
 package com.example.springboot.component;
 
+import com.example.springboot.core.Base;
 import com.example.springboot.html.*;
 import com.example.springboot.page.PageHeaderProvider;
 
 public class PageHeader extends Header {
+
+    public static final String POSTS = "/posts/";
+    public static final String GRANTS = "/grants/";
+    public static final String BUDGET = "/investicny_plan/";
 
     public PageHeader(PageHeaderProvider pageheaderProvider) {
         super("row paletteA px-md-4 border-bottom shadow-sm logo");
@@ -22,11 +27,10 @@ public class PageHeader extends Header {
         HtmlTag nav = new HtmlTag("nav");
         nav.addAttr("class", "row");
         addNavigationLink(nav, "/", "Home");
-        addNavigationLink(nav, "/projects/", "Projekty");
-        addNavigationLink(nav, "/casova_os/", "Časová os");
-        addNavigationLink(nav, "/grants/", "Granty");
-        addNavigationLink(nav, "/investicny_plan/", "Inv. Plán");
-        addNavigationLink(nav, "/ihriska/", "Ihriská");
+        addNavigationLink(nav, POSTS, "Projekty");
+        addNavigationLink(nav, GRANTS, "Granty");
+        addNavigationLink(nav, BUDGET, "Inv. Plán");
+//        addNavigationLink(nav, "/ihriska/", "Ihriská");
         row.addContent(nav);
 
         mainDiv.addContent(row);

@@ -1,6 +1,7 @@
 package com.example.springboot.page;
 
 import com.example.springboot.component.ArticleSportListComponent;
+import com.example.springboot.component.PageHeader;
 import com.example.springboot.component.Title;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
@@ -42,6 +43,6 @@ public class GrantPage extends BasePage {
 
     @Override
     public String getFileName() {
-        return "grants";
+        return PageHeader.GRANTS + "index";
     }
 }

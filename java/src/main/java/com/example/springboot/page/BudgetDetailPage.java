@@ -2,6 +2,7 @@ package com.example.springboot.page;
 
 import com.example.springboot.component.ArticleBudgetListComponent;
 import com.example.springboot.component.ArticleProjectListComponent;
+import com.example.springboot.component.PageHeader;
 import com.example.springboot.component.Title;
 import com.example.springboot.html.Div;
 import com.example.springboot.html.HtmlTag;
@@ -38,6 +39,6 @@ public class BudgetDetailPage extends BasePage {
 
     @Override
     public String getFileName() {
-        return "budgets/" + year + "/index";
+        return PageHeader.BUDGET + year + "/index";
     }
 }
