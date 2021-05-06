@@ -1,5 +1,6 @@
 package com.example.springboot.page;
 
+import com.example.springboot.component.ArticleProjectComponent;
 import com.example.springboot.component.Figure;
 import com.example.springboot.component.PageHeader;
 import com.example.springboot.component.Title;
@@ -20,7 +21,7 @@ public class ProjectDetailPage extends BasePage {
     public HtmlTag getContent() {
         Section root = new Section();
         root.addContent(new Title(project.getTitle()));
-        root.addContent(article());
+        root.addContent(new ArticleProjectComponent(project, false));
         root.addContent(gallery());
         root.addContent(new HtmlNoTag(project.getDescription()));
         return root;

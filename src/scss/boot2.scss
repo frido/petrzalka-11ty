@@ -93,10 +93,14 @@ section.section {
       @include timeline($pause);
     }
 
+    .project-description {
+      padding-bottom: .5rem;
+      border-bottom: solid 1px #80808038;
+      margin-bottom: .5rem;
+    }
+
     .statement-list {
-      padding-top: .5rem;
-      border-top: solid 1px #80808038;
-      margin-top: .5rem;
+
       .statement-row > * {
         padding-right: 1rem;
       }
