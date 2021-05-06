@@ -17,12 +17,12 @@ public class GrantService {
 
     @PersistenceContext
     private EntityManager em;
-    private InterfaceCriteriaBuilder defaultOrder = new AttributeOrderCriteriaBuilder(GrantItem_.amount);
+    private final InterfaceCriteriaBuilder<GrantItem> defaultOrder = new AttributeOrderCriteriaBuilder<>(List.of(GrantItem_.year, GrantItem_.amount));
 
     public Collection<GrantDto> getGrantTreeByCategory(GrantCategory category, int limit) {
         List<GrantItem> grantList = this.findByCriteria(
                 new SubqueryInCriteriaBuilder<>(GrantItem_.subjectId, GrantSubject_.id,
-                    new EqualsCriteriaBuilder(GrantSubject_.category, category)), limit);
+                    new EqualsCriteriaBuilder<>(GrantSubject_.category, category)), limit);
 
         Map<GrantSubject, GrantDto> dtoList = new HashMap<>();
         grantList.forEach(x -> {

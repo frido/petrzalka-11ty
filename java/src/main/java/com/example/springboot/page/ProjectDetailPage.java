@@ -42,7 +42,7 @@ public class ProjectDetailPage extends BasePage {
                 .with(new H(5)
                         .clazz("status-text")
                         .clazz(project.getStatus().clazz())
-                        .with(project.getPhase()));
+                        .with(project.getPhase().getLabel()));
 
         row.column("col-md-2 text-right")
                 .with(new Span("status-text", project.getStatus().label()).clazz(project.getStatus().clazz()));

@@ -1,5 +1,6 @@
 package com.example.springboot.component;
 
+import com.example.springboot.core.Amount;
 import com.example.springboot.model.Budget;
 import com.example.springboot.html.*;
 import com.example.springboot.model.BudgetStatus;
@@ -54,12 +55,12 @@ public class ArticleBudgetListComponent extends HtmlTag {
 
     private HtmlTag article(Budget plan) {
         HtmlTag article = new HtmlTag("article");
-        article.addClass("budget box inwork");
-        Div row = new Div("row");
-        row.addContent(new Div("col-md-9").with(new H(3, null, plan.getTitle())));
-        row.addContent(new Div("col-md-3 text-right")
+        article.clazz("box").clazz(plan.getStatus().getClazz());
+        Row row = new Row();
+        row.column("col-md-9").with(new H(3, null, plan.getTitle()));
+        row.column("col-md-3 text-right")
             .with(new Span("muted", "rozpočet"))
-            .with(new Span("amount", plan.getAmountOriginal().toString())));
+            .with(new Span("amount", Amount.of(plan.getAmountOriginal())));
         article.addContent(row);
         return article;
     }

@@ -20,7 +20,8 @@ public class Project {
     @JoinColumn(name = "budget", referencedColumnName = "id")
     private Budget budget;
     private String url;
-    private String phase;
+    @Enumerated(EnumType.STRING)
+    private ProjectPhase phase;
     @Enumerated(EnumType.STRING)
     private ProjectStatus status;
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -86,11 +87,11 @@ public class Project {
         this.url = url;
     }
 
-    public String getPhase() {
+    public ProjectPhase getPhase() {
         return phase;
     }
 
-    public void setPhase(String phase) {
+    public void setPhase(ProjectPhase phase) {
         this.phase = phase;
     }
 

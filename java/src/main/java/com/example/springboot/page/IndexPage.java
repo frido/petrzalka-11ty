@@ -33,7 +33,7 @@ public class IndexPage extends BasePage {
 
     private HtmlTag projects() {
         Section timeline = new Section();
-        timeline.addContent(new Title("Časová os projektov"));
+        timeline.addContent(new Title("Projekty"));
         timeline.addContent(new ArticleProjectListComponent(projectService.getProjectForIndex()));
         return timeline;
     }
