@@ -22,16 +22,17 @@ public class BudgetService {
     private EntityManager em;
     private final InterfaceCriteriaBuilder<Budget> defaultOrder = new AttributeOrderCriteriaBuilder<>(Budget_.amountOriginal);
 
-    public List<Budget> getBudgetForIndex() {
-        return findByCriteria(new EqualsCriteriaBuilder<>(Budget_.year, 2021), 4);
+    public BudgetByYearDto getBudgetForIndex() {
+        List<Budget> budgetList = findByCriteria(new EqualsCriteriaBuilder<>(Budget_.year, 2021), 4);
+        return new BudgetByYearDto(2021, budgetList);
     }
 
     private List<Budget> findByCriteria(InterfaceCriteriaBuilder<Budget> criteriaBuilder, int limit) {
         return new CriteriaQueryContext<>(em, Budget.class).apply(criteriaBuilder).apply(defaultOrder).getResultList(limit);
     }
 
-    public Map<BudgetStatus, List<Budget>> getBudgetByYear(int year) {
+    public BudgetByYearDto getBudgetByYear(int year) {
         List<Budget> budgetList = findByCriteria(new EqualsCriteriaBuilder<>(Budget_.year, year), 100);
-        return budgetList.stream().collect(Collectors.groupingBy(Budget::getStatus, Collectors.toList()));
+        return new BudgetByYearDto(year, budgetList);
     }
 }

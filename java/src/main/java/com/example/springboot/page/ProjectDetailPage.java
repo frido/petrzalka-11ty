@@ -35,32 +35,6 @@ public class ProjectDetailPage extends BasePage {
         return gallery;
     }
 
-    private HtmlTag article() {
-        HtmlTag article = new HtmlTag("article");
-        article.clazz("article box").clazz(project.getStatus().clazz());
-        Row row = (Row) article.createContent(new Row());
-        row.column("col-md-10")
-                .with(new H(5)
-                        .clazz("status-text")
-                        .clazz(project.getStatus().clazz())
-                        .with(project.getPhase().getLabel()));
-
-        row.column("col-md-2 text-right")
-                .with(new Span("status-text", project.getStatus().label()).clazz(project.getStatus().clazz()));
-
-        HtmlTag sub = article.createContent(new Div("sub"));
-
-        project.getStatements().forEach(s -> sub.addContent(subArticle(s)));
-        return article;
-    }
-
-    private HtmlTag subArticle(Statement statement) {
-        return new Div("sub-row")
-                .with(new AHref("", statement.getSource(), new Span("", statement.getTitle())))
-                .with(new Span("status-text padding-right", statement.getStatusDescription()).clazz(statement.getStatus()))
-                .with(new Span("muted", String.valueOf(statement.getDate())));
-    }
-
     @Override
     public String getFileName() {
         return PageHeader.POSTS + project.getUrl() + "/index";

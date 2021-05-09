@@ -1,10 +1,13 @@
 package com.example.springboot.page;
 
 import com.example.springboot.component.PageHeader;
+import com.example.springboot.component.Title;
 import com.example.springboot.core.Amount;
 import com.example.springboot.html.*;
 import com.example.springboot.model.Budget;
 import com.example.springboot.model.BudgetStatus;
+import com.example.springboot.service.BudgetByYearDto;
+import com.example.springboot.service.BudgetListDto;
 import com.example.springboot.service.BudgetService;
 
 import java.math.BigDecimal;
@@ -28,24 +31,24 @@ public class BudgetPage extends BasePage {
     }
 
     private HtmlTag budgets() {
-        Section plan = new Section();
-        plan.with(article(2021));
-        plan.with(article(2020));
-        return plan;
+        Section root = new Section();
+        root.addContent(new Title("Investičné plány"));
+        root.with(article(2021));
+        root.with(article(2020));
+        return root;
     }
 
     private HtmlTag article(int year) {
-        Map<BudgetStatus, List<Budget>> map = budgetService.getBudgetByYear(year);
-        double rozpocet = map.values().stream().flatMap(Collection::stream).mapToDouble(x -> x.getAmountOriginal().doubleValue()).sum();
-        HtmlTag article = new HtmlTag("article").clazz("budget-summary box").clazz(status(year));
+        BudgetByYearDto plan = budgetService.getBudgetByYear(year);
+        HtmlTag article = new HtmlTag("article").clazz("box").clazz(status(year));
         Row row = (Row) article.createContent(new Row());
-        row.column("col-md-9").with(new H(2).with(new AHref(resolve(year), "Investicny plan na rok " + year)));
+        row.column("col-md-9").with(new H(2).with(new AHref(resolve(year), "Rok " + year)));
         row.column("col-md-3 text-right")
-                .with(new Span("muted", "rozpocet"))
-                .with(new Span("amount", Amount.of(new BigDecimal(rozpocet))));
+                .with(new Span("muted", "rozpočet"))
+                .with(new Span("amount", Amount.of(plan.getbudgetAmount())));
 
         List<BudgetStatus> statusList = List.of(BudgetStatus.SUCCESS, BudgetStatus.INWORK, BudgetStatus.POSTPONE, BudgetStatus.ERROR);
-        statusList.forEach(s -> article.with(statusRow(s, map.get(s))));
+        statusList.forEach(s -> article.with(statusRow(s, plan.getBudgetListByStatus(s))));
         return article;
     }
 
@@ -60,25 +63,27 @@ public class BudgetPage extends BasePage {
         return "success";
     }
 
-    private HtmlTag statusRow(BudgetStatus s, List<Budget> list) {
-        double amount = 0;
-        int count = 0;
-        if (list != null) {
-            amount = list.stream().mapToDouble(x -> x.getAmountReal().doubleValue()).sum();
-            count = list.size();
-        }
-
-        if (list == null) {
+    private HtmlTag statusRow(BudgetStatus status, BudgetListDto list) {
+        if (list.size() == 0) {
             return new HtmlNoTag("");
         }
-
         Row row = new Row();
-        row.column("col-md-4 text-success").with(s.name());
-        row.column("col-md-4").with(String.valueOf(count));
+        row.column("col-md-4 text-success").with(status.getDecription());
+        row.column("col-md-4").with(projectCount(list.size()));
         row.column("col-md-4 text-right")
-                .with(new Span("muted", "aktuálne"))
-                .with(new Span("amount", Amount.of(new BigDecimal(amount))));
+                .with(new Span("muted", "Aktuálne výdavky"))
+                .with(new Span("amount", Amount.of(list.calculateRealAmount())));
         return row;
+    }
+
+    private String projectCount(int count) {
+        if (count == 1) {
+            return "1 projekt";
+        }
+        if (count >1 && count < 5)  {
+            return count + " projekty";
+        }
+        return count + " projektov";
     }
 
     @Override

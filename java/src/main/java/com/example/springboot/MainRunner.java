@@ -38,7 +38,7 @@ public class MainRunner implements CommandLineRunner {
     }
 
     private List<Page> budgetPageGenerator(List<Integer> years) {
-        return years.stream().map(year -> new BudgetDetailPage(budgetService.getBudgetByYear(year), year)).collect(Collectors.toList());
+        return years.stream().map(year -> new BudgetDetailPage(budgetService.getBudgetByYear(year))).collect(Collectors.toList());
     }
 
     private List<Page> projectsPageGenerator() {

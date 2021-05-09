@@ -7,6 +7,9 @@ public class AHref extends HtmlTag {
         super("a");
         addAttr("class", clazz);
         addAttr("href", Base.resolve(href));
+        if (href.startsWith("http")) {
+            addAttr("target", "blank");
+        }
         addContent(content);
     }
 

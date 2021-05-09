@@ -5,6 +5,9 @@ public class Base {
     private static String base = "file:///C:/home/repos/11ty-petrzalka/_site"; // TODO: configurable
 
     public static String resolve(String url) {
+        if (url.startsWith("http")) {
+            return url;
+        }
         return base + url;
     }
 

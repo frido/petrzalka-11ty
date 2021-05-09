@@ -41,7 +41,7 @@ public class IndexPage extends BasePage {
     private HtmlTag budgets() {
         Section plan = new Section();
         plan.addContent(new Title("Investičný plán 2021"));
-        plan.addContent(new ArticleBudgetListComponent(budgetService.getBudgetForIndex()));
+        plan.addContent(new ArticleBudgetListComponent(budgetService.getBudgetForIndex(), false));
         return plan;
     }
 
