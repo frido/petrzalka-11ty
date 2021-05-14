@@ -23,7 +23,7 @@ public class Template {
         html.addContent(new Head(headProvider));
         HtmlTag body = new HtmlTag("body");
         body.addContent(new PageHeader(pageheaderProvider));
-        body.addContent(contentProvider.getContent());
+        contentProvider.applyContent(body);
         html.addContent(body);
         return html.toString();
     }

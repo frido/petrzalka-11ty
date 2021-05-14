@@ -1,6 +1,5 @@
 package com.example.springboot.component;
 
-import com.example.springboot.core.Base;
 import com.example.springboot.html.*;
 import com.example.springboot.page.HeadProvider;
 

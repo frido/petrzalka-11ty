@@ -29,6 +29,9 @@ Run server
 
 ```npx @11ty/eleventy --serve```
 
+For Java version:
+```http-server```
+
 ## Deploy
 
 Copy the` _site` folder to a destination.

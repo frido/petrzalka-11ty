@@ -1,6 +1,6 @@
 package com.example.springboot.criteria;
 
-import com.example.springboot.model.GrantSubject;
+import com.example.springboot.page.grant.GrantSubject;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.*;

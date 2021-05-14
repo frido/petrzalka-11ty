@@ -1,10 +1,15 @@
 package com.example.springboot;
 
-import com.example.springboot.core.PageWriter;
+import com.example.springboot.component.PageWriter;
 import com.example.springboot.page.*;
-import com.example.springboot.service.BudgetService;
-import com.example.springboot.service.GrantService;
-import com.example.springboot.service.ProjectService;
+import com.example.springboot.page.budget.BudgetDetailPage;
+import com.example.springboot.page.budget.BudgetPage;
+import com.example.springboot.page.grant.GrantPage;
+import com.example.springboot.page.project.ProjectDetailPage;
+import com.example.springboot.page.project.ProjectPage;
+import com.example.springboot.page.budget.BudgetService;
+import com.example.springboot.page.grant.GrantService;
+import com.example.springboot.page.project.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

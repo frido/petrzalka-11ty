@@ -1,5 +1,7 @@
 package com.example.springboot.model;
 
+import com.example.springboot.page.project.Project;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 

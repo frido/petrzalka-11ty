@@ -1,7 +1,8 @@
 package com.example.springboot.service;
 
-import com.example.springboot.model.GrantCategory;
-import com.example.springboot.model.dto.GrantDto;
+import com.example.springboot.page.grant.GrantCategory;
+import com.example.springboot.page.grant.GrantDto;
+import com.example.springboot.page.grant.GrantService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

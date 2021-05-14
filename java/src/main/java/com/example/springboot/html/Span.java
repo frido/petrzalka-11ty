@@ -11,4 +11,12 @@ public class Span extends HtmlTag{
         this(clazz);
         addContent(new HtmlNoTag(content));
     }
+
+    public static HtmlTag muted(String content) {
+        return new Span("muted").with(content);
+    }
+
+    public static HtmlTag amount(String content) {
+        return new Span("amount").with(content);
+    }
 }

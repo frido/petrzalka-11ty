@@ -1,6 +1,6 @@
 package com.example.springboot.html;
 
-import com.example.springboot.core.Base;
+import com.example.springboot.component.Base;
 
 public class AHref extends HtmlTag {
     public AHref(String clazz, String href, HtmlTag content) {
